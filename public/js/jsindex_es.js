@@ -185,6 +185,7 @@ function operar(id,tipo){
 			    modal.find('.mdl-card__supporting-text').find('small').text(small[0].innerText);
 				modal.modal('show');
 			}
+		//será máximo de 1000 a 2500
 		}else if(i == 3){
 			$('#textOperar').text('50 - 100');
 		}else if(i == 4){
