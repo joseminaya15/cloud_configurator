@@ -109,7 +109,102 @@
                         </div>
                     </div>
                     <div class="js-window2">
-                        <div class="js-window2">
+                        <div class="js-window--byd">
+                            <div class="js-question">
+                                <p><strong>BYD</strong> Configurator</p>
+                                <div class="js-question--number">
+                                    <span>01/05</span>
+                                    <h2>¿Qu&eacute; tipo de ayuda requiere para su negocio&#63;</h2>
+                                </div>
+                                <div class="js-card__flex">
+                                    <div class="js-card--large">
+                                        <div class="js-card--large__content">
+                                            <img src="">
+                                            <p>Lograr una <strong>integraci&oacute;n financiera</strong> que arroje informaci&oacute;n relevante en tiempo real</p>
+                                        </div>
+                                        <div class="js-card--large__button">
+                                            <button>Seleccione</button>
+                                        </div>
+                                    </div>
+                                    <div class="js-card--large">
+                                        <div class="js-card--large__content">
+                                            <img src="">
+                                            <p>Evidenciar una <strong>Mejora en mis Procesos Operativos</strong></p>
+                                        </div>
+                                        <div class="js-card--large__button">
+                                            <button>Seleccione</button>
+                                        </div>
+                                    </div>
+                                    <div class="js-card--large">
+                                        <div class="js-card--large__content">
+                                            <img src="">
+                                            <p>Trabajar con una <strong>Mejor Visibilidad de los Indicadores</strong> de Crecimiento</p>
+                                        </div>
+                                        <div class="js-card--large__button">
+                                            <button>Seleccione</button>
+                                        </div>
+                                    </div>
+                                    <div class="js-card--large">
+                                        <div class="js-card--large__content">
+                                            <img src="">
+                                            <p>Lograr una <strong>integraci&oacute;n financiera</strong> que arroje informaci&oacute;n relevante en tiempo real</p>
+                                        </div>
+                                        <div class="js-card--large__button">
+                                            <button>Seleccione</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="js-question">
+                                <p><strong>BYD</strong> Configurator</p>
+                                <div class="js-question--number">
+                                    <span>01/05</span>
+                                    <h2>¿Qu&eacute; tipo de ayuda requiere para su negocio&#63;</h2>
+                                </div>
+                                <div class="js-card__flex">
+                                    <div class="js-card--large">
+                                        <div class="js-card--large__content">
+                                            <img src="">
+                                            <p>Lograr una <strong>integraci&oacute;n financiera</strong> que arroje informaci&oacute;n relevante en tiempo real</p>
+                                        </div>
+                                        <div class="js-card--large__button">
+                                            <button>Seleccione</button>
+                                        </div>
+                                    </div>
+                                    <div class="js-card--large">
+                                        <div class="js-card--large__content">
+                                            <img src="">
+                                            <p>Evidenciar una <strong>Mejora en mis Procesos Operativos</strong></p>
+                                        </div>
+                                        <div class="js-card--large__button">
+                                            <button>Seleccione</button>
+                                        </div>
+                                    </div>
+                                    <div class="js-card--large">
+                                        <div class="js-card--large__content">
+                                            <img src="">
+                                            <p>Trabajar con una <strong>Mejor Visibilidad de los Indicadores</strong> de Crecimiento</p>
+                                        </div>
+                                        <div class="js-card--large__button">
+                                            <button>Seleccione</button>
+                                        </div>
+                                    </div>
+                                    <div class="js-card--large">
+                                        <div class="js-card--large__content">
+                                            <img src="">
+                                            <p>Lograr una <strong>integraci&oacute;n financiera</strong> que arroje informaci&oacute;n relevante en tiempo real</p>
+                                        </div>
+                                        <div class="js-card--large__button">
+                                            <button>Seleccione</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="js-window--crm">
+                            
+                        </div>
+                        <div class="js-window--hr">
                             
                         </div>
                     </div>
