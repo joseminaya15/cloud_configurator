@@ -457,7 +457,7 @@ class Es extends CI_Controller {
           $data['Prioridad']       = $html;
           $data['Infraestructura'] = $this->session->userdata('Infraestructura') == null ? '-' : $this->session->userdata('Infraestructura');
           $data['error']           = EXIT_SUCCESS;
-        } catch (Exception $e) {
+        } catch (Exception $e){
             $data['msj'] = $e->getMessage();
         }
         echo json_encode($data);
