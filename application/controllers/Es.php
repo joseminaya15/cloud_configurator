@@ -13,7 +13,7 @@ class Es extends CI_Controller {
   }
 
 	public function index(){
-    /*$data['nombre_comple'] = $this->session->userdata('nombre_linke');
+    $data['nombre_comple'] = $this->session->userdata('nombre_linke');
     $data['email_link']      = $this->session->userdata('email_linke');
     $data['comp']            = $this->session->userdata('compania') == null ? '' : $this->session->userdata('compania');
     $data['tit']             = $this->session->userdata('titulo') == null ? '' : $this->session->userdata('titulo');
@@ -24,6 +24,7 @@ class Es extends CI_Controller {
     $data['Tamanio']         = $this->session->userdata('Tamanio');
     $data['Infraestructura'] = $this->session->userdata('Infraestructura');
     $explode                 = explode(",", $this->session->userdata('Prioridad'));
+    $data['idIndustria']     = '';
     $html                    = '';
     foreach ($explode as $key){
       $html .= '<li>'.$key.'</li>';
@@ -39,7 +40,7 @@ class Es extends CI_Controller {
     $data['redirect_uri']  = $redirect_uri;
     $data['csrf_token']    = $csrf_token;
     $data['scopes']        = $scopes;
-    $data['nombre_linke']  = $this->session->userdata('emailAddress');*/
+    $data['nombre_linke']  = $this->session->userdata('emailAddress');
 		$data['nombre'] = '';
 		$this->load->view('v_es', $data);
 	}
