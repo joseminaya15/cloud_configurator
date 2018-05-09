@@ -58,4 +58,64 @@ class Pt extends CI_Controller {
 		}
 		echo json_encode($data);
   	}
+  	function solicitarEstimacion(){
+      $data['error']  = EXIT_ERROR;
+      $data['msj']    = null;
+      try {
+          $nombre_completo = $this->input->post('nombre_completo');
+          $empresa         = $this->input->post('empresa');
+          $email           = $this->input->post('email');
+          $pais            = $this->input->post('pais');
+          $cargo           = $this->input->post('cargo');
+          $telefono        = $this->input->post('telefono');
+          $relacion        = $this->input->post('relacion');
+          $contacto        = $this->input->post('contacto');//
+          $term_cond       = $this->input->post('term_cond');
+          if($contacto == '-'){
+            $contacto = 0;
+          }
+          $arrayInsert = array('nombre_completo' => $nombre_completo,
+                               'Empresa'         => $empresa,
+                               'Email'           => $email,
+                               'Pais'            => $pais,
+                               'Cargo'           => $cargo,
+                               'Telefono'        => $telefono,
+                               'Terminos'        => $term_cond,
+                               'Relacion'        => $relacion,
+                               'Contactado'      => $contacto,
+                               'Id_solicitud'    => $_SESSION['id_sol'],
+                               'fecha_sol'       => date('Y-m-d H:i:s'));
+          $datoInsert = $this->M_solicitud->insertarDatos($arrayInsert, 'usuario');
+          $session    = array('nombre_completo' => $nombre_completo,
+                              'Empresa'         => $empresa,
+                              'Email'           => $email,
+                              'Pais'            => $pais,
+                              'Cargo'           => $cargo,
+                              'Telefono'        => $telefono,
+                              'Relacion'        => $relacion,
+                              'Contacto'        => $contacto,
+                              'pantalla'        => 0,
+                              'id_persona'      => $datoInsert['Id']);
+          $this->session->set_userdata($session);
+          $this->session->unset_userdata('nombre_linke');
+          $this->session->unset_userdata('email_linke');
+          $this->session->unset_userdata('universidad');
+          $this->session->unset_userdata('pais_linke');
+          $this->session->unset_userdata('titulo');
+          $this->session->unset_userdata('compania');
+          $this->session->unset_userdata('Industria');
+          $this->session->unset_userdata('Infraestructura');
+          $this->session->unset_userdata('Factura_anual');
+          $this->session->unset_userdata('Tamanio');
+          $this->session->unset_userdata('Prioridad');
+          $this->session->unset_userdata('idioma');
+          /*$this->sendGmailSap($email);
+          $this->emailClienteSap($email);*/
+          $data['msj']   = $datoInsert['msj'];
+          $data['error'] = $datoInsert['error'];
+      }catch(Exception $e){
+            $data['msj'] = $e->getMessage();
+      }
+      echo json_encode($data);
+  }
 }
