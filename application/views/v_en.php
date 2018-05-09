@@ -61,7 +61,7 @@
                 <div class="js-container">
                     <div class="js-window1">
                         <div class="js-contenido">
-                            <h2>YO <strong>QUIERO</strong></h2>
+                            <h2>I <strong>WANT</strong></h2>
                             <div class="js-card">
                                 <div class="js-card-flip">
                                     <div class="js-card-flip__front">
@@ -73,7 +73,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card-content">
-                                    <p>Innovar digitalmente mis procesos para mejorar la competitividad, la reputaci&oacute;n de mi marca y m&aacute;s.</p>
+                                    <p>Digitally innovate my processes to improve competitiveness, the reputation of my brand and more.</p>
                                 </div>
                             </div>
                             <div class="js-card">
@@ -87,7 +87,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card-content">
-                                    <p>Contar con herramientas para una gestión avanzada de mis clientes por medio de marketing contextual y en tiempo real.</p>
+                                    <p>To have tools for an advanced management of my clients through contextual and real-time marketing.</p>
                                 </div>
                             </div>
                             <div class="js-card">
@@ -101,7 +101,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card-content">
-                                    <p>Modernizar la gesti&oacute;n de mi fuerza laboral, alinearlos con las metas del negocio, innovar su aprendizaje y compensarlos adecuadamente.</p>
+                                    <p>Modernize the management of my workforce, align with business goals, innovate their learning and compensate them adequately.</p>
                                 </div>
                             </div>
                         </div>

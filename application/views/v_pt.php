@@ -61,7 +61,7 @@
                 <div class="js-container">
                     <div class="js-window1">
                         <div class="js-contenido">
-                            <h2>YO <strong>QUIERO</strong></h2>
+                            <h2>EU <strong>QUERO</strong></h2>
                             <div class="js-card">
                                 <div class="js-card-flip">
                                     <div class="js-card-flip__front">
@@ -73,7 +73,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card-content">
-                                    <p>Innovar digitalmente mis procesos para mejorar la competitividad, la reputaci&oacute;n de mi marca y m&aacute;s.</p>
+                                    <p>Inove digitalmente meus processos para melhorar a competitividade, a reputa&ccedil;&atilde;o da minha marca e muito mais.</p>
                                 </div>
                             </div>
                             <div class="js-card">
@@ -87,7 +87,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card-content">
-                                    <p>Contar con herramientas para una gestión avanzada de mis clientes por medio de marketing contextual y en tiempo real.</p>
+                                    <p>Ter ferramentas para uma gest&atilde;o avançada dos meus clientes atrav&eacute;s de marketing contextual e em tempo real.</p>
                                 </div>
                             </div>
                             <div class="js-card">
@@ -101,7 +101,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card-content">
-                                    <p>Modernizar la gesti&oacute;n de mi fuerza laboral, alinearlos con las metas del negocio, innovar su aprendizaje y compensarlos adecuadamente.</p>
+                                    <p>Modernizar a gest&atilde;o da minha força de trabalho, alinhar com os objetivos de neg&oacute;cio, inovar a sua aprendizagem e compensá-los adequadamente.</p>
                                 </div>
                             </div>
                         </div>
