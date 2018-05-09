@@ -130,5 +130,12 @@
         <script src="<?php echo RUTA_JS?>jsutils.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>jsmenu.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>jsindex_es.js?v=<?php echo time();?>"></script>
+        <script type="text/javascript">
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+                $('select').selectpicker('mobile');
+            } else {
+                $('select').selectpicker();
+            }
+        </script>
     </body>
 </html>
