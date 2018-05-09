@@ -62,46 +62,48 @@
                     <div class="js-window1">
                         <div class="js-contenido">
                             <h2>YO <strong>QUIERO</strong></h2>
-                            <div class="js-card">
-                                <div class="js-card-flip">
-                                    <div class="js-card-flip__front">
-                                        <img src="<?php echo RUTA_IMG?>cards/byd.png">
+                            <div class="js-card__flex">
+                                <div class="js-card">
+                                    <div class="js-card-imagen">
+                                        <div class="js-card-flip js-card-flip__front">
+                                            <img src="<?php echo RUTA_IMG?>cards/byd.png">
+                                        </div>
+                                        <div class="js-card-flip js-card-flip__back">
+                                            <h2>BYD</h2>
+                                            <p>Configurator</p>
+                                        </div>
                                     </div>
-                                    <div class="js-card-flip__back">
-                                        <h2>BYD</h2>
-                                        <p>Configurator</p>
-                                    </div>
-                                </div>
-                                <div class="js-card-content">
-                                    <p>Innovar digitalmente mis procesos para mejorar la competitividad, la reputaci&oacute;n de mi marca y m&aacute;s.</p>
-                                </div>
-                            </div>
-                            <div class="js-card">
-                                <div class="js-card-flip">
-                                    <div class="js-card-flip__front">
-                                        <img src="<?php echo RUTA_IMG?>cards/crm.png">
-                                    </div>
-                                    <div class="js-card-flip__back">
-                                        <h2>CRM</h2>
-                                        <p>Configurator</p>
+                                    <div class="js-card-content">
+                                        <p>Innovar digitalmente mis procesos para mejorar la competitividad, la reputaci&oacute;n de mi marca y m&aacute;s.</p>
                                     </div>
                                 </div>
-                                <div class="js-card-content">
-                                    <p>Contar con herramientas para una gestión avanzada de mis clientes por medio de marketing contextual y en tiempo real.</p>
-                                </div>
-                            </div>
-                            <div class="js-card">
-                                <div class="js-card-flip">
-                                    <div class="js-card-flip__front">
-                                        <img src="<?php echo RUTA_IMG?>cards/hr.png">
+                                <div class="js-card">
+                                    <div class="js-card-imagen">
+                                        <div class="js-card-flip js-card-flip__front">
+                                            <img src="<?php echo RUTA_IMG?>cards/crm.png">
+                                        </div>
+                                        <div class="js-card-flip js-card-flip__back">
+                                            <h2>CRM</h2>
+                                            <p>Configurator</p>
+                                        </div>
                                     </div>
-                                    <div class="js-card-flip__back">
-                                        <h2>HR</h2>
-                                        <p>Configurator</p>
+                                    <div class="js-card-content">
+                                        <p>Contar con herramientas para una gestión avanzada de mis clientes por medio de marketing contextual y en tiempo real.</p>
                                     </div>
                                 </div>
-                                <div class="js-card-content">
-                                    <p>Modernizar la gesti&oacute;n de mi fuerza laboral, alinearlos con las metas del negocio, innovar su aprendizaje y compensarlos adecuadamente.</p>
+                                <div class="js-card">
+                                    <div class="js-card-imagen">
+                                        <div class="js-card-flip js-card-flip__front">
+                                            <img src="<?php echo RUTA_IMG?>cards/hr.png">
+                                        </div>
+                                        <div class="js-card-flip js-card-flip__back">
+                                            <h2>HR</h2>
+                                            <p>Configurator</p>
+                                        </div>
+                                    </div>
+                                    <div class="js-card-content">
+                                        <p>Modernizar la gesti&oacute;n de mi fuerza laboral, alinearlos con las metas del negocio, innovar su aprendizaje y compensarlos adecuadamente.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

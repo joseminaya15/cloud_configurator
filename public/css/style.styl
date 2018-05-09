@@ -36,6 +36,37 @@ flipCard()
 	-moz-box-shadow 1px 1px 2px rgba(14, 85, 143, 0.8)
 	-webkit-box-shadow 1px 1px 2px rgba(14, 85, 143, 0.8)
 	box-shadow 1px 1px 2px rgba(14, 85, 143, 0.8)
+	position absolute
+flipCardFront()
+	-webkit-transform perspective(600) rotateY(0)
+	-moz-transform perspective(600) rotateY(0)
+	-o-transform perspective(600) rotateY(0)
+	transform perspective(600) rotateY(0)
+flipCardBack()
+	-webkit-transform rotateY(-180deg)
+	-moz-transform rotateY(-180deg)
+	-o-transform rotateY(-180deg)
+	transform rotateY(-180deg)
+	z-index 900
+flipCardFrontHover()
+	-webkit-transform rotateY(180deg)
+	-moz-transform rotateY(180deg)
+	-o-transform rotateY(180deg)
+	transform rotateY(180deg)
+	-webkit-transform perspective(600) rotateY(180deg)
+	-moz-transform perspective(600) rotateY(180deg)
+	-o-transform perspective(600) rotateY(180deg)
+	transform perspective(600) rotateY(180deg)
+flipCardBackHover()
+	-webkit-transform rotateY(0)
+	-moz-transform rotateY(0)
+	-o-transform rotateY(0)
+	transform rotateY(0)
+	-webkit-transform perspective(600) rotateY(0)
+	-moz-transform perspective(600) rotateY(0)
+	-o-transform perspective(600) rotateY(0)
+	transform perspective(600) rotateY(0)
+	z-index 950
 body
 	margin 0
 	padding 0
@@ -149,4 +180,31 @@ body
 			background linear-gradient(to right, #EFAB1F 0%, #E35500 100%)
 			-webkit-background-clip text
 			-webkit-text-fill-color transparent
-	 
+.js-card__flex
+	flexCenter()
+.js-card
+	width 100%
+	max-width 180px
+	.js-card-imagen
+		position relative
+		width 100%
+		max-width 180px
+		height 180px
+		.js-card-flip
+			width 100%
+			height 100%
+			flipCard()
+			&.js-card-flip__front
+				flipCardFront()
+			&.js-card-flip__back
+				flipCardBack()		
+	&:hover
+		.js-card-flip__front
+			flipCardFrontHover()
+		.js-card-flip__back
+			flipCardBackHover()
+.js-card-content
+	p
+		color #FFFFFF
+		line-height 18px
+		margin 0	 
