@@ -110,7 +110,7 @@ class Es extends CI_Controller {
           $this->session->unset_userdata('idioma');
           /*$this->sendGmailSap($email);
           $this->emailClienteSap($email);*/
-          $data['msj']  = $datoInsert['msj'];
+          $data['msj']   = $datoInsert['msj'];
           $data['error'] = $datoInsert['error'];
       }catch(Exception $e){
             $data['msj'] = $e->getMessage();
@@ -146,7 +146,7 @@ class Es extends CI_Controller {
        $this->email->from('info@sap-latam.com');
        $this->email->to('jhonatanibericom@gmail.com');
        $this->email->subject('Estoy interesado en SAP Business One para mi negocio.');
-        $texto = '<!DOCTYPE html>
+       $texto = '<!DOCTYPE html>
                   <html>
                   <head>
                     <title></title>
@@ -284,7 +284,7 @@ class Es extends CI_Controller {
         $this->email->message($texto);
         $this->email->send();
         $data['error'] = EXIT_SUCCESS;
-      }catch (Exception $e){
+      }catch(Exception $e){
         $data['msj'] = $e->getMessage();
       }
       return json_encode(array_map('utf8_encode', $data));
@@ -293,9 +293,9 @@ class Es extends CI_Controller {
       $data['error'] = EXIT_ERROR;
       $data['msj']   = null;
       try {  
-       $this->load->library("email");
-       $respuestas = $this->M_solicitud->getRespUsuario($_SESSION['id_persona']);
-       $configGmail = array('protocol'  => 'smtp',
+        $this->load->library("email");
+        $respuestas = $this->M_solicitud->getRespUsuario($_SESSION['id_persona']);
+        $configGmail = array('protocol'  => 'smtp',
                             'smtp_host' => 'smtpout.secureserver.net',
                             'smtp_port' => 3535,
                             'smtp_user' => 'info@marketinghpe.com',
@@ -303,131 +303,131 @@ class Es extends CI_Controller {
                             'mailtype'  => 'html',
                             'charset'   => 'utf-8',
                             'newline'   => "\r\n");    
-       $this->email->initialize($configGmail);
-       $this->email->from('info@sap-latam.com');
-       $this->email->to($email);
-       $this->email->subject('Gracias por su interés en SAP Business One.');
+        $this->email->initialize($configGmail);
+        $this->email->from('info@sap-latam.com');
+        $this->email->to($email);
+        $this->email->subject('Gracias por su interés en SAP Business One.');
         $texto = '<!DOCTYPE html>
-                <html>
-                <head>
-                  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-                    <meta name="viewport" content="width=device-width">
-                  <title></title>
-                  <style type="text/css">
-                    table,tbody,tr,td,th{padding: 0;margin: 0;border-spacing: 0;border-collapse: inherit;}
-                    body{margin: 0;padding: 0; height: 100vh;}
-                    table.body{background-color: #F3F3F3;width: 100%;height: 100%;border:0;}
-                    h2,p{font-family: "Open Sans",Arial,Helvetica,sans-serif;margin: 0;}
-                  </style>
-                </head>
-                <body>
-                  <table class="body" cellspacing="0" cellpadding="0" border="0">
-                    <tr>
-                      <td>
-                        <table align="center" cellspacing="0" cellpadding="0" border="0" style="width: 100%;max-width: 600px;margin: 0 auto;background-color: #000000;text-align: center;float: none;">
-                          <tbody>
-                            <tr>
-                              <th>
-                                <table cellspacing="0" cellpadding="0" border="0">
-                                  <tbody>
-                                    <tr>
-                                      <th style="width: 525px;text-align: left;padding-left: 20px;">
-                                        <table cellspacing="0" cellpadding="0" border="0">
-                                          <tbody>
-                                            <tr style="text-align: left;">
-                                              <th style="text-align: left;"><img width="150" src="http://www.sap-latam.com/sap_business_one/public/img/logo/logo_header.png"></th>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                      </th>
-                                      <th style="width: 75px;">
-                                        <table cellspacing="0" cellpadding="0" border="0">
-                                          <tbody>
-                                            <tr>
-                                              <td style="height: 100px;width: 25px;background-color: #54442E;"></td>
-                                              <td style="height: 100px;width: 25px;background-color: #8D6832;"></td>
-                                              <td style="height: 100px;width: 25px;background-color: #E29D2E;"></td>
-                                            </tr>
-                                          </tbody>
-                                        </table>
-                                      </th>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </th>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <table align="center" cellspacing="0" cellpadding="0" style="width: 100%;border:1px solid #000000;max-width: 600px;margin: 5px auto;;text-align: center;float: none;background-color: #FFFFFF;">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <table align="center" cellspacing="0" cellpadding="0" style="text-align: center;margin: auto;">
-                                  <tbody>
-                                    <tr>
-                                      <td style="padding: 20px 40px 10px 40px;">
-                                        <font style="color: #000000;font-weight: bold;font-size: 20px;">Gracias por su interés</font>
-                                      </td>
-                                    </tr>
-                                    <tr>
-                                      <td style="padding:10px 40px 20px 40px;">
-                                        <font style="color: #000000;">Un representante de SAP se pondrá en contacto con Usted para ayudarlo a dar el primer paso.</font>
-                                      </td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding-bottom: 20px;">
-                                <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
-                                  <tbody>
-                                    <tr style="padding: 5px 20px;">
-                                      <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/1.jpg"></td>
-                                      <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">¿En qué industria se desempeña?</font></td>
-                                    </tr>
-                                    <tr style="padding: 5px 20px;">
-                                      <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->Industria.'</font></td>
-                                    </tr>
-                                    <tr style="padding: 5px 20px;">
-                                      <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/2.jpg"></td>
-                                      <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">¿De qué tamaño es su empresa?</font></td>
-                                    </tr>
-                                    <tr style="padding: 5px 20px;">
-                                      <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->Tamanio.' empleados</font></td>
-                                    </tr>
-                                    <tr style="padding: 5px 20px;">
-                                      <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/3.jpg"></td>
-                                      <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Su facturación</font></td>
-                                    </tr>
-                                    <tr style="padding: 5px 20px;">
-                                      <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->Factura_anual.'</font></td>
-                                    </tr>
-                                    <tr style="padding: 5px 20px;">
-                                      <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/4.jpg"></td>
-                                      <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">¿Cual es la prioridad de su negocio?</font></td>
-                                    </tr>
-                                    <tr style="padding: 5px 20px;">
-                                      <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->Prioridad.'</font></td>
-                                    </tr>
-                                    <tr style="padding: 5px 20px;">
-                                      <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/5.jpg"></td>
-                                      <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">¿Qué tipo de infraestructura está buscando?</font></td>
-                                    </tr>
-                                    <tr style="padding: 5px 20px;">
-                                      <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->Infraestructura.'</font></td>
-                                    </tr>
-                                  </tbody>
-                                </table>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </body>
-                </html>';
+                    <html>
+                    <head>
+                      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+                        <meta name="viewport" content="width=device-width">
+                      <title></title>
+                      <style type="text/css">
+                        table,tbody,tr,td,th{padding: 0;margin: 0;border-spacing: 0;border-collapse: inherit;}
+                        body{margin: 0;padding: 0; height: 100vh;}
+                        table.body{background-color: #F3F3F3;width: 100%;height: 100%;border:0;}
+                        h2,p{font-family: "Open Sans",Arial,Helvetica,sans-serif;margin: 0;}
+                      </style>
+                    </head>
+                    <body>
+                      <table class="body" cellspacing="0" cellpadding="0" border="0">
+                        <tr>
+                          <td>
+                            <table align="center" cellspacing="0" cellpadding="0" border="0" style="width: 100%;max-width: 600px;margin: 0 auto;background-color: #000000;text-align: center;float: none;">
+                              <tbody>
+                                <tr>
+                                  <th>
+                                    <table cellspacing="0" cellpadding="0" border="0">
+                                      <tbody>
+                                        <tr>
+                                          <th style="width: 525px;text-align: left;padding-left: 20px;">
+                                            <table cellspacing="0" cellpadding="0" border="0">
+                                              <tbody>
+                                                <tr style="text-align: left;">
+                                                  <th style="text-align: left;"><img width="150" src="http://www.sap-latam.com/sap_business_one/public/img/logo/logo_header.png"></th>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </th>
+                                          <th style="width: 75px;">
+                                            <table cellspacing="0" cellpadding="0" border="0">
+                                              <tbody>
+                                                <tr>
+                                                  <td style="height: 100px;width: 25px;background-color: #54442E;"></td>
+                                                  <td style="height: 100px;width: 25px;background-color: #8D6832;"></td>
+                                                  <td style="height: 100px;width: 25px;background-color: #E29D2E;"></td>
+                                                </tr>
+                                              </tbody>
+                                            </table>
+                                          </th>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </th>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <table align="center" cellspacing="0" cellpadding="0" style="width: 100%;border:1px solid #000000;max-width: 600px;margin: 5px auto;;text-align: center;float: none;background-color: #FFFFFF;">
+                              <tbody>
+                                <tr>
+                                  <td>
+                                    <table align="center" cellspacing="0" cellpadding="0" style="text-align: center;margin: auto;">
+                                      <tbody>
+                                        <tr>
+                                          <td style="padding: 20px 40px 10px 40px;">
+                                            <font style="color: #000000;font-weight: bold;font-size: 20px;">Gracias por su interés</font>
+                                          </td>
+                                        </tr>
+                                        <tr>
+                                          <td style="padding:10px 40px 20px 40px;">
+                                            <font style="color: #000000;">Un representante de SAP se pondrá en contacto con Usted para ayudarlo a dar el primer paso.</font>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="padding-bottom: 20px;">
+                                    <table style="width: 100%;padding: 20px;" cellspacing="0" cellpadding="0">
+                                      <tbody>
+                                        <tr style="padding: 5px 20px;">
+                                          <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/1.jpg"></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">¿En qué industria se desempeña?</font></td>
+                                        </tr>
+                                        <tr style="padding: 5px 20px;">
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->Industria.'</font></td>
+                                        </tr>
+                                        <tr style="padding: 5px 20px;">
+                                          <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/2.jpg"></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">¿De qué tamaño es su empresa?</font></td>
+                                        </tr>
+                                        <tr style="padding: 5px 20px;">
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->Tamanio.' empleados</font></td>
+                                        </tr>
+                                        <tr style="padding: 5px 20px;">
+                                          <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/3.jpg"></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">Su facturación</font></td>
+                                        </tr>
+                                        <tr style="padding: 5px 20px;">
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->Factura_anual.'</font></td>
+                                        </tr>
+                                        <tr style="padding: 5px 20px;">
+                                          <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/4.jpg"></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">¿Cual es la prioridad de su negocio?</font></td>
+                                        </tr>
+                                        <tr style="padding: 5px 20px;">
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->Prioridad.'</font></td>
+                                        </tr>
+                                        <tr style="padding: 5px 20px;">
+                                          <td rowspan="2"><img width="35" src="http://www.sap-latam.com/sap_business_one/public/img/5.jpg"></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">¿Qué tipo de infraestructura está buscando?</font></td>
+                                        </tr>
+                                        <tr style="padding: 5px 20px;">
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->Infraestructura.'</font></td>
+                                        </tr>
+                                      </tbody>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </body>
+                    </html>';
         $this->email->message($texto);
         $this->email->send();
         $data['error'] = EXIT_SUCCESS;
@@ -442,8 +442,8 @@ class Es extends CI_Controller {
         try {
           $ids_array   = $this->input->post('array_ids');
           $array_3pant = $this->input->post('array_3pant');
-          $explode = explode(",", $this->session->userdata('Prioridad'));
-          $html    = '';
+          $explode     = explode(",", $this->session->userdata('Prioridad'));
+          $html        = '';
           foreach ($explode as $key) {
             $html .= '<li>'.$key.'</li>';
           }
