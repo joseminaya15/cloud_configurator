@@ -14,6 +14,34 @@ class En extends CI_Controller {
     }
 
 	public function index(){
+		$data['nombre_comple'] = $this->session->userdata('nombre_linke');
+	    $data['email_link']      = $this->session->userdata('email_linke');
+	    $data['comp']            = $this->session->userdata('compania') == null ? '' : $this->session->userdata('compania');
+	    $data['tit']             = $this->session->userdata('titulo') == null ? '' : $this->session->userdata('titulo');
+	    $data['pais_link']       = $this->session->userdata('pais_linke');
+	    $data['pantalla1']        = $this->session->userdata('pantalla') == '' ? 0 : $this->session->userdata('pantalla');
+	    $data['industria']       = $this->session->userdata('industria');
+	    $data['Factura_anual']   = $this->session->userdata('Factura_anual');
+	    $data['Tamanio']         = $this->session->userdata('Tamanio');
+	    $data['Infraestructura'] = $this->session->userdata('Infraestructura');
+	    $explode                 = explode(",", $this->session->userdata('Prioridad'));
+	    $data['idIndustria']     = '';
+	    $html                    = '';
+	    foreach ($explode as $key){
+	      $html .= '<li>'.$key.'</li>';
+	    }
+	    $data['priori']        = $html;
+	    $client_id             = "864xp2wdu9eghe";
+	    $client_secret         = "M6NxoP4EWlaADF2U";
+	    $redirect_uri          = "http://www.sap-latam.com/sap_business_one/callback";
+	    $csrf_token            = random_int(1111111, 9999999);
+	    $scopes                = "r_basicprofile%20r_emailaddress";
+	    $data['client_id']     = $client_id;
+	    $data['client_secret'] = $client_secret;
+	    $data['redirect_uri']  = $redirect_uri;
+	    $data['csrf_token']    = $csrf_token;
+	    $data['scopes']        = $scopes;
+	    $data['nombre_linke']  = $this->session->userdata('emailAddress');
 		$data['nombre'] = '';
 		$this->load->view('v_en', $data);
 	}
