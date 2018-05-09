@@ -231,3 +231,29 @@ function operar(id,tipo){
 		}
 	}
 }
+function mostrarDatos(){
+	$.ajax({
+		data : {array_ids   : array_ids,
+				array_3pant : array_3pant},
+		url  : 'es/mostrarDatos',
+		type : 'POST'
+	}).done(function(data){
+		try{
+        data = JSON.parse(data);
+        if(data.error == 0){
+        	$("#relacion").val('0');
+			$('.selectpicker').selectpicker('refresh');
+          	$('#industria').text(data.Industria);
+          	$('#factura').text(data.Factura_anual)
+           	$('#tamanio').text(data.Tamanio);
+           	$('#prioridad').find('li').remove();
+           	$('#prioridad').append(data.Prioridad);
+           	$('#infraestructura').text(data.Infraestructura);
+        }else{
+        	return;
+        }
+      } catch (err){
+        msj('error',err.message);
+      }
+	});
+}

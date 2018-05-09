@@ -108,8 +108,8 @@ class Es extends CI_Controller {
           $this->session->unset_userdata('Tamanio');
           $this->session->unset_userdata('Prioridad');
           $this->session->unset_userdata('idioma');
-          $this->sendGmailSap($email);
-          $this->emailClienteSap($email);
+          /*$this->sendGmailSap($email);
+          $this->emailClienteSap($email);*/
           $data['msj']  = $datoInsert['msj'];
           $data['error'] = $datoInsert['error'];
       }catch(Exception $e){
@@ -137,14 +137,14 @@ class Es extends CI_Controller {
        $configGmail = array('protocol'  => 'smtp',
                             'smtp_host' => 'smtpout.secureserver.net',
                             'smtp_port' => 3535,
-                            'smtp_user' => 'info@sap-latam.com',
-                            'smtp_pass' => 'sapinfo18#',
+                            'smtp_user' => 'info@marketinghpe.com',
+                            'smtp_pass' => 'hpeinfo18',
                             'mailtype'  => 'html',
                             'charset'   => 'utf-8',
                             'newline'   => "\r\n");
        $this->email->initialize($configGmail);
        $this->email->from('info@sap-latam.com');
-       $this->email->to('jhonatanibericom@brainblue.com');
+       $this->email->to('jhonatanibericom@gmail.com');
        $this->email->subject('Estoy interesado en SAP Business One para mi negocio.');
         $texto = '<!DOCTYPE html>
                   <html>
@@ -298,8 +298,8 @@ class Es extends CI_Controller {
        $configGmail = array('protocol'  => 'smtp',
                             'smtp_host' => 'smtpout.secureserver.net',
                             'smtp_port' => 3535,
-                            'smtp_user' => 'info@sap-latam.com',
-                            'smtp_pass' => 'sapinfo18',
+                            'smtp_user' => 'info@marketinghpe.com',
+                            'smtp_pass' => 'hpeinfo18',
                             'mailtype'  => 'html',
                             'charset'   => 'utf-8',
                             'newline'   => "\r\n");    
@@ -436,4 +436,30 @@ class Es extends CI_Controller {
       }
       return json_encode(array_map('utf8_encode', $data));
     }
+    function mostrarDatos(){
+        $data['error'] = EXIT_ERROR;
+        $data['msj']   = null;
+        try {
+          $ids_array   = $this->input->post('array_ids');
+          $array_3pant = $this->input->post('array_3pant');
+          $explode = explode(",", $this->session->userdata('Prioridad'));
+          $html    = '';
+          foreach ($explode as $key) {
+            $html .= '<li>'.$key.'</li>';
+          }
+          $session = array('ids_array'   => $ids_array,
+                           'array_3pant' => $array_3pant);
+          $this->session->set_userdata($session);
+          $tamanio = $this->session->userdata('Tamanio') == null ? '-' : $this->session->userdata('Tamanio').' empleados';
+          $data['Industria']       = $this->session->userdata('industria') == null ? '-' : $this->session->userdata('industria');
+          $data['Factura_anual']   = $this->session->userdata('Factura_anual') == null ? '-' : $this->session->userdata('Factura_anual');
+          $data['Tamanio']         = $tamanio;
+          $data['Prioridad']       = $html;
+          $data['Infraestructura'] = $this->session->userdata('Infraestructura') == null ? '-' : $this->session->userdata('Infraestructura');
+          $data['error']           = EXIT_SUCCESS;
+        } catch (Exception $e) {
+            $data['msj'] = $e->getMessage();
+        }
+        echo json_encode($data);
+  }
 }
