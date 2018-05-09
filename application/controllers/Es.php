@@ -47,16 +47,16 @@ class Es extends CI_Controller {
 	}
 	function cambiarIdioma(){
     $data['error'] = EXIT_ERROR;
-      $data['msj'] = null;
-      try {
+    $data['msj'] = null;
+    try {
         $idioma  = $this->input->post('idioma');
         $session = array('idioma' => $idioma);
         $this->session->set_userdata($session);
         $data['error'] = EXIT_SUCCESS;
-      }catch(Exception $e) {
+    }catch(Exception $e) {
         $data['msj'] = $e->getMessage();
-      }
-      echo json_encode($data);
+    }
+    echo json_encode($data);
   }
   function solicitarEstimacion(){
       $data['error']  = EXIT_ERROR;

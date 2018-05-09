@@ -18,16 +18,16 @@ class En extends CI_Controller {
 		$this->load->view('v_en', $data);
 	}
 	function cambiarIdioma(){
-    $data['error'] = EXIT_ERROR;
-      $data['msj'] = null;
-      try {
-        $idioma  = $this->input->post('idioma');
-        $session = array('idioma' => $idioma);
-        $this->session->set_userdata($session);
-        $data['error'] = EXIT_SUCCESS;
-      }catch(Exception $e) {
-        $data['msj'] = $e->getMessage();
-      }
-      echo json_encode($data);
-  }
+		$data['error'] = EXIT_ERROR;
+		$data['msj'] = null;
+		try {
+		    $idioma  = $this->input->post('idioma');
+		    $session = array('idioma' => $idioma);
+		    $this->session->set_userdata($session);
+		    $data['error'] = EXIT_SUCCESS;
+		}catch(Exception $e) {
+		    $data['msj'] = $e->getMessage();
+		}
+		echo json_encode($data);
+  	}
 }
