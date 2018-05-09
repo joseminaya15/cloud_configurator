@@ -158,11 +158,11 @@
                             <div class="js-question">
                                 <p><strong>BYD</strong> Configurator</p>
                                 <div class="js-question--number">
-                                    <span>01/05</span>
+                                    <span>02/05</span>
                                     <h2>¿Qu&eacute; tipo de ayuda requiere para su negocio&#63;</h2>
                                 </div>
                                 <div class="js-card__flex">
-                                    <div class="js-card--large">
+                                    <div class="js-card">
                                         <div class="js-card--large__content">
                                             <img src="">
                                             <p>Lograr una <strong>integraci&oacute;n financiera</strong> que arroje informaci&oacute;n relevante en tiempo real</p>
