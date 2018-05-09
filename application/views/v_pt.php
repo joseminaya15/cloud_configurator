@@ -30,9 +30,9 @@
                     <img src="<?php echo RUTA_IMG?>logo/logo-sap__run.png">
                     <div class="js-idioma">
                         <select class="selectpicker" id="IdiomaHome"  name="Idioma" onchange="cambiarIdioma()">
+                            <option value="Portugués">Portugu&ecirc;s</option>
                             <option value="Español">Espa&ntilde;ol</option>
                             <option value="Inglés">English</option>
-                            <option value="Portugués">Portugu&ecirc;s</option>
                         </select>
                     </div>
                 </div>
