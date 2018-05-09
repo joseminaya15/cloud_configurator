@@ -68,7 +68,7 @@
                                         <div class="js-card-flip js-card-flip__front">
                                             <img src="<?php echo RUTA_IMG?>cards/byd.png">
                                         </div>
-                                        <div class="js-card-flip js-card-flip__back">
+                                        <div class="js-card-flip js-card-flip__back selected">
                                             <h2>BYD</h2>
                                             <p>Configurator</p>
                                         </div>

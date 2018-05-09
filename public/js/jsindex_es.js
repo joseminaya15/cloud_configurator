@@ -1,9 +1,15 @@
 var homePage     = $('#home');
 var congigurator = $('#configurator'); 
-
+var pant1 		 = 0;
 function buttonNext(){
+	pant1++;
+	var cate = '';
+	if(pant1 == 2){		
+		/*cate = $('.js-card').find('selected').children().text();
+		console.log(cate);*/
+	}
 	homePage.addClass('animated fadeOutUp');
-	congigurator.addClass('animated fadeInDown');
+	congigurator.addClass('animated fadeInDown');	
 }
 function cambiarIdioma(){
 	var idioma = $('#IdiomaHome').val();
