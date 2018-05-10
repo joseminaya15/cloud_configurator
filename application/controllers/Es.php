@@ -53,7 +53,7 @@ class Es extends CI_Controller {
         $session = array('idioma' => $idioma);
         $this->session->set_userdata($session);
         $data['error'] = EXIT_SUCCESS;
-    }catch(Exception $e) {
+    }catch(Exception $e){
         $data['msj'] = $e->getMessage();
     }
     echo json_encode($data);
