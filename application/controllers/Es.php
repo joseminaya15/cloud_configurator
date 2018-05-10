@@ -42,7 +42,6 @@ class Es extends CI_Controller {
     $data['csrf_token']    = $csrf_token;
     $data['scopes']        = $scopes;
     $data['nombre_linke']  = $this->session->userdata('emailAddress');
-		$data['nombre'] = '';
 		$this->load->view('v_es', $data);
 	}
 	function cambiarIdioma(){
