@@ -465,36 +465,36 @@ class Es extends CI_Controller {
       $data['error'] = EXIT_ERROR;
       $data['msj']   = null;
       try {
-        $config      = $this->input->post('config');
-        $pantalla    = $this->input->post('pantalla');
-        $ayuda       = $this->input->post('ayuda');
-        if($pantalla == 2){
-          /*$arrayInsert   = array('producto' => $config);
-          $datoInsert    = $this->M_solicitud->insertarDatos($arrayInsert, 'solicitud');
-          $session       = array('producto' => $config,
-                                 'id_sol'   => $datoInsert['Id']);*/
-        }else if($pantalla == 3){
-          /*$arrayUpdate = array('ayuda' => $ayuda);
-          $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');*/
-        }else if($pantalla == 4){
-          /*$arrayUpdate = array('tipo_industria' => $tipo,
-                               'tamanio'        => $tamanio,
-                               'factura_anual'  => $factura);
-          $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
-          $session     = array('tipo_industria' => $tipo,
-                               'tamanio'        => $tamanio,
-                               'factura_anual'  => $factura);*/
-        }else if($pantalla == 5){
-          /*$arrayUpdate = array('retos' => $retos);
-          $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
-          $session     = array('retos' => $retos);*/
-        }else if($pantalla == 6){
-          /*$arrayUpdate = array('solucion' => $solucion);
-          $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
-          $session     = array('solucion' => $solucion);*/
-        }
-        //$this->session->set_userdata($session);
-        $data['error'] = EXIT_SUCCESS;
+          $config      = $this->input->post('config');
+          $pantalla    = $this->input->post('pantalla');
+          $ayuda       = $this->input->post('ayuda');
+          if($pantalla == 2){
+              /*$arrayInsert   = array('producto' => $config);
+              $datoInsert    = $this->M_solicitud->insertarDatos($arrayInsert, 'solicitud');
+              $session       = array('producto' => $config,
+                                     'id_sol'   => $datoInsert['Id']);*/
+          }else if($pantalla == 3){
+              /*$arrayUpdate = array('ayuda' => $ayuda);
+              $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');*/
+          }else if($pantalla == 4){
+              /*$arrayUpdate = array('tipo_industria' => $tipo,
+                                     'tamanio'        => $tamanio,
+                                     'factura_anual'  => $factura);
+              $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
+              $session     = array('tipo_industria' => $tipo,
+                                   'tamanio'        => $tamanio,
+                                   'factura_anual'  => $factura);*/
+          }else if($pantalla == 5){
+              /*$arrayUpdate = array('retos' => $retos);
+              $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
+              $session     = array('retos' => $retos);*/
+          }else if($pantalla == 6){
+              /*$arrayUpdate = array('solucion' => $solucion);
+              $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
+              $session     = array('solucion' => $solucion);*/
+          }
+          //$this->session->set_userdata($session);
+          $data['error'] = EXIT_SUCCESS;
       } catch (Exception $e){
           $data['msj'] = $e->getMessage();
       }
