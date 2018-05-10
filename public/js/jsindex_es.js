@@ -289,3 +289,21 @@ function ayudaCard(ayuda){
 	ayuda_negocio = ayuda;
 	arr_pant.push(ayuda);
 }
+function validarCampos(){
+	var $inputs    = $('form :input');
+	var formvalido = true;
+	$inputs.each(function(){
+		if(isEmpty($(this).val())){
+			$(this).css('border-color','red');
+			formvalido = false;
+		}else{
+			$(this).css('border-color','');
+		}
+	});
+	return formvalido;
+}
+function isEmpty(val){
+	if(jQuery.trim(val).length != 0)
+    	return false;
+		return true;
+}
