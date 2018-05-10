@@ -97,6 +97,21 @@ body
 	img
 		width 100%
 		max-width 150px
+	&.js-header--configurator
+		border-bottom 1px solid #FFFFFF
+		.js-header__bgcolor
+			flexCenter()
+			justify-content flex-end
+			.js-header__bgcolor--bar
+				height 100%
+				width 100%
+				max-width 120px
+				&:nth-child(1)
+					background-color rgba(240, 171, 0, 0.4)
+				&:nth-child(2)
+					background-color rgba(240, 171, 0, 0.7)
+				&:nth-child(3)
+					background-color rgba(240, 171, 0, 1)
 .js-fondo__imagen
 	background url(../img/fondo/fondo-imagen.jpg) no-repeat center center
 	background-size cover

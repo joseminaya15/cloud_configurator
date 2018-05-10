@@ -55,10 +55,15 @@
             </div>
             <!-- TODOS LOS CARDS  -->
             <div id="configurator">
-                <div class="js-header">
+                <div class="js-header js-header--configurator">
                     <img src="<?php echo RUTA_IMG?>logo/logo-sap__run.png">
+                    <div class="js-header__bgcolor">
+                        <div class="js-header__bgcolor--bar"></div>
+                        <div class="js-header__bgcolor--bar"></div>
+                        <div class="js-header__bgcolor--bar"></div>
+                    </div>
                 </div>
-                <div class="js-window1" style="display: none;">
+                <div class="js-window1">
                     <div class="js-container">
                         <h2>YO <strong>QUIERO</strong></h2>
                         <div class="js-card__flex">
@@ -522,7 +527,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="js-window7">
+                <div class="js-window7" style="display: none;">
                     <div class="js-container">
                         <div class="js-agradecimiento">
                             <h2>Gracias por su inter&eacute;s</h2>
