@@ -460,7 +460,7 @@ class Es extends CI_Controller {
       }catch(Exception $e){
           $data['msj'] = $e->getMessage();
       }
-        echo json_encode($data);
+      echo json_encode($data);
   }
   function buttonNext(){
       $data['error'] = EXIT_ERROR;
