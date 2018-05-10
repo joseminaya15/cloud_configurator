@@ -12,7 +12,6 @@ class Es extends CI_Controller {
         $this->output->set_header('Cache-Control: post-check=0, pre-check=0',false);
         $this->output->set_header('Pragma: no-cache');
   }
-
 	public function index(){
     $data['nombre_comple']   = $this->session->userdata('nombre_linke');
     $data['email_link']      = $this->session->userdata('email_linke');
