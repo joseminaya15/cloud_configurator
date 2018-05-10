@@ -502,27 +502,4 @@ class Es extends CI_Controller {
       }
       echo json_encode($data);
   }
-  function encontrarDatos(){
-    $data['error'] = EXIT_ERROR;
-    $data['msj']   = null;
-    try {
-      $html  = '';
-      $texto = $this->input->post('texto');
-      if($texto == '' || $texto == null || $texto == undefined){
-        throw new Exception("Error Processing Request", 1);
-      }
-      $datos = $this->M_solicitud->getDatos();
-      foreach($datos as $row){
-        $html  .= '<tr>
-                      <td>'.$row->Nombre.'</td>
-                      <td>'.$row->producto.'</td>
-                      <td>'.$row->tamaño.'</td>
-                   </tr>';
-      }
-      $data['error'] = EXIT_SUCCESS;
-    }catch(Exception $e){
-      $data['msj'] = $e->getMessage();
-    }
-    echo json_encode($data);
-  }
 }
