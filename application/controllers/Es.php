@@ -463,4 +463,19 @@ class Es extends CI_Controller {
         }
         echo json_encode($data);
   }
+  function buttonNext(){
+      $data['error'] = EXIT_ERROR;
+      $data['msj']   = null;
+      try {
+        $config        = $this->input->post('config');
+        $arrayInsert   = array('producto' => $config);
+        $datoInsert    = $this->M_solicitud->insertarDatos($arrayInsert, 'solicitud');
+        $session       = array('producto'    => $config,
+                               'id_productos'  => $datoInsert['Id']);
+        $data['error'] = EXIT_SUCCESS;
+      } catch (Exception $e){
+          $data['msj'] = $e->getMessage();
+      }
+      echo json_encode($data);
+  }
 }

@@ -1,15 +1,28 @@
 var homePage     = $('#home');
 var congigurator = $('#configurator'); 
-//var pant1 		 = 0;
+var pant 		 = 0;
 function buttonNext(){
-	//pant1++;
-	/*var cate = '';
-	if(pant1 == 2){		
-		cate = $('.js-card').find('.js-card-imagen .selected').children().text();
-		console.log(cate);
-	}*/
+	pant++;
 	homePage.addClass('animated fadeOutUp');
-	congigurator.addClass('animated fadeInDown');	
+	congigurator.addClass('animated fadeInDown');
+	if(pant >= 2){
+		$.ajax({
+			data : {config 	  : configurador,
+					pantalla  : pant},
+			url  : 'es/buttonNext',
+			type : 'POST'
+		}).done(function(data){
+			try{
+	        data = JSON.parse(data);
+	        if(data.error == 0){
+	        }else{
+	        	return;
+	        }
+	      } catch (err){
+	        msj('error',err.message);
+	      }
+		});
+	}
 }
 function cambiarIdioma(){
 	var idioma = $('#IdiomaHome').val();
@@ -264,6 +277,7 @@ function mostrarDatos(){
       }
 	});
 }
+var configurador = null;
 function clickCard(dato){
-	console.log(dato);
+	configurador = dato;
 }
