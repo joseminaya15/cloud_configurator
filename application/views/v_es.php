@@ -172,7 +172,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="js-window3">
+                <div class="js-window3" style=" display: none">
                     <div class="js-container">
                         <p class="js-question--title"><strong>/ BYD</strong> Configurator</p>
                         <div class="js-question--number">
@@ -247,7 +247,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="js-window4" style=" display: none">
+                    <div class="js-window4">
                         <div class="js-container">
                             <p class="js-question--title"><strong>/ BYD</strong> Configurator</p>
                             <div class="js-question--number">
