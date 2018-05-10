@@ -6,7 +6,7 @@ class Es extends CI_Controller {
 	function __construct() {
         parent::__construct();
         $this->load->model('M_solicitud');
-        $this->load->helper("url");//BORRAR CACHÉ DE LA PÁGINA
+        $this->load->helper("url");
         $this->output->set_header('Last-Modified:'.gmdate('D, d M Y H:i:s').'GMT');
         $this->output->set_header('Cache-Control: no-store, no-cache, must-revalidate');
         $this->output->set_header('Cache-Control: post-check=0, pre-check=0',false);
@@ -14,12 +14,12 @@ class Es extends CI_Controller {
   }
 
 	public function index(){
-    $data['nombre_comple'] = $this->session->userdata('nombre_linke');
+    $data['nombre_comple']   = $this->session->userdata('nombre_linke');
     $data['email_link']      = $this->session->userdata('email_linke');
     $data['comp']            = $this->session->userdata('compania') == null ? '' : $this->session->userdata('compania');
     $data['tit']             = $this->session->userdata('titulo') == null ? '' : $this->session->userdata('titulo');
     $data['pais_link']       = $this->session->userdata('pais_linke');
-    $data['pantalla1']        = $this->session->userdata('pantalla') == '' ? 0 : $this->session->userdata('pantalla');
+    $data['pantalla1']       = $this->session->userdata('pantalla') == '' ? 0 : $this->session->userdata('pantalla');
     $data['industria']       = $this->session->userdata('industria');
     $data['Factura_anual']   = $this->session->userdata('Factura_anual');
     $data['Tamanio']         = $this->session->userdata('Tamanio');
