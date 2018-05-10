@@ -374,7 +374,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="js-window6" style="display: none;">
+                <div class="js-window6">
                     <div class="js-container">
                         <p class="js-question--title"><strong>/ BYD</strong> Configurator</p>
                         <div class="js-question--number">
@@ -382,30 +382,51 @@
                             <h2>¿Qui&eacute;n recibir&aacute; la estimaci&oacute;n&#63;</h2>
                         </div>
                         <div class="js-card__flex">
-                            <div class="js-card--large">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-tipo">
-                                        <img src="<?php echo RUTA_IMG?>cards/premise.png">
+                            <div class="js-card-confirmacion">
+                                <h2>YO <strong>QUIERO</strong></h2>
+                                <div class="contenedor-respuestas">
+                                    <div class="col-xs-12 p-0">
+                                        <div class="js-respuestas">
+                                            <ul>
+                                                <li id="industria">Retail</li>
+                                            </ul>
+                                            <button id="window1" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 1)">Editar</button>
+                                        </div>
                                     </div>
-                                    <div class="js-card--large__content-name">
-                                        <small>On Premise</small>
+                                    <div class="col-xs-12 p-0">
+                                        <div class="js-respuestas">
+                                            <ul>
+                                                <li id="tamanio">1 - 50</li>
+                                            </ul>
+                                            <button id="window2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 2)">Editar</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 p-0">
+                                        <div class="js-respuestas">
+                                            <ul>
+                                                <li id="factura">1-3 Millones de D&oacute;lares</li>
+                                            </ul>
+                                            <button id="window2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 2)">Editar</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 p-0">
+                                        <div class="js-respuestas">
+                                            <ul id="prioridad">
+                                            </ul>
+                                            <button id="window3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 3)">Editar</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 p-0">
+                                        <div class="js-respuestas">
+                                            <ul>
+                                                <li id="infraestructura">Local</li>
+                                            </ul>
+                                            <button id="window4" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 4)">Editar</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
-                                </div>
-                            </div>
-                            <div class="js-card--large">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-tipo">
-                                        <img src="<?php echo RUTA_IMG?>cards/cloud.png">
-                                    </div>
-                                    <div class="js-card--large__content-name">
-                                        <small>Cloud</small>
-                                    </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                <div class="col-xs-12 p-0 text-right m-t-10">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-confirmar" onclick="ConfirmarRespuestas()">Confirmar respuestas</button>
                                 </div>
                             </div>
                         </div>
