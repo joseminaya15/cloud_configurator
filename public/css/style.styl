@@ -313,13 +313,6 @@ body
 	border 1px solid $color
 	padding 25px
 	margin 5px
-	.js-button--confirmar
-		background-color #4983B6
-		color #FFFFFF
-		text-transform initial
-		font-family $bold
-		height 30px
-		line-height 32px
 .js-formulario
 	transitionWidth()
 	width 100%
@@ -330,6 +323,17 @@ body
 	margin 5px
 	.col-sm-6
 		padding 0 5px
+	.js-contacto
+		font-size 15px
+		margin 5px 0
+		line-height 18px
+	.mdl-radio__outer-circle
+		border 2px solid #FFFFFF
+		border-radius 0
+	.mdl-radio
+		font-size 13px
+		font-family $regular
+		font-weight 100
 .js-respuestas
 	flexCenter()
 	background-color #FFFFFF
@@ -409,4 +413,45 @@ body
 				color #757575
 				height 46px
 				border-radius 0	
-					
+.js-label
+	flexCenter()
+	.js-input-label
+		width 100%
+		max-width 120px
+
+.mdl-radio__inner-circle
+	background #4983B6
+.mdl-checkbox
+	&.is-checked 
+		.mdl-checkbox__tick-outline
+			background #4983B6
+.mdl-checkbox__ripple-container 
+	&.mdl-ripple
+		background #4983B6
+.mdl-radio__ripple-container 
+	.mdl-ripple
+		background #4983B6
+.mdl-checkbox
+	&.is-checked 
+		.mdl-checkbox__box-outline
+			border 2px solid #4983B6
+.mdl-radio
+	&.is-checked 
+		.mdl-radio__outer-circle
+			border 2px solid #4983B6
+.js-checkbox
+	.mdl-checkbox
+		max-width 250px
+	.mdl-checkbox__label
+		font-size 15px
+		line-height 18px
+		font-weight 100
+	.mdl-checkbox__box-outline
+		border 2px solid #FFFFFF
+.js-button--confirmar
+	background-color #4983B6
+	color #FFFFFF
+	text-transform initial
+	font-family $bold
+	height 30px
+	line-height 32px

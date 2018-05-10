@@ -487,34 +487,36 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <p class="text-contacto">Quiero ser contactado por un representante de ventas:</p>
-                                    <div class="js-input-label">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-email">
-                                            <input type="radio" id="c-email" class="mdl-radio__button" name="options" value="1">
-                                            <span class="mdl-radio__label">Por email</span>
-                                        </label>
-                                    </div>
-                                    <div class="js-input-label">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-telefono">
-                                            <input type="radio" id="c-telefono" class="mdl-radio__button" name="options" value="2">
-                                            <span class="mdl-radio__label">Por tel&eacute;fono</span>
-                                        </label>
-                                    </div>
-                                    <div class="mdl-input-label">
-                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-ambos">
-                                            <input type="radio" id="c-ambos" class="mdl-radio__button" name="options" value="3">
-                                            <span class="mdl-radio__label">Ambos</span>
-                                        </label>
+                                    <p class="js-contacto">Quiero ser contactado por un representante de ventas:</p>
+                                    <div class="js-label">
+                                        <div class="js-input-label">
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-email">
+                                                <input type="radio" id="c-email" class="mdl-radio__button" name="options" value="1">
+                                                <span class="mdl-radio__label">Por email</span>
+                                            </label>
+                                        </div>
+                                        <div class="js-input-label">
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-telefono">
+                                                <input type="radio" id="c-telefono" class="mdl-radio__button" name="options" value="2">
+                                                <span class="mdl-radio__label">Por tel&eacute;fono</span>
+                                            </label>
+                                        </div>
+                                        <div class="js-input-label">
+                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-ambos">
+                                                <input type="radio" id="c-ambos" class="mdl-radio__button" name="options" value="3">
+                                                <span class="mdl-radio__label">Ambos</span>
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-xs-12 mdl-label m-t-10">
+                                <div class="col-xs-12 js-checkbox m-t-10">
                                     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
                                         <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
                                         <span class="mdl-checkbox__label f-s-14" style="">He le&iacute;do y acepto los <a class="FONDO_TERMINOS" href="https://www.sap.com/corporate/en/legal/terms-of-use.html" target="_blank" style="">Términos y condiciones de SAP</a></span>
                                     </label>
                                 </div>
                                 <div class="col-xs-12 text-right m-t-25">
-                                    <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-confirmar" onclick="solicitarEstimacion();">Enviar informaci&oacute;n</button>
+                                    <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button--confirmar" onclick="solicitarEstimacion();">Enviar informaci&oacute;n</button>
                                 </div>
                             </form>
                         </div>
