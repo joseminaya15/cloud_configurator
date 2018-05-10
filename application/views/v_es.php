@@ -411,9 +411,10 @@
                                     </div>
                                     <div class="col-xs-12 p-0">
                                         <div class="js-respuestas">
-                                            <ul id="prioridad">
+                                            <ul>
+                                                <li id="infraestructura">Local</li>
                                             </ul>
-                                            <button id="window3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 3)">Editar</button>
+                                            <button id="window4" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 4)">Editar</button>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 p-0">
@@ -429,6 +430,93 @@
                                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-confirmar" onclick="ConfirmarRespuestas()">Confirmar respuestas</button>
                                 </div>
                             </div>
+                            <form class="js-formulario disabled text-left">
+                                <div class="content-datos">
+                                    <div class="content-personal">
+                                        <p><i class="mdi mdi-arrow_downward"></i>Introduzca aqu&iacute; sus datos</p>
+                                    </div>
+                                    <div class="content-separacion">
+                                        <p>o</p>
+                                    </div>
+                                    <div class="content-linkedin">
+                                        <a class="button-linkedin" href="<?php  echo "https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id={$client_id}&redirect_uri={$redirect_uri}&state={$csrf_token}&scope={$scopes}"; ?>"><i class="fa fa-linkedin" aria-hidden="true"></i>Conéctese v&iacute;a LinkedIn</a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="mdl-input">
+                                        <input type="text" class="form-control" id="nombre_completo" maxlength="50" onkeypress="return soloLetras(event);" onchange="validarCampos()" placeholder="Nombre Completo">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="mdl-input">
+                                        <input type="text" class="form-control NEGRO_FONDO" id="cargo" maxlength="50" onkeypress="return soloLetras(event);"  onchange="validarCampos()" placeholder="Cargo">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="mdl-input">
+                                        <input type="text" class="form-control" id="empresa" maxlength="50" onkeypress="return soloLetras(event);" onchange="validarCampos()" placeholder="Empresa">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="mdl-input">
+                                        <input type="text" class="form-control" id="telefono" onchange="validarCampos()" placeholder="Teléfono">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="mdl-input">
+                                        <input type="email" class="form-control" id="email" maxlength="50" aria-describedby="emailHelp" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="mdl-select mdl-standar">
+                                        <select class="selectpicker" id="relacion" name="relacion" title="Relación con SAP">
+                                            <option value="Cliente">Cliente</option>
+                                            <option value="Cliente potencial">Cliente potencial</option>
+                                            <option value="Consultor">Consultor</option>
+                                            <option value="Empleado SAP">Empleado SAP</option>
+                                            <option value="Estudiante">Estudiante</option>
+                                            <option value="Partner">Partner</option>
+                                            <option value="Partner potencial">Partner potencial</option>
+                                            <option value="Prensa/Analista">Prensa/Analista</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="mdl-input">
+                                        <input type="text" class="form-control" id="pais" maxlength="100" onkeypress="return soloLetras(event);"  onchange="validarCampos()" placeholder="País">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p class="text-contacto">Quiero ser contactado por un representante de ventas:</p>
+                                    <div class="mdl-input-label">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-email">
+                                            <input type="radio" id="c-email" class="mdl-radio__button" name="options" value="1">
+                                            <span class="mdl-radio__label">Por email</span>
+                                        </label>
+                                    </div>
+                                    <div class="mdl-input-label">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-telefono">
+                                            <input type="radio" id="c-telefono" class="mdl-radio__button" name="options" value="2">
+                                            <span class="mdl-radio__label">Por tel&eacute;fono</span>
+                                        </label>
+                                    </div>
+                                    <div class="mdl-input-label">
+                                        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-ambos">
+                                            <input type="radio" id="c-ambos" class="mdl-radio__button" name="options" value="3">
+                                            <span class="mdl-radio__label">Ambos</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 mdl-label m-t-10">
+                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                                        <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+                                        <span class="mdl-checkbox__label f-s-14" style="">He le&iacute;do y acepto los <a class="FONDO_TERMINOS" href="https://www.sap.com/corporate/en/legal/terms-of-use.html" target="_blank" style="">Términos y condiciones de SAP</a></span>
+                                    </label>
+                                </div>
+                                <div class="col-xs-12 text-right m-t-25">
+                                    <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-confirmar" onclick="solicitarEstimacion();">Enviar informaci&oacute;n</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
