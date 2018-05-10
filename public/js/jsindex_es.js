@@ -307,3 +307,25 @@ function isEmpty(val){
     	return false;
 		return true;
 }
+function ConfirmarRespuestas(){
+	confirmar = 1;
+	$('.button-arrow.button-prev').css("display","none");
+	$('.mdl-card-confirmacion').addClass('confirmar');
+	$('.fp-controlArrow.fp-prev').css("display","none");
+	$('.mdl-formulario').removeClass('disabled');
+	$.ajax({
+		data : {confirmar : confirmar},
+		url  : 'es/ConfirmarRespuestas',
+		type : 'POST'
+	}).done(function(data){
+		try{
+        data = JSON.parse(data);
+        if(data.error == 0){
+        }else{
+        	return;
+        }
+      } catch (err){
+        msj('error',err.message);
+      }
+	});
+}
