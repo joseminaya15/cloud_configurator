@@ -514,9 +514,9 @@ class Es extends CI_Controller {
       $datos = $this->M_solicitud->getDatos();
       foreach($datos as $row){
         $html  .= '<tr>
-                      <td></td>
-                      <td></td>
-                      <td></td>
+                      <td>'.$row->Nombre.'</td>
+                      <td>'.$row->producto.'</td>
+                      <td>'.$row->tamaño.'</td>
                    </tr>';
       }
       $data['error'] = EXIT_SUCCESS;
