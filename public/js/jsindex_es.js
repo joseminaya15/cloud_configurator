@@ -1,6 +1,7 @@
 var homePage     = $('#home');
 var congigurator = $('#configurator'); 
 var pant 		 = 0;
+var arr_pant     = [];
 function buttonNext(){
 	pant++;
 	homePage.addClass('animated fadeOutUp');
@@ -281,8 +282,10 @@ function mostrarDatos(){
 var configurador = null;
 function clickCard(dato){
 	configurador = dato;
+	arr_pant.push(dato);
 }
 var ayuda_negocio = null;
 function ayudaCard(ayuda){
 	ayuda_negocio = ayuda;
+	arr_pant.push(ayuda);
 }

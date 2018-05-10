@@ -69,7 +69,7 @@ class Es extends CI_Controller {
           $cargo           = $this->input->post('cargo');
           $telefono        = $this->input->post('telefono');
           $relacion        = $this->input->post('relacion');
-          $contacto        = $this->input->post('contacto');//
+          $contacto        = $this->input->post('contacto');
           $term_cond       = $this->input->post('term_cond');
           if($contacto == '-'){
             $contacto = 0;
@@ -297,13 +297,13 @@ class Es extends CI_Controller {
         $this->load->library("email");
         $respuestas = $this->M_solicitud->getRespUsuario($_SESSION['id_persona']);
         $configGmail = array('protocol'  => 'smtp',
-                            'smtp_host' => 'smtpout.secureserver.net',
-                            'smtp_port' => 3535,
-                            'smtp_user' => 'info@marketinghpe.com',
-                            'smtp_pass' => 'hpeinfo18',
-                            'mailtype'  => 'html',
-                            'charset'   => 'utf-8',
-                            'newline'   => "\r\n");    
+                             'smtp_host' => 'smtpout.secureserver.net',
+                             'smtp_port' => 3535,
+                             'smtp_user' => 'info@marketinghpe.com',
+                             'smtp_pass' => 'hpeinfo18',
+                             'mailtype'  => 'html',
+                             'charset'   => 'utf-8',
+                             'newline'   => "\r\n");    
         $this->email->initialize($configGmail);
         $this->email->from('info@sap-latam.com');
         $this->email->to($email);
