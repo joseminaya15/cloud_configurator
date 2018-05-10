@@ -8,7 +8,8 @@ function buttonNext(){
 	if(pant >= 2){
 		$.ajax({
 			data : {config 	  : configurador,
-					pantalla  : pant},
+					pantalla  : pant,
+				    ayuda 	  : ayuda_negocio},
 			url  : 'es/buttonNext',
 			type : 'POST'
 		}).done(function(data){
@@ -280,4 +281,8 @@ function mostrarDatos(){
 var configurador = null;
 function clickCard(dato){
 	configurador = dato;
+}
+var ayuda_negocio = null;
+function ayudaCard(ayuda){
+	ayuda_negocio = ayuda;
 }

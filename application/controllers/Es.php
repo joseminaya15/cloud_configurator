@@ -468,10 +468,26 @@ class Es extends CI_Controller {
       $data['msj']   = null;
       try {
         $config        = $this->input->post('config');
-        $arrayInsert   = array('producto' => $config);
-        $datoInsert    = $this->M_solicitud->insertarDatos($arrayInsert, 'solicitud');
-        $session       = array('producto'    => $config,
-                               'id_productos'  => $datoInsert['Id']);
+        $pantalla      = $this->input->post('pantalla');
+        $ayuda         = $this->input->post('ayuda');
+        if($pantalla == 2){
+          /*$arrayInsert   = array('producto' => $config);
+          $datoInsert    = $this->M_solicitud->insertarDatos($arrayInsert, 'solicitud');
+          $session       = array('producto'    => $config,
+                                 'id_productos'  => $datoInsert['Id']);*/
+        }else if($pantalla == 3){
+          /*$arrayUpdate = array('ayuda' => $ayuda);
+          $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');*/
+        }else if($pantalla == 4){
+          /*$arrayUpdate = array('tamanio' => $tamanio);
+          $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');*/
+        }else if($pantalla == 5){
+          /*$arrayUpdate = array('retos' => $retos);
+          $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');*/
+        }else if($pantalla == 6){
+          /*$arrayUpdate = array('solucion' => $solucion);
+          $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');*/
+        }
         $data['error'] = EXIT_SUCCESS;
       } catch (Exception $e){
           $data['msj'] = $e->getMessage();
