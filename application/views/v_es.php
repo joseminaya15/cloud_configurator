@@ -58,7 +58,7 @@
                 <div class="js-header">
                     <img src="<?php echo RUTA_IMG?>logo/logo-sap__run.png">
                 </div>
-                <div class="js-window1" style="display: none">
+                <div class="js-window1" style="display: none;">
                     <div class="js-container">
                         <h2>YO <strong>QUIERO</strong></h2>
                         <div class="js-card__flex">
@@ -107,7 +107,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="js-window2" style=" display: none">
+                <div class="js-window2" style="display: none;">
                     <div class="js-container">
                         <p class="js-question--title"><strong>/ BYD</strong> Configurator</p>
                         <div class="js-question--number">
@@ -177,7 +177,7 @@
                         <p class="js-question--title"><strong>/ BYD</strong> Configurator</p>
                         <div class="js-question--number">
                             <span>02/05</span>
-                            <h2>Cu&aacute;l es su tipo y tama&ntilde;o de empresa?&#63;</h2>
+                            <h2>¿Cu&aacute;l es su tipo y tama&ntilde;o de empresa&#63;</h2>
                         </div>
                         <div class="js-card__flex">
                             <div class="js-card--large">
@@ -247,132 +247,165 @@
                             </div>
                         </div>
                     </div>
-                    <div class="js-window4">
-                        <div class="js-container">
-                            <p class="js-question--title"><strong>/ BYD</strong> Configurator</p>
-                            <div class="js-question--number">
-                                <span>03/05</span>
-                                <h2>Identifique los retos m&aacute;s relevantes que enfrenta su empresa</h2>
+                </div>
+                <div class="js-window4" style=" display: none">
+                    <div class="js-container">
+                        <p class="js-question--title"><strong>/ BYD</strong> Configurator</p>
+                        <div class="js-question--number">
+                            <span>03/05</span>
+                            <h2>Identifique los retos m&aacute;s relevantes que enfrenta su empresa</h2>
+                        </div>
+                        <div class="js-card__flex">
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-imagen">
+                                        <img src="<?php echo RUTA_IMG?>cards/integracion.png">
+                                    </div>
+                                    <div class="js-card--large__content-text">
+                                        <p>Quiero que mi equipo colabore de forma m&aacute;s eficiente</p>
+                                    </div>
+                                </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
                             </div>
-                            <div class="js-card__flex">
-                                <div class="js-card--large">
-                                    <div class="js-card--large__content">
-                                        <div class="js-card--large__content-imagen">
-                                            <img src="<?php echo RUTA_IMG?>cards/integracion.png">
-                                        </div>
-                                        <div class="js-card--large__content-text">
-                                            <p>Lograr una <strong>integraci&oacute;n financiera</strong> que arroje informaci&oacute;n relevante en tiempo real</p>
-                                        </div>
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-imagen">
+                                        <img src="<?php echo RUTA_IMG?>cards/operativo.png">
                                     </div>
-                                    <div class="js-card--large__button">
-                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <div class="js-card--large__content-text">
+                                        <p>Quiero conectar el front office con el back office</p>
                                     </div>
                                 </div>
-                                <div class="js-card--large">
-                                    <div class="js-card--large__content">
-                                        <div class="js-card--large__content-imagen">
-                                            <img src="<?php echo RUTA_IMG?>cards/operativo.png">
-                                        </div>
-                                        <div class="js-card--large__content-text">
-                                            <p>Evidenciar una <strong>Mejora en mis Procesos Operativos</strong></p>
-                                        </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
+                            </div>
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-imagen">
+                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
                                     </div>
-                                    <div class="js-card--large__button">
-                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <div class="js-card--large__content-text">
+                                        <p>Quiero gestionar las visitas en las instalaciones</p>
                                     </div>
                                 </div>
-                                <div class="js-card--large">
-                                    <div class="js-card--large__content">
-                                        <div class="js-card--large__content-imagen">
-                                            <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
-                                        </div>
-                                        <div class="js-card--large__content-text">
-                                            <p>Trabajar con una <strong>Mejor Visibilidad de los Indicadores</strong> de Crecimiento</p>
-                                        </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
+                            </div>
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-imagen">
+                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
                                     </div>
-                                    <div class="js-card--large__button">
-                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <div class="js-card--large__content-text">
+                                        <p>Quiero gestionar las visitas en las instalaciones</p>
                                     </div>
                                 </div>
-                                <div class="js-card--large">
-                                    <div class="js-card--large__content">
-                                        <div class="js-card--large__content-imagen">
-                                            <img src="<?php echo RUTA_IMG?>cards/otra.png">
-                                        </div>
-                                        <div class="js-card--large__content-text">
-                                            <div class="form-group">
-                                                <textarea class="form-control" id="idEspecificar" rows="4" placeholder="Especificar"></textarea>
-                                            </div>
-                                        </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
+                            </div>
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-imagen">
+                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
                                     </div>
-                                    <div class="js-card--large__button">
-                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <div class="js-card--large__content-text">
+                                        <p>Quiero gestionar las visitas en las instalaciones</p>
                                     </div>
+                                </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="js-window5" style=" display: none">
-                        <div class="js-container">
-                            <p class="js-question--title"><strong>/ BYD</strong> Configurator</p>
-                            <div class="js-question--number">
-                                <span>04/05</span>
-                                <h2>Que tipo de soluci&oacute;n le interesa evaluar&#63;</h2>
+                </div>
+                <div class="js-window5" style="display: none;">
+                    <div class="js-container">
+                        <p class="js-question--title"><strong>/ BYD</strong> Configurator</p>
+                        <div class="js-question--number">
+                            <span>04/05</span>
+                            <h2>¿Que tipo de soluci&oacute;n le interesa evaluar&#63;</h2>
+                        </div>
+                        <div class="js-card__flex">
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-tipo">
+                                        <img src="<?php echo RUTA_IMG?>cards/premise.png">
+                                    </div>
+                                    <div class="js-card--large__content-name">
+                                        <small>On Premise</small>
+                                    </div>
+                                </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
                             </div>
-                            <div class="js-card__flex">
-                                <div class="js-card--large">
-                                    <div class="js-card--large__content">
-                                        <div class="js-card--large__content-imagen">
-                                            <img src="<?php echo RUTA_IMG?>cards/integracion.png">
-                                        </div>
-                                        <div class="js-card--large__content-text">
-                                            <p>Lograr una <strong>integraci&oacute;n financiera</strong> que arroje informaci&oacute;n relevante en tiempo real</p>
-                                        </div>
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-tipo">
+                                        <img src="<?php echo RUTA_IMG?>cards/cloud.png">
                                     </div>
-                                    <div class="js-card--large__button">
-                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <div class="js-card--large__content-name">
+                                        <small>Cloud</small>
                                     </div>
                                 </div>
-                                <div class="js-card--large">
-                                    <div class="js-card--large__content">
-                                        <div class="js-card--large__content-imagen">
-                                            <img src="<?php echo RUTA_IMG?>cards/operativo.png">
-                                        </div>
-                                        <div class="js-card--large__content-text">
-                                            <p>Evidenciar una <strong>Mejora en mis Procesos Operativos</strong></p>
-                                        </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
+                            </div>
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-tipo">
+                                        <img src="<?php echo RUTA_IMG?>cards/hibrida.png">
                                     </div>
-                                    <div class="js-card--large__button">
-                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <div class="js-card--large__content-name">
+                                        <small>H&iacute;brida</small>
                                     </div>
                                 </div>
-                                <div class="js-card--large">
-                                    <div class="js-card--large__content">
-                                        <div class="js-card--large__content-imagen">
-                                            <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
-                                        </div>
-                                        <div class="js-card--large__content-text">
-                                            <p>Trabajar con una <strong>Mejor Visibilidad de los Indicadores</strong> de Crecimiento</p>
-                                        </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="js-window6" style="display: none;">
+                    <div class="js-container">
+                        <p class="js-question--title"><strong>/ BYD</strong> Configurator</p>
+                        <div class="js-question--number">
+                            <span>05/05</span>
+                            <h2>¿Qui&eacute;n recibir&aacute; la estimaci&oacute;n&#63;</h2>
+                        </div>
+                        <div class="js-card__flex">
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-tipo">
+                                        <img src="<?php echo RUTA_IMG?>cards/premise.png">
                                     </div>
-                                    <div class="js-card--large__button">
-                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <div class="js-card--large__content-name">
+                                        <small>On Premise</small>
                                     </div>
                                 </div>
-                                <div class="js-card--large">
-                                    <div class="js-card--large__content">
-                                        <div class="js-card--large__content-imagen">
-                                            <img src="<?php echo RUTA_IMG?>cards/otra.png">
-                                        </div>
-                                        <div class="js-card--large__content-text">
-                                            <div class="form-group">
-                                                <textarea class="form-control" id="idEspecificar" rows="4" placeholder="Especificar"></textarea>
-                                            </div>
-                                        </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
+                            </div>
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-tipo">
+                                        <img src="<?php echo RUTA_IMG?>cards/cloud.png">
                                     </div>
-                                    <div class="js-card--large__button">
-                                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <div class="js-card--large__content-name">
+                                        <small>Cloud</small>
                                     </div>
+                                </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
                                 </div>
                             </div>
                         </div>
