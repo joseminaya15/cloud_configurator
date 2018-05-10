@@ -10,6 +10,10 @@ flexStart()
 	display flex
 	display -webkit-flex
 	align-items start
+flexEnd()
+	display flex
+	display -webkit-flex
+	align-items flex-end
 transitionOpacity()
 	-webkit-transition opacity .3s linear
 	-moz-transition opacity .3s linear
@@ -22,6 +26,12 @@ transitionWidth()
 	-ms-transition max-width .3s linear
 	-o-transition max-width .3s linear
 	transition max-width .3s linear
+transitionBgColor()
+	-webkit-transition background-color .3s linear
+	-moz-transition background-color .3s linear
+	-ms-transition background-color .3s linear
+	-o-transition background-color .3s linear
+	transition background-color .3s linear
 absolute()
 	position absolute
 	top 0
@@ -73,6 +83,7 @@ body
 	padding 0
 	overflow hidden
 	font-family $regular
+	color #FFFFFF
 	background-color #000000
 .js-header
 	position fixed
@@ -167,13 +178,14 @@ body
 		width 100%
 		max-width 155px
 .js-container
+	transitionWidth()
+	flexStart()
 	width 100%
 	max-width 1350px
 	height 100vh
-	justify-content flex-start
+	justify-content center
 	margin auto
-	transitionWidth()
-	flexCenter()
+	flex-direction column
 .js-window1
 	h2
 		color #FFFFFF
@@ -184,6 +196,7 @@ body
 			-webkit-text-fill-color transparent
 .js-card__flex
 	flexStart()
+	width 100%
 .js-card
 	width 100%
 	max-width 180px
@@ -228,4 +241,67 @@ body
 		color #FFFFFF
 		font-size 16px
 		line-height 20px
-		margin 0	 
+		margin 0
+.js-question--title
+	font-size 18px
+	margin-bottom 20px
+.js-question--number
+	font-size 32px
+	line-height 34px
+	margin-bottom 20px
+	h2
+		color $color
+		margin 3px 0
+.js-card--large
+	width 100%
+	max-width 210px
+	margin 10px
+	.js-card--large__content
+		border 1px solid $color
+		border-radius 10px
+		padding 5px 15px
+		text-align center
+		.js-card--large__content-imagen
+			flexCenter()
+			justify-content center
+			height 120px
+		.js-card--large__content-text
+			height 150px
+			p
+				font-size 18px
+				text-align left
+				strong
+					color $color
+					font-family $medium
+			.form-group
+				textarea
+					background-color transparent
+					border-radius 0
+					border 1px solid #FFFFFF
+					color #FFFFFF
+		.js-card--large__content-tipo
+			flexEnd()
+			height 145px
+			justify-content center
+		.js-card--large__content-name
+			flexEnd()
+			justify-content center
+			margin 12px 0 10px 0
+			height 32px
+			small
+				font-size 16px
+				line-height 18px	
+	.js-card--large__button
+		padding 10px 0
+		button
+			border 1px solid $color
+			background-color transparent
+			color #FFFFFF
+			text-transform initial
+			width 100%
+			border-radius 0
+			font-family $medium
+			font-size 18px
+			&:hover
+				transitionBgColor()
+				background-color $color
