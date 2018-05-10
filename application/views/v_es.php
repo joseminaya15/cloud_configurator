@@ -63,7 +63,7 @@
                         <div class="js-contenido">
                             <h2>YO <strong>QUIERO</strong></h2>
                             <div class="js-card__flex">
-                                <div class="js-card">
+                                <div class="js-card" onclick="clickCard('BYD Configurator')">
                                     <div class="js-card-imagen">
                                         <div class="js-card-flip js-card-flip__front">
                                             <img src="<?php echo RUTA_IMG?>cards/byd.png">
@@ -77,7 +77,7 @@
                                         <p>Innovar digitalmente mis procesos para mejorar la competitividad, la reputaci&oacute;n de mi marca y m&aacute;s.</p>
                                     </div>
                                 </div>
-                                <div class="js-card">
+                                <div class="js-card" onclick="clickCard('CRM Configurator')">
                                     <div class="js-card-imagen">
                                         <div class="js-card-flip js-card-flip__front">
                                             <img src="<?php echo RUTA_IMG?>cards/crm.png">
@@ -91,7 +91,7 @@
                                         <p>Contar con herramientas para una gestión avanzada de mis clientes por medio de marketing contextual y en tiempo real.</p>
                                     </div>
                                 </div>
-                                <div class="js-card">
+                                <div class="js-card" onclick="clickCard('HR Configurator')">
                                     <div class="js-card-imagen">
                                         <div class="js-card-flip js-card-flip__front">
                                             <img src="<?php echo RUTA_IMG?>cards/hr.png">

@@ -1,13 +1,13 @@
 var homePage     = $('#home');
 var congigurator = $('#configurator'); 
-var pant1 		 = 0;
+//var pant1 		 = 0;
 function buttonNext(){
-	pant1++;
-	var cate = '';
+	//pant1++;
+	/*var cate = '';
 	if(pant1 == 2){		
-		/*cate = $('.js-card').find('selected').children().text();
-		console.log(cate);*/
-	}
+		cate = $('.js-card').find('.js-card-imagen .selected').children().text();
+		console.log(cate);
+	}*/
 	homePage.addClass('animated fadeOutUp');
 	congigurator.addClass('animated fadeInDown');	
 }
@@ -263,4 +263,7 @@ function mostrarDatos(){
         msj('error',err.message);
       }
 	});
+}
+function clickCard(dato){
+	console.log(dato);
 }
