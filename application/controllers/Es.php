@@ -435,11 +435,11 @@ class Es extends CI_Controller {
         $data['msj'] = $e->getMessage();
       }
       return json_encode(array_map('utf8_encode', $data));
-    }
-    function mostrarDatos(){
-        $data['error'] = EXIT_ERROR;
-        $data['msj']   = null;
-        try {
+  }
+  function mostrarDatos(){
+      $data['error'] = EXIT_ERROR;
+      $data['msj']   = null;
+      try {
           $ids_array   = $this->input->post('array_ids');
           $array_3pant = $this->input->post('array_3pant');
           $explode     = explode(",", $this->session->userdata('Prioridad'));
@@ -457,9 +457,9 @@ class Es extends CI_Controller {
           $data['Prioridad']       = $html;
           $data['Infraestructura'] = $this->session->userdata('Infraestructura') == null ? '-' : $this->session->userdata('Infraestructura');
           $data['error']           = EXIT_SUCCESS;
-        } catch (Exception $e){
-            $data['msj'] = $e->getMessage();
-        }
+      }catch(Exception $e){
+          $data['msj'] = $e->getMessage();
+      }
         echo json_encode($data);
   }
   function buttonNext(){
