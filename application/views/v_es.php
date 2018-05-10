@@ -427,48 +427,48 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-12 p-0 text-right m-t-10">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-confirmar" onclick="ConfirmarRespuestas()">Confirmar respuestas</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button--confirmar" onclick="ConfirmarRespuestas()">Confirmar respuestas</button>
                                 </div>
                             </div>
                             <form class="js-formulario disabled text-left">
-                                <div class="content-datos">
-                                    <div class="content-personal">
+                                <div class="js-datos">
+                                    <div class="js-datos__personal">
                                         <p><i class="mdi mdi-arrow_downward"></i>Introduzca aqu&iacute; sus datos</p>
                                     </div>
-                                    <div class="content-separacion">
+                                    <div class="js-datos__separacion">
                                         <p>o</p>
                                     </div>
-                                    <div class="content-linkedin">
+                                    <div class="js-datos__linkedin">
                                         <a class="button-linkedin" href="<?php  echo "https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id={$client_id}&redirect_uri={$redirect_uri}&state={$csrf_token}&scope={$scopes}"; ?>"><i class="fa fa-linkedin" aria-hidden="true"></i>Conéctese v&iacute;a LinkedIn</a>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="mdl-input">
+                                    <div class="js-input">
                                         <input type="text" class="form-control" id="nombre_completo" maxlength="50" onkeypress="return soloLetras(event);" onchange="validarCampos()" placeholder="Nombre Completo">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="mdl-input">
+                                    <div class="js-input">
                                         <input type="text" class="form-control NEGRO_FONDO" id="cargo" maxlength="50" onkeypress="return soloLetras(event);"  onchange="validarCampos()" placeholder="Cargo">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="mdl-input">
+                                    <div class="js-input">
                                         <input type="text" class="form-control" id="empresa" maxlength="50" onkeypress="return soloLetras(event);" onchange="validarCampos()" placeholder="Empresa">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="mdl-input">
+                                    <div class="js-input">
                                         <input type="text" class="form-control" id="telefono" onchange="validarCampos()" placeholder="Teléfono">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="mdl-input">
+                                    <div class="js-input">
                                         <input type="email" class="form-control" id="email" maxlength="50" aria-describedby="emailHelp" placeholder="Email">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="mdl-select mdl-standar">
+                                    <div class="js-select js-standar">
                                         <select class="selectpicker" id="relacion" name="relacion" title="Relación con SAP">
                                             <option value="Cliente">Cliente</option>
                                             <option value="Cliente potencial">Cliente potencial</option>
@@ -482,19 +482,19 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="mdl-input">
+                                    <div class="js-input">
                                         <input type="text" class="form-control" id="pais" maxlength="100" onkeypress="return soloLetras(event);"  onchange="validarCampos()" placeholder="País">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <p class="text-contacto">Quiero ser contactado por un representante de ventas:</p>
-                                    <div class="mdl-input-label">
+                                    <div class="js-input-label">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-email">
                                             <input type="radio" id="c-email" class="mdl-radio__button" name="options" value="1">
                                             <span class="mdl-radio__label">Por email</span>
                                         </label>
                                     </div>
-                                    <div class="mdl-input-label">
+                                    <div class="js-input-label">
                                         <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-telefono">
                                             <input type="radio" id="c-telefono" class="mdl-radio__button" name="options" value="2">
                                             <span class="mdl-radio__label">Por tel&eacute;fono</span>
@@ -517,6 +517,14 @@
                                     <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect button-confirmar" onclick="solicitarEstimacion();">Enviar informaci&oacute;n</button>
                                 </div>
                             </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="js-window7" style="display: none;">
+                    <div class="js-container">
+                        <div class="js-agradecimiento">
+                            <h2>Gracias por su interés</h2>
+                            <p>Un representante de SAP se pondrá en contacto con Usted para ayudarlo a dar el primer paso.</p>
                         </div>
                     </div>
                 </div>

@@ -305,3 +305,108 @@ body
 			&:hover
 				transitionBgColor()
 				background-color $color
+.js-card-confirmacion
+	transitionWidth()
+	width 100%
+	max-width 400px
+	border-radius 10px
+	border 1px solid $color
+	padding 25px
+	margin 5px
+	.js-button--confirmar
+		background-color #4983B6
+		color #FFFFFF
+		text-transform initial
+		font-family $bold
+		height 30px
+		line-height 32px
+.js-formulario
+	transitionWidth()
+	width 100%
+	max-width calc(100% - 500px)
+	border-radius 10px
+	border 1px solid $color
+	padding 25px
+	margin 5px
+	.col-sm-6
+		padding 0 5px
+.js-respuestas
+	flexCenter()
+	background-color #FFFFFF
+	color #000000
+	margin 5px 0
+	padding 8px 5px 8px 15px
+	ul
+		transitionWidth()
+		max-width calc(100% - 85px)
+		width 100%
+		margin 0
+		padding-left 15px
+		li
+			font-size 15px
+	button
+		transitionBgColor()
+		color #4983B6
+		text-transform initial
+		font-size 15px
+		box-shadow none
+		height 30px
+		line-height 32px
+		background-color transparent
+		font-family $bold
+		&:hover
+			background-color #4983B6
+			color #FFFFFF
+.js-datos
+	flexCenter()
+	padding 5px
+	.js-datos__personal
+		background-color #F6F6F6
+		color #000000
+		padding 7px 10px
+		p
+			flexCenter()
+			margin 0
+			i
+				margin-right 5px
+				color #4983B6
+				font-size 18px
+	.js-datos__separacion
+		padding 7px 10px
+		p
+			margin 0
+	.js-datos__linkedin
+		a
+			background-color #008FCC
+			font-size 16px
+			text-decoration none !important
+			color #FFFFFF !important
+			padding 10px
+			position relative
+			padding-left 45px
+			i
+				background-color #0076B3
+				font-size 20px
+				position absolute
+				top: 0; 
+				left 0;
+				padding 10px
+.js-input
+	margin 5px 0
+	.form-control
+		border-radius 0
+		height 46px
+		padding 6px 15px
+		font-size 15px
+		font-family $regular
+.js-select
+	&.js-standar
+		margin 5px 0
+		.bootstrap-select
+			width 100% !important
+			.btn-default
+				background-color #FFFFFF
+				color #757575
+				height 46px
+				border-radius 0	
+					
