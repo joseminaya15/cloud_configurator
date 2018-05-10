@@ -374,7 +374,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="js-window6">
+                <div class="js-window6" style="display: none;">
                     <div class="js-container">
                         <p class="js-question--title"><strong>/ BYD</strong> Configurator</p>
                         <div class="js-question--number">
@@ -522,11 +522,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="js-window7" style="display: none;">
+                <div class="js-window7">
                     <div class="js-container">
                         <div class="js-agradecimiento">
-                            <h2>Gracias por su interés</h2>
-                            <p>Un representante de SAP se pondrá en contacto con Usted para ayudarlo a dar el primer paso.</p>
+                            <h2>Gracias por su inter&eacute;s</h2>
+                            <p>Un representante de SAP se pondr&aacute; en contacto con Usted para ayudarlo a transformar su negocio de cara al futuro.</p>
                         </div>
                     </div>
                 </div>
