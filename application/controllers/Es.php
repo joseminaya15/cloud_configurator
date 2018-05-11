@@ -468,6 +468,8 @@ class Es extends CI_Controller {
           $config      = $this->input->post('config');
           $pantalla    = $this->input->post('pantalla');
           $ayuda       = $this->input->post('ayuda');
+          $solucion    = $this->input->post('ayuda');
+          $retos       = $this->input->post('retos');
           if($pantalla == PANT_UNO){
               $arrayInsert   = array('producto' => $config);
               $datoInsert    = $this->M_solicitud->insertarDatos($arrayInsert, 'solicitud');
@@ -475,7 +477,8 @@ class Es extends CI_Controller {
                                      'id_sol'   => $datoInsert['Id']);
           }else if($pantalla == PANT_DOS){
               /*$arrayUpdate = array('ayuda' => $ayuda);
-              $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');*/
+              $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
+              $session     = array('ayuda'   => $ayuda);*/
           }else if($pantalla == PANT_TRES){
               /*$arrayUpdate = array('tipo_industria' => $tipo,
                                      'tamanio'        => $tamanio,

@@ -63,7 +63,7 @@
                         <div class="js-header__bgcolor--bar"></div>
                     </div>
                 </div>
-                <div class="js-window1">
+                <div class="js-window1" style="display: none;">
                     <div class="js-container">
                         <h2>YO <strong>QUIERO</strong></h2>
                         <div class="js-card__flex">
@@ -271,7 +271,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="saveDatos('Quiero que mi equipo colabore de forma más eficiente')">Seleccione</button>
                                 </div>
                             </div>
                             <div class="js-card--large">
@@ -284,7 +284,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="saveDatos('Quiero conectar el front office con el back office')">Seleccione</button>
                                 </div>
                             </div>
                             <div class="js-card--large">
@@ -297,7 +297,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="saveDatos('Quiero gestionar las visitas en las instalaciones')">Seleccione</button>
                                 </div>
                             </div>
                             <div class="js-card--large">
@@ -310,7 +310,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="saveDatos('Quiero gestionar las visitas en las instalaciones')">Seleccione</button>
                                 </div>
                             </div>
                             <div class="js-card--large">
@@ -323,13 +323,13 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="saveDatos('Quiero gestionar las visitas en las instalaciones')">Seleccione</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="js-window5" style="display: none;">
+                <div class="js-window5" style="display: block;">
                     <div class="js-container">
                         <p class="js-question--title"><strong>/ BYD</strong> Configurator</p>
                         <div class="js-question--number">
@@ -347,7 +347,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="saveSolucion('On Premise')">Seleccione</button>
                                 </div>
                             </div>
                             <div class="js-card--large">
@@ -360,7 +360,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="saveSolucion('Cloud')">Seleccione</button>
                                 </div>
                             </div>
                             <div class="js-card--large">
@@ -373,7 +373,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="saveSolucion('Híbrida')">Seleccione</button>
                                 </div>
                             </div>
                         </div>

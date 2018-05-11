@@ -10,7 +10,9 @@ function buttonNext(){
 		$.ajax({
 			data : {config 	  : configurador,
 					pantalla  : pant,
-				    ayuda 	  : ayuda_negocio},
+				    ayuda 	  : ayuda_negocio,
+				    solucion  : solucion,
+				    retos 	  : retos.toString()},
 			url  : 'es/buttonNext',
 			type : 'POST'
 		}).done(function(data){
@@ -328,4 +330,12 @@ function ConfirmarRespuestas(){
         msj('error',err.message);
       }
 	});
+}
+var retos = [];
+function saveDatos(datos, row){
+	
+}
+var solucion = "";
+function saveSolucion(dato){
+	solucion = dato;
 }
