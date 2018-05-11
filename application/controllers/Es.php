@@ -468,15 +468,15 @@ class Es extends CI_Controller {
           $config      = $this->input->post('config');
           $pantalla    = $this->input->post('pantalla');
           $ayuda       = $this->input->post('ayuda');
-          if($pantalla == 2){
+          if($pantalla == PANT_UNO){
               $arrayInsert   = array('producto' => $config);
               $datoInsert    = $this->M_solicitud->insertarDatos($arrayInsert, 'solicitud');
               $session       = array('producto' => $config,
                                      'id_sol'   => $datoInsert['Id']);
-          }else if($pantalla == 3){
+          }else if($pantalla == PANT_DOS){
               /*$arrayUpdate = array('ayuda' => $ayuda);
               $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');*/
-          }else if($pantalla == 4){
+          }else if($pantalla == PANT_TRES){
               /*$arrayUpdate = array('tipo_industria' => $tipo,
                                      'tamanio'        => $tamanio,
                                      'factura_anual'  => $factura);
@@ -484,11 +484,11 @@ class Es extends CI_Controller {
               $session     = array('tipo_industria' => $tipo,
                                    'tamanio'        => $tamanio,
                                    'factura_anual'  => $factura);*/
-          }else if($pantalla == 5){
+          }else if($pantalla == PANT_CUATRO){
               /*$arrayUpdate = array('retos' => $retos);
               $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
               $session     = array('retos' => $retos);*/
-          }else if($pantalla == 6){
+          }else if($pantalla == PANT_CINCO){
               /*$arrayUpdate = array('solucion' => $solucion);
               $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
               $session     = array('solucion' => $solucion);*/

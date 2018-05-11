@@ -100,3 +100,9 @@ defined('MSJ_INSERT_ERROR')   OR define('MSJ_INSERT_ERROR', 'Se ha insertado inc
 defined('MSJ_INSERT_SUCCESS') OR define('MSJ_INSERT_SUCCESS', 'Se ha insertado correctamente');
 defined('MSJ_DELETE_ERROR')   OR define('MSJ_DELETE_ERROR', 'Se ha eliminado incorrectamente');
 defined('MSJ_DELETE_SUCCESS') OR define('MSJ_DELETE_SUCCESS', 'Se ha eliminado correctamente');
+
+defined('PANT_UNO') OR define('PANT_UNO', 2);
+defined('PANT_DOS') OR define('PANT_DOS', 3);
+defined('PANT_TRES') OR define('PANT_TRES', 4);
+defined('PANT_CUATRO') OR define('PANT_CUATRO', 5);
+defined('PANT_CINCO') OR define('PANT_CINCO', 6);
