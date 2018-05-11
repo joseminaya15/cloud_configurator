@@ -63,7 +63,7 @@
                         <div class="js-header__bgcolor--bar"></div>
                     </div>
                 </div>
-                <div class="js-window1" style="display: none;">
+                <div class="js-window1" style="display: block;">
                     <div class="js-container">
                         <h2>YO <strong>QUIERO</strong></h2>
                         <div class="js-card__flex">
@@ -329,7 +329,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="js-window5" style="display: block;">
+                <div class="js-window5" style="display: none;">
                     <div class="js-container">
                         <p class="js-question--title"><strong>/ BYD</strong> Configurator</p>
                         <div class="js-question--number">
