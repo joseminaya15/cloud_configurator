@@ -469,10 +469,10 @@ class Es extends CI_Controller {
           $pantalla    = $this->input->post('pantalla');
           $ayuda       = $this->input->post('ayuda');
           if($pantalla == 2){
-              /*$arrayInsert   = array('producto' => $config);
+              $arrayInsert   = array('producto' => $config);
               $datoInsert    = $this->M_solicitud->insertarDatos($arrayInsert, 'solicitud');
               $session       = array('producto' => $config,
-                                     'id_sol'   => $datoInsert['Id']);*/
+                                     'id_sol'   => $datoInsert['Id']);
           }else if($pantalla == 3){
               /*$arrayUpdate = array('ayuda' => $ayuda);
               $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');*/
