@@ -412,7 +412,6 @@ function buttonQuestion(direction){
 }
 function selectConfigurator(id){
 	idConfigurator = id
-	console.log(idConfigurator);
 	secondWindow.find('.js-card--large').css('display','none');
 	$('.js-card--large__'+idConfigurator).css('display','block');
 }
