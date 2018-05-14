@@ -65,7 +65,7 @@
                 </div>
                 <div class="js-window1" style="display: block;">
                     <div class="js-container">
-                        <h2>YO <strong>QUIERO</strong></h2>
+                        <h2>EU <strong>QUERO</strong></h2>
                         <div class="js-card__flex">
                             <div class="js-card" onclick="clickCard('BYD Configurator')">
                                 <div class="js-card-imagen">
