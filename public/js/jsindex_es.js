@@ -331,9 +331,15 @@ function ConfirmarRespuestas(){
       }
 	});
 }
+var cont = 0;
 var retos = [];
 function saveDatos(datos, row){
-	
+	if("selected " == "selected"){
+		retos.push(datos);
+		cont = 1;
+	}else if("selected" == ""){
+
+	}
 }
 var solucion = "";
 function saveSolucion(dato){
