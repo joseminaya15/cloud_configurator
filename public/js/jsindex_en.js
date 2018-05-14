@@ -1,9 +1,32 @@
 var homePage     = $('#home');
 var congigurator = $('#configurator'); 
-
+var pant 		 = 0;
+var arr_pant     = [];
 function buttonNext(){
+	pant++;
 	homePage.addClass('animated fadeOutUp');
 	congigurator.addClass('animated fadeInDown');
+	if(pant >= 2){
+		$.ajax({
+			data : {config 	  : configurador,
+					pantalla  : pant,
+				    ayuda 	  : ayuda_negocio,
+				    solucion  : solucion,
+				    retos 	  : retos.toString()},
+			url  : 'pt/buttonNext',
+			type : 'POST'
+		}).done(function(data){
+			try{
+	        data = JSON.parse(data);
+	        if(data.error == 0){
+	        }else{
+	        	return;
+	        }
+	      } catch (err){
+	        msj('error',err.message);
+	      }
+		});
+	}
 }
 function cambiarIdioma(){
 	var idioma = $('#IdiomaHome').val();
@@ -257,4 +280,14 @@ function mostrarDatos(){
         msj('error',err.message);
       }
 	});
+}
+var configurador = null;
+function clickCard(dato){
+	configurador = dato;
+	arr_pant.push(dato);
+}
+var ayuda_negocio = null;
+function ayudaCard(ayuda){
+	ayuda_negocio = ayuda;
+	arr_pant.push(ayuda);
 }
