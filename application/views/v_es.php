@@ -38,7 +38,7 @@
                 </div>
                 <div class="js-title">
                     <h1>Bienvenido a <br><strong>Cloud Configurator</strong></h1>
-                    <p>Con esta herramienta podr&aacute; obtener r&aacute;pidamente una configuraci&oacute;n personalizada de las Ofertas SAP Cloud en funci&oacute;n a sus necesidades</p>
+                    <p>Complete estas preguntas y descubra la soluci&oacute;n perfecta de SAP en funci&oacute;n a las necesidades de su negocio.</p>
                 </div>
                 <div class="js-bar">
                     <div class="js-bar__children background-body3"></div>
@@ -73,12 +73,11 @@
                                         <img src="<?php echo RUTA_IMG?>cards/byd.png">
                                     </div>
                                     <div class="js-card-flip js-card-flip__back selected">
-                                        <h2>BYD</h2>
-                                        <p>Configurator</p>
+                                        <h2>ERP</h2>
                                     </div>
                                 </div>
                                 <div class="js-card-content">
-                                    <p>Innovar digitalmente mis procesos para mejorar la competitividad, la reputaci&oacute;n de mi marca y m&aacute;s.</p>
+                                    <p>Innovar digitalmente mis procesos para mejorar la competitividad, la eficiencia y la reputaci&oaute;n de mi marca y m&aacute;s.</p>
                                 </div>
                             </div>
                             <div class="js-card" onclick="clickCard('CRM Configurator')">
@@ -88,11 +87,10 @@
                                     </div>
                                     <div class="js-card-flip js-card-flip__back">
                                         <h2>CRM</h2>
-                                        <p>Configurator</p>
                                     </div>
                                 </div>
                                 <div class="js-card-content">
-                                    <p>Contar con herramientas para una gestión avanzada de mis clientes por medio de marketing contextual y en tiempo real.</p>
+                                    <p>Contar con herramientas para una gesti&oacute;n avanzada de mis clientes para entregar la mejor experiencia, adelantarse a sus necesidades y brindar un servicio de excelencia.</p>
                                 </div>
                             </div>
                             <div class="js-card" onclick="clickCard('HR Configurator')">
@@ -102,7 +100,6 @@
                                     </div>
                                     <div class="js-card-flip js-card-flip__back">
                                         <h2>HR</h2>
-                                        <p>Configurator</p>
                                     </div>
                                 </div>
                                 <div class="js-card-content">
@@ -114,7 +111,7 @@
                 </div>
                 <div class="js-window2" style="display: none;">
                     <div class="js-container">
-                        <p class="js-question--title"><strong>/ BYD</strong> Configurator</p>
+                        <p class="js-question--title"><strong>/ ERP</strong> Configurator</p>
                         <div class="js-question--number">
                             <span>01/05</span>
                             <h2>¿Qu&eacute; tipo de ayuda requiere para su negocio&#63;</h2>
@@ -174,12 +171,129 @@
                                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
                                 </div>
                             </div>
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-imagen">
+                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                    </div>
+                                    <div class="js-card--large__content-text">
+                                        <p>Como responsable de la integraci&oacute;n financiera de mi empresa quiero <strong>tener visibilidad en tiempo real</strong></p>
+                                    </div>
+                                </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
+                            </div>
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-imagen">
+                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                    </div>
+                                    <div class="js-card--large__content-text">
+                                        <p>Como responsable de HR quiero consolidar y optimizar los procesos centrales de RRHH.</p>
+                                    </div>
+                                </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
+                            </div>
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-imagen">
+                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                    </div>
+                                    <div class="js-card--large__content-text">
+                                        <p>Como responsable de HR quiero alinear las metas de la empresa con la recompensa de mis empleados.</p>
+                                    </div>
+                                </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
+                            </div>
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-imagen">
+                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                    </div>
+                                    <div class="js-card--large__content-text">
+                                        <p>Como responsable de HR quiero desarrollar a mis empleados de una manera simple y colaborativa.</p>
+                                    </div>
+                                </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
+                            </div>
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-imagen">
+                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                    </div>
+                                    <div class="js-card--large__content-text">
+                                        <p>Como responsable de HR quiero retener a los mejores talentos con un plan de compensaci&oacute;n atractivo.</p>
+                                    </div>
+                                </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
+                            </div>
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-imagen">
+                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                    </div>
+                                    <div class="js-card--large__content-text">
+                                        <p>Como responsable de HR quiero planificar el desarrollo y sucesi&oacute;n de mis mejores talentos</p>
+                                    </div>
+                                </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
+                            </div>
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-imagen">
+                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                    </div>
+                                    <div class="js-card--large__content-text">
+                                        <p>Como responsable de HR quiero centralizar y agilizar mis procesos de adquisici&oacute;n y contrataci&oacute;n de talentos.</p>
+                                    </div>
+                                </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
+                            </div>
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-imagen">
+                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                    </div>
+                                    <div class="js-card--large__content-text">
+                                        <p>Como responsable de HR quiero aumentar la eficacia de la funci&oacute;n de RRHH accediendo a un conjunto de anal&iacute;ticas listas para usar.</p>
+                                    </div>
+                                </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
+                            </div>
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-imagen">
+                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                    </div>
+                                    <div class="js-card--large__content-text">
+                                        <p>Como responsable de HR quiero empoderar a los nuevos empleados para lograr una contribuci&oacute;n r&aacute;pida a las metas del negocio.</p>
+                                    </div>
+                                </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="js-window3" style=" display: none">
                     <div class="js-container">
-                        <p class="js-question--title"><strong>/ BYD</strong> Configurator</p>
+                        <p class="js-question--title"><strong>/ ERP</strong> Configurator</p>
                         <div class="js-question--number">
                             <span>02/05</span>
                             <h2>¿Cu&aacute;l es su tipo y tama&ntilde;o de empresa&#63;</h2>
@@ -204,7 +318,7 @@
                                         <img src="<?php echo RUTA_IMG?>cards/retail.png">
                                     </div>
                                     <div class="js-card--large__content-name">
-                                        <small>Retail</small>
+                                        <small>Servicios Financieros</small>
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
@@ -217,7 +331,7 @@
                                         <img src="<?php echo RUTA_IMG?>cards/distribucion.png">
                                     </div>
                                     <div class="js-card--large__content-name">
-                                        <small>Distribuci&oacute;n Mayorista</small>
+                                        <small>Comercio Minorista</small>
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
@@ -230,7 +344,7 @@
                                         <img src="<?php echo RUTA_IMG?>cards/productos.png">
                                     </div>
                                     <div class="js-card--large__content-name">
-                                        <small>Productos de consumo</small>
+                                        <small>Comercio Mayorista</small>
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
@@ -243,7 +357,20 @@
                                         <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
                                     </div>
                                     <div class="js-card--large__content-name">
-                                        <small>Procesos/Manufactura</small>
+                                        <small>Productos de Consumo</small>
+                                    </div>
+                                </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
+                            </div>
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-tipo">
+                                        <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
+                                    </div>
+                                    <div class="js-card--large__content-name">
+                                        <small>Manufactura</small>
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
@@ -255,7 +382,7 @@
                 </div>
                 <div class="js-window4" style=" display: none">
                     <div class="js-container">
-                        <p class="js-question--title"><strong>/ BYD</strong> Configurator</p>
+                        <p class="js-question--title"><strong>/ ERP</strong> Configurator</p>
                         <div class="js-question--number">
                             <span>03/05</span>
                             <h2>Identifique los retos m&aacute;s relevantes que enfrenta su empresa</h2>
@@ -331,7 +458,7 @@
                 </div>
                 <div class="js-window5" style="display: none;">
                     <div class="js-container">
-                        <p class="js-question--title"><strong>/ BYD</strong> Configurator</p>
+                        <p class="js-question--title"><strong>/ ERP</strong> Configurator</p>
                         <div class="js-question--number">
                             <span>04/05</span>
                             <h2>¿Que tipo de soluci&oacute;n le interesa evaluar&#63;</h2>
@@ -381,10 +508,11 @@
                 </div>
                 <div class="js-window6" style="display: none;">
                     <div class="js-container">
-                        <p class="js-question--title"><strong>/ BYD</strong> Configurator</p>
+                        <p class="js-question--title"><strong>/ ERP</strong> Configurator</p>
                         <div class="js-question--number">
                             <span>05/05</span>
-                            <h2>¿Qui&eacute;n recibir&aacute; la estimaci&oacute;n&#63;</h2>
+                            <!-- <h2>¿Qui&eacute;n recibir&aacute; la estimaci&oacute;n&#63;</h2> -->
+                            <h2>Ingrese su informaci&oacute;n para recibir el resultado</h2>
                         </div>
                         <div class="js-card__flex">
                             <div class="js-card-confirmacion">
@@ -538,6 +666,11 @@
                 <div class="js-button-next">
                     <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="buttonNext()">
                         <i class="mdi mdi-keyboard_arrow_down"></i>
+                    </button>
+                </div>
+                <div class="js-button-next">
+                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="buttonNext()">
+                        <i class="mdi mdi-keyboard_arrow_down   "></i>
                     </button>
                 </div>
             </div>
