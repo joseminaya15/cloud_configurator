@@ -437,4 +437,72 @@ class Pt extends CI_Controller {
       }
       return json_encode(array_map('utf8_encode', $data));
     }
+    function mostrarDatos(){
+      $data['error'] = EXIT_ERROR;
+      $data['msj']   = null;
+      try {
+          $ids_array   = $this->input->post('array_ids');
+          $array_3pant = $this->input->post('array_3pant');
+          $explode     = explode(",", $this->session->userdata('Prioridad'));
+          $html        = '';
+          foreach ($explode as $key) {
+            $html .= '<li>'.$key.'</li>';
+          }
+          $session = array('ids_array'   => $ids_array,
+                           'array_3pant' => $array_3pant);
+          $this->session->set_userdata($session);
+          $tamanio = $this->session->userdata('Tamanio') == null ? '-' : $this->session->userdata('Tamanio').' empleados';
+          $data['Industria']       = $this->session->userdata('industria') == null ? '-' : $this->session->userdata('industria');
+          $data['Factura_anual']   = $this->session->userdata('Factura_anual') == null ? '-' : $this->session->userdata('Factura_anual');
+          $data['Tamanio']         = $tamanio;
+          $data['Prioridad']       = $html;
+          $data['Infraestructura'] = $this->session->userdata('Infraestructura') == null ? '-' : $this->session->userdata('Infraestructura');
+          $data['error']           = EXIT_SUCCESS;
+      }catch(Exception $e){
+          $data['msj'] = $e->getMessage();
+      }
+      echo json_encode($data);
+  }
+  function buttonNext(){
+      $data['error'] = EXIT_ERROR;
+      $data['msj']   = null;
+      try {
+          $config      = $this->input->post('config');
+          $pantalla    = $this->input->post('pantalla');
+          $ayuda       = $this->input->post('ayuda');
+          $solucion    = $this->input->post('ayuda');
+          $retos       = $this->input->post('retos');
+          if($pantalla == PANT_UNO){
+              $arrayInsert   = array('producto' => $config);
+              $datoInsert    = $this->M_solicitud->insertarDatos($arrayInsert, 'solicitud');
+              $session       = array('producto' => $config,
+                                     'id_sol'   => $datoInsert['Id']);
+          }else if($pantalla == PANT_DOS){
+              /*$arrayUpdate = array('ayuda' => $ayuda);
+              $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
+              $session     = array('ayuda'   => $ayuda);*/
+          }else if($pantalla == PANT_TRES){
+              /*$arrayUpdate = array('tipo_industria' => $tipo,
+                                     'tamanio'        => $tamanio,
+                                     'factura_anual'  => $factura);
+              $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
+              $session     = array('tipo_industria' => $tipo,
+                                   'tamanio'        => $tamanio,
+                                   'factura_anual'  => $factura);*/
+          }else if($pantalla == PANT_CUATRO){
+              /*$arrayUpdate = array('retos' => $retos);
+              $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
+              $session     = array('retos' => $retos);*/
+          }else if($pantalla == PANT_CINCO){
+              /*$arrayUpdate = array('solucion' => $solucion);
+              $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
+              $session     = array('solucion' => $solucion);*/
+          }
+          //$this->session->set_userdata($session);
+          $data['error'] = EXIT_SUCCESS;
+      } catch (Exception $e){
+          $data['msj'] = $e->getMessage();
+      }
+      echo json_encode($data);
+  }
 }
