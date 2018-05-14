@@ -402,7 +402,7 @@ function buttonQuestion(direction){
 		else if(m < 1){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			homePage.removeClass('animated fadeInRight fadeOutLeft fadeInLeft fadeOutRight');
-			homePage.addClass('animated fadeInLeft');
+			homePage.addClass('animated fadeInDown');
 			firstWindow.addClass('animated fadeOutRight');
 			m = 1;
 			return;

@@ -127,7 +127,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select">Seleccione</button>
                                 </div>
                             </div>
                             <div class="js-card--large">
@@ -140,7 +140,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select">Seleccione</button>
                                 </div>
                             </div>
                             <div class="js-card--large">
@@ -153,77 +153,49 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select">Seleccione</button>
                                 </div>
                             </div>
-                            <!-- <div class="js-card--large">
+                            <div class="js-card--large js-card--large__none">
                                 <div class="js-card--large__content">
                                     <div class="js-card--large__content-imagen">
                                         <img src="<?php echo RUTA_IMG?>cards/integracion.png">
                                     </div>
                                     <div class="js-card--large__content-text">
-                                        <p>Lograr una <strong>integraci&oacute;n financiera</strong> que arroje informaci&oacute;n relevante en tiempo real</p>
+                                        <p>Como responsable de ventas quiero <strong>mejorar mi proceso de ventas</strong></p>
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
-                                </div>
-                            </div> -->
-                            <!-- <div class="js-card--large">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-imagen">
-                                        <img src="<?php echo RUTA_IMG?>cards/operativo.png">
-                                    </div>
-                                    <div class="js-card--large__content-text">
-                                        <p>Evidenciar una <strong>Mejora en mis Procesos Operativos</strong></p>
-                                    </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
-                                </div>
-                            </div> -->
-                            <!-- <div class="js-card--large">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-imagen">
-                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
-                                    </div>
-                                    <div class="js-card--large__content-text">
-                                        <p>Trabajar con una <strong>Mejor Visibilidad de los Indicadores</strong> de Crecimiento</p>
-                                    </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
-                                </div>
-                            </div> -->
-                            <!-- <div class="js-card--large">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-imagen">
-                                        <img src="<?php echo RUTA_IMG?>cards/otra.png">
-                                    </div>
-                                    <div class="js-card--large__content-text">
-                                        <div class="form-group">
-                                            <textarea class="form-control" id="idEspecificar" rows="4" placeholder="Especificar"></textarea>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
-                                </div>
-                            </div> -->
-                            <div class="js-card--large">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-imagen">
-                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
-                                    </div>
-                                    <div class="js-card--large__content-text">
-                                        <p>Como responsable de la integraci&oacute;n financiera de mi empresa quiero <strong>tener visibilidad en tiempo real</strong></p>
-                                    </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select">Seleccione</button>
                                 </div>
                             </div>
-                            <div class="js-card--large">
+                            <div class="js-card--large js-card--large__none">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-imagen">
+                                        <img src="<?php echo RUTA_IMG?>cards/integracion.png">
+                                    </div>
+                                    <div class="js-card--large__content-text">
+                                        <p>Como responsable de servicios quiero <strong>mejorar nuestros procesos de soporte al cliente.</strong></p>
+                                    </div>
+                                </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select">Seleccione</button>
+                                </div>
+                            </div>
+                            <div class="js-card--large  js-card--large__none">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-imagen">
+                                        <img src="<?php echo RUTA_IMG?>cards/integracion.png">
+                                    </div>
+                                    <div class="js-card--large__content-text">
+                                        <p>Como responsable de ventas online quiero <strong>crear experiencias de compra &uacute;nicas e simplificadas</strong></p>
+                                    </div>
+                                </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select">Seleccione</button>
+                                </div>
+                            </div>
+                            <div class="js-card--large js-card--large__none">
                                 <div class="js-card--large__content">
                                     <div class="js-card--large__content-imagen">
                                         <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
@@ -233,10 +205,10 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select">Seleccione</button>
                                 </div>
                             </div>
-                            <div class="js-card--large">
+                            <div class="js-card--large js-card--large__none">
                                 <div class="js-card--large__content">
                                     <div class="js-card--large__content-imagen">
                                         <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
@@ -246,10 +218,10 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select">Seleccione</button>
                                 </div>
                             </div>
-                            <div class="js-card--large">
+                            <div class="js-card--large js-card--large__none">
                                 <div class="js-card--large__content">
                                     <div class="js-card--large__content-imagen">
                                         <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
@@ -259,10 +231,10 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select">Seleccione</button>
                                 </div>
                             </div>
-                            <div class="js-card--large">
+                            <div class="js-card--large js-card--large__none">
                                 <div class="js-card--large__content">
                                     <div class="js-card--large__content-imagen">
                                         <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
@@ -272,10 +244,10 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select">Seleccione</button>
                                 </div>
                             </div>
-                            <div class="js-card--large">
+                            <div class="js-card--large js-card--large__none">
                                 <div class="js-card--large__content">
                                     <div class="js-card--large__content-imagen">
                                         <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
@@ -285,10 +257,10 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select">Seleccione</button>
                                 </div>
                             </div>
-                            <div class="js-card--large">
+                            <div class="js-card--large js-card--large__none">
                                 <div class="js-card--large__content">
                                     <div class="js-card--large__content-imagen">
                                         <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
@@ -298,10 +270,10 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select">Seleccione</button>
                                 </div>
                             </div>
-                            <div class="js-card--large">
+                            <div class="js-card--large js-card--large__none">
                                 <div class="js-card--large__content">
                                     <div class="js-card--large__content-imagen">
                                         <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
@@ -311,10 +283,10 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select">Seleccione</button>
                                 </div>
                             </div>
-                            <div class="js-card--large">
+                            <div class="js-card--large js-card--large__none">
                                 <div class="js-card--large__content">
                                     <div class="js-card--large__content-imagen">
                                         <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
@@ -324,7 +296,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select">Seleccione</button>
                                 </div>
                             </div>
                         </div>
@@ -348,7 +320,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select">Seleccione</button>
                                 </div>
                             </div>
                             <div class="js-card--large">
@@ -361,7 +333,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select">Seleccione</button>
                                 </div>
                             </div>
                             <div class="js-card--large">
@@ -374,7 +346,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select">Seleccione</button>
                                 </div>
                             </div>
                             <div class="js-card--large">
@@ -387,7 +359,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select">Seleccione</button>
                                 </div>
                             </div>
                             <div class="js-card--large">
@@ -400,7 +372,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select">Seleccione</button>
                                 </div>
                             </div>
                             <div class="js-card--large">
@@ -413,7 +385,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select">Seleccione</button>
                                 </div>
                             </div>
                         </div>
@@ -437,7 +409,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="saveSolucion('On Premise')">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion('On Premise')">Seleccione</button>
                                 </div>
                             </div>
                             <div class="js-card--large">
@@ -450,7 +422,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="saveSolucion('Cloud')">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion('Cloud')">Seleccione</button>
                                 </div>
                             </div>
                             <div class="js-card--large">
@@ -463,7 +435,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="saveSolucion('Híbrida')">Seleccione</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion('Híbrida')">Seleccione</button>
                                 </div>
                             </div>
                         </div>
