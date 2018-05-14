@@ -77,7 +77,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card-content">
-                                    <p>Innovar digitalmente mis procesos para mejorar la competitividad, la eficiencia y la reputaci&oaute;n de mi marca y m&aacute;s.</p>
+                                    <p>Digitally innovate my processes to improve the competitiveness, efficiency and reputation of my brand and more.</p>
                                 </div>
                             </div>
                             <div class="js-card" onclick="clickCard('CRM Configurator')">
