@@ -385,7 +385,6 @@ function buttonQuestion(direction){
 			fiveWindow.addClass('animated fadeOutDown');
 		}
 		else if(m == 3){
-			datos_array = [];
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			thirdWindow.addClass('animated fadeInDown');
 			fourWindow.addClass('animated fadeOutDown');
