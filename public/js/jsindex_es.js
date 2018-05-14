@@ -1,14 +1,15 @@
-var homePage     = $('#home');
-var congigurator = $('#configurator'); 
-var firstWindow  = $('.js-window1');
-var secondWindow = $('.js-window2');
-var thirdWindow  = $('.js-window3');
-var fourWindow   = $('.js-window4');
-var fiveWindow   = $('.js-window5');
-var sixWindow    = $('.js-window6');
-var m 			 = 1;
-var pant 		 = 0;
-var arr_pant     = [];
+var homePage       = $('#home');
+var congigurator   = $('#configurator'); 
+var firstWindow    = $('.js-window1');
+var secondWindow   = $('.js-window2');
+var thirdWindow    = $('.js-window3');
+var fourWindow     = $('.js-window4');
+var fiveWindow     = $('.js-window5');
+var sixWindow      = $('.js-window6');
+var arr_pant       = [];
+var m 			   = 1;
+var pant 		   = 0;
+var idConfigurator = null;
 function buttonNext(){
 	pant++;
 	homePage.addClass('animated fadeOutUp');
@@ -408,4 +409,10 @@ function buttonQuestion(direction){
 			return;
 		}
 	}
+}
+function selectConfigurator(id){
+	idConfigurator = id
+	console.log(idConfigurator);
+	secondWindow.find('.js-card--large').css('display','none');
+	$('.js-card--large__'+idConfigurator).css('display','block');
 }
