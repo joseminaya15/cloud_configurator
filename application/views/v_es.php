@@ -63,7 +63,7 @@
                         <div class="js-header__bgcolor--bar"></div>
                     </div>
                 </div>
-                <div class="js-window1" style="display: block;">
+                <div class="js-window1">
                     <div class="js-container">
                         <h2>YO <strong>QUIERO</strong></h2>
                         <div class="js-card__flex">
@@ -109,15 +109,54 @@
                         </div>
                     </div>
                 </div>
-                <div class="js-window2" style="display: none;">
+                <div class="js-window2 opacity-done">
                     <div class="js-container">
                         <p class="js-question--title"><strong>/ ERP</strong> Configurator</p>
                         <div class="js-question--number">
                             <span>01/05</span>
-                            <h2>¿Qu&eacute; tipo de ayuda requiere para su negocio&#63;</h2>
+                            <h2>¿C&oacute;mo podemos ayudarle&#63;</h2>
                         </div>
                         <div class="js-card__flex">
                             <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-imagen">
+                                        <img src="<?php echo RUTA_IMG?>cards/integracion.png">
+                                    </div>
+                                    <div class="js-card--large__content-text">
+                                        <p>Como responsable de la integraci&oacute;n financiera de mi empresa quiero tener visibilidad en tiempo real.</p>
+                                    </div>
+                                </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
+                            </div>
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-imagen">
+                                        <img src="<?php echo RUTA_IMG?>cards/integracion.png">
+                                    </div>
+                                    <div class="js-card--large__content-text">
+                                        <p>Como responsable de los procesos operativos quiero alacanzar una mayor eficiencia</p>
+                                    </div>
+                                </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
+                            </div>
+                            <div class="js-card--large">
+                                <div class="js-card--large__content">
+                                    <div class="js-card--large__content-imagen">
+                                        <img src="<?php echo RUTA_IMG?>cards/integracion.png">
+                                    </div>
+                                    <div class="js-card--large__content-text">
+                                        <p>Como responsable del crecimiento de la empresa quiero lograr m&aacute;xima rentabilidad.</p>
+                                    </div>
+                                </div>
+                                <div class="js-card--large__button">
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
+                                </div>
+                            </div>
+                            <!-- <div class="js-card--large">
                                 <div class="js-card--large__content">
                                     <div class="js-card--large__content-imagen">
                                         <img src="<?php echo RUTA_IMG?>cards/integracion.png">
@@ -129,8 +168,8 @@
                                 <div class="js-card--large__button">
                                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
                                 </div>
-                            </div>
-                            <div class="js-card--large">
+                            </div> -->
+                            <!-- <div class="js-card--large">
                                 <div class="js-card--large__content">
                                     <div class="js-card--large__content-imagen">
                                         <img src="<?php echo RUTA_IMG?>cards/operativo.png">
@@ -142,8 +181,8 @@
                                 <div class="js-card--large__button">
                                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
                                 </div>
-                            </div>
-                            <div class="js-card--large">
+                            </div> -->
+                            <!-- <div class="js-card--large">
                                 <div class="js-card--large__content">
                                     <div class="js-card--large__content-imagen">
                                         <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
@@ -155,8 +194,8 @@
                                 <div class="js-card--large__button">
                                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
                                 </div>
-                            </div>
-                            <div class="js-card--large">
+                            </div> -->
+                            <!-- <div class="js-card--large">
                                 <div class="js-card--large__content">
                                     <div class="js-card--large__content-imagen">
                                         <img src="<?php echo RUTA_IMG?>cards/otra.png">
@@ -170,7 +209,7 @@
                                 <div class="js-card--large__button">
                                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Seleccione</button>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="js-card--large">
                                 <div class="js-card--large__content">
                                     <div class="js-card--large__content-imagen">
@@ -664,13 +703,11 @@
                     </div>
                 </div>
                 <div class="js-button-next">
-                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="buttonNext()">
-                        <i class="mdi mdi-keyboard_arrow_down"></i>
+                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="buttonQuestion(1)">
+                        <i class="mdi mdi-keyboard_arrow_up"></i>
                     </button>
-                </div>
-                <div class="js-button-next">
-                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="buttonNext()">
-                        <i class="mdi mdi-keyboard_arrow_down   "></i>
+                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="buttonQuestion(2)">
+                        <i class="mdi mdi-keyboard_arrow_down"></i>
                     </button>
                 </div>
             </div>

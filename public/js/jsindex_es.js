@@ -1,5 +1,12 @@
 var homePage     = $('#home');
 var congigurator = $('#configurator'); 
+var firstWindow  = $('.js-window1');
+var secondWindow = $('.js-window2');
+var thirdWindow  = $('.js-window3');
+var fourWindow   = $('.js-window4');
+var fiveWindow   = $('.js-window5');
+var sixWindow    = $('.js-window6');
+var m 			 = 1;
 var pant 		 = 0;
 var arr_pant     = [];
 function buttonNext(){
@@ -344,4 +351,68 @@ function saveDatos(datos, row){
 var solucion = "";
 function saveSolucion(dato){
 	solucion = dato;
+}
+function buttonQuestion(direction){
+	if(direction == 2){
+		m++;
+		if(m == 2){
+			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+			firstWindow.addClass('animated fadeOutUp');
+			secondWindow.addClass('animated fadeInUp');
+		}
+		else if(m == 3){
+			$('.opacity-done').removeClass('animated fadeInRight fadeOutLeft fadeInLeft fadeOutRight');
+			secondWindow.addClass('animated fadeOutLeft');
+			thirdWindow.addClass('animated fadeInRight');
+		}
+		else if(m == 4){
+			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+			thirdWindow.addClass('animated fadeOutLeft');
+			$('.bottom-right').css("display","none");
+			fourthWindow.addClass('animated fadeInRight');
+		}
+		else if(m == 5){
+			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+			fourthWindow.addClass('animated fadeOutLeft');
+			fifthWindow.addClass('animated fadeInRight');
+			$('.button-arrow.button-next').css("display","none");
+		}
+	}
+	else if(direction == 1){
+		m--;
+		if(m == 4){
+			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+			fourthWindow.addClass('animated fadeInLeft');
+			fifthWindow.addClass('animated fadeOutRight');
+			$('.button-arrow.button-next').css("display","block");
+		}
+		else if(m == 3){
+			datos_array = [];
+			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+			thirdWindow.addClass('animated fadeInLeft');
+			$('.bottom-right').css("display","block");
+			fourthWindow.addClass('animated fadeOutRight');
+		}
+		else if(m == 2){
+			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+			secondWindow.addClass('animated fadeInLeft');
+			thirdWindow.addClass('animated fadeOutRight');
+			$('.bottom-right').css("display","none");
+		}
+		else if(m == 1){
+			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+			firstWindow.addClass('animated fadeInLeft');
+			secondWindow.addClass('animated fadeOutRight');
+		}
+		else if(m < 1){
+			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+			homePage.removeClass('animated fadeInRight fadeOutLeft fadeInLeft fadeOutRight');
+			homePage.addClass('animated fadeInLeft');
+			firstWindow.addClass('animated fadeOutRight');
+			header.removeClass('opacity');
+			footerLogo.removeClass('opacity');
+			m = 1;
+			return;
+		}
+	}
 }
