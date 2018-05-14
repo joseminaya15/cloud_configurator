@@ -439,16 +439,6 @@ class Es extends CI_Controller {
       $data['error'] = EXIT_ERROR;
       $data['msj']   = null;
       try {
-          /*$ids_array   = $this->input->post('array_ids');
-          $array_3pant = $this->input->post('array_3pant');
-          $explode     = explode(",", $this->session->userdata('Prioridad'));
-          $html        = '';
-          foreach ($explode as $key) {
-            $html .= '<li>'.$key.'</li>';
-          }
-          $session = array('ids_array'   => $ids_array,
-                           'array_3pant' => $array_3pant);
-          $this->session->set_userdata($session);*/
           $tamanio = $this->session->userdata('Tamanio') == null ? '-' : $this->session->userdata('Tamanio').' empleados';
           $data['Industria']       = $this->session->userdata('industria') == null ? '-' : $this->session->userdata('industria');
           $data['Factura_anual']   = $this->session->userdata('Factura_anual') == null ? '-' : $this->session->userdata('Factura_anual');
