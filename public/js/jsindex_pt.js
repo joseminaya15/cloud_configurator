@@ -1,9 +1,32 @@
 var homePage     = $('#home');
 var congigurator = $('#configurator'); 
-
+var pant 		 = 0;
+var arr_pant     = [];
 function buttonNext(){
+	pant++;
 	homePage.addClass('animated fadeOutUp');
 	congigurator.addClass('animated fadeInDown');
+	if(pant >= 2){
+		$.ajax({
+			data : {config 	  : configurador,
+					pantalla  : pant,
+				    ayuda 	  : ayuda_negocio,
+				    solucion  : solucion,
+				    retos 	  : retos.toString()},
+			url  : 'pt/buttonNext',
+			type : 'POST'
+		}).done(function(data){
+			try{
+	        data = JSON.parse(data);
+	        if(data.error == 0){
+	        }else{
+	        	return;
+	        }
+	      } catch (err){
+	        msj('error',err.message);
+	      }
+		});
+	}
 }
 function cambiarIdioma(){
 	var idioma = $('#IdiomaHome').val();
@@ -257,4 +280,68 @@ function mostrarDatos(){
         msj('error',err.message);
       }
 	});
+}
+var configurador = null;
+function clickCard(dato){
+	configurador = dato;
+	arr_pant.push(dato);
+}
+var ayuda_negocio = null;
+function ayudaCard(ayuda){
+	ayuda_negocio = ayuda;
+	arr_pant.push(ayuda);
+}
+function validarCampos(){
+	var $inputs    = $('form :input');
+	var formvalido = true;
+	$inputs.each(function(){
+		if(isEmpty($(this).val())){
+			$(this).css('border-color','red');
+			formvalido = false;
+		}else{
+			$(this).css('border-color','');
+		}
+	});
+	return formvalido;
+}
+function isEmpty(val){
+	if(jQuery.trim(val).length != 0)
+    	return false;
+		return true;
+}
+function ConfirmarRespuestas(){
+	confirmar = 1;
+	$('.button-arrow.button-prev').css("display","none");
+	$('.mdl-card-confirmacion').addClass('confirmar');
+	$('.fp-controlArrow.fp-prev').css("display","none");
+	$('.mdl-formulario').removeClass('disabled');
+	$.ajax({
+		data : {confirmar : confirmar},
+		url  : 'es/ConfirmarRespuestas',
+		type : 'POST'
+	}).done(function(data){
+		try{
+        data = JSON.parse(data);
+        if(data.error == 0){
+        }else{
+        	return;
+        }
+      } catch (err){
+        msj('error',err.message);
+      }
+	});
+}
+var cont = 0;
+var retos = [];
+function saveDatos(datos, row){
+	if("selected " == "selected"){
+		retos.push(datos);
+		cont = 1;
+	}else if("selected" == ""){
+
+	}
+}
+var solucion = "";
+function saveSolucion(dato){
+	solucion = dato;
 }
