@@ -330,7 +330,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="js-window3" style=" display: none">
+                <div class="js-window3 opacity-done">
                     <div class="js-container">
                         <p class="js-question--title"><strong>/ ERP</strong> Configurator</p>
                         <div class="js-question--number">
@@ -419,83 +419,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="js-window4" style=" display: none">
-                    <div class="js-container">
-                        <p class="js-question--title"><strong>/ ERP</strong> Configurator</p>
-                        <div class="js-question--number">
-                            <span>03/05</span>
-                            <h2>Identifique los retos m&aacute;s relevantes que enfrenta su empresa</h2>
-                        </div>
-                        <div class="js-card__flex">
-                            <div class="js-card--large">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-imagen">
-                                        <img src="<?php echo RUTA_IMG?>cards/integracion.png">
-                                    </div>
-                                    <div class="js-card--large__content-text">
-                                        <p>Quiero que mi equipo colabore de forma m&aacute;s eficiente</p>
-                                    </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="saveDatos('Quiero que mi equipo colabore de forma más eficiente')">Seleccione</button>
-                                </div>
-                            </div>
-                            <div class="js-card--large">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-imagen">
-                                        <img src="<?php echo RUTA_IMG?>cards/operativo.png">
-                                    </div>
-                                    <div class="js-card--large__content-text">
-                                        <p>Quiero conectar el front office con el back office</p>
-                                    </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="saveDatos('Quiero conectar el front office con el back office')">Seleccione</button>
-                                </div>
-                            </div>
-                            <div class="js-card--large">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-imagen">
-                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
-                                    </div>
-                                    <div class="js-card--large__content-text">
-                                        <p>Quiero gestionar las visitas en las instalaciones</p>
-                                    </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="saveDatos('Quiero gestionar las visitas en las instalaciones')">Seleccione</button>
-                                </div>
-                            </div>
-                            <div class="js-card--large">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-imagen">
-                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
-                                    </div>
-                                    <div class="js-card--large__content-text">
-                                        <p>Quiero gestionar las visitas en las instalaciones</p>
-                                    </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="saveDatos('Quiero gestionar las visitas en las instalaciones')">Seleccione</button>
-                                </div>
-                            </div>
-                            <div class="js-card--large">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-imagen">
-                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
-                                    </div>
-                                    <div class="js-card--large__content-text">
-                                        <p>Quiero gestionar las visitas en las instalaciones</p>
-                                    </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="saveDatos('Quiero gestionar las visitas en las instalaciones')">Seleccione</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="js-window5" style="display: none;">
+                <div class="js-window4 opacity-done">
                     <div class="js-container">
                         <p class="js-question--title"><strong>/ ERP</strong> Configurator</p>
                         <div class="js-question--number">
@@ -545,7 +469,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="js-window6" style="display: none;">
+                <div class="js-window5 opacity-done">
                     <div class="js-container">
                         <p class="js-question--title"><strong>/ ERP</strong> Configurator</p>
                         <div class="js-question--number">
@@ -694,7 +618,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="js-window7" style="display: none;">
+                <div class="js-window6 opacity-done">
                     <div class="js-container">
                         <div class="js-agradecimiento">
                             <h2>Gracias por su inter&eacute;s</h2>
@@ -729,28 +653,28 @@
             } else {
                 $('select').selectpicker();
             }
-            $(window).load(function(){
-            if(<?php echo $pantalla1 ?> == 5) {
-                var formulario = $('#formulario');
-                var homePage   = $('#home');
-                $('.opacity-done').removeClass('animated fadeInRight fadeOutLeft fadeInLeft fadeOutRight');
-                homePage.css("display","none");
-                formulario.addClass('animated fadeInLeft');
-                $('#email').val("<?php echo $email_link ?>");
-                $('#nombre_completo').val("<?php echo $nombre_comple ?>");
-                if("<?php echo $comp ?>" == ''){
-                    $('#empresa').css('border-color','red');
-                }
-                if("<?php echo $tit ?>" == ''){
-                    $('#cargo').css('border-color','red');
-                }
-                $('#cargo').val("<?php echo $tit ?>");
-                $('#empresa').val("<?php echo $comp ?>");
-                $('#pais').val("<?php echo $pais_link ?>");
-                $('#telefono').css('border-color','red');
-                nameIndustria("<?php echo $idIndustria ?>");
-            }
-        });
+            // $(window).load(function(){
+            //     if(<?php echo $pantalla1 ?> == 5) {
+            //         var formulario = $('#formulario');
+            //         var homePage   = $('#home');
+            //         $('.opacity-done').removeClass('animated fadeInRight fadeOutLeft fadeInLeft fadeOutRight');
+            //         homePage.css("display","none");
+            //         formulario.addClass('animated fadeInLeft');
+            //         $('#email').val("<?php echo $email_link ?>");
+            //         $('#nombre_completo').val("<?php echo $nombre_comple ?>");
+            //         if("<?php echo $comp ?>" == ''){
+            //             $('#empresa').css('border-color','red');
+            //         }
+            //         if("<?php echo $tit ?>" == ''){
+            //             $('#cargo').css('border-color','red');
+            //         }
+            //         $('#cargo').val("<?php echo $tit ?>");
+            //         $('#empresa').val("<?php echo $comp ?>");
+            //         $('#pais').val("<?php echo $pais_link ?>");
+            //         $('#telefono').css('border-color','red');
+            //         nameIndustria("<?php echo $idIndustria ?>");
+            //     }
+            // });
         </script>
     </body>
 </html>

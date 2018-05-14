@@ -357,60 +357,54 @@ function buttonQuestion(direction){
 		m++;
 		if(m == 2){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+			firstWindow.addClass('opacity-done');
 			firstWindow.addClass('animated fadeOutUp');
 			secondWindow.addClass('animated fadeInUp');
 		}
 		else if(m == 3){
 			$('.opacity-done').removeClass('animated fadeInRight fadeOutLeft fadeInLeft fadeOutRight');
-			secondWindow.addClass('animated fadeOutLeft');
-			thirdWindow.addClass('animated fadeInRight');
+			secondWindow.addClass('animated fadeOutUp');
+			thirdWindow.addClass('animated fadeInUp');
 		}
 		else if(m == 4){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
-			thirdWindow.addClass('animated fadeOutLeft');
-			$('.bottom-right').css("display","none");
-			fourthWindow.addClass('animated fadeInRight');
+			thirdWindow.addClass('animated fadeOutUp');
+			fourWindow.addClass('animated fadeInUp');
 		}
 		else if(m == 5){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
-			fourthWindow.addClass('animated fadeOutLeft');
-			fifthWindow.addClass('animated fadeInRight');
-			$('.button-arrow.button-next').css("display","none");
+			fourWindow.addClass('animated fadeOutUp');
+			fiveWindow.addClass('animated fadeInUp');
 		}
 	}
 	else if(direction == 1){
 		m--;
 		if(m == 4){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
-			fourthWindow.addClass('animated fadeInLeft');
-			fifthWindow.addClass('animated fadeOutRight');
-			$('.button-arrow.button-next').css("display","block");
+			fourWindow.addClass('animated fadeInDown');
+			fiveWindow.addClass('animated fadeOutDown');
 		}
 		else if(m == 3){
 			datos_array = [];
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
-			thirdWindow.addClass('animated fadeInLeft');
-			$('.bottom-right').css("display","block");
-			fourthWindow.addClass('animated fadeOutRight');
+			thirdWindow.addClass('animated fadeInDown');
+			fourWindow.addClass('animated fadeOutDown');
 		}
 		else if(m == 2){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
-			secondWindow.addClass('animated fadeInLeft');
-			thirdWindow.addClass('animated fadeOutRight');
-			$('.bottom-right').css("display","none");
+			secondWindow.addClass('animated fadeInDown');
+			thirdWindow.addClass('animated fadeOutDown');
 		}
 		else if(m == 1){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
-			firstWindow.addClass('animated fadeInLeft');
-			secondWindow.addClass('animated fadeOutRight');
+			firstWindow.addClass('animated fadeInDown');
+			secondWindow.addClass('animated fadeOutDown');
 		}
 		else if(m < 1){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			homePage.removeClass('animated fadeInRight fadeOutLeft fadeInLeft fadeOutRight');
 			homePage.addClass('animated fadeInLeft');
 			firstWindow.addClass('animated fadeOutRight');
-			header.removeClass('opacity');
-			footerLogo.removeClass('opacity');
 			m = 1;
 			return;
 		}
