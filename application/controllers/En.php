@@ -460,7 +460,7 @@ class En extends CI_Controller {
           $config      = $this->input->post('config');
           $pantalla    = $this->input->post('pantalla');
           $ayuda       = $this->input->post('ayuda');
-          $solucion    = $this->input->post('ayuda');
+          $solucion    = $this->input->post('solucion');
           $retos       = $this->input->post('retos');
           if($pantalla == PANT_UNO){
               $arrayInsert   = array('producto' => $config);
