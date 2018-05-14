@@ -466,9 +466,9 @@ class Es extends CI_Controller {
               $session       = array('producto' => $config,
                                      'id_sol'   => $datoInsert['Id']);
           }else if($pantalla == PANT_DOS){
-              /*$arrayUpdate = array('ayuda' => $ayuda);
+              $arrayUpdate = array('ayuda' => $ayuda);
               $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
-              $session     = array('ayuda'   => $ayuda);*/
+              $session     = array('ayuda'   => $ayuda);
           }else if($pantalla == PANT_TRES){
               /*$arrayUpdate = array('tipo_industria' => $tipo,
                                      'tamanio'        => $tamanio,

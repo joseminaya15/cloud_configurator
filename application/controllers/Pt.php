@@ -441,16 +441,6 @@ class Pt extends CI_Controller {
       $data['error'] = EXIT_ERROR;
       $data['msj']   = null;
       try {
-          $ids_array   = $this->input->post('array_ids');
-          $array_3pant = $this->input->post('array_3pant');
-          $explode     = explode(",", $this->session->userdata('Prioridad'));
-          $html        = '';
-          foreach ($explode as $key) {
-            $html .= '<li>'.$key.'</li>';
-          }
-          $session = array('ids_array'   => $ids_array,
-                           'array_3pant' => $array_3pant);
-          $this->session->set_userdata($session);
           $tamanio = $this->session->userdata('Tamanio') == null ? '-' : $this->session->userdata('Tamanio').' empleados';
           $data['Industria']       = $this->session->userdata('industria') == null ? '-' : $this->session->userdata('industria');
           $data['Factura_anual']   = $this->session->userdata('Factura_anual') == null ? '-' : $this->session->userdata('Factura_anual');
@@ -470,7 +460,7 @@ class Pt extends CI_Controller {
           $config      = $this->input->post('config');
           $pantalla    = $this->input->post('pantalla');
           $ayuda       = $this->input->post('ayuda');
-          $solucion    = $this->input->post('ayuda');
+          $solucion    = $this->input->post('solucion');
           $retos       = $this->input->post('retos');
           if($pantalla == PANT_UNO){
               $arrayInsert   = array('producto' => $config);
