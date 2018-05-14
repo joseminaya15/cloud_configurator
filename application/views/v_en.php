@@ -31,7 +31,7 @@
                     <div class="js-idioma">
                         <select class="selectpicker" id="IdiomaHome"  name="Idioma" onchange="cambiarIdioma()">
                             <option value="Inglés">English</option>
-                            <option value="Portugués">Portugu&ecirc;s</option>
+                            <option value="Portugués" disabled="true">Portugu&ecirc;s</option>
                             <option value="Español">Espa&ntilde;ol</option>
                         </select>
                     </div>
