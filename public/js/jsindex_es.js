@@ -15,12 +15,16 @@ function buttonNext(){
 	homePage.addClass('animated fadeOutUp');
 	congigurator.addClass('animated fadeInDown');
 	if(pant >= 2){
+		console.log(pant);
+		console.log(configurador);
+		console.log(ayuda_negocio);
+		console.log(solucion);
 		$.ajax({
 			data : {config 	  : configurador,
 					pantalla  : pant,
 				    ayuda 	  : ayuda_negocio,
-				    solucion  : solucion,
-				    retos 	  : retos.toString()},
+				    tipo_ind  : tipo_ind,
+				    solucion  : solucion},
 			url  : 'es/buttonNext',
 			type : 'POST'
 		}).done(function(data){
@@ -345,8 +349,8 @@ function saveDatos(datos, row){
 	}
 }
 var solucion = "";
-function saveSolucion(dato){
-	solucion = dato;
+function saveSolucion(sol){
+	solucion = sol;
 }
 function buttonQuestion(direction){
 	if(direction == 2){
@@ -410,4 +414,8 @@ function selectConfigurator(id, dato){
 	configurador = dato;
 	secondWindow.find('.js-card--large').css('display','none');
 	$('.js-card--large__'+idConfigurator).css('display','block');
+}
+var tipo_ind = "";
+function tipoTamaño(tipo){
+	tipo_ind = tipo;
 }

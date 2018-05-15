@@ -458,6 +458,7 @@ class Es extends CI_Controller {
           $config      = $this->input->post('config');
           $pantalla    = $this->input->post('pantalla');
           $ayuda       = $this->input->post('ayuda');
+          $tipo_ind    = $this->input->post('tipo_ind');
           $solucion    = $this->input->post('solucion');
           $retos       = $this->input->post('retos');
           if($pantalla == PANT_UNO){
@@ -467,23 +468,19 @@ class Es extends CI_Controller {
                                      'id_sol'   => $datoInsert['Id']);
           }else if($pantalla == PANT_DOS){
               $arrayUpdate = array('ayuda' => $ayuda);
-              $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
+              $this->M_solicitud->updateDatos($arrayUpdate, $this->session->userdata('id_sol'), 'solicitud');
               $session     = array('ayuda'   => $ayuda);
           }else if($pantalla == PANT_TRES){
-              $arrayUpdate = array('tipo_industria' => $tipo,
+              $arrayUpdate = array('tipo_industria' => $tipo_ind/*,
                                     'tamanio'        => $tamanio,
-                                    'factura_anual'  => $factura);
-              $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
-              $session     = array('tipo_industria' => $tipo,
+                                    'factura_anual'  => $factura*/);
+              $this->M_solicitud->updateDatos($arrayUpdate, $this->session->userdata('id_sol'), 'solicitud');
+              $session     = array('tipo_industria' => $tipo_ind/*,
                                    'tamanio'        => $tamanio,
-                                   'factura_anual'  => $factura);
+                                   'factura_anual'  => $factura*/);
           }else if($pantalla == PANT_CUATRO){
-              $arrayUpdate = array('retos' => $retos);
-              $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
-              $session     = array('retos' => $retos);
-          }else if($pantalla == PANT_CINCO){
               $arrayUpdate = array('solucion' => $solucion);
-              $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
+              $this->M_solicitud->updateDatos($arrayUpdate, $this->session->userdata('id_sol'), 'solicitud');
               $session     = array('solucion' => $solucion);
           }
           $this->session->set_userdata($session);
