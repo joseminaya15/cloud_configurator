@@ -351,7 +351,7 @@ function saveSolucion(sol){
 function buttonQuestion(direction){
 	if(direction == 2){
 		m++;
-		if(m == 2){
+		if(m == 2){			
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			firstWindow.addClass('opacity-done');
 			firstWindow.addClass('animated fadeOutUp');
@@ -393,16 +393,25 @@ function buttonQuestion(direction){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			thirdWindow.addClass('animated fadeInDown');
 			fourWindow.addClass('animated fadeOutDown');
+			if(tipo_ind != null || tipo_ind != ''){
+				$('#next').prop("disabled", false);
+			}
 		}
 		else if(m == 2){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			secondWindow.addClass('animated fadeInDown');
 			thirdWindow.addClass('animated fadeOutDown');
+			if(ayuda_negocio != null || ayuda_negocio != ''){
+				$('#next').prop("disabled", false);
+			}
 		}
 		else if(m == 1){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			firstWindow.addClass('animated fadeInDown');
 			secondWindow.addClass('animated fadeOutDown');
+			if(configurador != null || configurador != ''){
+				$('#next').prop("disabled", false);
+			}
 		}
 		else if(m < 1){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
