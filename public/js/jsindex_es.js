@@ -21,7 +21,6 @@ function buttonNext(){
 		if(pant == 5){
 			mostrarDatos();
 		}
-		console.log(ayuda_negocio);
 		$.ajax({
 			data : {config 	  : configurador,
 					pantalla  : pant,
@@ -384,6 +383,7 @@ function buttonQuestion(direction){
 	}
 	else if(direction == 1){
 		m--;
+		pant--;
 		if(m == 4){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			fourWindow.addClass('animated fadeInDown');
