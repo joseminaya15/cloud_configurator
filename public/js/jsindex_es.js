@@ -418,6 +418,7 @@ function selectConfigurator(id, dato){
 	configurador = dato;
 	secondWindow.find('.js-card--large').css('display','none');
 	$('.js-card--large__'+idConfigurator).css('display','block');
+	$('.js-question--title').find('strong').text('/ '+idConfigurator);
 	if(configurador != null || configurador != ''){
 		$('#next').prop("disabled", false);
 	}
