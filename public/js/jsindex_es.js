@@ -416,6 +416,9 @@ function selectConfigurator(id, dato){
 	$('.js-card--large__'+idConfigurator).css('display','block');
 }
 var tipo_ind = "";
-function tipoTamaño(tipo){
+function tipoTamaño(id,tipo){
+	var idButtonSelect = $('#'+id);
 	tipo_ind = tipo;
+	$('.js-button-select').removeClass('js-selected');
+	idButtonSelect.addClass('js-selected');
 }
