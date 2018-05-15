@@ -361,7 +361,7 @@ function buttonQuestion(direction){
 			//$('#prev').prop("disabled", true);
 		}
 		else if(m == 3){
-			$('.opacity-done').removeClass('animated fadeInRight fadeOutLeft fadeInLeft fadeOutRight');
+			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			secondWindow.addClass('animated fadeOutUp');
 			thirdWindow.addClass('animated fadeInUp');
 			$('#next').prop("disabled", true);
