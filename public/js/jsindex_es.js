@@ -429,6 +429,8 @@ function tipoTamaño(id,tipo){
 	var idButtonSelect = $('#'+id);
 	tipo_ind = tipo;
 	$('.js-button-select').removeClass('js-selected');
+	thirdWindow.find('.js-card--large').addClass('js-card--hide');
+	idButtonSelect.parents('.js-card--large').removeClass('js-card--hide');
 	idButtonSelect.addClass('js-selected');
 	if(tipo_ind != null || tipo_ind != ''){
 		$('#next').prop("disabled", false);
