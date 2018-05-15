@@ -412,7 +412,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion('On Premise')">Seleccione</button>
+                                    <button id="buttonCard21" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'On Premise')">Seleccione</button>
                                 </div>
                             </div>
                             <div class="js-card--large">
@@ -425,7 +425,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion('Cloud')">Seleccione</button>
+                                    <button id="buttonCard22" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Cloud')">Seleccione</button>
                                 </div>
                             </div>
                             <div class="js-card--large">
@@ -438,7 +438,7 @@
                                     </div>
                                 </div>
                                 <div class="js-card--large__button">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion('Híbrida')">Seleccione</button>
+                                    <button id="buttonCard23" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Híbrida')">Seleccione</button>
                                 </div>
                             </div>
                         </div>
