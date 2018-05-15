@@ -21,6 +21,7 @@ function buttonNext(){
 		if(pant == 5){
 			mostrarDatos();
 		}
+		console.log(ayuda_negocio);
 		$.ajax({
 			data : {config 	  : configurador,
 					pantalla  : pant,
@@ -284,7 +285,7 @@ function mostrarDatos(){
            	$('#tamanio').text(data.Tamanio);
            	//$('#prioridad').find('li').remove();
            	$('#ayuda').append(data.Prioridad);
-           	$('#infraestructura').text(data.Infraestructura);
+           	$('#infraestructura').text(solucion);
         }else{
         	return;
         }

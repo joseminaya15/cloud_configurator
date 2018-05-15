@@ -467,7 +467,7 @@
                                     <div class="col-xs-12 p-0">
                                         <div class="js-respuestas">
                                             <ul>
-                                                <li id="ayuda">-</li>
+                                                <li id="ayuda"></li>
                                             </ul>
                                             <button id="window2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 2)">Editar</button>
                                         </div>
@@ -602,7 +602,7 @@
                     </div>
                 </div>
                 <div class="js-button-next">
-                    <button id="prev" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="buttonQuestion(1);buttonNext();">
+                    <button id="prev" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="buttonQuestion(1);">
                         <i class="mdi mdi-keyboard_arrow_up"></i>
                     </button>
                     <button id="next" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="buttonQuestion(2);buttonNext();">
