@@ -398,7 +398,7 @@
                     <div class="js-container">
                         <p class="js-question--title"><strong>/ ERP</strong> Configurator</p>
                         <div class="js-question--number">
-                            <span>04/05</span>
+                            <span>03/05</span>
                             <h2>¿Que tipo de soluci&oacute;n le interesa evaluar&#63;</h2>
                         </div>
                         <div class="js-card__flex">
@@ -448,7 +448,7 @@
                     <div class="js-container">
                         <p class="js-question--title"><strong>/ ERP</strong> Configurator</p>
                         <div class="js-question--number">
-                            <span>05/05</span>
+                            <span>04/05</span>
                             <!-- <h2>¿Qui&eacute;n recibir&aacute; la estimaci&oacute;n&#63;</h2> -->
                             <h2>Ingrese su informaci&oacute;n para recibir el resultado</h2>
                         </div>
