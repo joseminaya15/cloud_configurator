@@ -15,10 +15,9 @@ function buttonNext(){
 	homePage.addClass('animated fadeOutUp');
 	congigurator.addClass('animated fadeInDown');
 	if(pant >= 2){
-		console.log(pant);
-		console.log(configurador);
-		console.log(ayuda_negocio);
-		console.log(solucion);
+		if(pant == 5){
+			mostrarDatos();
+		}
 		$.ajax({
 			data : {config 	  : configurador,
 					pantalla  : pant,
@@ -269,8 +268,6 @@ function operar(id,tipo){
 }
 function mostrarDatos(){
 	$.ajax({
-		data : {array_ids   : array_ids,
-				array_3pant : array_3pant},
 		url  : 'es/mostrarDatos',
 		type : 'POST'
 	}).done(function(data){
@@ -282,8 +279,8 @@ function mostrarDatos(){
           	$('#industria').text(data.Industria);
           	$('#factura').text(data.Factura_anual)
            	$('#tamanio').text(data.Tamanio);
-           	$('#prioridad').find('li').remove();
-           	$('#prioridad').append(data.Prioridad);
+           	//$('#prioridad').find('li').remove();
+           	$('#ayuda').append(data.Prioridad);
            	$('#infraestructura').text(data.Infraestructura);
         }else{
         	return;

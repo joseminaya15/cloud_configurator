@@ -467,6 +467,14 @@
                                     <div class="col-xs-12 p-0">
                                         <div class="js-respuestas">
                                             <ul>
+                                                <li id="ayuda">-</li>
+                                            </ul>
+                                            <button id="window2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 2)">Editar</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 p-0">
+                                        <div class="js-respuestas">
+                                            <ul>
                                                 <li id="tamanio">1 - 50</li>
                                             </ul>
                                             <button id="window2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 2)">Editar</button>
@@ -476,14 +484,6 @@
                                         <div class="js-respuestas">
                                             <ul>
                                                 <li id="factura">1-3 Millones de D&oacute;lares</li>
-                                            </ul>
-                                            <button id="window2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 2)">Editar</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-12 p-0">
-                                        <div class="js-respuestas">
-                                            <ul>
-                                                <li id="infraestructura">Local</li>
                                             </ul>
                                             <button id="window4" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id, 4)">Editar</button>
                                         </div>
