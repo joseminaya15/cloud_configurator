@@ -470,23 +470,23 @@ class Es extends CI_Controller {
               $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
               $session     = array('ayuda'   => $ayuda);
           }else if($pantalla == PANT_TRES){
-              /*$arrayUpdate = array('tipo_industria' => $tipo,
-                                     'tamanio'        => $tamanio,
-                                     'factura_anual'  => $factura);
+              $arrayUpdate = array('tipo_industria' => $tipo,
+                                    'tamanio'        => $tamanio,
+                                    'factura_anual'  => $factura);
               $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
               $session     = array('tipo_industria' => $tipo,
                                    'tamanio'        => $tamanio,
-                                   'factura_anual'  => $factura);*/
+                                   'factura_anual'  => $factura);
           }else if($pantalla == PANT_CUATRO){
-              /*$arrayUpdate = array('retos' => $retos);
+              $arrayUpdate = array('retos' => $retos);
               $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
-              $session     = array('retos' => $retos);*/
+              $session     = array('retos' => $retos);
           }else if($pantalla == PANT_CINCO){
-              /*$arrayUpdate = array('solucion' => $solucion);
+              $arrayUpdate = array('solucion' => $solucion);
               $this->M_solicitud->updateDatos($arrayUpdate, $datoInsert['Id'], 'solicitud');
-              $session     = array('solucion' => $solucion);*/
+              $session     = array('solucion' => $solucion);
           }
-          //$this->session->set_userdata($session);
+          $this->session->set_userdata($session);
           $data['error'] = EXIT_SUCCESS;
       } catch (Exception $e){
           $data['msj'] = $e->getMessage();

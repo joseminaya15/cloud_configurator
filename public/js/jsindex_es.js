@@ -290,14 +290,9 @@ function mostrarDatos(){
 	});
 }
 var configurador = null;
-function clickCard(dato){
-	configurador = dato;
-	arr_pant.push(dato);
-}
 var ayuda_negocio = null;
 function ayudaCard(ayuda){
 	ayuda_negocio = ayuda;
-	arr_pant.push(ayuda);
 }
 function validarCampos(){
 	var $inputs    = $('form :input');
@@ -410,8 +405,9 @@ function buttonQuestion(direction){
 		}
 	}
 }
-function selectConfigurator(id){
+function selectConfigurator(id, dato){
 	idConfigurator = id
+	configurador = dato;
 	secondWindow.find('.js-card--large').css('display','none');
 	$('.js-card--large__'+idConfigurator).css('display','block');
 }
