@@ -439,12 +439,12 @@ class Es extends CI_Controller {
       $data['error'] = EXIT_ERROR;
       $data['msj']   = null;
       try {
-          $tamanio = $this->session->userdata('Tamanio') == null ? '-' : $this->session->userdata('Tamanio').' empleados';
-          $data['Industria']       = $this->session->userdata('industria') == null ? '-' : $this->session->userdata('industria');
-          $data['Factura_anual']   = $this->session->userdata('Factura_anual') == null ? '-' : $this->session->userdata('Factura_anual');
-          $data['Tamanio']         = $tamanio;
-          $data['Prioridad']       = $html;
-          $data['Infraestructura'] = $this->session->userdata('Infraestructura') == null ? '-' : $this->session->userdata('Infraestructura');
+          //$tamanio = $this->session->userdata('Tamanio') == null ? '-' : $this->session->userdata('Tamanio').' empleados';
+          $data['Industria']       = $this->session->userdata('tipo_industria') == null ? '-' : $this->session->userdata('tipo_industria');
+          $data['Factura_anual']   = /*$this->session->userdata('Factura_anual') == null ?*/ '-' /*: $this->session->userdata('Factura_anual')*/;
+          $data['Tamanio']         = /*$tamanio*/'-';
+          $data['Prioridad']       = $this->session->userdata('ayuda') == null ? '-' : $this->session->userdata('ayuda');
+          $data['Infraestructura'] = $this->session->userdata('solucion') == null ? '-' : $this->session->userdata('solucion');
           $data['error']           = EXIT_SUCCESS;
       }catch(Exception $e){
           $data['msj'] = $e->getMessage();
