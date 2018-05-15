@@ -12,6 +12,9 @@ var pant 		   = 0;
 var idConfigurator = null;
 function buttonNext(){
 	pant++;
+	if(pant == 1){
+		$('#next').prop("disabled", true);
+	}
 	homePage.addClass('animated fadeOutUp');
 	congigurator.addClass('animated fadeInDown');
 	if(pant >= 2){
@@ -294,6 +297,9 @@ var configurador = null;
 var ayuda_negocio = null;
 function ayudaCard(ayuda){
 	ayuda_negocio = ayuda;
+	if(ayuda_negocio != null || ayuda_negocio != ''){
+		$('#next').prop("disabled", false);
+	}
 }
 function validarCampos(){
 	var $inputs    = $('form :input');
@@ -335,19 +341,12 @@ function ConfirmarRespuestas(){
       }
 	});
 }
-var cont = 0;
-var retos = [];
-function saveDatos(datos, row){
-	if("selected " == "selected"){
-		retos.push(datos);
-		cont = 1;
-	}else if("selected" == ""){
-
-	}
-}
 var solucion = "";
 function saveSolucion(sol){
 	solucion = sol;
+	if(solucion != '' || solucion != null){
+		$('#next').prop("disabled", false);
+	}
 }
 function buttonQuestion(direction){
 	if(direction == 2){
@@ -357,21 +356,29 @@ function buttonQuestion(direction){
 			firstWindow.addClass('opacity-done');
 			firstWindow.addClass('animated fadeOutUp');
 			secondWindow.addClass('animated fadeInUp');
+			$('#next').prop("disabled", true);
+			//$('#prev').prop("disabled", true);
 		}
 		else if(m == 3){
 			$('.opacity-done').removeClass('animated fadeInRight fadeOutLeft fadeInLeft fadeOutRight');
 			secondWindow.addClass('animated fadeOutUp');
 			thirdWindow.addClass('animated fadeInUp');
+			$('#next').prop("disabled", true);
+			//$('#prev').prop("disabled", true);
 		}
 		else if(m == 4){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			thirdWindow.addClass('animated fadeOutUp');
 			fourWindow.addClass('animated fadeInUp');
+			$('#next').prop("disabled", true);
+			//$('#prev').prop("disabled", true);
 		}
 		else if(m == 5){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			fourWindow.addClass('animated fadeOutUp');
 			fiveWindow.addClass('animated fadeInUp');
+			$('#next').prop("disabled", true);
+			//$('#prev').prop("disabled", true);
 		}
 	}
 	else if(direction == 1){
@@ -411,6 +418,9 @@ function selectConfigurator(id, dato){
 	configurador = dato;
 	secondWindow.find('.js-card--large').css('display','none');
 	$('.js-card--large__'+idConfigurator).css('display','block');
+	if(configurador != null || configurador != ''){
+		$('#next').prop("disabled", false);
+	}
 }
 var tipo_ind = "";
 function tipoTamaño(id,tipo){
@@ -418,4 +428,7 @@ function tipoTamaño(id,tipo){
 	tipo_ind = tipo;
 	$('.js-button-select').removeClass('js-selected');
 	idButtonSelect.addClass('js-selected');
+	if(tipo_ind != null || tipo_ind != ''){
+		$('#next').prop("disabled", false);
+	}
 }

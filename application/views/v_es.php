@@ -602,10 +602,10 @@
                     </div>
                 </div>
                 <div class="js-button-next">
-                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="buttonQuestion(1);buttonNext();">
+                    <button id="prev" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="buttonQuestion(1);buttonNext();">
                         <i class="mdi mdi-keyboard_arrow_up"></i>
                     </button>
-                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="buttonQuestion(2);buttonNext();">
+                    <button id="next" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="buttonQuestion(2);buttonNext();">
                         <i class="mdi mdi-keyboard_arrow_down"></i>
                     </button>
                 </div>
