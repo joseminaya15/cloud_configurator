@@ -295,7 +295,10 @@ function mostrarDatos(){
 }
 var configurador = null;
 var ayuda_negocio = null;
-function ayudaCard(ayuda){
+function ayudaCard(id,ayuda){
+	var idButtonCard = $('#'+id);
+	$('.js-button-select').removeClass('js-selected');
+	idButtonCard.addClass('js-selected');
 	ayuda_negocio = ayuda;
 	if(ayuda_negocio != null || ayuda_negocio != ''){
 		$('#next').prop("disabled", false);
@@ -436,12 +439,16 @@ function selectConfigurator(id, dato){
 var tipo_ind = "";
 function tipoTamaño(id,tipo){
 	var idButtonSelect = $('#'+id);
+	var idButtonToggle = $('#'+id+'.js-button--toggle');
 	tipo_ind = tipo;
 	$('.js-button-select').removeClass('js-selected');
-	thirdWindow.find('.js-card--large').addClass('js-card--hide');
-	idButtonSelect.parents('.js-card--large').removeClass('js-card--hide');
 	idButtonSelect.addClass('js-selected');
 	if(tipo_ind != null || tipo_ind != ''){
 		$('#next').prop("disabled", false);
 	}
+	idButtonToggle.click(function(){
+		thirdWindow.find('.js-card--large').toggleClass('js-card--hide');
+		idButtonSelect.parents('.js-card--large').addClass('js-card--show');
+		console.log("entra");
+	})
 }
