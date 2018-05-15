@@ -411,6 +411,7 @@ function selectConfigurator(id, dato){
 	configurador = dato;
 	secondWindow.find('.js-card--large').css('display','none');
 	$('.js-card--large__'+idConfigurator).css('display','block');
+	$('.js-question--title').find('strong').text('/ '+idConfigurator);
 }
 var tipo_ind = "";
 function tipoTamaño(id,tipo){
