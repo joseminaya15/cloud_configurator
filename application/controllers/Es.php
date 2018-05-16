@@ -25,6 +25,7 @@ class Es extends CI_Controller {
     $data['Infraestructura'] = $this->session->userdata('Infraestructura');
     $explode                 = explode(",", $this->session->userdata('Prioridad'));
     $data['idIndustria']     = '';
+    $data['idIndustria']     = '';
     $html                    = '';
     foreach ($explode as $key){ 
       $html .= '<li>'.$key.'</li>';

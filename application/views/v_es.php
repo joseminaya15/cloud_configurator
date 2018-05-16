@@ -684,7 +684,6 @@
                      $('#empresa').val("<?php echo $comp ?>");
                      $('#pais').val("<?php echo $pais_link ?>");
                      $('#telefono').css('border-color','red');
-                     nameIndustria("<?php echo $idIndustria ?>");
                  }
                  /*var windowQestion = $('.js-'+id);
                     $('.opacity-done').removeClass('animated fadeInDown fadeOutDown fadeInUp fadeOutUp');
