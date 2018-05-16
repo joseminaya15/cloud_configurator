@@ -15,8 +15,9 @@ function buttonNext(){
 	if(pant == 1){
 		$('#next').prop("disabled", true);
 	}
+	congigurator.removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 	homePage.addClass('animated fadeOutUp');
-	congigurator.addClass('animated fadeInDown');
+	congigurator.addClass('animated fadeInUp');
 	if(pant >= 2){
 		var empleados = $('#textOperar').text();
 		if(pant == 5){
@@ -333,7 +334,7 @@ function buttonQuestion(direction){
 	var empleados = $('#textOperar').text();
 	if(direction == 2){
 		m++;
-		if(m == 2){			
+		if(m == 2){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			firstWindow.addClass('opacity-done');
 			firstWindow.addClass('animated fadeOutUp');
@@ -396,7 +397,9 @@ function buttonQuestion(direction){
 		}
 		else if(m < 1){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
-			firstWindow.addClass('animated fadeOutRight');
+			homePage.removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+			homePage.addClass('animated fadeInDown');
+			congigurator.addClass('animated fadeOutDown');
 			m = 1;
 			return;
 		}

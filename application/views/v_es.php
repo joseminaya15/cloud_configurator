@@ -673,7 +673,7 @@
                     homePage.css('display','none');
                     firstWindow.css('display','none');
                     $('.opacity-done').removeClass('animated fadeInDown fadeOutDown fadeInUp fadeOutUp');
-                    windowQestion.addClass('animated fadeInDown');
+                    windowQestion.addClass('animated fadeInUp');
                     $('#email').val("<?php echo $email_link ?>");
                     $('#nombre_completo').val("<?php echo $nombre_comple ?>");
                     if("<?php echo $comp ?>" == ''){
