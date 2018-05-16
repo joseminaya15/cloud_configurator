@@ -685,9 +685,6 @@
                      $('#pais').val("<?php echo $pais_link ?>");
                      $('#telefono').css('border-color','red');
                  }
-                 /*var windowQestion = $('.js-'+id);
-                    $('.opacity-done').removeClass('animated fadeInDown fadeOutDown fadeInUp fadeOutUp');
-                    windowQestion.addClass('animated fadeInDown');*/
              });
         </script>
     </body>
