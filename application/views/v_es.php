@@ -667,14 +667,18 @@
             } else {
                 $('select').selectpicker();
             }
+            var confirmar = '';
              $(window).load(function(){
                  if(<?php echo $pantalla1 ?> == 5) {
+                    confirmar = 1;
                     var windowQestion = $('.js-window5');
                     homePage.css('display','none');
                     firstWindow.css('display','none');
                     $('.opacity-done').removeClass('animated fadeInDown fadeOutDown fadeInUp fadeOutUp');
                     windowQestion.addClass('animated fadeInUp');
                     //
+                    $('#next').prop("disabled", true);
+                    $('#prev').prop("disabled", true);
                     $("#relacion").val('0');
                     $('.selectpicker').selectpicker('refresh');
                     $('#industria').text(<?php echo '"'.$Industria.'"' ?>);
