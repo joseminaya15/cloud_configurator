@@ -669,21 +669,23 @@
             }
              $(window).load(function(){
                  if(<?php echo $pantalla1 ?> == 5) {
-                     var windowQestion = $('.js-'+'window5');
+                    var windowQestion = $('.js-window5');
+                    homePage.css('display','none');
+                    firstWindow.css('display','none');
                     $('.opacity-done').removeClass('animated fadeInDown fadeOutDown fadeInUp fadeOutUp');
                     windowQestion.addClass('animated fadeInDown');
-                     $('#email').val("<?php echo $email_link ?>");
-                     $('#nombre_completo').val("<?php echo $nombre_comple ?>");
-                     if("<?php echo $comp ?>" == ''){
-                         $('#empresa').css('border-color','red');
-                     }
-                     if("<?php echo $tit ?>" == ''){
-                         $('#cargo').css('border-color','red');
-                     }
-                     $('#cargo').val("<?php echo $tit ?>");
-                     $('#empresa').val("<?php echo $comp ?>");
-                     $('#pais').val("<?php echo $pais_link ?>");
-                     $('#telefono').css('border-color','red');
+                    $('#email').val("<?php echo $email_link ?>");
+                    $('#nombre_completo').val("<?php echo $nombre_comple ?>");
+                    if("<?php echo $comp ?>" == ''){
+                     $('#empresa').css('border-color','red');
+                    }
+                    if("<?php echo $tit ?>" == ''){
+                     $('#cargo').css('border-color','red');
+                    }
+                    $('#cargo').val("<?php echo $tit ?>");
+                    $('#empresa').val("<?php echo $comp ?>");
+                    $('#pais').val("<?php echo $pais_link ?>");
+                    $('#telefono').css('border-color','red');
                  }
              });
         </script>
