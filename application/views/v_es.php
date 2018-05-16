@@ -677,11 +677,13 @@
                     //
                     $("#relacion").val('0');
                     $('.selectpicker').selectpicker('refresh');
-                    $('#industria').text(<?php echo $Industria ?>);
-                    $('#factura').text(<?php echo $Factura_anual ?>)
-                    $('#tamanio').text(<?php echo $Tamanio ?>);
-                    $('#ayuda').append(<?php echo $Prioridad ?>);
-                    $('#infraestructura').text(<?php echo $Infraestructura ?>);
+                    $('#industria').text(<?php echo '"'.$Industria.'"' ?>);
+                    $('#factura').text(<?php echo '"'.$Factura_anual.'"' ?>)
+                    $('#tamanio').text(<?php echo '"'.$Tamanio.'"' ?>);
+                    $('#ayuda').append(<?php echo '"'.$Prioridad.'"' ?>);
+                    $('#infraestructura').text(<?php echo '"'.$Infraestructura.'"' ?>);
+                    $('.js-card-confirmacion').addClass('js-disabled');
+                    $('.js-formulario').removeClass('js-disabled');
                     //
                     $('#email').val("<?php echo $email_link ?>");
                     $('#nombre_completo').val("<?php echo $nombre_comple ?>");

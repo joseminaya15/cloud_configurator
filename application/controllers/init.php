@@ -2,8 +2,8 @@
 
 session_start();
 
-$client_id     = "78i2bmy86c4cof";
-$client_secret = "J2LeEbcAaQfJaE20";
+$client_id     = "789a3qdz8kro7w";
+$client_secret = "g6EEY96bQjbhoCN0";
 $redirect_uri  = "http://test.brainblue.com/cloud_configurator/callback";
 $csrf_token    = random_int(1111111, 9999999);
 $scopes        = "r_basicprofile%20r_emailaddress";
@@ -23,8 +23,8 @@ function curl($url, $parameters){
 }
 
 function getCallback(){
-    $client_id     = "78i2bmy86c4cof";
-    $client_secret = "J2LeEbcAaQfJaE20";
+    $client_id     = "789a3qdz8kro7w";
+    $client_secret = "g6EEY96bQjbhoCN0";
     $redirect_uri  = "http://test.brainblue.com/cloud_configurator/callback";
     $csrf_token    = random_int(1111111, 9999999);
     $scopes        = "r_basicprofile%20r_emailaddress";
