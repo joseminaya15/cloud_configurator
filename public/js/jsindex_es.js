@@ -18,6 +18,7 @@ function buttonNext(){
 	homePage.addClass('animated fadeOutUp');
 	congigurator.addClass('animated fadeInDown');
 	if(pant >= 2){
+		var empleados = $('#textOperar').text();
 		if(pant == 5){
 			mostrarDatos();
 		}
@@ -26,6 +27,8 @@ function buttonNext(){
 					pantalla  : pant,
 				    ayuda 	  : ayuda_negocio,
 				    tipo_ind  : tipo_ind,
+				    factu     : facturacion,
+				    empleados : empleados,
 				    solucion  : solucion},
 			url  : 'es/buttonNext',
 			type : 'POST'
@@ -232,6 +235,12 @@ function operar(id,tipo){
 			return;
 		}
 	}
+	var empleados = $('#textOperar').text();
+	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
+		if(tipo_ind != null && empleados != null && facturacion != null){
+			$('#next').prop("disabled", false);
+		}
+	}
 }
 function mostrarDatos(){
 	$.ajax({
@@ -406,7 +415,20 @@ function tipoTamaño(id,tipo){
 	$('.js-card--tipo').toggleClass('js-card--show');
 	$('.js-card--empresa').toggleClass('animated fadeInLeft');
 	idButtonSelect.toggleClass('js-selected');
-	if(tipo_ind != null || tipo_ind != ''){
-		$('#next').prop("disabled", false);
+	var empleados = $('#textOperar').text();
+	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
+		if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
+			$('#next').prop("disabled", false);
+		}
+	}
+}
+var facturacion = null;
+function selectFacturacion(id){
+	facturacion = $('#'+id).val();
+	var empleados = $('#textOperar').text();
+	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
+		if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
+			$('#next').prop("disabled", false);
+		}
 	}
 }

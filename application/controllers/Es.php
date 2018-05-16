@@ -440,8 +440,8 @@ class Es extends CI_Controller {
       $data['msj']   = null;
       try {
           $data['Industria']       = $this->session->userdata('tipo_industria') == null ? '-' : $this->session->userdata('tipo_industria');
-          $data['Factura_anual']   = /*$this->session->userdata('Factura_anual') == null ?*/ '-' /*: $this->session->userdata('Factura_anual')*/;
-          $data['Tamanio']         = /*$this->session->userdata('Tamanio') == null ? '-' : $this->session->userdata('Tamanio').' empleados'*/'-';
+          $data['Factura_anual']   = $this->session->userdata('factura_anual') == null ? '-' : $this->session->userdata('factura_anual');
+          $data['Tamanio']         = $this->session->userdata('tamanio') == null ? '-' : $this->session->userdata('tamanio').' empleados';
           $data['Prioridad']       = $this->session->userdata('ayuda') == null ? '-' : $this->session->userdata('ayuda');
           $data['Infraestructura'] = $this->session->userdata('solucion') == null ? '-' : $this->session->userdata('solucion');
           $data['error']           = EXIT_SUCCESS;
@@ -459,6 +459,8 @@ class Es extends CI_Controller {
           $ayuda       = $this->input->post('ayuda');
           $tipo_ind    = $this->input->post('tipo_ind');
           $solucion    = $this->input->post('solucion');
+          $factura     = $this->input->post('factu');
+          $tamanio     = $this->input->post('empleados');
           $retos       = $this->input->post('retos');
           if($pantalla == PANT_UNO){
               $arrayInsert   = array('producto' => $config);
@@ -470,13 +472,13 @@ class Es extends CI_Controller {
               $this->M_solicitud->updateDatos($arrayUpdate, $this->session->userdata('id_sol'), 'solicitud');
               $session     = array('ayuda'   => $ayuda);
           }else if($pantalla == PANT_TRES){
-              $arrayUpdate = array('tipo_industria' => $tipo_ind/*,
+              $arrayUpdate = array('tipo_industria' => $tipo_ind,
                                     'tamanio'        => $tamanio,
-                                    'factura_anual'  => $factura*/);
+                                    'factura_anual'  => $factura);//
               $this->M_solicitud->updateDatos($arrayUpdate, $this->session->userdata('id_sol'), 'solicitud');
-              $session     = array('tipo_industria' => $tipo_ind/*,
+              $session     = array('tipo_industria' => $tipo_ind,
                                    'tamanio'        => $tamanio,
-                                   'factura_anual'  => $factura*/);
+                                   'factura_anual'  => $factura);
           }else if($pantalla == PANT_CUATRO){
               $arrayUpdate = array('solucion' => $solucion);
               $this->M_solicitud->updateDatos($arrayUpdate, $this->session->userdata('id_sol'), 'solicitud');
