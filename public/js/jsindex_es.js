@@ -198,13 +198,15 @@ function validateEmail(email){
 }
 var i = 1;
 function operar(id,tipo){
-	var buttonSelect = $('#'+id+'.select-one');
+	var buttonSelect = $('#'+id);
+	var cardSelected = buttonSelect.parents('.js-card--large__select');
 	if(tipo == 2){
 		i++;
 		if(i == 2){
 			$('#textOperar').text('0 - 100');
 			$("#facturacion").val('0');
 			$('.selectpicker').selectpicker('refresh');
+			cardSelected.addClass('js-selected');
 		}else if(i == 3){
 			$('#textOperar').text('100 - 500');
 		}else if(i == 4){
@@ -229,6 +231,7 @@ function operar(id,tipo){
 			$('#textOperar').text('Seleccione');
 			$("#facturacion").val('0');
 			$('.selectpicker').selectpicker('refresh');
+			cardSelected.removeClass('js-selected');
 			return;
 		}else if(i < 1){
 			i = 1;
