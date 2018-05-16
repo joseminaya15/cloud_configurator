@@ -506,6 +506,14 @@
                                     <div class="col-xs-12 p-0">
                                         <div class="js-respuestas">
                                             <ul>
+                                                <li id="industria">Retail</li>
+                                            </ul>
+                                            <button id="window3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id)">Editar</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 p-0">
+                                        <div class="js-respuestas">
+                                            <ul>
                                                 <li id="tamanio">1 - 50</li>
                                             </ul>
                                             <button id="window3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id)">Editar</button>
