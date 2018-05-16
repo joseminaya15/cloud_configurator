@@ -255,7 +255,6 @@ function mostrarDatos(){
           	$('#industria').text(data.Industria);
           	$('#factura').text(data.Factura_anual)
            	$('#tamanio').text(data.Tamanio);
-           	//$('#prioridad').find('li').remove();
            	$('#ayuda').append(data.Prioridad);
            	$('#infraestructura').text(solucion);
         }else{
@@ -335,28 +334,24 @@ function buttonQuestion(direction){
 			firstWindow.addClass('animated fadeOutUp');
 			secondWindow.addClass('animated fadeInUp');
 			$('#next').prop("disabled", true);
-			//$('#prev').prop("disabled", true);
 		}
 		else if(m == 3){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			secondWindow.addClass('animated fadeOutUp');
 			thirdWindow.addClass('animated fadeInUp');
 			$('#next').prop("disabled", true);
-			//$('#prev').prop("disabled", true);
 		}
 		else if(m == 4){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			thirdWindow.addClass('animated fadeOutUp');
 			fourWindow.addClass('animated fadeInUp');
 			$('#next').prop("disabled", true);
-			//$('#prev').prop("disabled", true);
 		}
 		else if(m == 5){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			fourWindow.addClass('animated fadeOutUp');
 			fiveWindow.addClass('animated fadeInUp');
 			$('#next').prop("disabled", true);
-			//$('#prev').prop("disabled", true);
 		}
 	}
 	else if(direction == 1){
