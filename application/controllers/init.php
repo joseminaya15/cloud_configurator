@@ -2,9 +2,9 @@
 
 session_start();
 
-$client_id     = "864xp2wdu9eghe";
-$client_secret = "M6NxoP4EWlaADF2U";
-$redirect_uri  = "http://www.sap-latam.com/sap_business_one/callback";
+$client_id     = "78i2bmy86c4cof";
+$client_secret = "J2LeEbcAaQfJaE20";
+$redirect_uri  = "http://test.brainblue.com/cloud_configurator/callback";
 $csrf_token    = random_int(1111111, 9999999);
 $scopes        = "r_basicprofile%20r_emailaddress";
 
@@ -23,9 +23,9 @@ function curl($url, $parameters){
 }
 
 function getCallback(){
-    $client_id     = "864xp2wdu9eghe";
-    $client_secret = "M6NxoP4EWlaADF2U";
-    $redirect_uri  = "http://www.sap-latam.com/sap_business_one/callback";
+    $client_id     = "78i2bmy86c4cof";
+    $client_secret = "J2LeEbcAaQfJaE20";
+    $redirect_uri  = "http://test.brainblue.com/cloud_configurator/callback";
     $csrf_token    = random_int(1111111, 9999999);
     $scopes        = "r_basicprofile%20r_emailaddress";
     if (isset($_REQUEST['code'])){

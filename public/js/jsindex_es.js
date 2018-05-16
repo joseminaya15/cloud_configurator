@@ -345,7 +345,7 @@ function ConfirmarRespuestas(){
 	});
 }
 var solucion = "";
-function saveSolucion(sol){
+function saveSolucion(id ,sol){
 	solucion = sol;
 	if(solucion != '' || solucion != null){
 		$('#next').prop("disabled", false);
