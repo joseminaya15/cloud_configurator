@@ -400,9 +400,10 @@ function tipoTamaño(id,tipo){
 	var idButtonSelect = $('#'+id);
 	var cardIndustrias = idButtonSelect.parents('.js-card--large');
 	tipo_ind = tipo;
-	thirdWindow.find('.js-card--large').toggleClass('js-card--large__tipo');
-	thirdWindow.find('.js-card--large').find('js-card--large__button').find('button').removeClass('js-selected');
+	thirdWindow.find('.js-card--tipo').find('.js-card--large').toggleClass('js-card--large__tipo');
+	thirdWindow.find('.js-card--tipo').find('.js-card--large').find('js-card--large__button').find('button').removeClass('js-selected');
 	cardIndustrias.removeClass('js-card--large__tipo');
+	$('.js-card--tipo').toggleClass('js-card--show');
 	$('.js-card--empresa').toggleClass('animated fadeInLeft');
 	idButtonSelect.toggleClass('js-selected');
 	if(tipo_ind != null || tipo_ind != ''){

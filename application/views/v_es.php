@@ -403,7 +403,7 @@
                                             <small>N&uacute;mero de empleados</small>
                                         </div>
                                     </div>
-                                    <div class="js-card--large__button">
+                                    <div class="js-card--large__select">
                                         <button id="buttonMenos" class="mdl-button mdl-js-button mdl-button--icon select-one" onclick="operar(this.id,1)"><i class="mdi mdi-remove"></i></button>
                                         <span id="textOperar">Seleccione</span>
                                         <button id="buttonMas" class="mdl-button mdl-js-button mdl-button--icon select-one" onclick="operar(this.id,2)"><i class="mdi mdi-add"></i></button>
@@ -418,16 +418,14 @@
                                             <small>Facturaci&oacute;n anual</small>
                                         </div>
                                     </div>
-                                    <div class="js-card--large__button">
-                                        <div class="col-xs-12">
-                                            <div class="js-select js-facturacion">
-                                                <select class="selectpicker" id="facturacion" name="facturacion" title="Seleccione" onchange="selectFacturacion(this.id)">
-                                                    <option value="10 - 30 Millones de dólares">10 - 30 Millones de d&oacute;lares</option>
-                                                    <option value="30 - 100 Millones de dólares">30 - 100 Millones de d&oacute;lares</option>
-                                                    <option value="100 Millones de dólares a más">100 Millones de d&oacute;lares a m&aacute;s</option>
-                                                    <option value="No poseo información">No poseo información</option>
-                                                </select>
-                                            </div>
+                                    <div class="js-card--large__select">
+                                        <div class="js-select js-facturacion">
+                                            <select class="selectpicker" id="facturacion" name="facturacion" title="Seleccione" onchange="selectFacturacion(this.id)">
+                                                <option value="10 - 30 Millones de dólares">10 - 30 Millones de d&oacute;lares</option>
+                                                <option value="30 - 100 Millones de dólares">30 - 100 Millones de d&oacute;lares</option>
+                                                <option value="100 Millones de dólares a más">100 Millones de d&oacute;lares a m&aacute;s</option>
+                                                <option value="No poseo información">No poseo información</option>
+                                            </select>
                                         </div>
                                     </div>
                                 </div>

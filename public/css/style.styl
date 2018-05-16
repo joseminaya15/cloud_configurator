@@ -287,6 +287,7 @@ body
 	width 100%
 	max-width 205px
 	margin 10px
+	flex none
 	.js-card--large__content
 		border 1px solid $color
 		border-radius 10px
@@ -337,6 +338,47 @@ body
 			&:hover
 				transitionBgColor()
 				background-color $color
+	.js-card--large__select
+		flexCenter()
+		height 36px
+		justify-content center
+		border 1px solid $color
+		margin 10px 0
+		#textOperar
+			font-family $medium
+			font-size 16px
+			width 100%
+			max-width 115px
+			text-align center
+		.mdl-button--icon
+			i
+				color #FFFFFF
+		.js-select
+			.bootstrap-select
+				width 205px !important
+				background-color transparent
+				border 1px solid $color
+				color #FFFFFF
+				outline none !important
+				.dropdown-toggle
+					background-color transparent !important
+					color #FFFFFF
+					border none
+					outline 0 !important
+					box-shadow none !important
+					.filter-option
+						font-size 16px
+				.dropdown-menu
+					background-color transparent !important
+					li
+						border 1px solid $color
+						margin 3px 0
+						a
+							text-align center
+							color #FFFFFF
+							font-size 15px
+							outline none
+							font-family $medium
 .js-card-confirmacion
 	transitionMaxWidth()
 	width 100%
@@ -536,11 +578,13 @@ body
 	z-index -5
 .js-card--tipo
 	flexCenter()
-	flex-wrap wrap
-	width 100%
+	&.js-card--show
+		max-width 225px
+		width 100%
 .js-card--empresa
 	flexCenter center()
 	position relative
+	align-items flex-start
 	&.fadeInLeft
 		opacity 1
 		z-index 5
