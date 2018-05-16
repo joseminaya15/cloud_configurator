@@ -10,6 +10,7 @@ var arr_pant       = [];
 var m 			   = 1;
 var pant 		   = 0;
 var idConfigurator = null;
+var confirmar      = null;
 function buttonNext(){
 	pant++;
 	if(pant == 1){
@@ -301,6 +302,8 @@ function isEmpty(val){
 }
 function ConfirmarRespuestas(){
 	confirmar = 1;
+	$('.js-card-confirmacion').addClass('js-disabled');
+	$('.js-formulario').removeClass('js-disabled');
 	$('.button-arrow.button-prev').css("display","none");
 	$('.mdl-card-confirmacion').addClass('confirmar');
 	$('.fp-controlArrow.fp-prev').css("display","none");

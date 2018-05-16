@@ -540,7 +540,7 @@
                                     <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button--confirmar" onclick="ConfirmarRespuestas()">Confirmar respuestas</button>
                                 </div>
                             </div>
-                            <form class="js-formulario disabled text-left">
+                            <form class="js-formulario js-disabled text-left">
                                 <div class="js-datos">
                                     <div class="js-datos__personal">
                                         <p><i class="mdi mdi-arrow_downward"></i>Introduzca aqu&iacute; sus datos</p>
