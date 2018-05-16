@@ -409,16 +409,14 @@ function selectConfigurator(id, dato){
 var tipo_ind = "";
 function tipoTamaño(id,tipo){
 	var idButtonSelect = $('#'+id);
-	var idButtonToggle = $('#'+id+'.js-button--toggle');
+	var cardIndustrias = idButtonSelect.parents('.js-card--large');
 	tipo_ind = tipo;
-	$('.js-button-select').removeClass('js-selected');
-	idButtonSelect.addClass('js-selected');
+	thirdWindow.find('.js-card--large').toggleClass('js-card--large__tipo');
+	thirdWindow.find('.js-card--large').find('js-card--large__button').find('button').removeClass('js-selected');
+	cardIndustrias.removeClass('js-card--large__tipo');
+	$('.js-card--empresa').toggleClass('animated fadeInLeft');
+	idButtonSelect.toggleClass('js-selected');
 	if(tipo_ind != null || tipo_ind != ''){
 		$('#next').prop("disabled", false);
 	}
-	idButtonToggle.click(function(){
-		thirdWindow.find('.js-card--large').toggleClass('js-card--hide');
-		idButtonSelect.parents('.js-card--large').addClass('js-card--show');
-		console.log("entra");
-	})
 }

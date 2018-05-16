@@ -314,7 +314,7 @@
                         </div>
                         <div class="js-card__flex js-card__flex--relative">
                             <div class="js-card--tipo">
-                                <div class="js-card--large js-card--large__tipo">
+                                <div class="js-card--large">
                                     <div class="js-card--large__content">
                                         <div class="js-card--large__content-tipo">
                                             <img src="<?php echo RUTA_IMG?>cards/servicios.png">
@@ -327,7 +327,7 @@
                                         <button id="buttonCard15" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Servicios Profesionales')">Seleccione</button>
                                     </div>
                                 </div>
-                                <div class="js-card--large js-card--large__tipo">
+                                <div class="js-card--large">
                                     <div class="js-card--large__content">
                                         <div class="js-card--large__content-tipo">
                                             <img src="<?php echo RUTA_IMG?>cards/retail.png">
@@ -340,7 +340,7 @@
                                         <button id="buttonCard16" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Servicios Financieros')">Seleccione</button>
                                     </div>
                                 </div>
-                                <div class="js-card--large js-card--large__tipo">
+                                <div class="js-card--large">
                                     <div class="js-card--large__content">
                                         <div class="js-card--large__content-tipo">
                                             <img src="<?php echo RUTA_IMG?>cards/distribucion.png">
@@ -353,7 +353,7 @@
                                         <button id="buttonCard17" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Comercio Minorista')">Seleccione</button>
                                     </div>
                                 </div>
-                                <div class="js-card--large js-card--large__tipo">
+                                <div class="js-card--large">
                                     <div class="js-card--large__content">
                                         <div class="js-card--large__content-tipo">
                                             <img src="<?php echo RUTA_IMG?>cards/productos.png">
@@ -366,7 +366,7 @@
                                         <button id="buttonCard18" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Comercio Mayorista')">Seleccione</button>
                                     </div>
                                 </div>
-                                <div class="js-card--large js-card--large__tipo">
+                                <div class="js-card--large">
                                     <div class="js-card--large__content">
                                         <div class="js-card--large__content-tipo">
                                             <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
@@ -379,7 +379,7 @@
                                         <button id="buttonCard19" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Productos de Consumo')">Seleccione</button>
                                     </div>
                                 </div>
-                                <div class="js-card--large js-card--large__tipo">
+                                <div class="js-card--large">
                                     <div class="js-card--large__content">
                                         <div class="js-card--large__content-tipo">
                                             <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
