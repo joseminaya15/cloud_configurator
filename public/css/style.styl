@@ -261,6 +261,16 @@ body
 				flipCardFrontHover()
 			.js-card-flip__back
 				flipCardBackHover()
+		&.js-card-imagen__static
+			.js-card-flip__front
+				flipCardFrontHover()
+			.js-card-flip__back
+				flipCardBackHover()
+				button
+					transitionBgColor()
+					background-color #000000
+					color $color
+					border-radius 5px
 .js-card-content
 	padding 20px 5px 20px 0
 	p
