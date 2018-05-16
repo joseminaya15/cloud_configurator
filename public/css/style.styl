@@ -207,6 +207,7 @@ body
 	justify-content center
 	margin auto
 	flex-direction column
+	position relative
 .js-window1
 	h2
 		color #FFFFFF
@@ -614,6 +615,28 @@ body
 .js-disabled
 	opacity .3
 	pointer-events none
+.js-carousel
+	position relative
+	width 100%
+	max-width 1000px
+.owl-theme 
+	.owl-nav
+		flexCenter()
+		position absolute
+		top 0
+		bottom 0
+		z-index -1
+		width 100%
+		.owl-prev
+			position absolute
+			left 0
+			margin-left -40px
+			background-color $color
+		.owl-next
+			position absolute
+			right 0
+			margin-right -20px
+			background-color $color
 /*SCROLL*/
 ::-webkit-scrollbar
 	width 8px

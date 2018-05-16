@@ -419,6 +419,26 @@ function selectConfigurator(id, dato){
 	if(configurador != null || configurador != ''){
 		$('#next').prop("disabled", false);
 	}
+	if(configurador == 'HR'){
+		$('.owl-carousel').owlCarousel({
+			lazyLoad : true,
+			responsive : {
+				0 : {
+					items : 1
+				},
+				1200:{
+					items : 4
+				}
+			},
+			navigation : false,
+			nav : true,
+			loop : false,
+			dots: false,
+			autoplay : false,
+			autoplayTimeout : 5000,
+			navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+		});
+	}
 }
 var tipo_ind = "";
 function tipoTamaño(id,tipo){

@@ -16,6 +16,8 @@
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>mdl/material.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap-select/css/bootstrap-select.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap/css/bootstrap.min.css?v=<?php echo time();?>">
+        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.theme.default.min.css">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>font-awesome.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>material-icons.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>bentonsans.css?v=<?php echo time();?>">
@@ -198,108 +200,128 @@
                                     <button id="buttonCard6" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de ventas online quiero crear experiencias de compra únicas e simplificadas.')">Seleccione</button>
                                 </div>
                             </div>
-                            <div class="js-card--large js-card--large__HR js-card--large__flex">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-imagen">
-                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                            <div class="js-carousel">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <div class="js-card--large js-card--large__HR js-card--large__flex">
+                                            <div class="js-card--large__content">
+                                                <div class="js-card--large__content-imagen">
+                                                    <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                                </div>
+                                                <div class="js-card--large__content-text">
+                                                    <p>Como responsable de HR quiero consolidar y optimizar los procesos centrales de RRHH.</p>
+                                                </div>
+                                            </div>
+                                            <div class="js-card--large__button">
+                                                <button id="buttonCard7" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de HR quiero consolidar y optimizar los procesos centrales de RRHH.')">Seleccione</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="js-card--large__content-text">
-                                        <p>Como responsable de HR quiero consolidar y optimizar los procesos centrales de RRHH.</p>
+                                    <div class="item">
+                                        <div class="js-card--large js-card--large__HR js-card--large__flex">
+                                            <div class="js-card--large__content">
+                                                <div class="js-card--large__content-imagen">
+                                                    <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                                </div>
+                                                <div class="js-card--large__content-text">
+                                                    <p>Como responsable de HR quiero alinear las metas de la empresa con la recompensa de mis empleados.</p>
+                                                </div>
+                                            </div>
+                                            <div class="js-card--large__button">
+                                                <button id="buttonCard8" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de HR quiero consolidar y optimizar los procesos centrales de RRHH.')">Seleccione</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button id="buttonCard7" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de HR quiero consolidar y optimizar los procesos centrales de RRHH.')">Seleccione</button>
-                                </div>
-                            </div>
-                            <div class="js-card--large js-card--large__HR js-card--large__flex">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-imagen">
-                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                    <div class="item">
+                                        <div class="js-card--large js-card--large__HR js-card--large__flex">
+                                            <div class="js-card--large__content">
+                                                <div class="js-card--large__content-imagen">
+                                                    <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                                </div>
+                                                <div class="js-card--large__content-text">
+                                                    <p>Como responsable de HR quiero desarrollar a mis empleados de una manera simple y colaborativa.</p>
+                                                </div>
+                                            </div>
+                                            <div class="js-card--large__button">
+                                                <button id="buttonCard9" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de HR quiero desarrollar a mis empleados de una manera simple y colaborativa.')">Seleccione</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="js-card--large__content-text">
-                                        <p>Como responsable de HR quiero alinear las metas de la empresa con la recompensa de mis empleados.</p>
+                                    <div class="item">
+                                        <div class="js-card--large js-card--large__HR js-card--large__flex">
+                                            <div class="js-card--large__content">
+                                                <div class="js-card--large__content-imagen">
+                                                    <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                                </div>
+                                                <div class="js-card--large__content-text">
+                                                    <p>Como responsable de HR quiero retener a los mejores talentos con un plan de compensaci&oacute;n atractivo.</p>
+                                                </div>
+                                            </div>
+                                            <div class="js-card--large__button">
+                                                <button id="buttonCard10" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de HR quiero retener a los mejores talentos con un plan de compensación atractivo.')">Seleccione</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button id="buttonCard8" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de HR quiero consolidar y optimizar los procesos centrales de RRHH.')">>Seleccione</button>
-                                </div>
-                            </div>
-                            <div class="js-card--large js-card--large__HR js-card--large__flex">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-imagen">
-                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                    <div class="item">
+                                        <div class="js-card--large js-card--large__HR js-card--large__flex">
+                                            <div class="js-card--large__content">
+                                                <div class="js-card--large__content-imagen">
+                                                    <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                                </div>
+                                                <div class="js-card--large__content-text">
+                                                    <p>Como responsable de HR quiero planificar el desarrollo y sucesi&oacute;n de mis mejores talentos</p>
+                                                </div>
+                                            </div>
+                                            <div class="js-card--large__button">
+                                                <button id="buttonCard11" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de HR quiero planificar el desarrollo y sucesión de mis mejores talentos')">Seleccione</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="js-card--large__content-text">
-                                        <p>Como responsable de HR quiero desarrollar a mis empleados de una manera simple y colaborativa.</p>
+                                    <div class="item">
+                                        <div class="js-card--large js-card--large__HR js-card--large__flex">
+                                            <div class="js-card--large__content">
+                                                <div class="js-card--large__content-imagen">
+                                                    <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                                </div>
+                                                <div class="js-card--large__content-text">
+                                                    <p>Como responsable de HR quiero centralizar y agilizar mis procesos de adquisici&oacute;n y contrataci&oacute;n de talentos.</p>
+                                                </div>
+                                            </div>
+                                            <div class="js-card--large__button">
+                                                <button id="buttonCard12" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de HR quiero centralizar y agilizar mis procesos de adquisición y contratación de talentos.')">Seleccione</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button id="buttonCard9" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de HR quiero desarrollar a mis empleados de una manera simple y colaborativa.')">Seleccione</button>
-                                </div>
-                            </div>
-                            <div class="js-card--large js-card--large__HR js-card--large__flex">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-imagen">
-                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                    <div class="item">
+                                        <div class="js-card--large js-card--large__HR js-card--large__flex">
+                                            <div class="js-card--large__content">
+                                                <div class="js-card--large__content-imagen">
+                                                    <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                                </div>
+                                                <div class="js-card--large__content-text">
+                                                    <p>Como responsable de HR quiero aumentar la eficacia de la funci&oacute;n de RRHH accediendo a un conjunto de anal&iacute;ticas listas para usar.</p>
+                                                </div>
+                                            </div>
+                                            <div class="js-card--large__button">
+                                                <button id="buttonCard13" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de HR quiero aumentar la eficacia de la función de RRHH accediendo a un conjunto de analíticas listas para usar.')">Seleccione</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="js-card--large__content-text">
-                                        <p>Como responsable de HR quiero retener a los mejores talentos con un plan de compensaci&oacute;n atractivo.</p>
+                                    <div class="item">
+                                        <div class="js-card--large js-card--large__HR js-card--large__flex">
+                                            <div class="js-card--large__content">
+                                                <div class="js-card--large__content-imagen">
+                                                    <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                                </div>
+                                                <div class="js-card--large__content-text">
+                                                    <p>Como responsable de HR quiero empoderar a los nuevos empleados para lograr una contribuci&oacute;n r&aacute;pida a las metas del negocio.</p>
+                                                </div>
+                                            </div>
+                                            <div class="js-card--large__button">
+                                                <button id="buttonCard14" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de HR quiero empoderar a los nuevos empleados para lograr una contribución rápida a las metas del negocio.')">Seleccione</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button id="buttonCard10" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de HR quiero retener a los mejores talentos con un plan de compensación atractivo.')">Seleccione</button>
-                                </div>
-                            </div>
-                            <div class="js-card--large js-card--large__HR js-card--large__flex">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-imagen">
-                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
-                                    </div>
-                                    <div class="js-card--large__content-text">
-                                        <p>Como responsable de HR quiero planificar el desarrollo y sucesi&oacute;n de mis mejores talentos</p>
-                                    </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button id="buttonCard11" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de HR quiero planificar el desarrollo y sucesión de mis mejores talentos')">Seleccione</button>
-                                </div>
-                            </div>
-                            <div class="js-card--large js-card--large__HR js-card--large__flex">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-imagen">
-                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
-                                    </div>
-                                    <div class="js-card--large__content-text">
-                                        <p>Como responsable de HR quiero centralizar y agilizar mis procesos de adquisici&oacute;n y contrataci&oacute;n de talentos.</p>
-                                    </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button id="buttonCard12" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de HR quiero centralizar y agilizar mis procesos de adquisición y contratación de talentos.')">Seleccione</button>
-                                </div>
-                            </div>
-                            <div class="js-card--large js-card--large__HR js-card--large__flex">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-imagen">
-                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
-                                    </div>
-                                    <div class="js-card--large__content-text">
-                                        <p>Como responsable de HR quiero aumentar la eficacia de la funci&oacute;n de RRHH accediendo a un conjunto de anal&iacute;ticas listas para usar.</p>
-                                    </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button id="buttonCard13" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de HR quiero aumentar la eficacia de la función de RRHH accediendo a un conjunto de analíticas listas para usar.')">Seleccione</button>
-                                </div>
-                            </div>
-                            <div class="js-card--large js-card--large__HR js-card--large__flex">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-imagen">
-                                        <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
-                                    </div>
-                                    <div class="js-card--large__content-text">
-                                        <p>Como responsable de HR quiero empoderar a los nuevos empleados para lograr una contribuci&oacute;n r&aacute;pida a las metas del negocio.</p>
-                                    </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button id="buttonCard14" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de HR quiero empoderar a los nuevos empleados para lograr una contribución rápida a las metas del negocio.')">Seleccione</button>
                                 </div>
                             </div>
                         </div>
@@ -658,6 +680,7 @@
         <script src="<?php echo RUTA_PLUGINS?>bootstrap-select/js/i18n/defaults-es_ES.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>mdl/material.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>toaster/toastr.js?v=<?php echo time();?>"></script>
+        <script src="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.js"></script>
         <script src="<?php echo RUTA_JS?>jsutils.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>jsmenu.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>jsindex_es.js?v=<?php echo time();?>"></script>
