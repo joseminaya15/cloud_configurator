@@ -340,6 +340,7 @@ body
 				background-color $color
 	.js-card--large__select
 		flexCenter()
+		transitionBgColor()
 		height 36px
 		justify-content center
 		border 1px solid $color
@@ -379,6 +380,8 @@ body
 							font-size 15px
 							outline none
 							font-family $medium
+		&.js-selected
+			background-color $color
 .js-card-confirmacion
 	transitionMaxWidth()
 	width 100%
