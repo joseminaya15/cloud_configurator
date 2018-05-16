@@ -436,4 +436,7 @@ function EditQuestion(id){
 	var windowQestion = $('.js-'+id);
 	$('.opacity-done').removeClass('animated fadeInDown fadeOutDown fadeInUp fadeOutUp');
 	windowQestion.addClass('animated fadeInDown');
+    var res = id.substr(6, 1);
+	pant = res;
+	m = res;
 }
