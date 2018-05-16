@@ -232,6 +232,7 @@ function operar(id,tipo){
 			$("#facturacion").val('0');
 			$('.selectpicker').selectpicker('refresh');
 			cardSelected.removeClass('js-selected');
+			$('#facturacion').parents('.js-card--large__select').removeClass('js-selected');
 			return;
 		}else if(i < 1){
 			i = 1;
@@ -429,6 +430,8 @@ var facturacion = null;
 function selectFacturacion(id){
 	facturacion = $('#'+id).val();
 	var empleados = $('#textOperar').text();
+	$('#'+id).parents('.js-card--large__select').addClass('js-selected');
+	console.log(id);
 	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
 		if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
 			$('#next').prop("disabled", false);
