@@ -86,9 +86,9 @@ function solicitarEstimacion(){
 	var terminos		= $('#checkbox-1').is(':checked');
 	var term_cond		= null;
 	var contacto		= null;
-	if(nombre_completo == '' && empresa == '' && email == '' && pais == '' && cargo == '' && telefono == '' && c_email == false && terminos == false){
+	/*if(nombre_completo == '' && empresa == '' && email == '' && pais == '' && cargo == '' && telefono == '' && c_email == false && terminos == false){
 		validarCampos();
-	}
+	}*/
 	if(nombre_completo == null || nombre_completo == ''){
 		msj('error', 'Ingrese su nombre completo');
 		return;
@@ -283,7 +283,7 @@ function ayudaCard(id,ayuda){
 	}
 }
 function validarCampos(){
-	var $inputs    = $('form :input');
+	var $inputs    = $('form .js-input :input');
 	var formvalido = true;
 	$inputs.each(function(){
 		if(isEmpty($(this).val())){
@@ -308,6 +308,8 @@ function ConfirmarRespuestas(){
 	$('.mdl-card-confirmacion').addClass('confirmar');
 	$('.fp-controlArrow.fp-prev').css("display","none");
 	$('.mdl-formulario').removeClass('disabled');
+	$('#next').prop("disabled", true);
+    $('#prev').prop("disabled", true);
 	$.ajax({
 		data : {confirmar : confirmar},
 		url  : 'es/ConfirmarRespuestas',
@@ -463,7 +465,6 @@ function selectFacturacion(id){
 	facturacion = $('#'+id).val();
 	var empleados = $('#textOperar').text();
 	$('#'+id).parents('.js-card--large__select').addClass('js-selected');
-	console.log(id);
 	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
 		if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
 			$('#next').prop("disabled", false);

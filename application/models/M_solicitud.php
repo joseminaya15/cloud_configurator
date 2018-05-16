@@ -22,4 +22,13 @@ class M_solicitud extends  CI_Model{
         }
         return array('error' => EXIT_SUCCESS,'msj' => MSJ_UPT);
     }
+    function getRespUsuario($id_persona) {
+        $sql = "SELECT s.* 
+                  FROM usuario u,
+                       solicitud s
+                WHERE s.Id = u.Id_solicitud
+                 AND u.Id_persona = ?;";
+        $result = $this->db->query($sql, array($id_persona));
+        return $result->result();
+    }
 }
