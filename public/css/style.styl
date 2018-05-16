@@ -369,17 +369,27 @@ body
 					box-shadow none !important
 					.filter-option
 						font-size 16px
+						text-align center
 				.dropdown-menu
 					background-color transparent !important
+					margin 0
+					padding 0
+					border none
 					li
 						border 1px solid $color
-						margin 3px 0
+						margin 5px 0
 						a
+							transitionBgColor()
 							text-align center
 							color #FFFFFF
 							font-size 15px
 							outline none
 							font-family $medium
+							background-color transparent
+							height 34px
+							line-height 30px
+							&:hover
+								background-color $color
 		&.js-selected
 			background-color $color
 .js-card-confirmacion

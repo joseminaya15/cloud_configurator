@@ -415,15 +415,15 @@
                                             <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
                                         </div>
                                         <div class="js-card--large__content-name">
-                                            <small>Facturaci&oacute;n anual</small>
+                                            <small>Facturaci&oacute;n anual en d&oacute;lares</small>
                                         </div>
                                     </div>
                                     <div class="js-card--large__select">
                                         <div class="js-select js-facturacion">
                                             <select class="selectpicker" id="facturacion" name="facturacion" title="Seleccione" onchange="selectFacturacion(this.id)">
-                                                <option value="10 - 30 Millones de dólares">10 - 30 Millones de d&oacute;lares</option>
-                                                <option value="30 - 100 Millones de dólares">30 - 100 Millones de d&oacute;lares</option>
-                                                <option value="100 Millones de dólares a más">100 Millones de d&oacute;lares a m&aacute;s</option>
+                                                <option value="10 - 30 Millones">10 - 30 Millones</option>
+                                                <option value="30 - 100 Millones">30 - 100 Millones</option>
+                                                <option value="100 Millones a más">100 Millones a m&aacute;s</option>
                                                 <option value="No poseo información">No poseo información</option>
                                             </select>
                                         </div>
