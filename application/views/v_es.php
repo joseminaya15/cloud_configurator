@@ -393,7 +393,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="js-card--empresa">
+                            <div class="js-card--empresa opacity-done">
                                 <div class="js-card--large">
                                     <div class="js-card--large__content">
                                         <div class="js-card--large__content-tipo">
