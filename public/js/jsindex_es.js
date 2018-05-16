@@ -409,4 +409,8 @@ function tipoTamaño(id,tipo){
 	if(tipo_ind != null || tipo_ind != ''){
 		$('#next').prop("disabled", false);
 	}
+}-
+function EditQuestion(id, pant){
+	var windowQestion = $('#'+id+'-page');
+	$('.opacity-done').removeClass('animated fadeInDown fadeOutDown fadeInUp fadeOutUp');
 }
