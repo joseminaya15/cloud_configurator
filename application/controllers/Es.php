@@ -27,6 +27,12 @@ class Es extends CI_Controller {
     $data['idIndustria']     = '';
     $data['idIndustria']     = '';
     $html                    = '';
+    $data['Industria']       = $this->session->userdata('tipo_industria') == null ? '-' : $this->session->userdata('tipo_industria');
+    $data['Factura_anual']   = $this->session->userdata('factura_anual') == null ? '-' : $this->session->userdata('factura_anual');
+    $data['Tamanio']         = $this->session->userdata('tamanio') == null ? '-' : $this->session->userdata('tamanio').' empleados';
+    $data['Prioridad']       = $this->session->userdata('ayuda') == null ? '-' : $this->session->userdata('ayuda');
+    $data['Infraestructura'] = $this->session->userdata('solucion') == null ? '-' : $this->session->userdata('solucion');
+    $data['error']           = EXIT_SUCCESS;
     foreach ($explode as $key){ 
       $html .= '<li>'.$key.'</li>';
     }
