@@ -329,6 +329,7 @@ function saveSolucion(id,sol){
 	}
 }
 function buttonQuestion(direction){
+	var empleados = $('#textOperar').text();
 	if(direction == 2){
 		m++;
 		if(m == 2){			
@@ -337,6 +338,9 @@ function buttonQuestion(direction){
 			firstWindow.addClass('animated fadeOutUp');
 			secondWindow.addClass('animated fadeInUp');
 			$('#next').prop("disabled", true);
+			if(tipo_ind != null && empleados != null && facturacion != null){
+				$('#next').prop("disabled", false);
+			}
 		}
 		else if(m == 3){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
@@ -369,7 +373,7 @@ function buttonQuestion(direction){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			thirdWindow.addClass('animated fadeInDown');
 			fourWindow.addClass('animated fadeOutDown');
-			if(tipo_ind != null || tipo_ind != ''){
+			if(tipo_ind != null && empleados != null && facturacion != null){
 				$('#next').prop("disabled", false);
 			}
 		}
@@ -442,4 +446,13 @@ function EditQuestion(id){
     var res = id.substr(6, 1);
 	pant = res;
 	m = res;
+	/*if(tipo_ind != null || tipo_ind != ''){
+		$('#next').prop("disabled", false);
+	}
+	if(ayuda_negocio != null || ayuda_negocio != ''){
+		$('#next').prop("disabled", false);
+	}
+	if(configurador != null || configurador != ''){*/
+		$('#next').prop("disabled", false);
+	//}
 }
