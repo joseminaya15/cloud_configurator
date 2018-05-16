@@ -199,38 +199,29 @@ function operar(id,tipo){
 	if(tipo == 2){
 		i++;
 		if(i == 2){
-			$('#textOperar').text('1 - 50');
+			$('#textOperar').text('0 - 100');
 			$("#facturacion").val('0');
 			$('.selectpicker').selectpicker('refresh');
-		//será máximo de 1000 a 2500
 		}else if(i == 3){
-			$('#textOperar').text('50 - 100');
-		}else if(i == 4){
 			$('#textOperar').text('100 - 500');
-		}else if(i == 5){
+		}else if(i == 4){
 			$('#textOperar').text('500 - 1000');
-		}else if(i == 6){
-			$('#textOperar').text('1000 - 2500');
-		}else if(i == 7){
-			$('#textOperar').text('más de 2500');
-		}else if(i > 7){
-			i = 7;
+		}else if(i == 5){
+			$('#textOperar').text('más de 1000');
+		}else if(i > 5){
+			i = 5;
 			return;
 		}
 	}else if(tipo == 1){
 		i--;
-		if(i == 7){
-			$('#textOperar').text('más de 2500');
-		}else if(i == 6){
-			$('#textOperar').text('1000 - 2500');
-		}else if(i == 5){
-			$('#textOperar').text('500 - 1000');
+		if(i == 5){
+			$('#textOperar').text('Más de 1000');
 		}else if(i == 4){
-			$('#textOperar').text('100 - 500');
+			$('#textOperar').text('500 - 1000');
 		}else if(i == 3){
-			$('#textOperar').text('50 - 100');
+			$('#textOperar').text('100 - 500');
 		}else if(i == 2){
-			$('#textOperar').text('1 - 50');
+			$('#textOperar').text('0 - 100');
 		}else if(i == 1){
 			$('#textOperar').text('Seleccione');
 			$("#facturacion").val('0');
