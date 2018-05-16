@@ -196,32 +196,12 @@ function validateEmail(email){
 var i = 1;
 function operar(id,tipo){
 	var buttonSelect = $('#'+id+'.select-one');
-	var cardSelec    = $('#'+id+'.select-one').parents('.content-card').find('.contenido');
-	var divIncrement = $('#'+id+'.select-one').parent();
-	var cardHidden   = $('.mdl-card-question.visi-hidden');
-	var modal        = $('#ModalQuestion');
 	if(tipo == 2){
 		i++;
 		if(i == 2){
 			$('#textOperar').text('1 - 50');
-			divIncrement.addClass('select-increment');
-			cardSelec.addClass('aparecer');
-			cardHidden.fadeIn(400);
 			$("#facturacion").val('0');
 			$('.selectpicker').selectpicker('refresh');
-			if (window.matchMedia("(max-width: 1200px)").matches){
-			    var card    = buttonSelect.closest('.mdl-card-question');
-			    var img     = card.find('.contenido-left').find('img');
-			    var content = card.find('.contenido-right').find('p');
-			    var small   = card.find('.contenido-right').find('small');
-			    modal.find('.mdl-card__title').find('img').attr({
-			        "alt"   : img.attr('alt'),
-			        "src"   : img.attr('src')
-			    });
-			    modal.find('.mdl-card__supporting-text').find('p').text(content[0].innerText);
-			    modal.find('.mdl-card__supporting-text').find('small').text(small[0].innerText);
-				modal.modal('show');
-			}
 		//será máximo de 1000 a 2500
 		}else if(i == 3){
 			$('#textOperar').text('50 - 100');
@@ -232,17 +212,15 @@ function operar(id,tipo){
 		}else if(i == 6){
 			$('#textOperar').text('1000 - 2500');
 		}else if(i == 7){
-			$('#textOperar').text('2500 - 5000');
-		}else if(i == 8){
-			$('#textOperar').text('5000 a más');
-		}else if(i > 8){
-			i = 8;
+			$('#textOperar').text('más de 2500');
+		}else if(i > 7){
+			i = 7;
 			return;
 		}
 	}else if(tipo == 1){
 		i--;
 		if(i == 7){
-			$('#textOperar').text('2500 - 5000');
+			$('#textOperar').text('más de 2500');
 		}else if(i == 6){
 			$('#textOperar').text('1000 - 2500');
 		}else if(i == 5){
@@ -255,11 +233,6 @@ function operar(id,tipo){
 			$('#textOperar').text('1 - 50');
 		}else if(i == 1){
 			$('#textOperar').text('Seleccione');
-			divIncrement.removeClass('select-increment');
-			$('.mdl-tablet').find('.mdl-select').removeClass('select-increment');
-			cardSelec.removeClass('aparecer');
-			$('.contenido').removeClass('aparecer');
-			cardHidden.fadeOut(400);
 			$("#facturacion").val('0');
 			$('.selectpicker').selectpicker('refresh');
 			return;
@@ -345,7 +318,9 @@ function ConfirmarRespuestas(){
 	});
 }
 var solucion = "";
-function saveSolucion(id ,sol){
+function saveSolucion(id,sol){
+	var idButtonSolution = $('#'+id);
+	idButtonSolution.addClass('js-selected');
 	solucion = sol;
 	if(solucion != '' || solucion != null){
 		$('#next').prop("disabled", false);

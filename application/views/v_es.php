@@ -313,82 +313,126 @@
                             <h2>¿Cu&aacute;l es su tipo y tama&ntilde;o de empresa&#63;</h2>
                         </div>
                         <div class="js-card__flex js-card__flex--relative">
-                            <div class="js-card--large js-card--large__tipo">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-tipo">
-                                        <img src="<?php echo RUTA_IMG?>cards/servicios.png">
+                            <div class="js-card--tipo">
+                                <div class="js-card--large js-card--large__tipo">
+                                    <div class="js-card--large__content">
+                                        <div class="js-card--large__content-tipo">
+                                            <img src="<?php echo RUTA_IMG?>cards/servicios.png">
+                                        </div>
+                                        <div class="js-card--large__content-name">
+                                            <small>Servicios Profesionales</small>
+                                        </div>
                                     </div>
-                                    <div class="js-card--large__content-name">
-                                        <small>Servicios Profesionales</small>
+                                    <div class="js-card--large__button">
+                                        <button id="buttonCard15" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Servicios Profesionales')">Seleccione</button>
                                     </div>
                                 </div>
-                                <div class="js-card--large__button">
-                                    <button id="buttonCard15" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Servicios Profesionales')">Seleccione</button>
+                                <div class="js-card--large js-card--large__tipo">
+                                    <div class="js-card--large__content">
+                                        <div class="js-card--large__content-tipo">
+                                            <img src="<?php echo RUTA_IMG?>cards/retail.png">
+                                        </div>
+                                        <div class="js-card--large__content-name">
+                                            <small>Servicios Financieros</small>
+                                        </div>
+                                    </div>
+                                    <div class="js-card--large__button">
+                                        <button id="buttonCard16" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Servicios Financieros')">Seleccione</button>
+                                    </div>
+                                </div>
+                                <div class="js-card--large js-card--large__tipo">
+                                    <div class="js-card--large__content">
+                                        <div class="js-card--large__content-tipo">
+                                            <img src="<?php echo RUTA_IMG?>cards/distribucion.png">
+                                        </div>
+                                        <div class="js-card--large__content-name">
+                                            <small>Comercio Minorista</small>
+                                        </div>
+                                    </div>
+                                    <div class="js-card--large__button">
+                                        <button id="buttonCard17" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Comercio Minorista')">Seleccione</button>
+                                    </div>
+                                </div>
+                                <div class="js-card--large js-card--large__tipo">
+                                    <div class="js-card--large__content">
+                                        <div class="js-card--large__content-tipo">
+                                            <img src="<?php echo RUTA_IMG?>cards/productos.png">
+                                        </div>
+                                        <div class="js-card--large__content-name">
+                                            <small>Comercio Mayorista</small>
+                                        </div>
+                                    </div>
+                                    <div class="js-card--large__button">
+                                        <button id="buttonCard18" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Comercio Mayorista')">Seleccione</button>
+                                    </div>
+                                </div>
+                                <div class="js-card--large js-card--large__tipo">
+                                    <div class="js-card--large__content">
+                                        <div class="js-card--large__content-tipo">
+                                            <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
+                                        </div>
+                                        <div class="js-card--large__content-name">
+                                            <small>Productos de Consumo</small>
+                                        </div>
+                                    </div>
+                                    <div class="js-card--large__button">
+                                        <button id="buttonCard19" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Productos de Consumo')">Seleccione</button>
+                                    </div>
+                                </div>
+                                <div class="js-card--large js-card--large__tipo">
+                                    <div class="js-card--large__content">
+                                        <div class="js-card--large__content-tipo">
+                                            <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
+                                        </div>
+                                        <div class="js-card--large__content-name">
+                                            <small>Manufactura</small>
+                                        </div>
+                                    </div>
+                                    <div class="js-card--large__button">
+                                        <button id="buttonCard20" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Manufactura')">Seleccione</button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="js-card--large js-card--large__tipo">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-tipo">
-                                        <img src="<?php echo RUTA_IMG?>cards/retail.png">
+                            <div class="js-card--empresa">
+                                <div class="js-card--large">
+                                    <div class="js-card--large__content">
+                                        <div class="js-card--large__content-tipo">
+                                            <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
+                                        </div>
+                                        <div class="js-card--large__content-name">
+                                            <small>N&uacute;mero de empleados</small>
+                                        </div>
                                     </div>
-                                    <div class="js-card--large__content-name">
-                                        <small>Servicios Financieros</small>
-                                    </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button id="buttonCard16" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Servicios Financieros')">Seleccione</button>
-                                </div>
-                            </div>
-                            <div class="js-card--large js-card--large__tipo">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-tipo">
-                                        <img src="<?php echo RUTA_IMG?>cards/distribucion.png">
-                                    </div>
-                                    <div class="js-card--large__content-name">
-                                        <small>Comercio Minorista</small>
+                                    <div class="js-card--large__button">
+                                        <button id="buttonMenos" class="mdl-button mdl-js-button mdl-button--icon select-one" onclick="operar(this.id,1)"><i class="mdi mdi-remove"></i></button>
+                                        <span id="textOperar">Seleccione</span>
+                                        <button id="buttonMas" class="mdl-button mdl-js-button mdl-button--icon select-one" onclick="operar(this.id,2)"><i class="mdi mdi-add"></i></button>
                                     </div>
                                 </div>
-                                <div class="js-card--large__button">
-                                    <button id="buttonCard17" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Comercio Minorista')">Seleccione</button>
-                                </div>
-                            </div>
-                            <div class="js-card--large js-card--large__tipo">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-tipo">
-                                        <img src="<?php echo RUTA_IMG?>cards/productos.png">
+                                <div class="js-card--large">
+                                    <div class="js-card--large__content">
+                                        <div class="js-card--large__content-tipo">
+                                            <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
+                                        </div>
+                                        <div class="js-card--large__content-name">
+                                            <small>Facturaci&oacute;n anual</small>
+                                        </div>
                                     </div>
-                                    <div class="js-card--large__content-name">
-                                        <small>Comercio Mayorista</small>
+                                    <div class="js-card--large__button">
+                                        <div class="col-xs-12">
+                                            <div class="mdl-select">
+                                                <select class="selectpicker" id="facturacion" name="facturacion" title="Seleccione" onchange="selectFacturacion(this.id)">
+                                                    <option value="< 1 Millón de Dólares">< 1 Millón de dólares</option>
+                                                    <option value="1 - 3 Millones de dólares">1 - 3 Millones de dólares</option>
+                                                    <option value="3 - 5 Millones de dólares">3 - 5 Millones de dólares</option>
+                                                    <option value="5 - 10 Millones de dólares">5 - 10 Millones de dólares</option>
+                                                    <option value="10 - 20 Millones de dólares">10 - 20 Millones de dólares</option>
+                                                    <option value="20 - 40 Millones de dólares">20 - 40 Millones de dólares</option>
+                                                    <option value="No poseo información">No poseo información</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button id="buttonCard18" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Comercio Mayorista')">Seleccione</button>
-                                </div>
-                            </div>
-                            <div class="js-card--large js-card--large__tipo">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-tipo">
-                                        <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
-                                    </div>
-                                    <div class="js-card--large__content-name">
-                                        <small>Productos de Consumo</small>
-                                    </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button id="buttonCard19" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Productos de Consumo')">Seleccione</button>
-                                </div>
-                            </div>
-                            <div class="js-card--large js-card--large__tipo">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-tipo">
-                                        <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
-                                    </div>
-                                    <div class="js-card--large__content-name">
-                                        <small>Manufactura</small>
-                                    </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button id="buttonCard20" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Manufactura')">Seleccione</button>
                                 </div>
                             </div>
                         </div>
@@ -398,7 +442,7 @@
                     <div class="js-container">
                         <p class="js-question--title"><strong>/ ERP</strong> Configurator</p>
                         <div class="js-question--number">
-                            <span>04/05</span>
+                            <span>03/05</span>
                             <h2>¿Que tipo de soluci&oacute;n le interesa evaluar&#63;</h2>
                         </div>
                         <div class="js-card__flex">
@@ -448,7 +492,7 @@
                     <div class="js-container">
                         <p class="js-question--title"><strong>/ ERP</strong> Configurator</p>
                         <div class="js-question--number">
-                            <span>05/05</span>
+                            <span>04/05</span>
                             <!-- <h2>¿Qui&eacute;n recibir&aacute; la estimaci&oacute;n&#63;</h2> -->
                             <h2>Ingrese su informaci&oacute;n para recibir el resultado</h2>
                         </div>
