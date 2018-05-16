@@ -159,7 +159,7 @@ function solicitarEstimacion(){
         	if(data.error == 0){
 				if(confirmar == 1){
 					limpiarCampos();
-					//enviarGracias();
+					enviarGracias();
 				}
         	}else{
         		return;
@@ -487,4 +487,16 @@ function limpiarCampos(){
 	}else if(c_ambos == true){
 		$('#c-ambos').parent().removeClass('is-checked');
 	}
+}
+function enviarGracias(){
+	var windowQestion = $('.js-window6');
+    homePage.css('display','none');
+    firstWindow.css('display','none');
+    $('.opacity-done').removeClass('animated fadeInDown fadeOutDown fadeInUp fadeOutUp');
+    windowQestion.addClass('animated fadeInUp');
+	$('.button-arrow').css("display","none");
+	$('.question').css("display","none");
+	setTimeout(function(){ 
+		location.reload();
+	}, 4000);
 }
