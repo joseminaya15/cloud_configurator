@@ -431,9 +431,10 @@ function selectFacturacion(id){
 			$('#next').prop("disabled", false);
 		}
 	}
-}-
+}
 function EditQuestion(id){
-	var windowQestion = $('#js-'+id);
+	var windowQestion = $('.js-'+id);
 	$('.opacity-done').removeClass('animated fadeInDown fadeOutDown fadeInUp fadeOutUp');
-	windowQestion.addClass('animated fadeOutDown');
+	windowQestion.addClass('animated fadeInDown');
+	console.log(windowQestion);
 }
