@@ -479,7 +479,7 @@ class Es extends CI_Controller {
               $this->M_solicitud->updateDatos($arrayUpdate, $this->session->userdata('id_sol'), 'solicitud');
               $session     = array('ayuda'   => $ayuda);
           }else if($pantalla == PANT_TRES){
-              $arrayUpdate = array('tipo_industria' => $tipo_ind,
+              $arrayUpdate = array('tipo_industria'  => $tipo_ind,
                                     'tamanio'        => $tamanio,
                                     'factura_anual'  => $factura);//
               $this->M_solicitud->updateDatos($arrayUpdate, $this->session->userdata('id_sol'), 'solicitud');

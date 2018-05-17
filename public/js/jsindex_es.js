@@ -11,10 +11,21 @@ var m 			   = 1;
 var pant 		   = 0;
 var idConfigurator = null;
 var confirmar      = null;
+var especificar    = '';
 function buttonNext(){
 	pant++;
 	if(pant == 1){
 		$('#next').prop("disabled", true);
+	}
+	if(tipo_ind == 'Otras'){
+		especificar = $('#idEspecificar').val();
+		if(especificar == null || especificar == ''){
+			msj('error', 'Especifique su industria');
+			pant = 3;
+			return;
+		}
+	}else {
+		especificar = tipo_ind;
 	}
 	congigurator.removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 	homePage.addClass('animated fadeOutUp');
@@ -28,7 +39,7 @@ function buttonNext(){
 			data : {config 	  : configurador,
 					pantalla  : pant,
 				    ayuda 	  : ayuda_negocio,
-				    tipo_ind  : tipo_ind,
+				    tipo_ind  : especificar,
 				    factu     : facturacion,
 				    empleados : empleados,
 				    solucion  : solucion},
@@ -356,6 +367,10 @@ function buttonQuestion(direction){
 			$('#next').prop("disabled", true);
 		}
 		else if(m == 4){
+			if($('#idEspecificar').val() == '' || $('#idEspecificar').val() == null) {
+				m = 3;
+				return;
+			}
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			thirdWindow.addClass('animated fadeOutUp');
 			fourWindow.addClass('animated fadeInUp');
