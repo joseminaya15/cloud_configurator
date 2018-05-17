@@ -416,6 +416,21 @@
                                         <button id="buttonCard20" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Manufactura')">Seleccione</button>
                                     </div>
                                 </div>
+                                <div class="js-card--large">
+                                    <div class="js-card--large__content">
+                                        <div class="js-card--large__content-imagen">
+                                            <img src="<?php echo RUTA_IMG?>cards/otra.png">
+                                        </div>
+                                        <div class="js-card--large__content-text">
+                                            <div class="form-group">
+                                                <textarea class="form-control" id="idEspecificar" rows="4" placeholder="Especificar"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="js-card--large__button">
+                                            <button id="buttonCardOtra" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Otras')">Seleccione</button>
+                                        </div>
+                                   </div>
+                                </div>
                             </div>
                             <div class="js-card--empresa opacity-done">
                                 <div class="js-card--large">
