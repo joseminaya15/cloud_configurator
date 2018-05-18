@@ -341,7 +341,7 @@
                                 <div class="js-carousel">
                                     <div class="owl-carousel owl-theme">
                                         <div class="item">
-                                            <div class="js-card--large">
+                                            <div class="js-card--large js-card--large__flex">
                                                 <div class="js-card--large__content">
                                                     <div class="js-card--large__content-tipo">
                                                         <img src="<?php echo RUTA_IMG?>cards/servicios.png">
@@ -356,7 +356,7 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <div class="js-card--large">
+                                            <div class="js-card--large js-card--large__flex">
                                                 <div class="js-card--large__content">
                                                     <div class="js-card--large__content-tipo">
                                                         <img src="<?php echo RUTA_IMG?>cards/retail.png">
@@ -371,7 +371,7 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <div class="js-card--large">
+                                            <div class="js-card--large js-card--large__flex">
                                                 <div class="js-card--large__content">
                                                     <div class="js-card--large__content-tipo">
                                                         <img src="<?php echo RUTA_IMG?>cards/distribucion.png">
@@ -386,7 +386,7 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <div class="js-card--large">
+                                            <div class="js-card--large js-card--large__flex">
                                                 <div class="js-card--large__content">
                                                     <div class="js-card--large__content-tipo">
                                                         <img src="<?php echo RUTA_IMG?>cards/productos.png">
@@ -401,7 +401,7 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <div class="js-card--large">
+                                            <div class="js-card--large js-card--large__flex">
                                                 <div class="js-card--large__content">
                                                     <div class="js-card--large__content-tipo">
                                                         <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
@@ -416,7 +416,7 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <div class="js-card--large">
+                                            <div class="js-card--large js-card--large__flex">
                                                 <div class="js-card--large__content">
                                                     <div class="js-card--large__content-tipo">
                                                         <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
@@ -431,7 +431,7 @@
                                             </div>
                                         </div>
                                         <div class="item">
-                                            <div class="js-card--large">
+                                            <div class="js-card--large js-card--large__flex">
                                                 <div class="js-card--large__content">
                                                     <div class="js-card--large__content-imagen">
                                                         <img src="<?php echo RUTA_IMG?>cards/otra.png">
@@ -488,7 +488,7 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div> -->
+                        <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div>
                     </div>
                 </div>
                 <div class="js-window4 opacity-done">
