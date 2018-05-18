@@ -667,7 +667,7 @@
                                     </label>
                                 </div>
                                 <div class="col-xs-12 text-right m-t-25">
-                                    <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button--confirmar" onclick="solicitarEstimacion();">Enviar informaci&oacute;n</button>
+                                    <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button--confirmar button-confirmar" onclick="solicitarEstimacion();">Enviar informaci&oacute;n</button>
                                 </div>
                             </form>
                         </div>
