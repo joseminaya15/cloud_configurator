@@ -367,9 +367,11 @@ function buttonQuestion(direction){
 			$('#next').prop("disabled", true);
 		}
 		else if(m == 4){
-			if($('#idEspecificar').val() == '' || $('#idEspecificar').val() == null) {
-				m = 3;
-				return;
+			if(tipo_ind == 'Otras') {
+				if($('#idEspecificar').val() == '' || $('#idEspecificar').val() == null) {
+					m = 3;
+					return;
+				}
 			}
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			thirdWindow.addClass('animated fadeOutUp');
