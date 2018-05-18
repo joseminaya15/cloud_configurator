@@ -443,15 +443,22 @@ function selectConfigurator(id, dato){
 	}
 	if(configurador == 'HR'){
 		$('.owl-nav').css('display','flex');
-		$('.owl-carousel').owlCarousel({
+		$('.js-window2 .owl-carousel').owlCarousel({
 			lazyLoad : true,
 			responsive : {
 				0 : {
 					items : 1
 				},
+				600:{
+					items : 2
+				},
 				1200:{
+					items : 3
+				},
+				1400:{
 					items : 4
 				}
+
 			},
 			navigation : false,
 			nav : true,
@@ -462,6 +469,31 @@ function selectConfigurator(id, dato){
 			navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
 		});
 	}
+	$('.js-window3 .owl-carousel').owlCarousel({
+		lazyLoad : true,
+		responsive : {
+			0 : {
+				items : 1
+			},
+			600:{
+				items : 2
+			},
+			1200:{
+				items : 3
+			},
+			1400:{
+				items : 4
+			}
+
+		},
+		navigation : false,
+		nav : true,
+		loop : false,
+		dots: false,
+		autoplay : false,
+		autoplayTimeout : 5000,
+		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+	});
 }
 var tipo_ind = "";
 function tipoTamaño(id,tipo){

@@ -196,6 +196,7 @@ body
 	left 60px
 	bottom 40px
 	img
+		transitionMaxWidth()
 		width 100%
 		max-width 155px
 	&.js-minilogo__right
@@ -310,6 +311,8 @@ body
 	max-width 205px
 	margin 10px
 	flex none
+	&.js-card--large__flex
+		margin 10px auto
 	.js-card--large__content
 		border 1px solid $color
 		border-radius 10px
@@ -319,6 +322,8 @@ body
 			flexCenter()
 			justify-content center
 			height 120px
+			img
+				width initial !important
 		.js-card--large__content-text
 			height 150px
 			p
@@ -338,6 +343,8 @@ body
 			flexEnd()
 			height 145px
 			justify-content center
+			img
+				width initial
 		.js-card--large__content-name
 			flexEnd()
 			justify-content center
@@ -598,8 +605,6 @@ body
 	&.js-selected
 	&:hover
 		background-color $color !important
-.js-card--large__flex
-	flex none
 .js-card__flex--relative
 	position relative
 	flex-wrap wrap
@@ -662,4 +667,21 @@ body
 ::-webkit-scrollbar-thumb
 	background-color #AAAAAA
 	border-radius 10px
-			
+@media ( max-width: 1400px )
+	.js-carousel
+		max-width 750px
+@media ( max-width: 1200px )
+	.js-carousel
+		max-width 500px
+	.js-minilogo 
+		&.js-minilogo__right
+			img
+				max-width 155px
+@media ( max-width: 768px )
+	.js-minilogo 
+		&.js-minilogo__right
+			img
+				display none
+@media ( max-width: 600px )
+	.js-carousel
+		max-width 300px			

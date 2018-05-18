@@ -338,98 +338,116 @@
                         </div>
                         <div class="js-card__flex js-card__flex--relative">
                             <div class="js-card--tipo">
-                                <div class="js-card--large">
-                                    <div class="js-card--large__content">
-                                        <div class="js-card--large__content-tipo">
-                                            <img src="<?php echo RUTA_IMG?>cards/servicios.png">
-                                        </div>
-                                        <div class="js-card--large__content-name">
-                                            <small>Servicios Profesionales</small>
-                                        </div>
-                                    </div>
-                                    <div class="js-card--large__button">
-                                        <button id="buttonCard15" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Servicios Profesionales')">Seleccione</button>
-                                    </div>
-                                </div>
-                                <div class="js-card--large">
-                                    <div class="js-card--large__content">
-                                        <div class="js-card--large__content-tipo">
-                                            <img src="<?php echo RUTA_IMG?>cards/retail.png">
-                                        </div>
-                                        <div class="js-card--large__content-name">
-                                            <small>Servicios Financieros</small>
-                                        </div>
-                                    </div>
-                                    <div class="js-card--large__button">
-                                        <button id="buttonCard16" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Servicios Financieros')">Seleccione</button>
-                                    </div>
-                                </div>
-                                <div class="js-card--large">
-                                    <div class="js-card--large__content">
-                                        <div class="js-card--large__content-tipo">
-                                            <img src="<?php echo RUTA_IMG?>cards/distribucion.png">
-                                        </div>
-                                        <div class="js-card--large__content-name">
-                                            <small>Comercio Minorista</small>
-                                        </div>
-                                    </div>
-                                    <div class="js-card--large__button">
-                                        <button id="buttonCard17" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Comercio Minorista')">Seleccione</button>
-                                    </div>
-                                </div>
-                                <div class="js-card--large">
-                                    <div class="js-card--large__content">
-                                        <div class="js-card--large__content-tipo">
-                                            <img src="<?php echo RUTA_IMG?>cards/productos.png">
-                                        </div>
-                                        <div class="js-card--large__content-name">
-                                            <small>Comercio Mayorista</small>
-                                        </div>
-                                    </div>
-                                    <div class="js-card--large__button">
-                                        <button id="buttonCard18" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Comercio Mayorista')">Seleccione</button>
-                                    </div>
-                                </div>
-                                <div class="js-card--large">
-                                    <div class="js-card--large__content">
-                                        <div class="js-card--large__content-tipo">
-                                            <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
-                                        </div>
-                                        <div class="js-card--large__content-name">
-                                            <small>Productos de Consumo</small>
-                                        </div>
-                                    </div>
-                                    <div class="js-card--large__button">
-                                        <button id="buttonCard19" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Productos de Consumo')">Seleccione</button>
-                                    </div>
-                                </div>
-                                <div class="js-card--large">
-                                    <div class="js-card--large__content">
-                                        <div class="js-card--large__content-tipo">
-                                            <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
-                                        </div>
-                                        <div class="js-card--large__content-name">
-                                            <small>Manufactura</small>
-                                        </div>
-                                    </div>
-                                    <div class="js-card--large__button">
-                                        <button id="buttonCard20" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Manufactura')">Seleccione</button>
-                                    </div>
-                                </div>
-                                <div class="js-card--large">
-                                    <div class="js-card--large__content">
-                                        <div class="js-card--large__content-imagen">
-                                            <img src="<?php echo RUTA_IMG?>cards/otra.png">
-                                        </div>
-                                        <div class="js-card--large__content-text">
-                                            <div class="form-group">
-                                                <textarea class="form-control" id="idEspecificar" rows="4" placeholder="Especificar"></textarea>
+                                <div class="js-carousel">
+                                    <div class="owl-carousel owl-theme">
+                                        <div class="item">
+                                            <div class="js-card--large">
+                                                <div class="js-card--large__content">
+                                                    <div class="js-card--large__content-tipo">
+                                                        <img src="<?php echo RUTA_IMG?>cards/servicios.png">
+                                                    </div>
+                                                    <div class="js-card--large__content-name">
+                                                        <small>Servicios Profesionales</small>
+                                                    </div>
+                                                </div>
+                                                <div class="js-card--large__button">
+                                                    <button id="buttonCard15" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Servicios Profesionales')">Seleccione</button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="js-card--large__button">
-                                            <button id="buttonCardOtra" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Otras')">Seleccione</button>
+                                        <div class="item">
+                                            <div class="js-card--large">
+                                                <div class="js-card--large__content">
+                                                    <div class="js-card--large__content-tipo">
+                                                        <img src="<?php echo RUTA_IMG?>cards/retail.png">
+                                                    </div>
+                                                    <div class="js-card--large__content-name">
+                                                        <small>Servicios Financieros</small>
+                                                    </div>
+                                                </div>
+                                                <div class="js-card--large__button">
+                                                    <button id="buttonCard16" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Servicios Financieros')">Seleccione</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                   </div>
+                                        <div class="item">
+                                            <div class="js-card--large">
+                                                <div class="js-card--large__content">
+                                                    <div class="js-card--large__content-tipo">
+                                                        <img src="<?php echo RUTA_IMG?>cards/distribucion.png">
+                                                    </div>
+                                                    <div class="js-card--large__content-name">
+                                                        <small>Comercio Minorista</small>
+                                                    </div>
+                                                </div>
+                                                <div class="js-card--large__button">
+                                                    <button id="buttonCard17" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Comercio Minorista')">Seleccione</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="js-card--large">
+                                                <div class="js-card--large__content">
+                                                    <div class="js-card--large__content-tipo">
+                                                        <img src="<?php echo RUTA_IMG?>cards/productos.png">
+                                                    </div>
+                                                    <div class="js-card--large__content-name">
+                                                        <small>Comercio Mayorista</small>
+                                                    </div>
+                                                </div>
+                                                <div class="js-card--large__button">
+                                                    <button id="buttonCard18" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Comercio Mayorista')">Seleccione</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="js-card--large">
+                                                <div class="js-card--large__content">
+                                                    <div class="js-card--large__content-tipo">
+                                                        <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
+                                                    </div>
+                                                    <div class="js-card--large__content-name">
+                                                        <small>Productos de Consumo</small>
+                                                    </div>
+                                                </div>
+                                                <div class="js-card--large__button">
+                                                    <button id="buttonCard19" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Productos de Consumo')">Seleccione</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="js-card--large">
+                                                <div class="js-card--large__content">
+                                                    <div class="js-card--large__content-tipo">
+                                                        <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
+                                                    </div>
+                                                    <div class="js-card--large__content-name">
+                                                        <small>Manufactura</small>
+                                                    </div>
+                                                </div>
+                                                <div class="js-card--large__button">
+                                                    <button id="buttonCard20" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Manufactura')">Seleccione</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="js-card--large">
+                                                <div class="js-card--large__content">
+                                                    <div class="js-card--large__content-imagen">
+                                                        <img src="<?php echo RUTA_IMG?>cards/otra.png">
+                                                    </div>
+                                                    <div class="js-card--large__content-text" style="height: 79px;">
+                                                        <div class="form-group">
+                                                            <textarea class="form-control" id="idEspecificar" rows="3" placeholder="Especificar"></textarea>
+                                                        </div>
+                                                    </div>
+                                               </div>
+                                               <div class="js-card--large__button">
+                                                    <button id="buttonCardOtra" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Otras')">Seleccione</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="js-card--empresa opacity-done">
