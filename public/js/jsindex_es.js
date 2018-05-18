@@ -171,6 +171,8 @@ function solicitarEstimacion(){
 				if(confirmar == 1){
 					limpiarCampos();
 					enviarGracias();
+					$('#next').css('display', 'none');
+					$('#prev').css('display', 'none');
 				}
         	}else{
         		return;
