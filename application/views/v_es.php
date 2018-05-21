@@ -499,43 +499,53 @@
                             <h2>¿Que tipo de soluci&oacute;n le interesa evaluar&#63;</h2>
                         </div>
                         <div class="js-card__flex">
-                            <div class="js-card--large">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-tipo">
-                                        <img src="<?php echo RUTA_IMG?>cards/premise.png">
+                            <div class="js-carousel">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <div class="js-card--large">
+                                            <div class="js-card--large__content">
+                                                <div class="js-card--large__content-tipo">
+                                                    <img src="<?php echo RUTA_IMG?>cards/premise.png">
+                                                </div>
+                                                <div class="js-card--large__content-name">
+                                                    <small>On Premise</small>
+                                                </div>
+                                            </div>
+                                            <div class="js-card--large__button">
+                                                <button id="buttonCard21" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'On Premise')">Seleccione</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="js-card--large__content-name">
-                                        <small>On Premise</small>
+                                    <div class="item">
+                                        <div class="js-card--large">
+                                            <div class="js-card--large__content">
+                                                <div class="js-card--large__content-tipo">
+                                                    <img src="<?php echo RUTA_IMG?>cards/cloud.png">
+                                                </div>
+                                                <div class="js-card--large__content-name">
+                                                    <small>Cloud</small>
+                                                </div>
+                                            </div>
+                                            <div class="js-card--large__button">
+                                                <button id="buttonCard22" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Cloud')">Seleccione</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button id="buttonCard21" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'On Premise')">Seleccione</button>
-                                </div>
-                            </div>
-                            <div class="js-card--large">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-tipo">
-                                        <img src="<?php echo RUTA_IMG?>cards/cloud.png">
+                                    <div class="item">
+                                        <div class="js-card--large">
+                                            <div class="js-card--large__content">
+                                                <div class="js-card--large__content-tipo">
+                                                    <img src="<?php echo RUTA_IMG?>cards/hibrida.png">
+                                                </div>
+                                                <div class="js-card--large__content-name">
+                                                    <small>H&iacute;brida</small>
+                                                </div>
+                                            </div>
+                                            <div class="js-card--large__button">
+                                                <button id="buttonCard23" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Híbrida')">Seleccione</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="js-card--large__content-name">
-                                        <small>Cloud</small>
-                                    </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button id="buttonCard22" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Cloud')">Seleccione</button>
-                                </div>
-                            </div>
-                            <div class="js-card--large">
-                                <div class="js-card--large__content">
-                                    <div class="js-card--large__content-tipo">
-                                        <img src="<?php echo RUTA_IMG?>cards/hibrida.png">
-                                    </div>
-                                    <div class="js-card--large__content-name">
-                                        <small>H&iacute;brida</small>
-                                    </div>
-                                </div>
-                                <div class="js-card--large__button">
-                                    <button id="buttonCard23" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Híbrida')">Seleccione</button>
                                 </div>
                             </div>
                         </div>
