@@ -1,18 +1,48 @@
-var homePage     = $('#home');
-var congigurator = $('#configurator'); 
-var pant 		 = 0;
-var arr_pant     = [];
+var homePage       = $('#home');
+var congigurator   = $('#configurator'); 
+var firstWindow    = $('.js-window1');
+var secondWindow   = $('.js-window2');
+var thirdWindow    = $('.js-window3');
+var fourWindow     = $('.js-window4');
+var fiveWindow     = $('.js-window5');
+var sixWindow      = $('.js-window6');
+var arr_pant       = [];
+var m 			   = 1;
+var pant 		   = 0;
+var idConfigurator = null;
+var confirmar      = null;
+var especificar    = '';
 function buttonNext(){
 	pant++;
+	if(pant == 1){
+		$('#next').prop("disabled", true);
+	}
+	if(tipo_ind == 'Otras'){
+		especificar = $('#idEspecificar').val();
+		if(especificar == null || especificar == ''){
+			msj('error', 'Especifique su industria');
+			pant = 3;
+			return;
+		}
+	}else {
+		especificar = tipo_ind;
+	}
+	congigurator.removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 	homePage.addClass('animated fadeOutUp');
-	congigurator.addClass('animated fadeInDown');
+	congigurator.addClass('animated fadeInUp');
 	if(pant >= 2){
+		var empleados = $('#textOperar').text();
+		if(pant == 5){
+			mostrarDatos();
+		}
 		$.ajax({
 			data : {config 	  : configurador,
 					pantalla  : pant,
 				    ayuda 	  : ayuda_negocio,
-				    solucion  : solucion,
-				    retos 	  : retos.toString()},
+				    tipo_ind  : especificar,
+				    factu     : facturacion,
+				    empleados : empleados,
+				    solucion  : solucion},
 			url  : 'pt/buttonNext',
 			type : 'POST'
 		}).done(function(data){
@@ -39,7 +69,7 @@ function cambiarIdioma(){
 	}
 	$.ajax({
 		data : {idioma : idioma},
-		url  : 'pt/cambiarIdioma',
+		url  : 'es/cambiarIdioma',
 		type : 'POST'
 	}).done(function(data){
 		try{
@@ -67,9 +97,9 @@ function solicitarEstimacion(){
 	var terminos		= $('#checkbox-1').is(':checked');
 	var term_cond		= null;
 	var contacto		= null;
-	if(nombre_completo == '' && empresa == '' && email == '' && pais == '' && cargo == '' && telefono == '' && c_email == false && terminos == false){
+	/*if(nombre_completo == '' && empresa == '' && email == '' && pais == '' && cargo == '' && telefono == '' && c_email == false && terminos == false){
 		validarCampos();
-	}
+	}*/
 	if(nombre_completo == null || nombre_completo == ''){
 		msj('error', 'Ingrese su nombre completo');
 		return;
@@ -87,7 +117,7 @@ function solicitarEstimacion(){
 		return;
 	}
 	if(pais == null || pais == ''){
-		msj('error', 'Ingrese su pa&iacute;s');
+		msj('error', 'Ingrese su país');
 		return;
 	}
 	if(cargo == null || cargo == ''){
@@ -95,11 +125,11 @@ function solicitarEstimacion(){
 		return;
 	}
 	if(telefono == null || telefono == ''){
-		msj('error', 'Ingrese su tel&eacute;fono');
+		msj('error', 'Ingrese su teléfono');
 		return;
 	}
 	if(relacion == null || relacion == ''){
-		msj('error', 'Seleccione cu&aacute;l es su relaci&oacute;n con SAP');
+		msj('error', 'Seleccione cuál es su relación con SAP');
 		return;
 	}
 	if(c_email == true){
@@ -118,7 +148,7 @@ function solicitarEstimacion(){
 		term_cond = 0;
 	}
 	if(terminos == false){
-		msj('error', 'Acepte los t&eacute;rminos y condiciones');
+		msj('error', 'Acepte los términos y condiciones');
 		return;
 	}
 	$('.button-confirmar').prop("disabled", true);
@@ -141,6 +171,8 @@ function solicitarEstimacion(){
 				if(confirmar == 1){
 					limpiarCampos();
 					enviarGracias();
+					$('#next').css('display', 'none');
+					$('#prev').css('display', 'none');
 				}
         	}else{
         		return;
@@ -181,84 +213,56 @@ function validateEmail(email){
 }
 var i = 1;
 function operar(id,tipo){
-	var buttonSelect = $('#'+id+'.select-one');
-	var cardSelec    = $('#'+id+'.select-one').parents('.content-card').find('.contenido');
-	var divIncrement = $('#'+id+'.select-one').parent();
-	var cardHidden   = $('.mdl-card-question.visi-hidden');
-	var modal        = $('#ModalQuestion');
+	var buttonSelect = $('#'+id);
+	var cardSelected = buttonSelect.parents('.js-card--large__select');
 	if(tipo == 2){
 		i++;
 		if(i == 2){
-			$('#textOperar').text('1 - 50');
-			divIncrement.addClass('select-increment');
-			cardSelec.addClass('aparecer');
-			cardHidden.fadeIn(400);
+			$('#textOperar').text('0 - 100');
 			$("#facturacion").val('0');
 			$('.selectpicker').selectpicker('refresh');
-			if (window.matchMedia("(max-width: 1200px)").matches){
-			    var card    = buttonSelect.closest('.mdl-card-question');
-			    var img     = card.find('.contenido-left').find('img');
-			    var content = card.find('.contenido-right').find('p');
-			    var small   = card.find('.contenido-right').find('small');
-			    modal.find('.mdl-card__title').find('img').attr({
-			        "alt"   : img.attr('alt'),
-			        "src"   : img.attr('src')
-			    });
-			    modal.find('.mdl-card__supporting-text').find('p').text(content[0].innerText);
-			    modal.find('.mdl-card__supporting-text').find('small').text(small[0].innerText);
-				modal.modal('show');
-			}
-		//será máximo de 1000 a 2500
+			cardSelected.addClass('js-selected');
 		}else if(i == 3){
-			$('#textOperar').text('50 - 100');
-		}else if(i == 4){
 			$('#textOperar').text('100 - 500');
-		}else if(i == 5){
+		}else if(i == 4){
 			$('#textOperar').text('500 - 1000');
-		}else if(i == 6){
-			$('#textOperar').text('1000 - 2500');
-		}else if(i == 7){
-			$('#textOperar').text('2500 - 5000');
-		}else if(i == 8){
-			$('#textOperar').text('5000 a más');
-		}else if(i > 8){
-			i = 8;
+		}else if(i == 5){
+			$('#textOperar').text('más de 1000');
+		}else if(i > 5){
+			i = 5;
 			return;
 		}
 	}else if(tipo == 1){
 		i--;
-		if(i == 7){
-			$('#textOperar').text('2500 - 5000');
-		}else if(i == 6){
-			$('#textOperar').text('1000 - 2500');
-		}else if(i == 5){
-			$('#textOperar').text('500 - 1000');
+		if(i == 5){
+			$('#textOperar').text('Más de 1000');
 		}else if(i == 4){
-			$('#textOperar').text('100 - 500');
+			$('#textOperar').text('500 - 1000');
 		}else if(i == 3){
-			$('#textOperar').text('50 - 100');
+			$('#textOperar').text('100 - 500');
 		}else if(i == 2){
-			$('#textOperar').text('1 - 50');
+			$('#textOperar').text('0 - 100');
 		}else if(i == 1){
 			$('#textOperar').text('Seleccione');
-			divIncrement.removeClass('select-increment');
-			$('.mdl-tablet').find('.mdl-select').removeClass('select-increment');
-			cardSelec.removeClass('aparecer');
-			$('.contenido').removeClass('aparecer');
-			cardHidden.fadeOut(400);
 			$("#facturacion").val('0');
 			$('.selectpicker').selectpicker('refresh');
+			cardSelected.removeClass('js-selected');
+			$('#facturacion').parents('.js-card--large__select').removeClass('js-selected');
 			return;
 		}else if(i < 1){
 			i = 1;
 			return;
 		}
 	}
+	var empleados = $('#textOperar').text();
+	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
+		if(tipo_ind != null && empleados != null && facturacion != null){
+			$('#next').prop("disabled", false);
+		}
+	}
 }
 function mostrarDatos(){
 	$.ajax({
-		data : {array_ids   : array_ids,
-				array_3pant : array_3pant},
 		url  : 'pt/mostrarDatos',
 		type : 'POST'
 	}).done(function(data){
@@ -270,9 +274,8 @@ function mostrarDatos(){
           	$('#industria').text(data.Industria);
           	$('#factura').text(data.Factura_anual)
            	$('#tamanio').text(data.Tamanio);
-           	$('#prioridad').find('li').remove();
-           	$('#prioridad').append(data.Prioridad);
-           	$('#infraestructura').text(data.Infraestructura);
+           	$('#ayuda').append(data.Prioridad);
+           	$('#infraestructura').text(solucion);
         }else{
         	return;
         }
@@ -282,17 +285,18 @@ function mostrarDatos(){
 	});
 }
 var configurador = null;
-function clickCard(dato){
-	configurador = dato;
-	arr_pant.push(dato);
-}
 var ayuda_negocio = null;
-function ayudaCard(ayuda){
+function ayudaCard(id,ayuda){
+	var idButtonCard = $('#'+id);
+	$('.js-button-select').removeClass('js-selected');
+	idButtonCard.addClass('js-selected');
 	ayuda_negocio = ayuda;
-	arr_pant.push(ayuda);
+	if(ayuda_negocio != null || ayuda_negocio != ''){
+		$('#next').prop("disabled", false);
+	}
 }
 function validarCampos(){
-	var $inputs    = $('form :input');
+	var $inputs    = $('form .js-input :input');
 	var formvalido = true;
 	$inputs.each(function(){
 		if(isEmpty($(this).val())){
@@ -311,13 +315,17 @@ function isEmpty(val){
 }
 function ConfirmarRespuestas(){
 	confirmar = 1;
+	$('.js-card-confirmacion').addClass('js-disabled');
+	$('.js-formulario').removeClass('js-disabled');
 	$('.button-arrow.button-prev').css("display","none");
 	$('.mdl-card-confirmacion').addClass('confirmar');
 	$('.fp-controlArrow.fp-prev').css("display","none");
 	$('.mdl-formulario').removeClass('disabled');
+	$('#next').prop("disabled", true);
+    $('#prev').prop("disabled", true);
 	$.ajax({
 		data : {confirmar : confirmar},
-		url  : 'es/ConfirmarRespuestas',
+		url  : 'pt/ConfirmarRespuestas',
 		type : 'POST'
 	}).done(function(data){
 		try{
@@ -331,17 +339,259 @@ function ConfirmarRespuestas(){
       }
 	});
 }
-var cont = 0;
-var retos = [];
-function saveDatos(datos, row){
-	if("selected " == "selected"){
-		retos.push(datos);
-		cont = 1;
-	}else if("selected" == ""){
-
+var solucion = "";
+function saveSolucion(id,sol){
+	var idButtonSolution = $('#'+id);
+	idButtonSolution.addClass('js-selected');
+	solucion = sol;
+	if(solucion != '' || solucion != null){
+		$('#next').prop("disabled", false);
 	}
 }
-var solucion = "";
-function saveSolucion(dato){
-	solucion = dato;
+function buttonQuestion(direction){
+	var empleados = $('#textOperar').text();
+	if(direction == 2){
+		m++;
+		if(m == 2){
+			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+			firstWindow.addClass('opacity-done');
+			firstWindow.addClass('animated fadeOutUp');
+			secondWindow.addClass('animated fadeInUp');
+			$('#next').prop("disabled", true);
+			if(tipo_ind != null && empleados != null && facturacion != null){
+				$('#next').prop("disabled", false);
+			}
+		}
+		else if(m == 3){
+			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+			secondWindow.addClass('animated fadeOutUp');
+			thirdWindow.addClass('animated fadeInUp');
+			$('#next').prop("disabled", true);
+		}
+		else if(m == 4){
+			if(tipo_ind == 'Otras') {
+				if($('#idEspecificar').val() == '' || $('#idEspecificar').val() == null) {
+					m = 3;
+					return;
+				}
+			}
+			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+			thirdWindow.addClass('animated fadeOutUp');
+			fourWindow.addClass('animated fadeInUp');
+			$('#next').prop("disabled", true);
+		}
+		else if(m == 5){
+			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+			fourWindow.addClass('animated fadeOutUp');
+			fiveWindow.addClass('animated fadeInUp');
+			$('#next').prop("disabled", true);
+		}
+	}
+	else if(direction == 1){
+		m--;
+		pant--;
+		if(m == 4){
+			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+			fourWindow.addClass('animated fadeInDown');
+			fiveWindow.addClass('animated fadeOutDown');
+		}
+		else if(m == 3){
+			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+			thirdWindow.addClass('animated fadeInDown');
+			fourWindow.addClass('animated fadeOutDown');
+			if(tipo_ind != null && empleados != null && facturacion != null){
+				$('#next').prop("disabled", false);
+			}
+		}
+		else if(m == 2){
+			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+			secondWindow.addClass('animated fadeInDown');
+			thirdWindow.addClass('animated fadeOutDown');
+			if(ayuda_negocio != null || ayuda_negocio != ''){
+				$('#next').prop("disabled", false);
+			}
+		}
+		else if(m == 1){
+			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+			firstWindow.addClass('animated fadeInDown');
+			secondWindow.addClass('animated fadeOutDown');
+			if(configurador != null || configurador != ''){
+				$('#next').prop("disabled", false);
+			}
+		}
+		else if(m < 1){
+			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+			homePage.removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+			homePage.addClass('animated fadeInDown');
+			congigurator.addClass('animated fadeOutDown');
+			m = 1;
+			return;
+		}
+	}
+}
+function selectConfigurator(id, dato){
+	idConfigurator = id
+	configurador = dato;
+	secondWindow.find('.js-card--large').css('display','none');
+	$('.js-card--large__'+idConfigurator).css('display','block');
+	$('.js-question--title').find('strong').text('/ '+idConfigurator);
+	$('.js-card-imagen').removeClass('js-card-imagen__static');
+	$('#'+id).parents('.js-card-imagen').addClass('js-card-imagen__static');
+	$('.owl-nav').css('display','none');
+	if(configurador != null || configurador != ''){
+		$('#next').prop("disabled", false);
+	}
+	if(configurador == 'HR'){
+		$('.owl-nav').css('display','flex');
+		$('.js-window2 .owl-carousel').owlCarousel({
+			lazyLoad : true,
+			responsive : {
+				0 : {
+					items : 1
+				},
+				600:{
+					items : 2
+				},
+				1200:{
+					items : 3
+				},
+				1400:{
+					items : 4
+				}
+
+			},
+			navigation : false,
+			nav : true,
+			loop : false,
+			dots: false,
+			autoplay : false,
+			autoplayTimeout : 5000,
+			navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+		});
+	}
+	$('.js-window3 .owl-carousel').owlCarousel({
+		lazyLoad : true,
+		responsive : {
+			0 : {
+				items : 1
+			},
+			600:{
+				items : 2
+			},
+			1200:{
+				items : 3
+			},
+			1400:{
+				items : 4
+			}
+
+		},
+		navigation : false,
+		nav : true,
+		loop : false,
+		dots: false,
+		autoplay : false,
+		autoplayTimeout : 5000,
+		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+	});
+	$('.js-window4 .owl-carousel').owlCarousel({
+		lazyLoad : true,
+		responsive : {
+			0 : {
+				items : 1
+			},
+			600:{
+				items : 2
+			},
+			1200:{
+				items : 3
+			}
+		},
+		navigation : false,
+		nav : true,
+		loop : false,
+		dots: false,
+		autoplay : false,
+		autoplayTimeout : 5000,
+		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+	});
+}
+var tipo_ind = "";
+function tipoTamaño(id,tipo){
+	var idButtonSelect = $('#'+id);
+	var cardIndustrias = idButtonSelect.parents('.js-card--large');
+	tipo_ind = tipo;
+	thirdWindow.find('.js-card--tipo').find('.js-card--large').toggleClass('js-card--large__tipo');
+	thirdWindow.find('.js-card--tipo').find('.js-card--large').find('js-card--large__button').find('button').removeClass('js-selected');
+	cardIndustrias.removeClass('js-card--large__tipo');
+	$('.js-card--tipo').toggleClass('js-card--show');
+	$('.js-card--empresa').toggleClass('animated fadeInLeft');
+	idButtonSelect.toggleClass('js-selected');
+	var empleados = $('#textOperar').text();
+	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
+		if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
+			$('#next').prop("disabled", false);
+		}
+	}
+}
+var facturacion = null;
+function selectFacturacion(id){
+	facturacion = $('#'+id).val();
+	var empleados = $('#textOperar').text();
+	$('#'+id).parents('.js-card--large__select').addClass('js-selected');
+	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
+		if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
+			$('#next').prop("disabled", false);
+		}
+	}
+}
+function EditQuestion(id){
+	var windowQestion = $('.js-'+id);
+	$('.opacity-done').removeClass('animated fadeInDown fadeOutDown fadeInUp fadeOutUp');
+	windowQestion.addClass('animated fadeInDown');
+    var res = id.substr(6, 1);
+	pant = res;
+	m = res;
+	/*if(tipo_ind != null || tipo_ind != ''){
+		$('#next').prop("disabled", false);
+	}
+	if(ayuda_negocio != null || ayuda_negocio != ''){
+		$('#next').prop("disabled", false);
+	}
+	if(configurador != null || configurador != ''){*/
+		$('#next').prop("disabled", false);
+	//}
+}
+function limpiarCampos(){
+	var nombre_completo = $('#nombre_completo').val("");
+	var empresa  		= $('#empresa').val("");
+	var email 	 		= $('#email').val("");
+	var pais 	 		= $('#pais').val("");
+	var cargo 	 		= $('#cargo').val("");
+	var telefono 		= $('#telefono').val("");
+	var relacion		= $('#relacion').val("0");
+	$('.selectpicker').selectpicker('refresh');
+	var c_email    		= $('#c-email').is(':checked');
+	var c_telefono    	= $('#c-telefono').is(':checked');
+	var c_ambos    		= $('#c-ambos').is(':checked');
+	var terminos		= $('#checkbox-1').is(':checked');
+	if(c_email == true){
+		$('#c-email').parent().removeClass('is-checked');
+	}else if(c_telefono == true){
+		$('#c-telefono').parent().removeClass('is-checked');
+	}else if(c_ambos == true){
+		$('#c-ambos').parent().removeClass('is-checked');
+	}
+}
+function enviarGracias(){
+	var windowQestion = $('.js-window6');
+    homePage.css('display','none');
+    firstWindow.css('display','none');
+    $('.opacity-done').removeClass('animated fadeInDown fadeOutDown fadeInUp fadeOutUp');
+    windowQestion.addClass('animated fadeInUp');
+	$('.button-arrow').css("display","none");
+	$('.question').css("display","none");
+	setTimeout(function(){ 
+		location.reload();
+	}, 4000);
 }
