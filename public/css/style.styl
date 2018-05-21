@@ -450,33 +450,36 @@ body
 		font-size 13px
 		font-family $regular
 		font-weight 100
-.js-respuestas
-	flexCenter()
-	background-color #FFFFFF
-	color #000000
-	margin 5px 0
-	padding 8px 5px 8px 15px
-	ul
-		transitionMaxWidth()
-		max-width calc(100% - 85px)
-		width 100%
-		margin 0
-		padding-left 15px
-		li
+.js-contenedor-respuestas
+	overflow-y scroll
+	height 295px
+	.js-respuestas
+		flexCenter()
+		background-color #FFFFFF
+		color #000000
+		margin 5px 0
+		padding 8px 5px 8px 15px
+		ul
+			transitionMaxWidth()
+			max-width calc(100% - 85px)
+			width 100%
+			margin 0
+			padding-left 15px
+			li
+				font-size 15px
+		button
+			transitionBgColor()
+			color #4983B6
+			text-transform initial
 			font-size 15px
-	button
-		transitionBgColor()
-		color #4983B6
-		text-transform initial
-		font-size 15px
-		box-shadow none
-		height 30px
-		line-height 32px
-		background-color transparent
-		font-family $bold
-		&:hover
-			background-color #4983B6
-			color #FFFFFF
+			box-shadow none
+			height 30px
+			line-height 32px
+			background-color transparent
+			font-family $bold
+			&:hover
+				background-color #4983B6
+				color #FFFFFF
 .js-datos
 	flexCenter()
 	padding 5px
