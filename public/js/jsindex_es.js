@@ -97,9 +97,9 @@ function solicitarEstimacion(){
 	var terminos		= $('#checkbox-1').is(':checked');
 	var term_cond		= null;
 	var contacto		= null;
-	/*if(nombre_completo == '' && empresa == '' && email == '' && pais == '' && cargo == '' && telefono == '' && c_email == false && terminos == false){
+	if(nombre_completo == '' && empresa == '' && email == '' && pais == '' && cargo == '' && telefono == '' && c_email == false && terminos == false){
 		validarCampos();
-	}*/
+	}
 	if(nombre_completo == null || nombre_completo == ''){
 		msj('error', 'Ingrese su nombre completo');
 		return;
