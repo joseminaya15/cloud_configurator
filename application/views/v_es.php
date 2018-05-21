@@ -563,7 +563,7 @@
                         <div class="js-card__flex">
                             <div class="js-card-confirmacion">
                                 <h2>YO <strong>QUIERO</strong></h2>
-                                <div class="contenedor-respuestas">
+                                <div class="js-contenedor-respuestas">
                                     <div class="col-xs-12 p-0">
                                         <div class="js-respuestas">
                                             <ul>
