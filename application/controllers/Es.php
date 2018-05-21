@@ -150,7 +150,7 @@ class Es extends CI_Controller {
                             'newline'   => "\r\n");
          $this->email->initialize($configGmail);
          $this->email->from('info@sap-latam.com');
-         $this->email->to('jhonatanibericom@gmail.com');
+         $this->email->to('jhonatanibericom@gmail.com');//Giovanna.bergamo@sap.com,anali.vidal@sap.com,alejandra.hamelink@sap.com
          $this->email->subject('Estoy interesado en Cloud Configurator para mi negocio.');
          $texto = '<!DOCTYPE html>
                     <html>
@@ -481,7 +481,7 @@ class Es extends CI_Controller {
           }else if($pantalla == PANT_TRES){
               $arrayUpdate = array('tipo_industria'  => $tipo_ind,
                                     'tamanio'        => $tamanio,
-                                    'factura_anual'  => $factura);//
+                                    'factura_anual'  => $factura);
               $this->M_solicitud->updateDatos($arrayUpdate, $this->session->userdata('id_sol'), 'solicitud');
               $session     = array('tipo_industria' => $tipo_ind,
                                    'tamanio'        => $tamanio,
