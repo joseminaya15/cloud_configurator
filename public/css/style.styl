@@ -38,6 +38,12 @@ transitionBgColor()
 	-ms-transition background-color .3s linear
 	-o-transition background-color .3s linear
 	transition background-color .3s linear
+transitionTransform()
+	-webkit-transition transform .3s linear
+	-moz-transition transform .3s linear
+	-ms-transition transform .3s linear
+	-o-transition transform .3s linear
+	transition transform .3s linear
 absolute()
 	position absolute
 	top 0
@@ -615,15 +621,23 @@ body
 	height 100%
 	max-height 285px
 .js-card--large__tipo
+	transitionTransform()
 	transform translate3d(-100%, 0, 0)
 	opacity 0
 	margin 0
-	width 0
 	z-index -5
+	width 0 !important
+.js-card--transform
+	transitionTransform()
+	-webkit-transform translate3d(0px, 0px, 0px) !important
+	-moz-transform translate3d(0px, 0px, 0px) !important
+	-ms-transform translate3d(0px, 0px, 0px) !important
+	-o-transform translate3d(0px, 0px, 0px) !important
+	transform translate3d(0px, 0px, 0px) !important
 .js-card--tipo
 	flexCenter()
 	&.js-card--show
-		max-width 225px
+		max-width 240px
 		width 100%
 .js-card--empresa
 	flexCenter center()
