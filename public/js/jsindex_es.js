@@ -441,34 +441,6 @@ function selectConfigurator(id, dato){
 	if(configurador != null || configurador != ''){
 		$('#next').prop("disabled", false);
 	}
-	if(configurador == 'HR'){
-		$('.owl-nav').css('display','flex');
-		$('.js-window2 .owl-carousel').owlCarousel({
-			lazyLoad : true,
-			responsive : {
-				0 : {
-					items : 1
-				},
-				600:{
-					items : 2
-				},
-				1200:{
-					items : 3
-				},
-				1400:{
-					items : 4
-				}
-
-			},
-			navigation : false,
-			nav : true,
-			loop : false,
-			dots: false,
-			autoplay : false,
-			autoplayTimeout : 5000,
-			navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
-		});
-	}
 	$('.js-window3 .owl-carousel').owlCarousel({
 		lazyLoad : true,
 		responsive : {
@@ -516,6 +488,82 @@ function selectConfigurator(id, dato){
 		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
 	});
 }
+$('#ERP').click(function(){
+	$('#js-carousel--ERP .owl-nav').css('display','flex');
+	$('#js-carousel--ERP .owl-carousel').owlCarousel({
+		lazyLoad : true,
+		responsive : {
+			0 : {
+				items : 1
+			},
+			600:{
+				items : 2
+			},
+			1200:{
+				items : 3
+			}
+		},
+		navigation : false,
+		nav : true,
+		loop : false,
+		dots: false,
+		autoplay : false,
+		autoplayTimeout : 5000,
+		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+	});
+})
+$('#CRM').click(function(){
+	$('#js-carousel--CRM .owl-nav').css('display','flex');
+	$('#js-carousel--CRM .owl-carousel').owlCarousel({
+		lazyLoad : true,
+		responsive : {
+			0 : {
+				items : 1
+			},
+			600:{
+				items : 2
+			},
+			1200:{
+				items : 3
+			}
+		},
+		navigation : false,
+		nav : true,
+		loop : false,
+		dots: false,
+		autoplay : false,
+		autoplayTimeout : 5000,
+		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+	});
+})
+$('#HR').click(function(){
+	$('#js-carousel--HR .owl-nav').css('display','flex');
+	$('#js-carousel--HR .owl-carousel').owlCarousel({
+		lazyLoad : true,
+		responsive : {
+			0 : {
+				items : 1
+			},
+			600:{
+				items : 2
+			},
+			1200:{
+				items : 3
+			},
+			1400:{
+				items : 4
+			}
+
+		},
+		navigation : false,
+		nav : true,
+		loop : false,
+		dots: false,
+		autoplay : false,
+		autoplayTimeout : 5000,
+		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+	});
+})
 var tipo_ind = "";
 function tipoTamaño(id,tipo){
 	var idButtonSelect = $('#'+id);
