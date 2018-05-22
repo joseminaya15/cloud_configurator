@@ -69,46 +69,50 @@
                     <div class="js-container">
                         <h2>YO <strong>QUIERO</strong></h2>
                         <div class="js-card__flex">
-                            <div class="js-card">
-                                <div class="js-card-imagen">
-                                    <div class="js-card-flip js-card-flip__front">
-                                        <img src="<?php echo RUTA_IMG?>cards/byd.png">
+                            <div id="js-carousel--configurator" class="js-carousel">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="js-card">
+                                        <div class="js-card-imagen">
+                                            <div class="js-card-flip js-card-flip__front">
+                                                <img src="<?php echo RUTA_IMG?>cards/byd.png">
+                                            </div>
+                                            <div class="js-card-flip js-card-flip__back selected">
+                                                <h2>ERP</h2>
+                                                <button id="ERP" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'ERP')">Seleccionar</button>
+                                            </div>
+                                        </div>
+                                        <div class="js-card-content">
+                                            <p>Innovar digitalmente mis procesos para mejorar la competitividad, la eficiencia y la reputaci&oaute;n de mi marca y m&aacute;s.</p>
+                                        </div>
                                     </div>
-                                    <div class="js-card-flip js-card-flip__back selected">
-                                        <h2>ERP</h2>
-                                        <button id="ERP" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'ERP')">Seleccionar</button>
+                                    <div class="js-card">
+                                        <div class="js-card-imagen">
+                                            <div class="js-card-flip js-card-flip__front">
+                                                <img src="<?php echo RUTA_IMG?>cards/crm.png">
+                                            </div>
+                                            <div class="js-card-flip js-card-flip__back">
+                                                <h2>CRM</h2>
+                                                <button id="CRM" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'CRM')">Seleccionar</button>
+                                            </div>
+                                        </div>
+                                        <div class="js-card-content">
+                                            <p>Contar con herramientas para una gesti&oacute;n avanzada de mis clientes para entregar la mejor experiencia, adelantarse a sus necesidades y brindar un servicio de excelencia.</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="js-card-content">
-                                    <p>Innovar digitalmente mis procesos para mejorar la competitividad, la eficiencia y la reputaci&oaute;n de mi marca y m&aacute;s.</p>
-                                </div>
-                            </div>
-                            <div class="js-card">
-                                <div class="js-card-imagen">
-                                    <div class="js-card-flip js-card-flip__front">
-                                        <img src="<?php echo RUTA_IMG?>cards/crm.png">
+                                    <div class="js-card">
+                                        <div class="js-card-imagen">
+                                            <div class="js-card-flip js-card-flip__front">
+                                                <img src="<?php echo RUTA_IMG?>cards/hr.png">
+                                            </div>
+                                            <div class="js-card-flip js-card-flip__back">
+                                                <h2>HR</h2>
+                                                <button id="HR" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'HR')">Seleccionar</button>
+                                            </div>
+                                        </div>
+                                        <div class="js-card-content">
+                                            <p>Modernizar la gesti&oacute;n de mi fuerza laboral, alinearlos con las metas del negocio, innovar su aprendizaje y compensarlos adecuadamente.</p>
+                                        </div>
                                     </div>
-                                    <div class="js-card-flip js-card-flip__back">
-                                        <h2>CRM</h2>
-                                        <button id="CRM" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'CRM')">Seleccionar</button>
-                                    </div>
-                                </div>
-                                <div class="js-card-content">
-                                    <p>Contar con herramientas para una gesti&oacute;n avanzada de mis clientes para entregar la mejor experiencia, adelantarse a sus necesidades y brindar un servicio de excelencia.</p>
-                                </div>
-                            </div>
-                            <div class="js-card">
-                                <div class="js-card-imagen">
-                                    <div class="js-card-flip js-card-flip__front">
-                                        <img src="<?php echo RUTA_IMG?>cards/hr.png">
-                                    </div>
-                                    <div class="js-card-flip js-card-flip__back">
-                                        <h2>HR</h2>
-                                        <button id="HR" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'HR')">Seleccionar</button>
-                                    </div>
-                                </div>
-                                <div class="js-card-content">
-                                    <p>Modernizar la gesti&oacute;n de mi fuerza laboral, alinearlos con las metas del negocio, innovar su aprendizaje y compensarlos adecuadamente.</p>
                                 </div>
                             </div>
                         </div>

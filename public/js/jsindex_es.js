@@ -57,6 +57,27 @@ function buttonNext(){
 	      }
 		});
 	}
+	$('#js-carousel--configurator .owl-carousel').owlCarousel({
+		lazyLoad : true,
+		responsive : {
+			0 : {
+				items : 1
+			},
+			600:{
+				items : 2
+			},
+			1200:{
+				items : 3
+			}
+		},
+		navigation : false,
+		nav : true,
+		loop : false,
+		dots: false,
+		autoplay : false,
+		autoplayTimeout : 5000,
+		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+	});
 }
 function cambiarIdioma(){
 	var idioma = $('#IdiomaHome').val();

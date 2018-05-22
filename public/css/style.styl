@@ -241,7 +241,7 @@ body
 .js-card
 	width 100%
 	max-width 180px
-	margin 20px
+	margin 20px auto
 	.js-card-imagen
 		position relative
 		width 100%
@@ -256,6 +256,8 @@ body
 				flexCenter()
 				justify-content center
 				border 1px solid $color
+				img
+					width initial
 			&.js-card-flip__back
 				flipCardBack()
 				flexCenter()
@@ -734,6 +736,8 @@ body
 			font-size 20px
 			line-height 24px
 @media ( max-width: 600px )
+	.js-container
+		align-items center
 	.js-carousel
 		max-width 300px
 	.js-title
@@ -748,4 +752,19 @@ body
 	.js-minilogo
 		left 20px
 		img
-			max-width 75px			
+			max-width 75px
+	.js-window1 
+		h2
+			font-size 40px
+			line-height 42px
+	.js-question--title
+		margin-bottom 5px
+	.js-question--number
+		text-align center
+		font-size 32px
+		line-height 34px
+		margin 0
+		h2
+			font-size 24px
+			line-height 26px
+					
