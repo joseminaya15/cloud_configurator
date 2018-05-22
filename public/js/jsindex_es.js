@@ -437,7 +437,7 @@ function selectConfigurator(id, dato){
 	$('.js-question--title').find('strong').text('/ '+idConfigurator);
 	$('.js-card-imagen').removeClass('js-card-imagen__static');
 	$('#'+id).parents('.js-card-imagen').addClass('js-card-imagen__static');
-	$('.owl-nav').css('display','none');
+	// $('.owl-nav').css('display','none');
 	if(configurador != null || configurador != ''){
 		$('#next').prop("disabled", false);
 	}

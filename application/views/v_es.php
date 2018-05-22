@@ -43,9 +43,9 @@
                     <p>Complete estas preguntas y descubra la soluci&oacute;n perfecta de SAP en funci&oacute;n a las necesidades de su negocio.</p>
                 </div>
                 <div class="js-bar">
-                    <div class="js-bar__children background-body3"></div>
-                    <div class="js-bar__children background-body2"></div>
-                    <div class="js-bar__children background-body1"></div>
+                    <div class="js-bar__children"></div>
+                    <div class="js-bar__children"></div>
+                    <div class="js-bar__children"></div>
                 </div>
                 <div class="js-fondo__imagen"></div>
                 <div class="js-minilogo"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div>
