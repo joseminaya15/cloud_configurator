@@ -139,7 +139,7 @@
                             <span>01/04</span>
                             <h2>¿C&oacute;mo podemos ayudarle&#63;</h2>
                         </div>
-                        <div id="js-carousel--ERP" class="js-carousel">
+                        <div id="js-carousel--ERP" class="js-carousel js-nav-none">
                             <div class="owl-carousel owl-theme">
                                 <div class="item">
                                     <div class="js-card--large js-card--large__ERP js-card--large__flex">
@@ -191,7 +191,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="js-carousel--CRM" class="js-carousel">
+                        <div id="js-carousel--CRM" class="js-carousel js-nav-none">
                             <div class="owl-carousel owl-theme">
                                 <div class="item">
                                     <div class="js-card--large js-card--large__CRM js-card--large__flex">
@@ -243,7 +243,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="js-carousel--HR" class="js-carousel">
+                        <div id="js-carousel--HR" class="js-carousel js-nav-none">
                             <div class="owl-carousel owl-theme">
                                 <div class="item">
                                     <div class="js-card--large js-card--large__HR js-card--large__flex">

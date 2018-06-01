@@ -518,6 +518,7 @@ function selectConfigurator(id, dato){
 	});
 }
 $('#ERP').click(function(){
+	$('.js-nav-none .owl-nav').css('display','none');
 	$('#js-carousel--ERP .owl-nav').css('display','flex');
 	$('#js-carousel--ERP .owl-carousel').owlCarousel({
 		lazyLoad : true,
@@ -542,6 +543,7 @@ $('#ERP').click(function(){
 	});
 })
 $('#CRM').click(function(){
+	$('.js-nav-none .owl-nav').css('display','none');
 	$('#js-carousel--CRM .owl-nav').css('display','flex');
 	$('#js-carousel--CRM .owl-carousel').owlCarousel({
 		lazyLoad : true,
@@ -566,6 +568,7 @@ $('#CRM').click(function(){
 	});
 })
 $('#HR').click(function(){
+	$('.js-nav-none .owl-nav').css('display','none');
 	$('#js-carousel--HR .owl-nav').css('display','flex');
 	$('#js-carousel--HR .owl-carousel').owlCarousel({
 		lazyLoad : true,
