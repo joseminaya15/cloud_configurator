@@ -720,7 +720,7 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="js-select js-standar">
-                                        <select class="selectpicker" id="relacion" name="pais" title="País">
+                                        <select class="selectpicker" id="pais" name="pais" title="País">
                                             <option value="Argentina">Argentina</option>
                                             <option value="Brazil">Brazil</option>
                                             <option value="Canada">Canada</option>
