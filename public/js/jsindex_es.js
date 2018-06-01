@@ -309,7 +309,7 @@ var configurador = null;
 var ayuda_negocio = null;
 function ayudaCard(id,ayuda){
 	var idButtonCard = $('#'+id);
-	$('.js-button-select').removeClass('js-selected');
+	$('.js-window2').find('.js-button-select').removeClass('js-selected');
 	idButtonCard.addClass('js-selected');
 	ayuda_negocio = ayuda;
 	if(ayuda_negocio != null || ayuda_negocio != ''){
@@ -363,7 +363,7 @@ function ConfirmarRespuestas(){
 var solucion = "";
 function saveSolucion(id,sol){
 	var idButtonSolution = $('#'+id);
-	$('.js-button-select').removeClass('js-selected');
+	$('.js-window4').find('.js-button-select').removeClass('js-selected');
 	idButtonSolution.addClass('js-selected');
 	solucion = sol;
 	if(solucion != '' || solucion != null){
