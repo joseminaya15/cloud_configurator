@@ -373,7 +373,6 @@ function buttonQuestion(direction){
 	var empleados = $('#textOperar').text();
 	if(direction == 2){
 		m++;
-		console.log(m);
 		if(m == 2){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			firstWindow.addClass('opacity-done');
