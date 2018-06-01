@@ -58,11 +58,21 @@
             <!-- TODOS LOS CARDS  -->
             <div id="configurator">
                 <div class="js-header js-header--configurator">
-                    <img src="<?php echo RUTA_IMG?>logo/logo-sap__run.png">
-                    <div class="js-header__bgcolor">
-                        <div class="js-header__bgcolor--bar"></div>
-                        <div class="js-header__bgcolor--bar"></div>
-                        <div class="js-header__bgcolor--bar"></div>
+                    <div class="js-header--logo">
+                        <img src="<?php echo RUTA_IMG?>logo/logo_sap.svg">
+                        <p>Cloud Configurator</p>
+                    </div>
+                    <div class="js-idioma">
+                        <select class="selectpicker" id="IdiomaHome"  name="Idioma" onchange="cambiarIdioma()">
+                            <option value="Español">Espa&ntilde;ol</option>
+                            <option value="Inglés" disabled="true">English</option>
+                            <option value="Portugués" disabled="true">Portugu&ecirc;s</option>
+                        </select>
+                        <div class="js-header__bgcolor">
+                            <div class="js-header__bgcolor--bar"></div>
+                            <div class="js-header__bgcolor--bar"></div>
+                            <div class="js-header__bgcolor--bar"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="js-window1">
@@ -119,7 +129,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div>
+                        <!-- <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div> -->
                     </div>
                 </div>
                 <div class="js-window2 opacity-done">
@@ -365,7 +375,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div>
+                        <!-- <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div> -->
                     </div>
                 </div>
                 <div class="js-window3 opacity-done">
@@ -534,7 +544,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div>
+                        <!-- <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div> -->
                     </div>
                 </div>
                 <div class="js-window4 opacity-done">
@@ -598,7 +608,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div>
+                        <!-- <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div> -->
                     </div>
                 </div>
                 <div class="js-window5 opacity-done">
@@ -764,6 +774,9 @@
                     <button id="next" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="buttonQuestion(2);buttonNext();">
                         <i class="mdi mdi-keyboard_arrow_down"></i>
                     </button>
+                </div>
+                <div class="js-chat">
+                    <a href="https://z1.liveper.sn/api/account/81933160/route/campaign/194741814/engagement/250005114" target="_blank"><img src="<?php echo RUTA_IMG?>/logo/chat.png"><label>Chatea con nosotros</label></a>
                 </div>
             </div>
         </section> 

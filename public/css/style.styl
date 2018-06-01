@@ -110,20 +110,33 @@ body
 		width 100%
 		max-width 150px
 	&.js-header--configurator
+		padding 0
 		border-bottom 1px solid #FFFFFF
 		.js-header__bgcolor
 			flexCenter()
 			justify-content flex-end
+			width 100%
+			max-width 60px
 			.js-header__bgcolor--bar
-				height 100%
+				height 60px
 				width 100%
-				max-width 120px
+				max-width 20px
 				&:nth-child(1)
 					background-color rgba(240, 171, 0, 0.4)
 				&:nth-child(2)
 					background-color rgba(240, 171, 0, 0.7)
 				&:nth-child(3)
 					background-color rgba(240, 171, 0, 1)
+.js-header--logo
+	flexCenter()
+	width 100%
+	padding 15px 25px
+	img
+		width 100%
+		max-width 60px
+	p
+		margin 0
+		font-size 18px
 .js-fondo__imagen
 	background url(../img/fondo/fondo-imagen.jpg) no-repeat center center
 	background-size cover
@@ -697,6 +710,32 @@ body
 			background-color $color
 			&:hover
 				background-color $color
+.js-chat
+	width 100%
+	max-width 150px
+	background-color #008FD3
+	color #FFFFFF
+	position fixed
+	width 100%
+	bottom 10px
+	right 100px
+	padding 2px 5px
+	z-index 4
+	margin auto
+	text-align center
+	border-radius 10px
+	a
+		width 100%
+		display inline-block
+		vertical-align middle
+		color #FFFFFF
+		text-decoration none
+		img
+			max-width 37px
+			width 100%
+		label
+			font-weight 100
+			cursor pointer		
 /*SCROLL*/
 ::-webkit-scrollbar
 	width 8px
