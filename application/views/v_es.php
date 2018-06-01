@@ -719,8 +719,21 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="js-input">
-                                        <input type="text" class="form-control" id="pais" maxlength="100" onkeypress="return soloLetras(event);"  onchange="validarCampos()" placeholder="País">
+                                    <div class="js-select js-standar">
+                                        <select class="selectpicker" id="pais" name="pais" title="País">
+                                            <option value="Argentina">Argentina</option>
+                                            <option value="Brazil">Brazil</option>
+                                            <option value="Canada">Canada</option>
+                                            <option value="Chile">Chile</option>
+                                            <option value="Colombia">Colombia</option>
+                                            <option value="Costa Rica">Costa Rica</option>
+                                            <option value="Mexico">Mexico</option>
+                                            <option value="Panama">Panama</option>
+                                            <option value="Peru">Peru</option>
+                                            <option value="Puerto Rico">Puerto Rico</option>
+                                            <option value="USA">USA</option>
+                                            <option value="Venezuela">Venezuela</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
