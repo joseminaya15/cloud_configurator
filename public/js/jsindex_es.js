@@ -610,6 +610,7 @@ function tipoTamaño(id,tipo){
 	$('.js-card--empresa').toggleClass('animated fadeInLeft');
 	cardCarousel.toggleClass('js-card--transform');
 	idButtonSelect.toggleClass('js-selected');
+	$('.js-nav-toggle .owl-nav').toggleClass('dnone');
 	var empleados = $('#textOperar').text();
 	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
 		if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){

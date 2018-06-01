@@ -387,7 +387,7 @@
                         </div>
                         <div class="js-card__flex js-card__flex--relative">
                             <div class="js-card--tipo">
-                                <div class="js-carousel">
+                                <div class="js-carousel js-nav-toggle">
                                     <div class="owl-carousel owl-theme">
                                         <div class="item">
                                             <div class="js-card--large js-card--large__flex">
