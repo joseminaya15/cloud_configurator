@@ -309,7 +309,7 @@ var configurador = null;
 var ayuda_negocio = null;
 function ayudaCard(id,ayuda){
 	var idButtonCard = $('#'+id);
-	$('.js-button-select').removeClass('js-selected');
+	$('.js-window2').find('.js-button-select').removeClass('js-selected');
 	idButtonCard.addClass('js-selected');
 	ayuda_negocio = ayuda;
 	if(ayuda_negocio != null || ayuda_negocio != ''){
@@ -363,7 +363,7 @@ function ConfirmarRespuestas(){
 var solucion = "";
 function saveSolucion(id,sol){
 	var idButtonSolution = $('#'+id);
-	$('.js-button-select').removeClass('js-selected');
+	$('.js-window4').find('.js-button-select').removeClass('js-selected');
 	idButtonSolution.addClass('js-selected');
 	solucion = sol;
 	if(solucion != '' || solucion != null){
@@ -517,6 +517,7 @@ function selectConfigurator(id, dato){
 	});
 }
 $('#ERP').click(function(){
+	$('.js-nav-none .owl-nav').css('display','none');
 	$('#js-carousel--ERP .owl-nav').css('display','flex');
 	$('#js-carousel--ERP .owl-carousel').owlCarousel({
 		lazyLoad : true,
@@ -541,6 +542,7 @@ $('#ERP').click(function(){
 	});
 })
 $('#CRM').click(function(){
+	$('.js-nav-none .owl-nav').css('display','none');
 	$('#js-carousel--CRM .owl-nav').css('display','flex');
 	$('#js-carousel--CRM .owl-carousel').owlCarousel({
 		lazyLoad : true,
@@ -565,6 +567,7 @@ $('#CRM').click(function(){
 	});
 })
 $('#HR').click(function(){
+	$('.js-nav-none .owl-nav').css('display','none');
 	$('#js-carousel--HR .owl-nav').css('display','flex');
 	$('#js-carousel--HR .owl-carousel').owlCarousel({
 		lazyLoad : true,
@@ -606,6 +609,7 @@ function tipoTamaño(id,tipo){
 	$('.js-card--empresa').toggleClass('animated fadeInLeft');
 	cardCarousel.toggleClass('js-card--transform');
 	idButtonSelect.toggleClass('js-selected');
+	$('.js-nav-toggle .owl-nav').toggleClass('dnone');
 	var empleados = $('#textOperar').text();
 	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
 		if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){

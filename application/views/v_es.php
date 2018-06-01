@@ -58,11 +58,21 @@
             <!-- TODOS LOS CARDS  -->
             <div id="configurator">
                 <div class="js-header js-header--configurator">
-                    <img src="<?php echo RUTA_IMG?>logo/logo-sap__run.png">
-                    <div class="js-header__bgcolor">
-                        <div class="js-header__bgcolor--bar"></div>
-                        <div class="js-header__bgcolor--bar"></div>
-                        <div class="js-header__bgcolor--bar"></div>
+                    <div class="js-header--logo">
+                        <img src="<?php echo RUTA_IMG?>logo/logo_sap.svg">
+                        <p>Cloud Configurator</p>
+                    </div>
+                    <div class="js-idioma">
+                        <select class="selectpicker" id="IdiomaHome"  name="Idioma" onchange="cambiarIdioma()">
+                            <option value="Español">Espa&ntilde;ol</option>
+                            <option value="Inglés" disabled="true">English</option>
+                            <option value="Portugués" disabled="true">Portugu&ecirc;s</option>
+                        </select>
+                        <div class="js-header__bgcolor">
+                            <div class="js-header__bgcolor--bar"></div>
+                            <div class="js-header__bgcolor--bar"></div>
+                            <div class="js-header__bgcolor--bar"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="js-window1">
@@ -119,7 +129,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div>
+                        <!-- <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div> -->
                     </div>
                 </div>
                 <div class="js-window2 opacity-done">
@@ -129,13 +139,13 @@
                             <span>01/04</span>
                             <h2>¿C&oacute;mo podemos ayudarle&#63;</h2>
                         </div>
-                        <div id="js-carousel--ERP" class="js-carousel">
+                        <div id="js-carousel--ERP" class="js-carousel js-nav-none">
                             <div class="owl-carousel owl-theme">
                                 <div class="item">
                                     <div class="js-card--large js-card--large__ERP js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
-                                                <img src="<?php echo RUTA_IMG?>cards/integracion.png">
+                                                <img src="<?php echo RUTA_IMG?>cards/person1.png">
                                             </div>
                                             <div class="js-card--large__content-text">
                                                 <p>Como responsable de la integraci&oacute;n financiera de mi empresa <strong>quiero tener visibilidad en tiempo real.</strong></p>
@@ -151,7 +161,7 @@
                                     <div class="js-card--large js-card--large__ERP js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
-                                                <img src="<?php echo RUTA_IMG?>cards/integracion.png">
+                                                <img src="<?php echo RUTA_IMG?>cards/person2.png">
                                             </div>
                                             <div class="js-card--large__content-text">
                                                 <p>Como responsable de los procesos operativos <strong>quiero alacanzar una mayor eficiencia.</strong></p>
@@ -167,7 +177,7 @@
                                     <div class="js-card--large js-card--large__ERP js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
-                                                <img src="<?php echo RUTA_IMG?>cards/integracion.png">
+                                                <img src="<?php echo RUTA_IMG?>cards/person3.png">
                                             </div>
                                             <div class="js-card--large__content-text">
                                                 <p>Como responsable del crecimiento de la empresa <strong>quiero lograr m&aacute;xima rentabilidad.</strong></p>
@@ -181,13 +191,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="js-carousel--CRM" class="js-carousel">
+                        <div id="js-carousel--CRM" class="js-carousel js-nav-none">
                             <div class="owl-carousel owl-theme">
                                 <div class="item">
                                     <div class="js-card--large js-card--large__CRM js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
-                                                <img src="<?php echo RUTA_IMG?>cards/integracion.png">
+                                                <img src="<?php echo RUTA_IMG?>cards/person1.png">
                                             </div>
                                             <div class="js-card--large__content-text">
                                                 <p>Como responsable de ventas quiero <strong>mejorar mi proceso de ventas.</strong></p>
@@ -203,7 +213,7 @@
                                     <div class="js-card--large js-card--large__CRM js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
-                                                <img src="<?php echo RUTA_IMG?>cards/integracion.png">
+                                                <img src="<?php echo RUTA_IMG?>cards/person2.png">
                                             </div>
                                             <div class="js-card--large__content-text">
                                                 <p>Como responsable de servicios quiero <strong>mejorar nuestros procesos de soporte al cliente.</strong></p>
@@ -219,7 +229,7 @@
                                     <div class="js-card--large js-card--large__CRM js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
-                                                <img src="<?php echo RUTA_IMG?>cards/integracion.png">
+                                                <img src="<?php echo RUTA_IMG?>cards/person3.png">
                                             </div>
                                             <div class="js-card--large__content-text">
                                                 <p>Como responsable de ventas online quiero <strong>crear experiencias de compra &uacute;nicas e simplificadas.</strong></p>
@@ -233,13 +243,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="js-carousel--HR" class="js-carousel">
+                        <div id="js-carousel--HR" class="js-carousel js-nav-none">
                             <div class="owl-carousel owl-theme">
                                 <div class="item">
                                     <div class="js-card--large js-card--large__HR js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
-                                                <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                                <img src="<?php echo RUTA_IMG?>cards/person1.png">
                                             </div>
                                             <div class="js-card--large__content-text">
                                                 <p>Como responsable de HR quiero consolidar y optimizar los procesos centrales de RRHH.</p>
@@ -255,7 +265,7 @@
                                     <div class="js-card--large js-card--large__HR js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
-                                                <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                                <img src="<?php echo RUTA_IMG?>cards/person2.png">
                                             </div>
                                             <div class="js-card--large__content-text">
                                                 <p>Como responsable de HR quiero alinear las metas de la empresa con la recompensa de mis empleados.</p>
@@ -271,7 +281,7 @@
                                     <div class="js-card--large js-card--large__HR js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
-                                                <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                                <img src="<?php echo RUTA_IMG?>cards/person3.png">
                                             </div>
                                             <div class="js-card--large__content-text">
                                                 <p>Como responsable de HR quiero desarrollar a mis empleados de una manera simple y colaborativa.</p>
@@ -287,7 +297,7 @@
                                     <div class="js-card--large js-card--large__HR js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
-                                                <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                                <img src="<?php echo RUTA_IMG?>cards/person4.png">
                                             </div>
                                             <div class="js-card--large__content-text">
                                                 <p>Como responsable de HR quiero retener a los mejores talentos con un plan de compensaci&oacute;n atractivo.</p>
@@ -303,7 +313,7 @@
                                     <div class="js-card--large js-card--large__HR js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
-                                                <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                                <img src="<?php echo RUTA_IMG?>cards/person1.png">
                                             </div>
                                             <div class="js-card--large__content-text">
                                                 <p>Como responsable de HR quiero planificar el desarrollo y sucesi&oacute;n de mis mejores talentos</p>
@@ -319,7 +329,7 @@
                                     <div class="js-card--large js-card--large__HR js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
-                                                <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                                <img src="<?php echo RUTA_IMG?>cards/person2.png">
                                             </div>
                                             <div class="js-card--large__content-text">
                                                 <p>Como responsable de HR quiero centralizar y agilizar mis procesos de adquisici&oacute;n y contrataci&oacute;n de talentos.</p>
@@ -335,7 +345,7 @@
                                     <div class="js-card--large js-card--large__HR js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
-                                                <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                                <img src="<?php echo RUTA_IMG?>cards/person3.png">
                                             </div>
                                             <div class="js-card--large__content-text">
                                                 <p>Como responsable de HR quiero aumentar la eficacia de la funci&oacute;n de RRHH accediendo a un conjunto de anal&iacute;ticas listas para usar.</p>
@@ -351,7 +361,7 @@
                                     <div class="js-card--large js-card--large__HR js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
-                                                <img src="<?php echo RUTA_IMG?>cards/indicadores.png">
+                                                <img src="<?php echo RUTA_IMG?>cards/person4.png">
                                             </div>
                                             <div class="js-card--large__content-text">
                                                 <p>Como responsable de HR quiero empoderar a los nuevos empleados para lograr una contribuci&oacute;n r&aacute;pida a las metas del negocio.</p>
@@ -365,7 +375,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div>
+                        <!-- <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div> -->
                     </div>
                 </div>
                 <div class="js-window3 opacity-done">
@@ -377,7 +387,7 @@
                         </div>
                         <div class="js-card__flex js-card__flex--relative">
                             <div class="js-card--tipo">
-                                <div class="js-carousel">
+                                <div class="js-carousel js-nav-toggle">
                                     <div class="owl-carousel owl-theme">
                                         <div class="item">
                                             <div class="js-card--large js-card--large__flex">
@@ -399,7 +409,7 @@
                                             <div class="js-card--large js-card--large__flex">
                                                 <div class="js-card--large__content">
                                                     <div class="js-card--large__content-tipo">
-                                                        <img src="<?php echo RUTA_IMG?>cards/retail.png">
+                                                        <img src="<?php echo RUTA_IMG?>cards/finance.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
                                                         <small>Servicios Financieros</small>
@@ -415,7 +425,7 @@
                                             <div class="js-card--large js-card--large__flex">
                                                 <div class="js-card--large__content">
                                                     <div class="js-card--large__content-tipo">
-                                                        <img src="<?php echo RUTA_IMG?>cards/distribucion.png">
+                                                        <img src="<?php echo RUTA_IMG?>cards/retail.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
                                                         <small>Comercio Minorista</small>
@@ -431,7 +441,7 @@
                                             <div class="js-card--large js-card--large__flex">
                                                 <div class="js-card--large__content">
                                                     <div class="js-card--large__content-tipo">
-                                                        <img src="<?php echo RUTA_IMG?>cards/productos.png">
+                                                        <img src="<?php echo RUTA_IMG?>cards/distribucion.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
                                                         <small>Comercio Mayorista</small>
@@ -447,7 +457,7 @@
                                             <div class="js-card--large js-card--large__flex">
                                                 <div class="js-card--large__content">
                                                     <div class="js-card--large__content-tipo">
-                                                        <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
+                                                        <img src="<?php echo RUTA_IMG?>cards/productos.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
                                                         <small>Productos de Consumo</small>
@@ -500,7 +510,7 @@
                                 <div class="js-card--large">
                                     <div class="js-card--large__content">
                                         <div class="js-card--large__content-tipo">
-                                            <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
+                                            <img src="<?php echo RUTA_IMG?>cards/empleados.png">
                                         </div>
                                         <div class="js-card--large__content-name">
                                             <small>N&uacute;mero de empleados</small>
@@ -515,7 +525,7 @@
                                 <div class="js-card--large">
                                     <div class="js-card--large__content">
                                         <div class="js-card--large__content-tipo">
-                                            <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
+                                            <img src="<?php echo RUTA_IMG?>cards/facturacion.png">
                                         </div>
                                         <div class="js-card--large__content-name">
                                             <small>Facturaci&oacute;n anual en d&oacute;lares</small>
@@ -534,7 +544,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div>
+                        <!-- <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div> -->
                     </div>
                 </div>
                 <div class="js-window4 opacity-done">
@@ -598,7 +608,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div>
+                        <!-- <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div> -->
                     </div>
                 </div>
                 <div class="js-window5 opacity-done">
@@ -764,6 +774,9 @@
                     <button id="next" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="buttonQuestion(2);buttonNext();">
                         <i class="mdi mdi-keyboard_arrow_down"></i>
                     </button>
+                </div>
+                <div class="js-chat">
+                    <a href="https://z1.liveper.sn/api/account/81933160/route/campaign/194741814/engagement/250005114" target="_blank"><img src="<?php echo RUTA_IMG?>/logo/chat.png"><label>Chatea con nosotros</label></a>
                 </div>
             </div>
         </section> 
