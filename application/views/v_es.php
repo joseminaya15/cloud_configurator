@@ -425,7 +425,7 @@
                                             <div class="js-card--large js-card--large__flex">
                                                 <div class="js-card--large__content">
                                                     <div class="js-card--large__content-tipo">
-                                                        <img src="<?php echo RUTA_IMG?>cards/distribucion.png">
+                                                        <img src="<?php echo RUTA_IMG?>cards/retail.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
                                                         <small>Comercio Minorista</small>
@@ -441,7 +441,7 @@
                                             <div class="js-card--large js-card--large__flex">
                                                 <div class="js-card--large__content">
                                                     <div class="js-card--large__content-tipo">
-                                                        <img src="<?php echo RUTA_IMG?>cards/productos.png">
+                                                        <img src="<?php echo RUTA_IMG?>cards/distribucion.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
                                                         <small>Comercio Mayorista</small>
@@ -457,7 +457,7 @@
                                             <div class="js-card--large js-card--large__flex">
                                                 <div class="js-card--large__content">
                                                     <div class="js-card--large__content-tipo">
-                                                        <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
+                                                        <img src="<?php echo RUTA_IMG?>cards/productos.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
                                                         <small>Productos de Consumo</small>
@@ -510,7 +510,7 @@
                                 <div class="js-card--large">
                                     <div class="js-card--large__content">
                                         <div class="js-card--large__content-tipo">
-                                            <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
+                                            <img src="<?php echo RUTA_IMG?>cards/empleados.png">
                                         </div>
                                         <div class="js-card--large__content-name">
                                             <small>N&uacute;mero de empleados</small>
@@ -525,7 +525,7 @@
                                 <div class="js-card--large">
                                     <div class="js-card--large__content">
                                         <div class="js-card--large__content-tipo">
-                                            <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
+                                            <img src="<?php echo RUTA_IMG?>cards/facturacion.png">
                                         </div>
                                         <div class="js-card--large__content-name">
                                             <small>Facturaci&oacute;n anual en d&oacute;lares</small>
