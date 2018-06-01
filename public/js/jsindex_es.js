@@ -373,6 +373,7 @@ function buttonQuestion(direction){
 	var empleados = $('#textOperar').text();
 	if(direction == 2){
 		m++;
+		console.log(m);
 		if(m == 2){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			firstWindow.addClass('opacity-done');
@@ -387,7 +388,13 @@ function buttonQuestion(direction){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			secondWindow.addClass('animated fadeOutUp');
 			thirdWindow.addClass('animated fadeInUp');
-			$('#next').prop("disabled", true);
+			if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
+				if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
+					$('#next').prop("disabled", false);
+				}
+			}else {
+				$('#next').prop("disabled", true);
+			}
 		}
 		else if(m == 4){
 			if(tipo_ind == 'Otras') {
@@ -586,8 +593,9 @@ $('#HR').click(function(){
 	});
 })
 var tipo_ind = "";
+var idButtonSelect = "";
 function tipoTamaño(id,tipo){
-	var idButtonSelect = $('#'+id);
+	idButtonSelect     = $('#'+id);
 	var cardIndustrias = idButtonSelect.parents('.owl-item');
 	var cardCarousel   = idButtonSelect.parents('.owl-stage');
 	tipo_ind = tipo;
