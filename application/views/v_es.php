@@ -560,6 +560,7 @@
                                             <div class="js-card--large__button">
                                                 <button id="buttonCard21" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'On Premise')">Seleccione</button>
                                             </div>
+                                            <div class="js-card--menu"><span>1/3</span></div>
                                         </div>
                                     </div>
                                     <div class="item">
@@ -575,6 +576,7 @@
                                             <div class="js-card--large__button">
                                                 <button id="buttonCard22" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Cloud')">Seleccione</button>
                                             </div>
+                                            <div class="js-card--menu"><span>2/3</span></div>
                                         </div>
                                     </div>
                                     <div class="item">
@@ -590,6 +592,7 @@
                                             <div class="js-card--large__button">
                                                 <button id="buttonCard23" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Híbrida')">Seleccione</button>
                                             </div>
+                                            <div class="js-card--menu"><span>3/3</span></div>
                                         </div>
                                     </div>
                                 </div>
@@ -603,8 +606,7 @@
                         <p class="js-question--title"><strong>/ ERP</strong> Cloud Configurator</p>
                         <div class="js-question--number">
                             <span>04/04</span>
-                            <!-- <h2>¿Qui&eacute;n recibir&aacute; la estimaci&oacute;n&#63;</h2> -->
-                            <h2>Ingrese su informaci&oacute;n para recibir el resultado</h2>
+                            <h2>Complete el formulario para poder contactarlo y entrar en detalles</h2>
                         </div>
                         <div class="js-card__flex">
                             <div class="js-card-confirmacion">

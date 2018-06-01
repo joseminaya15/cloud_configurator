@@ -363,6 +363,7 @@ function ConfirmarRespuestas(){
 var solucion = "";
 function saveSolucion(id,sol){
 	var idButtonSolution = $('#'+id);
+	$('.js-button-select').removeClass('js-selected');
 	idButtonSolution.addClass('js-selected');
 	solucion = sol;
 	if(solucion != '' || solucion != null){
