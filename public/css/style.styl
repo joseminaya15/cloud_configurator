@@ -241,12 +241,14 @@ body
 	margin auto
 	flex-direction column
 	position relative
-	padding 30px
+	padding 20px
+	margin-top 30px
 .js-window1
 	h2
 		color #FFFFFF
 		font-size 70px
 		line-height 68px
+		margin 5px 0
 		strong
 			background linear-gradient(to right, #EFAB1F 0%, #E35500 100%)
 			-webkit-background-clip text
@@ -325,7 +327,7 @@ body
 		margin 0
 .js-question--title
 	font-size 18px
-	margin-bottom 20px
+	margin-bottom 10px
 .js-question--number
 	font-size 32px
 	line-height 34px
@@ -749,6 +751,12 @@ body
 ::-webkit-scrollbar-thumb
 	background-color #AAAAAA
 	border-radius 10px
+@media ( max-width 1400px ) and ( max-height 720px )
+	.js-minilogo 
+		img
+			max-width 100px
+	.js-container
+		margin-top 60px
 @media ( max-width: 1400px )
 	.js-carousel
 		max-width 750px
