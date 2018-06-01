@@ -731,8 +731,8 @@
                                             <option value="Panama">Panama</option>
                                             <option value="Peru">Peru</option>
                                             <option value="Puerto Rico">Puerto Rico</option>
-                                            <option value="Panama">USA</option>
-                                            <option value="Panama">Panama</option>
+                                            <option value="USA">USA</option>
+                                            <option value="Venezuela">Venezuela</option>
                                         </select>
                                     </div>
                                 </div>
