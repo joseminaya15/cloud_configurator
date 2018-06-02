@@ -59,6 +59,7 @@ function buttonNext(){
 	}
 	$('#js-carousel--configurator .owl-carousel').owlCarousel({
 		lazyLoad : true,
+		responsiveClass:true,
 		responsive : {
 			0 : {
 				items : 1
@@ -73,6 +74,8 @@ function buttonNext(){
 		navigation : false,
 		nav : true,
 		loop : false,
+		autoWidth:true,
+		margin: 30,
 		dots: false,
 		autoplay : false,
 		autoplayTimeout : 5000,
@@ -490,6 +493,7 @@ function selectConfigurator(id, dato){
 		nav : true,
 		loop : false,
 		dots: false,
+		autoWidth:true,
 		autoplay : false,
 		autoplayTimeout : 5000,
 		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
@@ -512,6 +516,7 @@ function selectConfigurator(id, dato){
 		loop : false,
 		dots: false,
 		autoplay : false,
+		autoWidth:true,
 		autoplayTimeout : 5000,
 		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
 	});
@@ -537,6 +542,8 @@ $('#ERP').click(function(){
 		loop : false,
 		dots: false,
 		autoplay : false,
+		autoWidth:true,
+		margin: 20,
 		autoplayTimeout : 5000,
 		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
 	});
@@ -560,8 +567,10 @@ $('#CRM').click(function(){
 		navigation : false,
 		nav : true,
 		loop : false,
+		autoWidth:true,
 		dots: false,
 		autoplay : false,
+		margin: 20,
 		autoplayTimeout : 5000,
 		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
 	});
@@ -590,6 +599,8 @@ $('#HR').click(function(){
 		nav : true,
 		loop : false,
 		dots: false,
+		autoWidth:true,
+		margin: 20,
 		autoplay : false,
 		autoplayTimeout : 5000,
 		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
