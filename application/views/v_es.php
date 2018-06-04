@@ -701,7 +701,7 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="js-input">
-                                        <input type="text" class="form-control" id="empresa" maxlength="50" onkeypress="return soloLetras(event);" onchange="validarCampos()" placeholder="Empresa">
+                                        <input type="text" class="form-control" id="empresa" maxlength="50" onchange="validarCampos()" placeholder="Empresa">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
