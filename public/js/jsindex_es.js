@@ -491,7 +491,6 @@ function selectConfigurator(id, dato){
 		nav : true,
 		loop : false,
 		dots: false,
-		margin: 10,
 		autoplay : false,
 		autoplayTimeout : 5000,
 		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
