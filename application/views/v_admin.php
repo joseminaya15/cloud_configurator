@@ -97,6 +97,7 @@
                                 <th class="text-left">Relationship</th>
                                 <th class="text-left">Position</th>
                                 <th class="text-left">Contacted</th>
+                                <th class="text-left">Consent Statement</th>
                                 <th class="text-left">Country</th>
                                 <th class="text-left">Date</th>
                                 <th class="text-center" style="display: none">Industry</th>
