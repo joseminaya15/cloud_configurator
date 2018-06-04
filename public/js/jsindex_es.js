@@ -299,7 +299,7 @@ function mostrarDatos(){
           	$('#industria').text(data.Industria);
           	$('#factura').text(data.Factura_anual)
            	$('#tamanio').text(data.Tamanio);
-           	$('#ayuda').append(data.Prioridad);
+           	$('#ayuda').text(data.Prioridad);
            	$('#infraestructura').text(solucion);
         }else{
         	return;
@@ -375,7 +375,6 @@ function buttonQuestion(direction){
 	var empleados = $('#textOperar').text();
 	if(direction == 2){
 		m++;
-		console.log(m);
 		if(m == 2){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			firstWindow.addClass('opacity-done');
