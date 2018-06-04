@@ -72,6 +72,7 @@ function buttonNext(){
 			}
 		},
 		navigation : false,
+		mouseDrag: false,
 		nav : true,
 		loop : false,
 		margin: 30,
@@ -486,6 +487,7 @@ function selectConfigurator(id, dato){
 			}
 		},
 		navigation : false,
+		mouseDrag: false,
 		nav : true,
 		loop : false,
 		dots: false,
@@ -507,6 +509,7 @@ function selectConfigurator(id, dato){
 			}
 		},
 		navigation : false,
+		mouseDrag: false,
 		nav : true,
 		loop : false,
 		dots: false,
@@ -533,6 +536,7 @@ $('#ERP').click(function(){
 			}
 		},
 		navigation : false,
+		mouseDrag: false,
 		nav : true,
 		loop : false,
 		dots: false,
@@ -559,6 +563,7 @@ $('#CRM').click(function(){
 			}
 		},
 		navigation : false,
+		mouseDrag: false,
 		nav : true,
 		loop : false,
 		dots: false,
@@ -588,6 +593,7 @@ $('#HR').click(function(){
 			}
 		},
 		navigation : false,
+		mouseDrag: false,
 		nav : true,
 		loop : false,
 		dots: false,
