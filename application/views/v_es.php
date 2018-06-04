@@ -16,8 +16,10 @@
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>mdl/material.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap-select/css/bootstrap-select.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap/css/bootstrap.min.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.theme.default.min.css">
+        <!-- <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.theme.default.min.css"> -->
+        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>slick/slick.css?v=<?php echo time();?>">
+        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>slick/slick-theme.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>font-awesome.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>material-icons.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>bentonsans.css?v=<?php echo time();?>">
@@ -79,8 +81,8 @@
                     <div class="js-container">
                         <h2>YO <strong>QUIERO</strong></h2>
                         <div class="js-card__flex">
-                            <div id="js-carousel--configurator" class="js-carousel">
-                                <div class="owl-carousel owl-theme">
+                            <div id="js-carousel--configurator" class="js-carousel js-3cards">
+                                <div class="your-class">
                                     <div class="js-card">
                                         <div class="js-card-imagen">
                                             <div class="js-card-flip js-card-flip__front">
@@ -801,7 +803,8 @@
         <script src="<?php echo RUTA_PLUGINS?>bootstrap-select/js/i18n/defaults-es_ES.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>mdl/material.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>toaster/toastr.js?v=<?php echo time();?>"></script>
-        <script src="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.js"></script>
+        <!-- <script src="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.js"></script> -->
+        <script src="<?php echo RUTA_PLUGINS?>slick/slick.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>jsutils.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>jsmenu.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>jsindex_es.js?v=<?php echo time();?>"></script>
@@ -846,7 +849,30 @@
                     $('#pais').val("<?php echo $pais_link ?>");
                     $('#telefono').css('border-color','red');
                  }
-             });
+            });
+            $(document).ready(function(){
+                $('.your-class').slick({
+                    slidesToShow: 3,
+                    centerPadding: '40px',
+                    responsive: [
+                        {
+                          breakpoint: 768,
+                          settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                            dots: false
+                          }
+                        },
+                        {
+                          breakpoint: 480,
+                          settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                          }
+                        }
+                    ]
+                });
+            });
         </script>
     </body>
 </html>
