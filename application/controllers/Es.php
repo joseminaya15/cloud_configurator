@@ -168,7 +168,8 @@ class Es extends CI_Controller {
                                     <table cellspacing="0" cellpadding="0" border="0">
                                       <tbody>
                                         <tr style="text-align: left;">
-                                          <th style="text-align: left;"><img width="150" src="http://www.sap-latam.com/sap_business_one/public/img/logo/logo_header.png"></th>
+                                          <th style="text-align: left;"><img width="150" src="http://www.sap-latam.com/sap_business_one/public/img/logo/logo_favicon.png"></th>
+                                          <th><font style="color: #FFFFFF;font-family: arial;font-size:18px">CLOUD CONFIGURATOR</font></th>
                                         </tr>
                                       </tbody>
                                     </table>
@@ -341,7 +342,8 @@ class Es extends CI_Controller {
                                             <table cellspacing="0" cellpadding="0" border="0">
                                               <tbody>
                                                 <tr style="text-align: left;">
-                                                  <th style="text-align: left;"><img width="150" src="http://www.sap-latam.com/sap_business_one/public/img/logo/logo_header.png"></th>
+                                                  <th style="text-align: left;"><img width="150" src="http://www.sap-latam.com/sap_business_one/public/img/logo/logo_favicon.png"></th>
+                                                   <th><font style="color: #FFFFFF;font-family: arial;font-size:18px">CLOUD CONFIGURATOR</font></th>
                                                 </tr>
                                               </tbody>
                                             </table>
