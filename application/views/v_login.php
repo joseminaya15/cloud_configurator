@@ -32,7 +32,7 @@
                 <h2>Different scenarios. One solution</h2>
             </div>
             <div class="contenido-bottom">
-                <img src="<?php echo RUTA_IMG?>fondo/fondo-imagen.jpg" style="width: 100%;height: 900px;">
+                <img src="<?php echo RUTA_IMG?>fondo/fondo-imagen.jpg" style="width: 100%;height: 860px;">
             </div>
         </div>
         <div class="card-login">
