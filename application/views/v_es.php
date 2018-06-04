@@ -804,9 +804,9 @@
             </div>
         </section> 
         <div class="modal fade" id="ModalPoliticas" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-            <div class="modal-dialog">
+            <div class="modal-dialog modal-sm">
                 <div class="modal-content">
-                    <div class="mdl-card" >
+                    <div class="mdl-card">
                         <div class="mdl-card__title">
                             <h2>SAP Marketing Consent Statement</h2>
                         </div>
@@ -820,7 +820,7 @@
                                 <span class="mdl-checkbox__label f-s-14">I agree that <span>SAP may share the information</span> I have provided hereunder with the <span>SAP group</span> in order that that they also may send additional marketing-related communications to me.</span>
                             </label>
                         </div>
-                        <div class="mdl-card__actions">
+                        <div class="mdl-card__actions text-right">
                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="acceptPoliticas()">Aceptar</button>
                             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="closePoliticas()">Cerrar</button>
                         </div>
