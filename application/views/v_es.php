@@ -748,7 +748,7 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <p class="js-contacto">Quiero ser contactado por un representante de ventas:</p>
-                                    <div class="js-label">
+                                    <div class="js-contact-label">
                                         <div class="js-input-label">
                                             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-email">
                                                 <input type="radio" id="c-email" class="mdl-radio__button" name="options" value="1">
@@ -772,7 +772,7 @@
                                 <div class="col-xs-12 js-checkbox m-t-10">
                                     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
                                         <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
-                                        <span class="mdl-checkbox__label f-s-14" style="">He le&iacute;do y acepto los <a class="FONDO_TERMINOS" href="https://www.sap.com/corporate/en/legal/terms-of-use.html" target="_blank" style="">Términos y condiciones de SAP</a></span>
+                                        <span class="mdl-checkbox__label f-s-14" style="">He le&iacute;do y acepto los <a class="FONDO_TERMINOS" href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Marketing_Configurator_Portals_Privacy_Policy.pdf" target="_blank">Términos y condiciones de SAP</a></span>
                                     </label>
                                 </div>
                                 <div class="col-xs-12 text-right m-t-25">
@@ -803,7 +803,31 @@
                 </div>
             </div>
         </section> 
-
+        <div class="modal fade" id="ModalPoliticas" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="mdl-card" >
+                        <div class="mdl-card__title">
+                            <h2>SAP Marketing Consent Statement</h2>
+                        </div>
+                        <div class="mdl-card__supporting-text p-t-0">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-3">
+                                <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input">
+                                <span class="mdl-checkbox__label f-s-14">Would you like to receive additional information on SAP products and services along with information related to this inquiry? By checking this box, you agree that your contact details will be used by SAP Marketing in accordance with the <a href="https://www.sap.com/dam/site/corporate/legal/consent-resource-center.pdf" target="_blank">SAP Marketing Consent Statement</a>.</span>
+                            </label>
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-2">
+                                <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+                                <span class="mdl-checkbox__label f-s-14">I agree that <span>SAP may share the information</span> I have provided hereunder with the <span>SAP group</span> in order that that they also may send additional marketing-related communications to me.</span>
+                            </label>
+                        </div>
+                        <div class="mdl-card__actions">
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="acceptPoliticas()">Aceptar</button>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="closePoliticas()">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="<?php echo RUTA_JS?>jquery-3.2.1.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>jquery-1.11.2.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>bootstrap/js/bootstrap.min.js?v=<?php echo time();?>"></script>

@@ -682,3 +682,29 @@ function enviarGracias(){
 		location.reload();
 	}, 4000);
 }
+function closePoliticas(){
+	$('#checkbox-1').prop('checked', false);
+	$('#checkbox-1').parent().removeClass('is-checked');
+	$('#ModalPoliticas').modal('hide');
+}
+var checks = '';
+function acceptPoliticas(){
+	$('#checkbox-1').prop('checked', true);
+	$('#ModalPoliticas').modal('hide');
+	var check_2 = $('#checkbox-2').is(':checked');
+	var share   = $('#checkbox-3').is(':checked');
+	if(check_2 == true){
+		checks = 'General Marketing';
+	}
+	if(share == true){
+		checks = 'Sharing data';
+	}
+	if(check_2 == true && share == true){
+		checks = 'General Marketing, Sharing data';
+	}
+}
+$('#checkbox-1').change(function(){
+	if($('#checkbox-1').prop('checked', true)){
+		$('#ModalPoliticas').modal('show');
+	}
+})
