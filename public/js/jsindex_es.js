@@ -340,12 +340,9 @@ function ConfirmarRespuestas(){
 	confirmar = 1;
 	$('.js-card-confirmacion').addClass('js-disabled');
 	$('.js-formulario').removeClass('js-disabled');
-	$('.button-arrow.button-prev').css("display","none");
 	$('.mdl-card-confirmacion').addClass('confirmar');
-	$('.fp-controlArrow.fp-prev').css("display","none");
 	$('.mdl-formulario').removeClass('disabled');
-	$('#next').prop("disabled", true);
-    $('#prev').prop("disabled", true);
+	$('.js-button-next').css('display','none');
 	$.ajax({
 		data : {confirmar : confirmar},
 		url  : 'es/ConfirmarRespuestas',
