@@ -25,11 +25,12 @@
     <section id="principal">
         <div class="card-content">
             <div class="contenido-top">
-                <img src="<?php echo RUTA_IMG?>logo/logo_home.png">
+                <img src="<?php echo RUTA_IMG?>logo/logo_favicon.png" style="max-width: 65px;">
+                <span style="color: #FFFFFF;font-weight: bold;">CLOUD CONFIGURATOR</span>
             </div>
             <div class="contenido">
-                <img class="logo-home" src="<?php echo RUTA_IMG?>logo/logo_header.png">
-                <h2>Different scenarios. One solution</h2>
+                <!-- <img class="logo-home" src="<?php echo RUTA_IMG?>logo/logo_header.png">
+                <h2>Different scenarios. One solution</h2> -->
             </div>
             <div class="contenido-bottom">
                 <img src="<?php echo RUTA_IMG?>fondo/fondo-imagen.jpg" style="width: 100%;height: 860px;">
