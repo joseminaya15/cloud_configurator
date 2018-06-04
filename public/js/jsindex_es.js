@@ -64,17 +64,16 @@ function buttonNext(){
 			0 : {
 				items : 1
 			},
-			600:{
+			500:{
 				items : 2
 			},
-			1200:{
+			768:{
 				items : 3
 			}
 		},
 		navigation : false,
 		nav : true,
 		loop : false,
-		autoWidth:true,
 		margin: 30,
 		dots: false,
 		autoplay : false,
@@ -478,22 +477,21 @@ function selectConfigurator(id, dato){
 			0 : {
 				items : 1
 			},
-			600:{
+			550:{
 				items : 2
 			},
-			1200:{
+			768:{
 				items : 3
 			},
-			1400:{
+			1000:{
 				items : 4
 			}
-
 		},
 		navigation : false,
 		nav : true,
 		loop : false,
 		dots: false,
-		autoWidth:true,
+		margin: 10,
 		autoplay : false,
 		autoplayTimeout : 5000,
 		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
@@ -504,10 +502,10 @@ function selectConfigurator(id, dato){
 			0 : {
 				items : 1
 			},
-			600:{
+			500:{
 				items : 2
 			},
-			1200:{
+			768:{
 				items : 3
 			}
 		},
@@ -515,8 +513,8 @@ function selectConfigurator(id, dato){
 		nav : true,
 		loop : false,
 		dots: false,
+		margin: 10,
 		autoplay : false,
-		autoWidth:true,
 		autoplayTimeout : 5000,
 		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
 	});
@@ -530,10 +528,10 @@ $('#ERP').click(function(){
 			0 : {
 				items : 1
 			},
-			600:{
+			550:{
 				items : 2
 			},
-			1200:{
+			768:{
 				items : 3
 			}
 		},
@@ -542,8 +540,7 @@ $('#ERP').click(function(){
 		loop : false,
 		dots: false,
 		autoplay : false,
-		autoWidth:true,
-		margin: 20,
+		margin: 10,
 		autoplayTimeout : 5000,
 		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
 	});
@@ -557,20 +554,19 @@ $('#CRM').click(function(){
 			0 : {
 				items : 1
 			},
-			600:{
+			550:{
 				items : 2
 			},
-			1200:{
+			768:{
 				items : 3
 			}
 		},
 		navigation : false,
 		nav : true,
 		loop : false,
-		autoWidth:true,
 		dots: false,
 		autoplay : false,
-		margin: 20,
+		margin: 10,
 		autoplayTimeout : 5000,
 		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
 	});
@@ -584,23 +580,21 @@ $('#HR').click(function(){
 			0 : {
 				items : 1
 			},
-			600:{
+			500:{
 				items : 2
 			},
-			1200:{
+			768:{
 				items : 3
 			},
-			1400:{
+			1000:{
 				items : 4
 			}
-
 		},
 		navigation : false,
 		nav : true,
 		loop : false,
 		dots: false,
-		autoWidth:true,
-		margin: 20,
+		margin: 10,
 		autoplay : false,
 		autoplayTimeout : 5000,
 		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]

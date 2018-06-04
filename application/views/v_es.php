@@ -16,10 +16,10 @@
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>mdl/material.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap-select/css/bootstrap-select.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap/css/bootstrap.min.css?v=<?php echo time();?>">
-        <!-- <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.theme.default.min.css"> -->
-        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>slick/slick.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>slick/slick-theme.css?v=<?php echo time();?>">
+        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.theme.default.min.css">
+        <!-- <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>slick/slick.css?v=<?php echo time();?>">
+        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>slick/slick-theme.css?v=<?php echo time();?>"> -->
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>font-awesome.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>material-icons.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>bentonsans.css?v=<?php echo time();?>">
@@ -82,50 +82,56 @@
                         <h2>YO <strong>QUIERO</strong></h2>
                         <div class="js-card__flex">
                             <div id="js-carousel--configurator" class="js-carousel js-3cards">
-                                <div class="your-class">
-                                    <div class="js-card">
-                                        <div class="js-card-imagen">
-                                            <div class="js-card-flip js-card-flip__front">
-                                                <img src="<?php echo RUTA_IMG?>cards/byd.png">
+                                <div class="owl-carousel owl-theme">
+                                    <div class="item">
+                                        <div class="js-card">
+                                            <div class="js-card-imagen">
+                                                <div class="js-card-flip js-card-flip__front">
+                                                    <img src="<?php echo RUTA_IMG?>cards/byd.png">
+                                                </div>
+                                                <div class="js-card-flip js-card-flip__back selected">
+                                                    <h2>ERP</h2>
+                                                    <p>Cloud</p>
+                                                    <button id="ERP" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'ERP')">Seleccionar</button>
+                                                </div>
                                             </div>
-                                            <div class="js-card-flip js-card-flip__back selected">
-                                                <h2>ERP</h2>
-                                                <p>Cloud</p>
-                                                <button id="ERP" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'ERP')">Seleccionar</button>
+                                            <div class="js-card-content">
+                                                <p>Innovar digitalmente mis procesos para mejorar la competitividad, la eficiencia y la reputaci&oacute;n de mi marca y m&aacute;s.</p>
                                             </div>
-                                        </div>
-                                        <div class="js-card-content">
-                                            <p>Innovar digitalmente mis procesos para mejorar la competitividad, la eficiencia y la reputaci&oacute;n de mi marca y m&aacute;s.</p>
                                         </div>
                                     </div>
-                                    <div class="js-card">
-                                        <div class="js-card-imagen">
-                                            <div class="js-card-flip js-card-flip__front">
-                                                <img src="<?php echo RUTA_IMG?>cards/crm.png">
+                                    <div class="item">
+                                        <div class="js-card">
+                                            <div class="js-card-imagen">
+                                                <div class="js-card-flip js-card-flip__front">
+                                                    <img src="<?php echo RUTA_IMG?>cards/crm.png">
+                                                </div>
+                                                <div class="js-card-flip js-card-flip__back">
+                                                    <h2>CRM</h2>
+                                                    <p>Cloud</p>
+                                                    <button id="CRM" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'CRM')">Seleccionar</button>
+                                                </div>
                                             </div>
-                                            <div class="js-card-flip js-card-flip__back">
-                                                <h2>CRM</h2>
-                                                <p>Cloud</p>
-                                                <button id="CRM" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'CRM')">Seleccionar</button>
+                                            <div class="js-card-content">
+                                                <p>Contar con herramientas para una gesti&oacute;n avanzada de mis clientes para entregar la mejor experiencia, adelantarse a sus necesidades y brindar un servicio de excelencia.</p>
                                             </div>
-                                        </div>
-                                        <div class="js-card-content">
-                                            <p>Contar con herramientas para una gesti&oacute;n avanzada de mis clientes para entregar la mejor experiencia, adelantarse a sus necesidades y brindar un servicio de excelencia.</p>
                                         </div>
                                     </div>
-                                    <div class="js-card">
-                                        <div class="js-card-imagen">
-                                            <div class="js-card-flip js-card-flip__front">
-                                                <img src="<?php echo RUTA_IMG?>cards/hr.png">
+                                    <div class="item">
+                                        <div class="js-card">
+                                            <div class="js-card-imagen">
+                                                <div class="js-card-flip js-card-flip__front">
+                                                    <img src="<?php echo RUTA_IMG?>cards/hr.png">
+                                                </div>
+                                                <div class="js-card-flip js-card-flip__back">
+                                                    <h2>HR</h2>
+                                                    <p>Cloud</p>
+                                                    <button id="HR" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'HR')">Seleccionar</button>
+                                                </div>
                                             </div>
-                                            <div class="js-card-flip js-card-flip__back">
-                                                <h2>HR</h2>
-                                                <p>Cloud</p>
-                                                <button id="HR" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'HR')">Seleccionar</button>
+                                            <div class="js-card-content">
+                                                <p>Modernizar la gesti&oacute;n de mi fuerza laboral, alinearlos con las metas del negocio, innovar su aprendizaje y compensarlos adecuadamente.</p>
                                             </div>
-                                        </div>
-                                        <div class="js-card-content">
-                                            <p>Modernizar la gesti&oacute;n de mi fuerza laboral, alinearlos con las metas del negocio, innovar su aprendizaje y compensarlos adecuadamente.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -141,7 +147,7 @@
                             <span>01/04</span>
                             <h2>¿Cómo podemos ayudarle en su rol de responsable de HR?</h2>
                         </div>
-                        <div id="js-carousel--ERP" class="js-carousel js-nav-none">
+                        <div id="js-carousel--ERP" class="js-carousel js-cards js-nav-none">
                             <div class="owl-carousel owl-theme">
                                 <div class="item">
                                     <div class="js-card--large js-card--large__ERP js-card--large__flex">
@@ -193,7 +199,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="js-carousel--CRM" class="js-carousel js-nav-none">
+                        <div id="js-carousel--CRM" class="js-carousel js-cards js-nav-none">
                             <div class="owl-carousel owl-theme">
                                 <div class="item">
                                     <div class="js-card--large js-card--large__CRM js-card--large__flex">
@@ -245,7 +251,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="js-carousel--HR" class="js-carousel js-nav-none">
+                        <div id="js-carousel--HR" class="js-carousel js-4cards js-nav-none">
                             <div class="owl-carousel owl-theme">
                                 <div class="item">
                                     <div class="js-card--large js-card--large__HR js-card--large__flex">
@@ -389,7 +395,7 @@
                         </div>
                         <div class="js-card__flex js-card__flex--relative">
                             <div class="js-card--tipo">
-                                <div class="js-carousel js-nav-toggle">
+                                <div class="js-carousel js-4cards js-nav-toggle">
                                     <div class="owl-carousel owl-theme">
                                         <div class="item">
                                             <div class="js-card--large js-card--large__flex">
@@ -557,7 +563,7 @@
                             <h2>¿Que tipo de soluci&oacute;n le interesa evaluar&#63;</h2>
                         </div>
                         <div class="js-card__flex">
-                            <div class="js-carousel">
+                            <div class="js-carousel js-3cards">
                                 <div class="owl-carousel owl-theme">
                                     <div class="item">
                                         <div class="js-card--large">
@@ -803,8 +809,8 @@
         <script src="<?php echo RUTA_PLUGINS?>bootstrap-select/js/i18n/defaults-es_ES.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>mdl/material.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>toaster/toastr.js?v=<?php echo time();?>"></script>
-        <!-- <script src="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.js"></script> -->
-        <script src="<?php echo RUTA_PLUGINS?>slick/slick.min.js?v=<?php echo time();?>"></script>
+        <script src="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.js"></script>
+        <!-- <script src="<?php echo RUTA_PLUGINS?>slick/slick.min.js?v=<?php echo time();?>"></script> -->
         <script src="<?php echo RUTA_JS?>jsutils.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>jsmenu.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>jsindex_es.js?v=<?php echo time();?>"></script>
@@ -849,29 +855,6 @@
                     $('#pais').val("<?php echo $pais_link ?>");
                     $('#telefono').css('border-color','red');
                  }
-            });
-            $(document).ready(function(){
-                $('.your-class').slick({
-                    slidesToShow: 3,
-                    centerPadding: '40px',
-                    responsive: [
-                        {
-                          breakpoint: 768,
-                          settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2,
-                            dots: false
-                          }
-                        },
-                        {
-                          breakpoint: 480,
-                          settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                          }
-                        }
-                    ]
-                });
             });
         </script>
     </body>

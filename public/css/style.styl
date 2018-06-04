@@ -676,6 +676,7 @@ body
 	transform translate3d(0px, 0px, 0px) !important
 .js-card--tipo
 	flexCenter()
+	width 100%
 	&.js-card--show
 		max-width 240px
 		width 100%
@@ -755,8 +756,12 @@ body
 .slick-slide
 	text-align center
 .js-carousel
+	&.js-4cards
+		max-width 1000px
 	&.js-3cards
-		max-width 750px	
+		max-width 750px
+	&.js-cards
+		max-width 800px	
 /*SCROLL*/
 ::-webkit-scrollbar
 	width 8px
@@ -773,12 +778,12 @@ body
 			max-width 100px
 	.js-container
 		padding-top 80px
-// @media ( max-width: 1400px )
-// 	.js-carousel
-// 		max-width 750px
+@media ( max-width: 1400px )
+	.js-carousel
+		max-width 750px
 @media ( max-width: 1200px )
-	// .js-carousel
-	// 	max-width 500px
+	.js-carousel
+		max-width 500px
 	.js-minilogo
 		left 30px 
 		&.js-minilogo__right
@@ -819,6 +824,10 @@ body
 		bottom 15px
 		label
 			display none
+@media ( max-width: 1000px )
+	.js-carousel
+		&.js-4cards
+			max-width 750px
 @media ( max-width: 768px )
 	.js-minilogo 
 		&.js-minilogo__right
@@ -835,7 +844,10 @@ body
 	.js-card--large
 		margin 10px auto
 	.js-carousel
+		&.js-4cards
 		&.js-3cards
+			max-width 500px
+		&.js-cards
 			max-width 500px
 @media ( max-width: 600px )
 	.js-container
