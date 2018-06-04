@@ -706,13 +706,3 @@ $('#checkbox-1').change(function(){
 		$('#ModalPoliticas').modal('show');
 	}
 })
-$(document).ready(function() {
-	resizeContent();
-    $(window).resize(function() {
-        resizeContent();
-    });
-});
-function resizeContent() {
-    var top = $( window ).height();
-	$("body").css('height', top);
-}
