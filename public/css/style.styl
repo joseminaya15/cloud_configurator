@@ -213,10 +213,12 @@ body
 	left 0
 	right 0
 	text-align center
-	background-color #000000
 	z-index 2
 	button
 		background-color transparent !important
+		box-shadow none !important
+		min-width 60px
+		width 60px
 		i
 			font-size 36px
 			color #FFFFFF
@@ -584,7 +586,17 @@ body
 	.js-input-label
 		width 100%
 		max-width 120px
-
+.bgcolorblack
+	background-color #000000
+	height 40px
+	bottom 0
+	content ''
+	width calc(50% - 30px)
+	position absolute
+	&.right
+		right 0
+	&.left
+		left 0
 .mdl-radio__inner-circle
 	background #4983B6
 .mdl-checkbox

@@ -52,9 +52,11 @@
                 <div class="js-fondo__imagen"></div>
                 <div class="js-minilogo"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div>
                 <div class="js-button-next">
+                    <div class="bgcolorblack left"></div>
                     <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="buttonNext()">
                         <i class="mdi mdi-keyboard_arrow_down"></i>
                     </button>
+                    <div class="bgcolorblack right"></div>
                 </div>
             </div>
             <!-- TODOS LOS CARDS  -->
