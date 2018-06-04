@@ -856,8 +856,7 @@
                     $('.opacity-done').removeClass('animated fadeInDown fadeOutDown fadeInUp fadeOutUp');
                     windowQestion.addClass('animated fadeInUp');
                     //
-                    $('#next').prop("disabled", true);
-                    $('#prev').prop("disabled", true);
+                    $('.js-button-next').css('display','none');
                     $("#relacion").val('0');
                     $('.selectpicker').selectpicker('refresh');
                     $('#industria').text(<?php echo '"'.$Industria.'"' ?>);
