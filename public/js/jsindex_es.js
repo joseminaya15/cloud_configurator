@@ -184,7 +184,8 @@ function solicitarEstimacion(){
 				telefono 		: telefono,
 				relacion 		: relacion,
 				contacto 		: contacto,
-				term_cond       : term_cond},
+				term_cond       : term_cond,
+				checks 			: checks},
 		url  : 'es/solicitarEstimacion',
 		type : 'POST'
 	}).done(function(data){
