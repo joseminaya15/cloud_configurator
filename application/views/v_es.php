@@ -147,7 +147,7 @@
                         <p class="js-question--title"><strong>/ ERP</strong> Cloud Configurator</p>
                         <div class="js-question--number">
                             <span>01/04</span>
-                            <h2>¿Cómo podemos ayudarle en su rol de responsable de HR?</h2>
+                            <h2>¿C&oacute;mo podemos ayudarle en su rol de responsable de <span id="title-configurator"></span>?</h2>
                         </div>
                         <div id="js-carousel--ERP" class="js-carousel js-cards js-nav-none">
                             <div class="owl-carousel owl-theme">

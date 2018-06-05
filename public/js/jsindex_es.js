@@ -470,6 +470,7 @@ function selectConfigurator(id, dato){
 	secondWindow.find('.js-card--large').css('display','none');
 	$('.js-card--large__'+idConfigurator).css('display','block');
 	$('.js-question--title').find('strong').text('/ '+idConfigurator);
+	$('#title-configurator').text(idConfigurator);
 	$('.js-card-imagen').removeClass('js-card-imagen__static');
 	$('#'+id).parents('.js-card-imagen').addClass('js-card-imagen__static');
 	// $('.owl-nav').css('display','none');
