@@ -718,28 +718,18 @@ function acceptPoliticas(){
 		checks = 'General Marketing, Sharing data';
 	}
 }
-function openModal(){
-	$('#checkbox-1').prop('checked', false);
-	$('#checkbox-1').parent().removeClass('is-checked');
-	$('#label-check3').removeClass('is-checked');
-	$('#label-check4').removeClass('is-checked');
+var p1 = New Promise(function openModal(){
+	$('#checkbox-2').prop('checked', false);
+	$('#checkbox-3').prop('checked', false);
+	$('#checkbox-2').parent().removeClass('is-checked');
+	$('#checkbox-3').parent().removeClass('is-checked');
 	$('#ModalPoliticas').modal('show');
-}
-$('#checkbox-1').change(function(){
-	if($('#checkbox-1').prop('checked', true)){
-		$('#label-check3').addClass('is-checked');
-		$('#label-check4').addClass('is-checked');
-		var check_2 = $('#checkbox-2').is(':checked');
-		var share   = $('#checkbox-3').is(':checked');
-		if(check_2 == true){
-			checks = 'General Marketing';
-		}
-		if(share == true){
-			checks = 'Sharing data';
-		}
-		if(check_2 == true && share == true){
-			checks = 'General Marketing, Sharing data';
-		}
-	}
 });
-
+p1.then(function (){
+	$('#checkbox-1').change(function(){
+	$('#checkbox-2').prop('checked', true);
+	$('#checkbox-3').prop('checked', true);
+	$('#checkbox-2').parent().addClass('is-checked');
+	$('#checkbox-3').parent().addClass('is-checked');
+	});
+})		

@@ -772,7 +772,7 @@
                                 <div class="col-xs-12 js-checkbox m-t-10">
                                     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
                                         <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
-                                        <a class="FONDO_TERMINOS" onclick="openModal()">He le&iacute;do y acepto los</a><span class="mdl-checkbox__label f-s-14" style=""> <a class="FONDO_TERMINOS" href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Marketing_Configurator_Portals_Privacy_Policy.pdf" target="_blank">Términos y condiciones de SAP</a></span>
+                                        <span class="mdl-checkbox__label f-s-14"><span onclick="openModal()">He le&iacute;do y acepto los</span> <a class="FONDO_TERMINOS" href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Marketing_Configurator_Portals_Privacy_Policy.pdf" target="_blank">Términos y condiciones de SAP</a></span>
                                     </label>
                                 </div>
                                 <div class="col-xs-12 text-right m-t-25">
