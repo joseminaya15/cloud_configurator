@@ -769,11 +769,19 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xs-12 js-checkbox m-t-10">
-                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                                <div class="col-xs-12 js-checkbox m-t-10 js-flex">
+                                    <div class="js-flex--left">
+                                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                                            <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+                                        </label>
+                                        <span onclick="openModal()">He le&iacute;do y acepto los</span>
+                                    </div>
+                                    <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Marketing_Configurator_Portals_Privacy_Policy.pdf" target="_blank">Términos y condiciones de SAP</a>
+                                    <!-- <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
                                         <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
-                                        <span class="mdl-checkbox__label f-s-14"><span onclick="openModal()">He le&iacute;do y acepto los</span> <a class="FONDO_TERMINOS" href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Marketing_Configurator_Portals_Privacy_Policy.pdf" target="_blank">Términos y condiciones de SAP</a></span>
+                                        <span class="mdl-checkbox__label f-s-14"><a onclick="openModal()">He le&iacute;do y acepto los</a> <a class="FONDO_TERMINOS" href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Marketing_Configurator_Portals_Privacy_Policy.pdf" target="_blank">Términos y condiciones de SAP</a></span>
                                     </label>
+                                    <span></span> -->
                                 </div>
                                 <div class="col-xs-12 text-right m-t-25">
                                     <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button--confirmar button-confirmar" onclick="solicitarEstimacion();">Enviar informaci&oacute;n</button>
