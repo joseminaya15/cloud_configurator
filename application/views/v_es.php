@@ -772,7 +772,7 @@
                                 <div class="col-xs-12 js-checkbox m-t-10">
                                     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
                                         <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
-                                        <span class="mdl-checkbox__label f-s-14" style="">He le&iacute;do y acepto los <a class="FONDO_TERMINOS" href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Marketing_Configurator_Portals_Privacy_Policy.pdf" target="_blank">Términos y condiciones de SAP</a></span>
+                                        <a class="FONDO_TERMINOS" onclick="openModal()">He le&iacute;do y acepto los</a><span class="mdl-checkbox__label f-s-14" style=""> <a class="FONDO_TERMINOS" href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Marketing_Configurator_Portals_Privacy_Policy.pdf" target="_blank">Términos y condiciones de SAP</a></span>
                                     </label>
                                 </div>
                                 <div class="col-xs-12 text-right m-t-25">
@@ -811,11 +811,11 @@
                             <h2>SAP Marketing Consent Statement</h2>
                         </div>
                         <div class="mdl-card__supporting-text p-t-0">
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-3">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-3" id="label-check3">
                                 <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input">
                                 <span class="mdl-checkbox__label f-s-14">Would you like to receive additional information on SAP products and services along with information related to this inquiry? By checking this box, you agree that your contact details will be used by SAP Marketing in accordance with the <a href="https://www.sap.com/dam/site/corporate/legal/consent-resource-center.pdf" target="_blank">SAP Marketing Consent Statement</a>.</span>
                             </label>
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-2">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-2" id="label-check4">
                                 <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
                                 <span class="mdl-checkbox__label f-s-14">I agree that <span>SAP may share the information</span> I have provided hereunder with the <span>SAP group</span> in order that that they also may send additional marketing-related communications to me.</span>
                             </label>
@@ -837,7 +837,7 @@
         <script src="<?php echo RUTA_PLUGINS?>toaster/toastr.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.js"></script>
         <!-- <script src="<?php echo RUTA_PLUGINS?>slick/slick.min.js?v=<?php echo time();?>"></script> -->
-        <script src="<?php echo RUTA_JS?>jsutils.js?v=<?php echo time();?>"></script>
+        <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>jsmenu.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>jsindex_es.js?v=<?php echo time();?>"></script>
         <script type="text/javascript">

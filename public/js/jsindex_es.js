@@ -698,8 +698,8 @@ function enviarGracias(){
 	}, 4000);
 }
 function closePoliticas(){
-	$('#checkbox-1').prop('checked', false);
-	$('#checkbox-1').parent().removeClass('is-checked');
+	/*$('#checkbox-1').prop('checked', false);
+	$('#checkbox-1').parent().removeClass('is-checked');*/
 	$('#ModalPoliticas').modal('hide');
 }
 var checks = '';
@@ -718,8 +718,25 @@ function acceptPoliticas(){
 		checks = 'General Marketing, Sharing data';
 	}
 }
+function openModal(){
+	$('#checkbox-1').prop('checked', false);
+	$('#checkbox-1').parent().removeClass('is-checked');
+	$('#ModalPoliticas').modal('show');
+}
 $('#checkbox-1').change(function(){
 	if($('#checkbox-1').prop('checked', true)){
-		$('#ModalPoliticas').modal('show');
+		$('#label-check3').addClass('is-checked');;
+		$('#label-check4').addClass('is-checked');;
+		var check_2 = $('#checkbox-2').is(':checked');
+		var share   = $('#checkbox-3').is(':checked');
+		if(check_2 == true){
+			checks = 'General Marketing';
+		}
+		if(share == true){
+			checks = 'Sharing data';
+		}
+		if(check_2 == true && share == true){
+			checks = 'General Marketing, Sharing data';
+		}
 	}
-})
+});
