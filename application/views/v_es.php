@@ -776,7 +776,7 @@
                                         </label>
                                         <span onclick="openModal()">He le&iacute;do y acepto los</span>
                                     </div>
-                                    <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Marketing_Configurator_Portals_Privacy_Policy.pdf" target="_blank">Términos y condiciones de SAP</a>
+                                    <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Privacy_Statement_CloudConfig_eng.pdf" target="_blank">Términos y condiciones de SAP</a>
                                     <!-- <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
                                         <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
                                         <span class="mdl-checkbox__label f-s-14"><a onclick="openModal()">He le&iacute;do y acepto los</a> <a class="FONDO_TERMINOS" href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Marketing_Configurator_Portals_Privacy_Policy.pdf" target="_blank">Términos y condiciones de SAP</a></span>
@@ -821,7 +821,7 @@
                         <div class="mdl-card__supporting-text p-t-0">
                             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-3" id="label-check3">
                                 <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input">
-                                <span class="mdl-checkbox__label f-s-14">Would you like to receive additional information on SAP products and services along with information related to this inquiry? By checking this box, you agree that your contact details will be used by SAP Marketing in accordance with the <a href="https://www.sap.com/dam/site/corporate/legal/consent-resource-center.pdf" target="_blank">SAP Marketing Consent Statement</a>.</span>
+                                <span class="mdl-checkbox__label f-s-14">Would you like to receive additional information on SAP products and services along with information related to this inquiry? By checking this box, you agree that your contact details will be used by SAP Marketing in accordance with the <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Consent_Statement_Jan_18.pdf" target="_blank">SAP Marketing Consent Statement</a>.</span>
                             </label>
                             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-2" id="label-check4">
                                 <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
