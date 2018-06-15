@@ -819,7 +819,7 @@
                             <h2>SAP Marketing Consent Statement</h2>
                         </div>
                         <div class="mdl-card__supporting-text p-t-0">
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-3" id="label-check3">
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label m-b-20" for="checkbox-3" id="label-check3">
                                 <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input">
                                 <span class="mdl-checkbox__label f-s-14">Would you like to receive additional information on SAP products and services along with information related to this inquiry? By checking this box, you agree that your contact details will be used by SAP Marketing in accordance with the <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Consent_Statement_Jan_18.pdf" target="_blank">SAP Marketing Consent Statement</a>.</span>
                             </label>
