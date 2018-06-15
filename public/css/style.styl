@@ -586,6 +586,7 @@ body
 				border-radius 0	
 .js-contact-label
 	flexCenter()
+	flex-wrap wrap
 	.js-input-label
 		width 100%
 		max-width 120px
@@ -642,6 +643,9 @@ body
 		font-weight 100
 	.mdl-checkbox__box-outline
 		border 2px solid #FFFFFF
+.js-formulario
+	.js-checkbox
+		padding 0 5px
 .js-button--confirmar
 	background-color #4983B6 !important
 	color #FFFFFF
@@ -937,9 +941,10 @@ body
 				margin-left 0
 			.owl-next
 				margin-right 0
-	// .owl-carousel
-	// 	.owl-item
-	// 		max-width 300px
+	.js-card--show
+		.owl-carousel 
+			.owl-stage-outer
+				overflow initial
 	.js-chat
 		right 10px
 		bottom 10px
@@ -959,6 +964,7 @@ body
 	.js-card--empresa
 		display block
 		margin auto
+		padding-bottom 50px
 	.js-datos
 		flex-wrap wrap
 		.js-datos__personal
@@ -972,4 +978,8 @@ body
 		&.js-3cards
 			max-width 250px	
 			margin auto
+	// .owl-carousel
+	// 	.owl-item
+	// 		width 100%
+	// 		max-width 250px
 					

@@ -73,6 +73,7 @@ function buttonNext(){
 		},
 		navigation : false,
 		mouseDrag: false,
+		touchDrag:  false,
 		nav : true,
 		loop : false,
 		margin: 30,
@@ -468,6 +469,7 @@ function selectConfigurator(id, dato){
 	secondWindow.find('.js-card--large').css('display','none');
 	$('.js-card--large__'+idConfigurator).css('display','block');
 	$('.js-question--title').find('strong').text('/ '+idConfigurator);
+	$('#title-configurator').text(idConfigurator);
 	$('.js-card-imagen').removeClass('js-card-imagen__static');
 	$('#'+id).parents('.js-card-imagen').addClass('js-card-imagen__static');
 	// $('.owl-nav').css('display','none');
@@ -492,6 +494,7 @@ function selectConfigurator(id, dato){
 		},
 		navigation : false,
 		mouseDrag: false,
+		touchDrag:  false,
 		nav : true,
 		loop : false,
 		dots: false,
@@ -514,6 +517,7 @@ function selectConfigurator(id, dato){
 		},
 		navigation : false,
 		mouseDrag: false,
+		touchDrag:  false,
 		nav : true,
 		loop : false,
 		dots: false,
@@ -541,6 +545,7 @@ $('#ERP').click(function(){
 		},
 		navigation : false,
 		mouseDrag: false,
+		touchDrag:  false,
 		nav : true,
 		loop : false,
 		dots: false,
@@ -568,6 +573,7 @@ $('#CRM').click(function(){
 		},
 		navigation : false,
 		mouseDrag: false,
+		touchDrag:  false,
 		nav : true,
 		loop : false,
 		dots: false,
@@ -598,6 +604,7 @@ $('#HR').click(function(){
 		},
 		navigation : false,
 		mouseDrag: false,
+		touchDrag:  false,
 		nav : true,
 		loop : false,
 		dots: false,
