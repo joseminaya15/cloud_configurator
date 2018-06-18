@@ -709,9 +709,9 @@ function enviarGracias(){
     windowQestion.addClass('animated fadeInUp');
 	$('.button-arrow').css("display","none");
 	$('.question').css("display","none");
-	setTimeout(function(){ 
-		location.reload();
-	}, 4000);
+	// setTimeout(function(){ 
+	// 	location.reload();
+	// }, 4000);
 }
 function closePoliticas(){
 	$('#checkbox-1').prop('checked', false);
