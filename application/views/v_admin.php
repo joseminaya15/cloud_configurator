@@ -38,13 +38,7 @@
                     <span style="color: #FFFFFF;font-weight: bold;margin-left: -5px;">CLOUD CONFIGURATOR</span>
                 </div>
                 <div class="header-right admin">
-                    <?php if($idioma == 'Francés'){ ?>
-                    <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect admin-logout m-r-25" onclick="cerrarCesion()">Se déconnecter</a>
-                    <?php } else if($idioma == 'Sueco'){ ?>
-                    <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect admin-logout m-r-25" onclick="cerrarCesion()">kirjautua ulos</a>
-                    <?php } else { ?>
-                     <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect admin-logout m-r-25" onclick="cerrarCesion()">Logout</a>
-                    <?php } ?>
+                    <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect admin-logout m-r-25" onclick="cerrarCesion()">Logout</a>
                     <div class="background1"></div>
                     <div class="background2"></div>
                     <div class="background3"></div>
@@ -54,41 +48,6 @@
                 <div class="table-responsive">
                     <table id="example" class="table table-bordered table-hover dt-responsive" cellspacing="0" width="100%">
                         <thead>
-                            <?php if($idioma == 'Francés'){ ?>
-                            <tr class="tr-header-reporte">
-                                <th class="text-left">Client</th>
-                                <th class="text-left">Société</th>
-                                <th class="text-left">E-mail</th>
-                                <th class="text-left">Téléphone</th>
-                                <th class="text-left">Relation avec SAP</th>
-                                <th class="text-left">Position</th>
-                                <th class="text-left">Je veux être contacté</th>
-                                <th class="text-left">Pays</th>
-                                <th class="text-left">Date</th>
-                                <th class="text-center" style="display: none">Industrie</th>
-                                <th class="text-center" style="display: none">Taille</th>
-                                <th class="text-center" style="display: none">Facture annuelle</th>
-                                <th class="text-center" style="display: none">Priorité</th>
-                                <th class="text-center" style="display: none">Infrastructure</th>
-                            </tr>
-                            <?php } else if($idioma == 'Sueco'){ ?>
-                            <tr class="tr-header-reporte">
-                                <th class="text-left">Asiakas</th>
-                                <th class="text-left">Yritys</th>
-                                <th class="text-left">Sähköposti</th>
-                                <th class="text-left">Puhelin</th>
-                                <th class="text-left">Suhde SAP'iin</th>
-                                <th class="text-left">Lataa</th>
-                                <th class="text-left">Haluan yhteydenottoa</th>
-                                <th class="text-left">Maa</th>
-                                <th class="text-left">Päivämäärä</th>
-                                <th class="text-center" style="display: none">ala</th>
-                                <th class="text-center" style="display: none">koko</th>
-                                <th class="text-center" style="display: none">Vuotuinen lasku</th>
-                                <th class="text-center" style="display: none">prioriteetti</th>
-                                <th class="text-center" style="display: none">infrastruktuuri</th>
-                            </tr>
-                            <?php } else { ?>
                             <tr class="tr-header-reporte">
                                 <th class="text-left">Client</th>
                                 <th class="text-left">Company</th>
@@ -100,13 +59,13 @@
                                 <th class="text-left">Consent Statement</th>
                                 <th class="text-left">Country</th>
                                 <th class="text-left">Date</th>
+                                <th class="text-center" style="display: none">Product</th>
                                 <th class="text-center" style="display: none">Industry</th>
                                 <th class="text-center" style="display: none">Size</th>
                                 <th class="text-center" style="display: none">Annual invoice</th>
-                                <th class="text-center" style="display: none">Priority</th>
-                                <th class="text-center" style="display: none">Infrastructure</th>
+                                <th class="text-center" style="display: none">How can we help?</th>
+                                <th class="text-center" style="display: none">Solution</th>
                             </tr>
-                            <?php } ?>
                         </thead>
                       <tbody>
                           <?php echo $html ?>  
@@ -126,6 +85,13 @@
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.colVis.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.flash.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.html5.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.print.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
     <script src="<?php echo RUTA_JS?>login.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
     <script type="text/javascript">

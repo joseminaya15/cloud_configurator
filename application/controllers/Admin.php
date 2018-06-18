@@ -49,6 +49,12 @@ class Admin extends CI_Controller {
                             <td class="text-center">'.$key->checks.'</td>
                             <td class="text-center">'.$key->Pais.'</td>
                             <td class="text-center">'.$key->fecha_sol.' pe</td>
+                            <td class="text-center" style="display:none">'.$key->producto.'</td>
+                            <td class="text-center" style="display:none">'.$key->tipo_industria.'</td>
+                            <td class="text-center" style="display:none">'.$key->tamanio.'</td>
+                            <td class="text-center" style="display:none">'.$key->factura_anual.'</td>
+                            <td class="text-center" style="display:none">'.$key->ayuda.'</td>
+                            <td class="text-center" style="display:none">'.$key->solucion.'</td>
                         </tr>';
                 $cont++;
             }
