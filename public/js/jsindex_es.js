@@ -300,7 +300,7 @@ function mostrarDatos(){
           	$('#industria').text(data.Industria);
           	$('#factura').text(data.Factura_anual)
            	$('#tamanio').text(data.Tamanio);
-           	$('#ayuda').text(data.Prioridad);
+           	$('#ayuda').append(data.Prioridad);
            	$('#infraestructura').text(solucion);
         }else{
         	return;
@@ -312,11 +312,19 @@ function mostrarDatos(){
 }
 var configurador = null;
 var ayuda_negocio = null;
+var arr_ayuda = [];
 function ayudaCard(id,ayuda){
 	var idButtonCard = $('#'+id);
-	$('.js-window2').find('.js-button-select').removeClass('js-selected');
-	idButtonCard.addClass('js-selected');
-	ayuda_negocio = ayuda;
+	
+	var indice = arr_ayuda.indexOf(ayuda);
+	if( arr_ayuda.indexOf(ayuda) == -1 ) {
+		arr_ayuda.push(ayuda);
+		idButtonCard.addClass('js-selected');
+	} else {
+		arr_ayuda.splice(indice, 1);
+		idButtonCard.removeClass('js-selected');
+	}
+	ayuda_negocio = arr_ayuda.toString().replace(/,/g, ' ');
 	if(ayuda_negocio != null || ayuda_negocio != ''){
 		$('#next').prop("disabled", false);
 	}
@@ -376,6 +384,7 @@ function buttonQuestion(direction){
 	var empleados = $('#textOperar').text();
 	if(direction == 2){
 		m++;
+		console.log(m);
 		if(m == 2){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			firstWindow.addClass('opacity-done');
@@ -424,6 +433,7 @@ function buttonQuestion(direction){
 	else if(direction == 1){
 		m--;
 		pant--;
+		console.log(m);
 		if(m == 4){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			fourWindow.addClass('animated fadeInDown');

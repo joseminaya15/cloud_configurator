@@ -282,7 +282,7 @@
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard8" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero consolidar y optimizar los procesos centrales de RRHH.')">Seleccione</button>
+                                            <button id="buttonCard8" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero alinear las metas de la empresa con la recompensa de mis empleados.')">Seleccione</button>
                                         </div>
                                         <div class="js-card--menu"><span>2/8</span></div>
                                     </div>
