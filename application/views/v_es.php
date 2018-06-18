@@ -324,11 +324,11 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person1.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Quiero planificar el desarrollo y sucesi&oacute;n de mis mejores talentos</p>
+                                                <p>Quiero planificar el desarrollo y sucesi&oacute;n de mis mejores talentos.</p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard11" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero planificar el desarrollo y sucesión de mis mejores talentos')">Seleccione</button>
+                                            <button id="buttonCard11" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero planificar el desarrollo y sucesión de mis mejores talentos.')">Seleccione</button>
                                         </div>
                                         <div class="js-card--menu"><span>5/8</span></div>
                                     </div>

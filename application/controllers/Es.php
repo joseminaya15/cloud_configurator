@@ -450,11 +450,12 @@ class Es extends CI_Controller {
       $data['error'] = EXIT_ERROR;
       $data['msj']   = null;
       try {
-          $data['Industria']       = $this->session->userdata('tipo_industria') == null ? '-' : $this->session->userdata('tipo_industria');
-          $data['Factura_anual']   = $this->session->userdata('factura_anual') == null ? '-' : $this->session->userdata('factura_anual');
-          $data['Tamanio']         = $this->session->userdata('tamanio') == null ? '-' : $this->session->userdata('tamanio').' empleados';
-          $data['Prioridad']       = $this->session->userdata('ayuda') == null ? '-' : $this->session->userdata('ayuda');
-          $data['Infraestructura'] = $this->session->userdata('solucion') == null ? '-' : $this->session->userdata('solucion');
+          $obtenerDatos            = $this->M_solicitud->datos($this->session->userdata('id_sol'));
+          $data['Industria']       = $obtenerDatos[0]->tipo_industria;//$this->session->userdata('tipo_industria') == null ? '-' : $this->session->userdata('tipo_industria');
+          $data['Factura_anual']   = $obtenerDatos[0]->factura_anual; //$this->session->userdata('factura_anual') == null ? '-' : $this->session->userdata('factura_anual');
+          $data['Tamanio']         = $obtenerDatos[0]->tamanio; //$this->session->userdata('tamanio') == null ? '-' : $this->session->userdata('tamanio').' empleados';
+          $data['Prioridad']       = $obtenerDatos[0]->ayuda; //$this->session->userdata('ayuda') == null ? '-' : $this->session->userdata('ayuda');
+          $data['Infraestructura'] = $obtenerDatos[0]->solucion; //$this->session->userdata('solucion') == null ? '-' : $this->session->userdata('solucion');
           $data['error']           = EXIT_SUCCESS;
       }catch(Exception $e){
           $data['msj'] = $e->getMessage();
@@ -479,9 +480,10 @@ class Es extends CI_Controller {
               $session       = array('producto' => $config,
                                      'id_sol'   => $datoInsert['Id']);
           }else if($pantalla == PANT_DOS){
+              $this->session->unset_userdata('ayuda');
               $arrayUpdate = array('ayuda' => $ayuda);
               $this->M_solicitud->updateDatos($arrayUpdate, $this->session->userdata('id_sol'), 'solicitud');
-              $session     = array('ayuda'   => $ayuda);
+              $session     = array('ayuda' => $ayuda);
           }else if($pantalla == PANT_TRES){
               $arrayUpdate = array('tipo_industria'  => $tipo_ind,
                                     'tamanio'        => $tamanio,

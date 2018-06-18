@@ -31,4 +31,11 @@ class M_solicitud extends  CI_Model{
         $result = $this->db->query($sql, array($id_persona));
         return $result->result();
     }
+    function datos($id) {
+        $sql = "SELECT * 
+                  FROM solicitud
+                 WHERE Id = ?";
+        $result = $this->db->query($sql, array($id));
+        return $result->result();
+    }
 }
