@@ -251,7 +251,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="js-carousel--HR" class="js-carousel js-4cards js-nav-none">
+                        <div id="js-carousel--HR" class="js-carousel js-5cards js-nav-none">
                             <div class="owl-carousel owl-theme">
                                 <div class="item">
                                     <div class="js-card--large js-card--large__HR js-card--large__flex">
@@ -395,7 +395,7 @@
                         </div>
                         <div class="js-card__flex js-card__flex--relative">
                             <div class="js-card--tipo">
-                                <div class="js-carousel js-4cards js-nav-toggle">
+                                <div class="js-carousel js-5cards js-nav-toggle">
                                     <div class="owl-carousel owl-theme">
                                         <div class="item">
                                             <div class="js-card--large js-card--large__flex">

@@ -500,6 +500,9 @@ function selectConfigurator(id, dato){
 			},
 			1000:{
 				items : 4
+			},
+			1200:{
+				items : 5
 			}
 		},
 		navigation : false,
@@ -610,6 +613,9 @@ $('#HR').click(function(){
 			},
 			1000:{
 				items : 4
+			},
+			1200:{
+				items : 5
 			}
 		},
 		navigation : false,
