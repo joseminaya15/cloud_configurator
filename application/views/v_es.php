@@ -18,8 +18,6 @@
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>bootstrap/css/bootstrap.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.css">
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.theme.default.min.css">
-        <!-- <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>slick/slick.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>slick/slick-theme.css?v=<?php echo time();?>"> -->
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>font-awesome.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>material-icons.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>bentonsans.css?v=<?php echo time();?>">
@@ -769,7 +767,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xs-12 js-checkbox m-t-10 js-flex">
+                                <div class="col-xs-12 js-checkbox m-t-10 js-flex js-terminos">
                                     <div class="js-flex--left">
                                         <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
                                             <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
@@ -839,7 +837,6 @@
         <script src="<?php echo RUTA_PLUGINS?>mdl/material.min.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>toaster/toastr.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_PLUGINS?>owl-carousel/owl.carousel.min.js"></script>
-        <!-- <script src="<?php echo RUTA_PLUGINS?>slick/slick.min.js?v=<?php echo time();?>"></script> -->
         <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>jsmenu.js?v=<?php echo time();?>"></script>
         <script src="<?php echo RUTA_JS?>jsindex_es.js?v=<?php echo time();?>"></script>
