@@ -514,6 +514,7 @@ function selectConfigurator(id, dato){
 	// $('.owl-nav').css('display','none');
 	if(configurador != null || configurador != ''){
 		$('#next').prop("disabled", false);
+		$('#next').addClass('active');
 	}
 	$('.js-window3 .owl-carousel').owlCarousel({
 		lazyLoad : true,

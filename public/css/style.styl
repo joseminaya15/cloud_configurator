@@ -230,11 +230,21 @@ body
 	button
 		background-color transparent !important
 		box-shadow none !important
-		min-width 60px
-		width 60px
+		min-width 50px !important
+		width 50px !important
+		height 50px !important
+		&.down
+			-webkit-animation js-buttonscroll--animate 1.5s infinite
+			animation js-buttonscroll--animate 1.5s infinite
+		&.active
+			i
+				-webkit-animation js-ripple--animate 1.5s infinite
+				animation js-ripple--animate 1.5s infinite
 		i
-			font-size 36px
+			font-size 50px
 			color #FFFFFF
+			line-height 52px
+			flexCenter()
 .js-minilogo
 	position absolute
 	left 60px
@@ -820,7 +830,40 @@ body
 			.modal-dialog
 				transform translate(1)
 				transform transform(-50% , -50%)
-				opacity 1		
+				opacity 1
+/*ANIMACIONES*/
+@-webkit-keyframes js-buttonscroll--animate
+	0%
+		-webkit-transform translateY(0)
+	30%
+		-webkit-transform translateY(-20px)
+	60%
+		-webkit-transform translateY(0)
+@keyframes js-buttonscroll--animate
+	0%
+		-webkit-transform translateY(0)
+	30%
+		-webkit-transform translateY(-20px)
+	60%
+		-webkit-transform translateY(0)
+@-webkit-keyframes js-ripple--animate
+	0%
+		-webkit-transform translateY(-25px)
+		opacity 0
+	50%
+		opacity 1
+	100%
+		-webkit-transform translateY(20px)
+		opacity 0
+@keyframes js-ripple--animate
+	0%
+		-webkit-transform translateY(-25px)
+		opacity 0
+	50%
+		opacity 1
+	100%
+		-webkit-transform translateY(20px)
+		opacity 0
 /*SCROLL*/
 ::-webkit-scrollbar
 	width 8px
