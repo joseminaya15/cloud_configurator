@@ -65,12 +65,15 @@
                         <p>Cloud Configurator</p>
                     </div>
                     <div class="js-idioma">
-                        <div class="js-step">
-                            <span id="step1" class="active">1</span>
-                            <span id="step2">2</span>
-                            <span id="step3">3</span>
-                            <span id="step4">4</span>
-                            <span id="step5">5</span>
+                        <div class="js-wizard">
+                            <div class="js-step">
+                                <span id="step1" class="active">1</span>
+                                <span id="step2">2</span>
+                                <span id="step3">3</span>
+                                <span id="step4">4</span>
+                                <span id="step5">5</span>
+                            </div>
+                            <div class="js-progress"></div>
                         </div>
                         <select class="selectpicker" id="IdiomaHome"  name="Idioma" onchange="cambiarIdioma()">
                             <option value="Español">Espa&ntilde;ol</option>
