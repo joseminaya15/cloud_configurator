@@ -330,12 +330,12 @@ function ayudaCard(id,ayuda){
 		idButtonCard.removeClass('js-selected');
 	}
 	ayuda_negocio = arr_ayuda.toString().replace(/,/g, ' ');
-	console.log("tamaño ayuda_negocio:::::"+ayuda_negocio.length);
-	console.log("tamaño arr_ayuda:::::"+arr_ayuda.length);
 	if(ayuda_negocio.length != 0){
 		$('#next').prop("disabled", false);
+		$('#next').addClass('active');
 	} else {
 		$('#next').prop("disabled", true);
+		$('#next').removeClass('active');
 	}
 }
 function validarCampos(){
@@ -388,6 +388,7 @@ function saveSolucion(id,sol){
 	idButtonSolution.addClass('js-selected');
 	solucion = sol;
 	if(solucion != '' || solucion != null){
+		$('#next').addClass('active');
 		$('#next').prop("disabled", false);
 	}
 }
@@ -421,7 +422,8 @@ function buttonQuestion(direction){
 				secondWindow.addClass('animated fadeInUp');
 				$('#step1').addClass('active');
 				$('.js-progress').find('span').css('width','20%');
-				$('#next').prop("disabled", true);
+				$('#next').prop("disabled", true);		
+				$('#next').removeClass('active');
 				if(tipo_ind != null && empleados != null && facturacion != null){
 					$('#next').prop("disabled", false);
 				}
@@ -431,11 +433,13 @@ function buttonQuestion(direction){
 				secondWindow.addClass('animated fadeOutUp');
 				thirdWindow.addClass('animated fadeInUp');
 				$('#step2').addClass('active');
+				$('#next').removeClass('active');
 				$('.js-progress').find('span').css('width','40%');
 				if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
 					if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
 						$('#next').prop("disabled", false);
 					}
+					$('#next').removeClass('active');
 				}else {
 					$('#next').prop("disabled", true);
 				}
@@ -444,6 +448,7 @@ function buttonQuestion(direction){
 				if(tipo_ind == 'Otras') {
 					if($('#idEspecificar').val() == '' || $('#idEspecificar').val() == null) {
 						m = 3;
+						$('#next').removeClass('active');
 						return;
 					}
 				}
@@ -451,6 +456,7 @@ function buttonQuestion(direction){
 				thirdWindow.addClass('animated fadeOutUp');
 				fourWindow.addClass('animated fadeInUp');
 				$('#step3').addClass('active');
+				$('#next').removeClass('active');
 				$('.js-progress').find('span').css('width','60%');
 				if(solucion != '' || solucion != null){
 					$('#next').prop("disabled", false);
@@ -463,6 +469,7 @@ function buttonQuestion(direction){
 				fourWindow.addClass('animated fadeOutUp');
 				fiveWindow.addClass('animated fadeInUp');
 				$('#next').prop("disabled", true);
+				$('#next').removeClass('active');
 				$('#step4').addClass('active');
 				$('.js-progress').find('span').css('width','80%');
 			}
@@ -470,7 +477,7 @@ function buttonQuestion(direction){
 		else if(direction == 1){
 			m--;
 			pant--;
-			console.log(m);
+			//$('#next').addClass('active');
 			if(m == 4){
 				$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 				fourWindow.addClass('animated fadeInDown');
@@ -689,6 +696,7 @@ function tipoTamaño(id,tipo){
 	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
 		if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
 			$('#next').prop("disabled", false);
+			$('#next').addClass('active');
 		}
 	}
 }
@@ -700,6 +708,7 @@ function selectFacturacion(id){
 	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
 		if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
 			$('#next').prop("disabled", false);
+			$('#next').addClass('active');
 		}
 	}
 }
