@@ -326,10 +326,12 @@ function ayudaCard(id,ayuda){
 		arr_ayuda.push(ayuda);
 		idButtonCard.addClass('js-selected');
 		idButtonCard.text('Deseleccione');
+		idButtonCard.css('color', '#000000');
 	} else {
 		arr_ayuda.splice(indice, 1);
 		idButtonCard.removeClass('js-selected');
 		idButtonCard.text('Seleccione');
+		idButtonCard.css('color', '#FFFFFF');
 	}
 	ayuda_negocio = arr_ayuda.toString().replace(/,/g, ' ');
 	if(ayuda_negocio.length != 0){
@@ -695,8 +697,10 @@ function tipoTamaño(id,tipo){
 	idButtonSelect.toggleClass('js-selected');
 	if(idButtonSelect.hasClass('js-selected')){
 		idButtonSelect.text('Deseleccione');
+		idButtonSelect.css('color', '#000000');
 	}else {
 		idButtonSelect.text('Seleccione');
+		idButtonSelect.css('color', '#FFFFFF');
 	}
 	$('.js-nav-toggle .owl-nav').toggleClass('dnone');
 	var empleados = $('#textOperar').text();
