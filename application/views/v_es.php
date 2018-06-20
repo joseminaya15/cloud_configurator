@@ -577,12 +577,23 @@
                                 <div class="owl-carousel owl-theme">
                                     <div class="item">
                                         <div class="js-card--large">
-                                            <div class="js-card--large__content">
-                                                <div class="js-card--large__content-tipo">
-                                                    <img src="<?php echo RUTA_IMG?>cards/premise.png">
+                                            <div class="js-card--large__content js-card--large__flip">
+                                                <div class="js-card-flip js-card-flip__front">
+                                                    <div class="js-card--large__content-tipo">
+                                                        <img src="<?php echo RUTA_IMG?>cards/premise.png">
+                                                    </div>
+                                                    <div class="js-card--large__content-name">
+                                                        <small>On Premise</small>
+                                                    </div>
+                                                    <div class="js-card--large__icon">
+                                                        <i class="mdi mdi-add"></i>
+                                                    </div>
                                                 </div>
-                                                <div class="js-card--large__content-name">
-                                                    <small>On Premise</small>
+                                                <div class="js-card-flip js-card-flip__back">
+                                                    <p>Implementar en su actual infraestructura o adquirir una de las opciones de hardware certificado.</p>
+                                                    <div class="js-card--large__icon">
+                                                        <i class="mdi mdi-remove"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="js-card--large__button">
@@ -593,12 +604,23 @@
                                     </div>
                                     <div class="item">
                                         <div class="js-card--large">
-                                            <div class="js-card--large__content">
-                                                <div class="js-card--large__content-tipo">
-                                                    <img src="<?php echo RUTA_IMG?>cards/cloud.png">
+                                            <div class="js-card--large__content js-card--large__flip">
+                                                <div class="js-card-flip js-card-flip__front">
+                                                    <div class="js-card--large__content-tipo">
+                                                        <img src="<?php echo RUTA_IMG?>cards/cloud.png">
+                                                    </div>
+                                                    <div class="js-card--large__content-name">
+                                                        <small>Cloud</small>
+                                                    </div>
+                                                    <div class="js-card--large__icon">
+                                                        <i class="mdi mdi-add"></i>
+                                                    </div>
                                                 </div>
-                                                <div class="js-card--large__content-name">
-                                                    <small>Cloud</small>
+                                                <div class="js-card-flip js-card-flip__back">
+                                                    <p>Ejecutar el software desde la nube junto con su informaci&oacute;n empresarial.</p>
+                                                    <div class="js-card--large__icon">
+                                                        <i class="mdi mdi-remove"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="js-card--large__button">
@@ -609,12 +631,23 @@
                                     </div>
                                     <div class="item">
                                         <div class="js-card--large">
-                                            <div class="js-card--large__content">
-                                                <div class="js-card--large__content-tipo">
-                                                    <img src="<?php echo RUTA_IMG?>cards/hibrida.png">
+                                            <div class="js-card--large__content js-card--large__flip">
+                                                <div class="js-card-flip js-card-flip__front">
+                                                    <div class="js-card--large__content-tipo">
+                                                        <img src="<?php echo RUTA_IMG?>cards/hibrida.png">
+                                                    </div>
+                                                    <div class="js-card--large__content-name">
+                                                        <small>H&iacute;brida</small>
+                                                    </div>
+                                                    <div class="js-card--large__icon">
+                                                        <i class="mdi mdi-add"></i>
+                                                    </div>
                                                 </div>
-                                                <div class="js-card--large__content-name">
-                                                    <small>H&iacute;brida</small>
+                                                <div class="js-card-flip js-card-flip__back">
+                                                    <p>Combinar ambas opciones donde la informaci&oacute;n sensible puede permanecer en su IT local y el resto en la nube.</p>
+                                                    <div class="js-card--large__icon">
+                                                        <i class="mdi mdi-remove"></i>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="js-card--large__button">
