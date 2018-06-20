@@ -801,7 +801,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="js-button-next">
+                <div class="js-button-next js-fixed--top">
                     <button id="prev" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="buttonQuestion(1);">
                         <i class="mdi mdi-keyboard_arrow_up"></i>
                     </button>
