@@ -325,9 +325,11 @@ function ayudaCard(id,ayuda){
 	if( arr_ayuda.indexOf(ayuda) == -1 ) {
 		arr_ayuda.push(ayuda);
 		idButtonCard.addClass('js-selected');
+		idButtonCard.text('Deseleccione');
 	} else {
 		arr_ayuda.splice(indice, 1);
 		idButtonCard.removeClass('js-selected');
+		idButtonCard.text('Seleccione');
 	}
 	ayuda_negocio = arr_ayuda.toString().replace(/,/g, ' ');
 	if(ayuda_negocio.length != 0){
@@ -691,6 +693,11 @@ function tipoTamaño(id,tipo){
 	$('.js-card--empresa').toggleClass('animated fadeInLeft');
 	cardCarousel.toggleClass('js-card--transform');
 	idButtonSelect.toggleClass('js-selected');
+	if(idButtonSelect.hasClass('js-selected')){
+		idButtonSelect.text('Deseleccione');
+	}else {
+		idButtonSelect.text('Seleccione');
+	}
 	$('.js-nav-toggle .owl-nav').toggleClass('dnone');
 	var empleados = $('#textOperar').text();
 	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
