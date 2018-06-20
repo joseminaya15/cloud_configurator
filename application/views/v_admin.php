@@ -96,111 +96,34 @@
     <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
     <script type="text/javascript">
       $(document).ready(function() {
-        <?php if($idioma == 'Francés'){ ?>
             $('#example').DataTable( {
-              responsive: true,
-              dom: 'Bfrtip',
-              language:{
-                  "emptyTable":     "Aucune donnée disponible",
-                  "info" : "Afficher _START_ a _END_ des _TOTAL_ résultats",
-                  "infoEmpty":      "Afficher 0 to 0 of 0 résultats",
-                  "search": "Chercher:",
-                  "lengthMenu":   "Afficher _MENU_ lignes",
-                  "paginate": {
-                      "first":    "Primero",
-                      "last":     "Ultimo",
-                      "next":     "Suivant",
-                      "previous": "Précédent"
-                  },
-              },
-              lengthMenu: [
-                      [ 10, 25, 50, -1 ],
-                      [ '10 lignes', '25 lignes', '50 lignes', 'Tout voir' ]
-                    ],
-              buttons: [
-                  {
-                    text: 'Afficher 10 lignes',
-                    extend: 'pageLength'
-                  },
-                  {
-                    extend:'excel'
-                  },
-                  {
-                    extend:'print'
-                  }
-              ]
-            });
-        <?php } else if($idioma == 'Sueco'){ ?>
-            $('#example').DataTable( {
-              responsive: true,
-              dom: 'Bfrtip',
-              language:{
-                "emptyTable":     "Nenhum dado está disponível",
-                "info" : "Afficher _START_ a _END_ des _TOTAL_ résultats",
-                "infoEmpty":      "Mostrando de 0 a 0 eventos de 0",
-                "search": "Pesquisa:",
-                "lengthMenu":   "Afficher _MENU_ lignes",
-                "paginate": {
-                    "first":    "Primero",
-                    "last":     "Ultimo",
-                    "next":     "Seguinte",
-                    "previous": "Anterior"
+                searching : false,
+                dom: 'Bfrtip',
+                language:{
+                    "emptyTable": "No data found",
+                    "info" : "Mostrando _END_ de _TOTAL_ resultados",
+                    "infoEmpty": "Showing from 0 to 0 events of 0",
+                    "paginate": {
+                    "first":    "First",
+                    "last":     "Latest",
+                    "next":     "next",
+                    "previous": "Previous"
                 },
-            },
-            lengthMenu: [
-                            //text: 'My button',
-                            [ 10, 25, 50, -1 ],
-                            [ '10 fileiras', '25 fileiras', '50 fileiras', 'veja tudo' ]
-                          ],
-                          buttons: [
-                              {
-                                text: 'mostre 10 fileiras',
-                                extend: 'pageLength'
-                              },
-                              {
-                                extend:'excel'
-                              },
-                              {
-                                extend:'print'
-                              }
-                          ]
-            });
-           <?php } else { ?>
-              $('#example').DataTable( {
-                  responsive: true,
-                  dom: 'Bfrtip',
-                  language:{
-                      "emptyTable":     "No data found",
-                      "info" : "Afficher _START_ a _END_ des _TOTAL_ résultats",
-                      "infoEmpty":      "Showing from 0 to 0 events of 0",
-                      "search": "Search:",
-                      "lengthMenu":   "Show _MENU_ lines",
-                      "paginate": {
-                          "first":    "First",
-                          "last":     "Latest",
-                          "next":     "next",
-                          "previous": "Previous"
-                      },
-                  },
-                  pageLength: 25,
-                  lengthMenu: [
+                },
+                lengthMenu: [
                     [ 10, 25, 50, -1 ],
-                    [ '10 lines', '25 lines', '50 lines', 'See everything' ]
-                  ],
-                  buttons: [
-                      {
-                        text: 'Show 25 lines',
+                    [ '10 resultados', '25 resultados', '50 resultados']
+                ],
+                buttons: [{
+                        text: 'Mostrar 10 resultados',
                         extend: 'pageLength'
-                      },
-                      {
-                        extend:'excel'
-                      },
-                      {
-                        extend:'print'
-                      }
-                  ]
-              });
-          <?php } ?>
+                    },
+                    {
+                        extend:'excel',
+                        text: 'Exportar a Excel'
+                    }
+                ]
+            });
           $('.buttons-excel').empty();
           $('.buttons-print').empty();
           $('.buttons-excel').append('<i class="fa fa-download"></i>');
