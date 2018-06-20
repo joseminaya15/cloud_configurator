@@ -149,6 +149,7 @@ body
 .js-header--logo
 	flexCenter()
 	width 100%
+	max-width 300px
 	padding 15px 25px
 	img
 		width 100%
@@ -1046,6 +1047,7 @@ body
 			max-width 40px
 	.js-header--logo
 		padding 10px 0 10px 20px
+		max-width 210px
 		p
 			font-size 13px
 			line-height 16px
@@ -1065,6 +1067,18 @@ body
 			margin 5px 0
 		.js-datos__linkedin
 			margin 10px 0 5px 0
+	.js-wizard
+		max-width 200px
+		.js-step
+			span
+				position absolute
+				display none
+				&.active
+					display inline-block
+					background-color $color
+					border-color $color
+		.js-progress
+			display none
 @media ( max-width: 480px )
 	.js-carousel
 		&.js-3cards
