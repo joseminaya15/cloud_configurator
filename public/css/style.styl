@@ -229,6 +229,7 @@ body
 		flex-wrap wrap
 		justify-content flex-end
 		span
+			transitionBgColor()
 			border 2px solid #FFFFFF
 			border-radius 50%
 			line-height 16px
@@ -246,11 +247,15 @@ body
 		position absolute
 		top 14px
 		width 100%
-		height 2px
+		height 3px
 		border-radius 5px
 		background-color #FFFFFF
-		content ''	
 		z-index -5
+		span
+			position absolute
+			height 3px
+			background-color $color
+			border-radius 5px
 .js-button-next
 	position fixed
 	bottom 0

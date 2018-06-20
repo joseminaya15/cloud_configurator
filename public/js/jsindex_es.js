@@ -363,6 +363,8 @@ function ConfirmarRespuestas(){
 	$('.mdl-card-confirmacion').addClass('confirmar');
 	$('.mdl-formulario').removeClass('disabled');
 	$('.js-button-next').css('display','none');
+	$('#step5').addClass('active');
+	$('.js-progress').find('span').css('width','100%');
 	$.ajax({
 		data : {confirmar : confirmar},
 		url  : 'es/ConfirmarRespuestas',
@@ -417,6 +419,8 @@ function buttonQuestion(direction){
 				firstWindow.addClass('opacity-done');
 				firstWindow.addClass('animated fadeOutUp');
 				secondWindow.addClass('animated fadeInUp');
+				$('#step1').addClass('active');
+				$('.js-progress').find('span').css('width','20%');
 				$('#next').prop("disabled", true);
 				if(tipo_ind != null && empleados != null && facturacion != null){
 					$('#next').prop("disabled", false);
@@ -426,6 +430,8 @@ function buttonQuestion(direction){
 				$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 				secondWindow.addClass('animated fadeOutUp');
 				thirdWindow.addClass('animated fadeInUp');
+				$('#step2').addClass('active');
+				$('.js-progress').find('span').css('width','40%');
 				if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
 					if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
 						$('#next').prop("disabled", false);
@@ -444,6 +450,8 @@ function buttonQuestion(direction){
 				$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 				thirdWindow.addClass('animated fadeOutUp');
 				fourWindow.addClass('animated fadeInUp');
+				$('#step3').addClass('active');
+				$('.js-progress').find('span').css('width','60%');
 				if(solucion != '' || solucion != null){
 					$('#next').prop("disabled", false);
 				}else {
@@ -455,6 +463,8 @@ function buttonQuestion(direction){
 				fourWindow.addClass('animated fadeOutUp');
 				fiveWindow.addClass('animated fadeInUp');
 				$('#next').prop("disabled", true);
+				$('#step4').addClass('active');
+				$('.js-progress').find('span').css('width','80%');
 			}
 		}
 		else if(direction == 1){
