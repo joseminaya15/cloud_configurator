@@ -412,6 +412,7 @@ function buttonQuestion(direction){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 			fiveWindow.addClass('animated fadeInUp');
 			$('#next').prop("disabled", true);
+			$('#next').removeClass('active');
 		}
 	} else {
 		$('#prev').prop("disabled", false);
@@ -746,6 +747,7 @@ function EditQuestion(id){
 	var windowQestion = $('.js-'+id);
 	$('.opacity-done').removeClass('animated fadeInDown fadeOutDown fadeInUp fadeOutUp');
 	windowQestion.addClass('animated fadeInDown');
+	$('#next').addClass('active');
     var res = id.substr(6, 1);
 	pant = res;
 	m = res;
