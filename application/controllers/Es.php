@@ -389,8 +389,8 @@ class Es extends CI_Controller {
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td style="padding-bottom: 20px;">
-                                    <table style="width: 100%;padding: 20px;margin-left: 30px;" cellspacing="0" cellpadding="0">
+                                  <td style="padding: 0 20px 20px 20px;">
+                                    <table style="width: 100%;" cellspacing="0" cellpadding="0">
                                       <tbody>
                                         <tr style="padding: 5px 20px;">
                                           <td rowspan="2"></td>
