@@ -75,11 +75,9 @@
                             </div>
                             <div class="js-progress"><span></span></div>
                         </div>
-                        <select class="selectpicker" id="IdiomaHome"  name="Idioma" onchange="cambiarIdioma()">
-                            <option value="Español">Espa&ntilde;ol</option>
-                            <option value="Inglés" disabled="true">English</option>
-                            <option value="Portugués" disabled="true">Portugu&ecirc;s</option>
-                        </select>
+                        <div class="btn-group bootstrap-select">
+                            
+                        </div>
                         <div class="js-header__bgcolor">
                             <div class="js-header__bgcolor--bar"></div>
                             <div class="js-header__bgcolor--bar"></div>

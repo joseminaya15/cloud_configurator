@@ -16,7 +16,14 @@ var returnEdit     = 0;
 function buttonNext(){
 	pant++;
 	if(pant == 1){
-		$('#next').prop("disabled", true);
+		if(idConfigurator != null){
+			$('#next').prop("disabled", false);
+			$('#next').addClass('active');
+		} else {
+			$('#next').prop("disabled", true);
+			$('#next').removeClass('active');
+		}
+		firstWindow.removeClass('opacity-done');
 	}
 	if(tipo_ind == 'Otras'){
 		especificar = $('#idEspecificar').val();
@@ -410,13 +417,13 @@ function buttonQuestion(direction){
 		$('#prev').prop("disabled", false);
 		if(direction == 2){
 			m++;
-			console.log(m);
 			if(m == 1){
 				$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 				configurator.addClass('animated fadeInDown');
 				firstWindow.addClass('animated fadeOutDown');
 				if(configurador != null || configurador != ''){
 					$('#next').prop("disabled", false);
+					$('#next').addClass('active');
 				}
 			}
 			else if(m == 2){
@@ -428,8 +435,9 @@ function buttonQuestion(direction){
 				$('.js-progress').find('span').css('width','20%');
 				$('#next').prop("disabled", true);		
 				$('#next').removeClass('active');
-				if(tipo_ind != null && empleados != null && facturacion != null){
+				if(ayuda_negocio != null){
 					$('#next').prop("disabled", false);
+					$('#next').addClass('active');
 				}
 			}
 			else if(m == 3){
@@ -442,8 +450,10 @@ function buttonQuestion(direction){
 				if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
 					if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
 						$('#next').prop("disabled", false);
+						$('#next').addClass('active');
+					} else {
+						$('#next').removeClass('active');	
 					}
-					$('#next').removeClass('active');
 				}else {
 					$('#next').prop("disabled", true);
 				}
@@ -462,10 +472,9 @@ function buttonQuestion(direction){
 				$('#step3').addClass('active');
 				$('#next').removeClass('active');
 				$('.js-progress').find('span').css('width','60%');
-				if(solucion != '' || solucion != null){
+				if(solucion != ''){
 					$('#next').prop("disabled", false);
-				}else {
-					$('#next').prop("disabled", true);
+					$('#next').addClass('active');
 				}
 			}
 			else if(m == 5){
@@ -486,6 +495,11 @@ function buttonQuestion(direction){
 				$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 				fourWindow.addClass('animated fadeInDown');
 				fiveWindow.addClass('animated fadeOutDown');
+				if(solucion != ''){
+					$('#next').prop("disabled", false);
+					$('#next').addClass('active');
+				}
+
 			}
 			else if(m == 3){
 				$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
@@ -493,6 +507,7 @@ function buttonQuestion(direction){
 				fourWindow.addClass('animated fadeOutDown');
 				if(tipo_ind != null && empleados != null && facturacion != null){
 					$('#next').prop("disabled", false);
+					$('#next').addClass('active');
 				}
 			}
 			else if(m == 2){
@@ -501,6 +516,7 @@ function buttonQuestion(direction){
 				thirdWindow.addClass('animated fadeOutDown');
 				if(ayuda_negocio != null || ayuda_negocio != ''){
 					$('#next').prop("disabled", false);
+					$('#next').addClass('active');
 				}
 			}
 			else if(m == 1){
@@ -509,6 +525,7 @@ function buttonQuestion(direction){
 				secondWindow.addClass('animated fadeOutDown');
 				if(configurador != null || configurador != ''){
 					$('#next').prop("disabled", false);
+					$('#next').addClass('active');
 				}
 			}
 			else if(m < 1){
@@ -516,6 +533,7 @@ function buttonQuestion(direction){
 				homePage.removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 				homePage.addClass('animated fadeInDown');
 				congigurator.addClass('animated fadeOutDown');
+				$('#next').addClass('active');
 				m = 1;
 				return;
 			}
