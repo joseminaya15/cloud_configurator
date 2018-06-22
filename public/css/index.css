@@ -171,7 +171,6 @@ table thead tr{
     text-transform: initial;
     font-family: 'RobotoMedium';
     padding: 0 14px;
-    width: 100%;
 }
 .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
 	background-color: #000000;
@@ -382,6 +381,7 @@ table thead tr{
     right: 0;
     width: 100%;
     border-bottom: 1px solid #FFFFFF;
+    padding-left: 20px;
     background-color: #000000;
     z-index: 5;
     -webkit-transition: opacity .5s ease-in-out .2s;
@@ -390,13 +390,23 @@ table thead tr{
 	-o-transition: opacity .5s ease-in-out .2s;
 	transition: opacity .5s ease-in-out .2s;
     opacity: 0;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 .header-left{
-    padding: 18px 0 18px 25px;
-    float: left;
+	display: flex;
+	align-items: center;
+    justify-content: flex-start;
+    width: 100%;
 }
-.header-right.admin{
-	max-width: 240px;
+.header-left img{
+	width: 100%;
+	max-width: 80px
+}
+.header-left p{
+	font-size: 18px;
+	margin: 0;
 }
 .header-right.none-idioma{
 	max-width: 95px;
@@ -405,9 +415,8 @@ table thead tr{
 	margin-right: 10px;
 }
 .header-right{
-    float: right;
+    justify-content: flex-end;
     height: 68px;
-    max-width: 215px;
     width: 100%;
     display: flex;
     display: -webkit-flex;

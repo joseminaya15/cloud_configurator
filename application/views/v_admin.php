@@ -33,9 +33,9 @@
     <section id="principal">
         <div id="content" class="mdl-container">
             <div class="header" style="opacity: 1;">
-                <div class="header-left">
-                    <img class="logo-header" src="<?php echo RUTA_IMG?>logo/logo_favicon.png" style="max-width: 65px !important;">
-                    <span style="color: #FFFFFF;font-weight: bold;margin-left: -5px;">CLOUD CONFIGURATOR</span>
+                <div class="header-left header-admin">
+                    <img class="logo-header" src="<?php echo RUTA_IMG?>logo/logo_favicon.png">
+                    <p>Cloud Configurator</p>
                 </div>
                 <div class="header-right admin">
                     <a class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect admin-logout m-r-25" onclick="cerrarCesion()">Logout</a>
