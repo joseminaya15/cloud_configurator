@@ -47,6 +47,9 @@ body{
 	position: absolute;
 	top: 20px;
 	left: 20px;
+	z-index: 10;
+	display: flex;
+	align-items: center;
 }
 .contenido-bottom{		
 	position: absolute;
@@ -58,7 +61,11 @@ body{
 }
 .contenido-top img{
 	width: 100%;
-	max-width: 150px;
+	max-width: 100px;
+}
+.contenido-top p{
+	margin: 0;
+	font-size: 18px;
 }
 /*MDL-INPUT*/
 .mdl-input {

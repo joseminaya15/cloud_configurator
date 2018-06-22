@@ -18,23 +18,23 @@
     <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>font-awesome.min.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>material-icons.css?v=<?php echo time();?>">
     <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>roboto.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>bentonsans.css?v=<?php echo time();?>">
 	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>m-p.min.css?v=<?php echo time();?>">
-    <link rel="stylesheet"    href="<?php echo RUTA_CSS?>login.min.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="<?php echo RUTA_CSS?>login.css?v=<?php echo time();?>">
+    <link rel="stylesheet"    href="<?php echo RUTA_CSS?>style.css?v=<?php echo time();?>">
 </head>
 <body>
     <section id="principal">
         <div class="card-content">
             <div class="contenido-top">
-                <img src="<?php echo RUTA_IMG?>logo/logo_favicon.png" style="max-width: 65px;">
-                <span style="color: #FFFFFF;font-weight: bold;">CLOUD CONFIGURATOR</span>
+                <img src="<?php echo RUTA_IMG?>logo/logo_favicon.png">
+                <p>Cloud Configurator</p>
             </div>
             <div class="contenido">
                 <!-- <img class="logo-home" src="<?php echo RUTA_IMG?>logo/logo_header.png">
                 <h2>Different scenarios. One solution</h2> -->
             </div>
-            <div class="contenido-bottom">
-                <img src="<?php echo RUTA_IMG?>fondo/fondo-imagen.jpg" style="width: 100%;height: 860px;">
-            </div>
+            <div class="js-fondo__imagen"></div>
         </div>
         <div class="card-login">
             <div class="mdl-card mdl-card-login">
