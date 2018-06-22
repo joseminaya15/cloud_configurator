@@ -748,6 +748,7 @@ function selectFacturacion(id){
 			$('#next').addClass('active');
 		}
 	}
+	$('.js-fixed--top').css('z-index', '2');
 }
 function EditQuestion(id){
 	returnEdit = 1;
