@@ -730,13 +730,13 @@ function tipoTamaño(id,tipo){
 		}
 	}
 }
-$('[data-id="facturacion"]').click(function(){
-	if( $('#facturacion').parents('.bootstrap-select').hasClass('open') != true ){
-		$('.js-fixed--top').css('z-index', '0');
-	} else{
-		$('.js-fixed--top').css('z-index', '2');
-	}
-})
+// $('[data-id="facturacion"]').click(function(){
+// 	if( $('#facturacion').parents('.bootstrap-select').hasClass('open') != true ){
+// 		$('.js-fixed--top').css('z-index', '0');
+// 	} else{
+// 		$('.js-fixed--top').css('z-index', '2');
+// 	}
+// })
 var facturacion = null;
 function selectFacturacion(id){
 	facturacion = $('#'+id).val();
