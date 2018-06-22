@@ -887,16 +887,6 @@
             } else {
                 $('select').selectpicker();
             }
-            $(document).ready(function(){
-                $('[data-id="facturacion"]').click(function(){
-                    if($(this).parent().has('.open')){
-                        $('.js-fixed--top').css('z-index', '0');
-                        console.log("entra");
-                    } else{
-                        $('.js-fixed--top').css('z-index', '2');
-                    }
-                });
-            })
             var confirmar = '';
              $(window).load(function(){
                  if(<?php echo $pantalla1 ?> == 5) {

@@ -730,13 +730,26 @@ function tipoTamaño(id,tipo){
 		}
 	}
 }
-// $('[data-id="facturacion"]').click(function(){
-// 	if( $('#facturacion').parents('.bootstrap-select').hasClass('open') != true ){
-// 		$('.js-fixed--top').css('z-index', '0');
-// 	} else{
-// 		$('.js-fixed--top').css('z-index', '2');
-// 	}
-// })
+$('html').click(function() {
+	if( $('#facturacion').parents('.bootstrap-select').hasClass('open') != true ){
+		$('#facturacion').parents('.bootstrap-select').addClass('open');
+		$('.js-fixed--top').css('z-index', '0');
+	} else{
+		$('#facturacion').parents('.bootstrap-select').removeClass('open');
+		$('.js-fixed--top').css('z-index', '2');
+	}
+	$('.js-fixed--top').css('z-index', '2');
+});
+$('[data-id="facturacion"]').click(function(e){
+	if( $('#facturacion').parents('.bootstrap-select').hasClass('open') != true ){
+		$('#facturacion').parents('.bootstrap-select').addClass('open');
+		$('.js-fixed--top').css('z-index', '0');
+	} else{
+		$('#facturacion').parents('.bootstrap-select').removeClass('open');
+		$('.js-fixed--top').css('z-index', '2');
+	}
+	e.stopPropagation();
+})
 var facturacion = null;
 function selectFacturacion(id){
 	facturacion = $('#'+id).val();
