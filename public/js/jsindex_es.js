@@ -246,6 +246,7 @@ function validateEmail(email){
     return re.test(email);
 }
 var i = 1;
+var empleados = '';
 function operar(id,tipo){
 	var buttonSelect = $('#'+id);
 	var cardSelected = buttonSelect.parents('.js-card--large__select');
@@ -288,7 +289,7 @@ function operar(id,tipo){
 			return;
 		}
 	}
-	var empleados = $('#textOperar').text();
+	empleados = $('#textOperar').text();
 	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
 		if(tipo_ind != null && empleados != null && facturacion != null){
 			$('#next').prop("disabled", false);
@@ -310,9 +311,9 @@ function mostrarDatos(){
         if(data.error == 0){
         	$("#relacion").val('0');
 			$('.selectpicker').selectpicker('refresh');
-          	$('#industria').text(data.Industria);
-          	$('#factura').text(data.Factura_anual)
-           	$('#tamanio').text(data.Tamanio);
+          	$('#industria').text(especificar);
+          	$('#factura').text(facturacion)
+           	$('#tamanio').text(empleados);
            	$('#ayuda').append(ayuda_negocio);
            	$('#infraestructura').text(solucion);
         }else{
