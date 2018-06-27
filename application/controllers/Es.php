@@ -203,35 +203,35 @@ class Es extends CI_Controller {
                                   <table style="padding: 20px;" cellspacing="0" cellpadding="0" border="0">
                                     <tbody>
                                       <tr style="padding: 0 20px;">
-                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold !important;">Cliente:</font></td>
+                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold !important;"><strong>Cliente:</strong></font></td>
                                         <td><font style="margin: 3px 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$_SESSION['nombre_completo'].'</font></td>
                                       </tr>
                                       <tr style="padding: 0 20px;">
-                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold;">Cargo:</font></td>
+                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold;"><strong>Cargo:</strong></font></td>
                                         <td><font  style="margin: 3px 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$_SESSION['Cargo'].'</font></td>
                                       </tr>
                                       <tr style="padding: 0 20px;">
-                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold !important">Empresa:</font></td>
+                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold !important"><strong>Empresa:</strong></font></td>
                                         <td><font style="font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$_SESSION['Empresa'].'</font></td>
                                       </tr>
                                       <tr style="padding: 0 20px;">
-                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold;">Teléfono:</font></td>
+                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold;"><strong>Teléfono:</strong></font></td>
                                         <td><font style="margin: 3px 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$_SESSION['Telefono'].'</font></td>
                                       </tr>
                                       <tr style="padding: 0 20px;">
-                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold;">Email:</font></td>
+                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold;"><strong>Email:</strong></font></td>
                                         <td><font style="margin: 3px 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$_SESSION['Email'].'</font></td>
                                       </tr>
                                       <tr style="padding: 0 20px;">
-                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold;">Relación con SAP:</font></td>
+                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold;"><strong>Relación con SAP:</strong></font></td>
                                         <td><font style="margin: 3px 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$_SESSION['Relacion'].'</font></td>
                                       </tr>
                                       <tr style="padding: 0 20px;">
-                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold;">País:</font></td>
+                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold;"><strong>País:</strong></font></td>
                                         <td><font style="margin: 3px 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$_SESSION['Pais'].'</font></td>
                                       </tr>
                                       <tr style="padding: 0 20px;">
-                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold;">Quiero que me contacten:</font></td>
+                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold;"><strong>Quiero que me contacten:</strong></font></td>
                                         <td><font style="margin: 3px 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$contact.'</font></td>
                                       </tr>
                                     </tbody>
@@ -429,6 +429,11 @@ class Es extends CI_Controller {
                                         </tr>
                                       </tbody>
                                     </table>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td style="padding:10px 40px 20px 40px;">
+                                    <font style="color: #000000;font-size:14px;font-family: arial;"><strong>SAP Latinoamérica</strong></font>
                                   </td>
                                 </tr>
                               </tbody>
