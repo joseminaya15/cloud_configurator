@@ -881,7 +881,9 @@ $('#checkbox-1').change(function(){
 });
 
 $( "#btnpant1" ).on( "click", function() {
+	selectConfigurator('ERP', 'ERP');
 	cambiar();
+	buttonNext();
   	$('.js-nav-none .owl-nav').css('display','none');
 	$('#js-carousel--ERP .owl-nav').css('display','flex');
 	$('#js-carousel--ERP .owl-carousel').owlCarousel({
@@ -908,10 +910,11 @@ $( "#btnpant1" ).on( "click", function() {
 		autoplayTimeout : 5000,
 		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
 	});
-	selectConfigurator('ERP', 'ERP');
 });
 $( "#btnpant2" ).on( "click", function() {
+	selectConfigurator('CRM', 'CRM');
 	cambiar();
+	buttonNext();
   	$('.js-nav-none .owl-nav').css('display','none');
 	$('#js-carousel--CRM .owl-nav').css('display','flex');
 	$('#js-carousel--CRM .owl-carousel').owlCarousel({
@@ -938,10 +941,11 @@ $( "#btnpant2" ).on( "click", function() {
 		autoplayTimeout : 5000,
 		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
 	});
-	selectConfigurator('CRM', 'CRM');
 });
 $( "#btnpant3" ).on( "click", function() {
+	selectConfigurator('HR', 'HR');
 	cambiar();
+	buttonNext();
   	$('.js-nav-none .owl-nav').css('display','none');
 	$('#js-carousel--HR .owl-nav').css('display','flex');
 	$('#js-carousel--HR .owl-carousel').owlCarousel({
@@ -974,11 +978,10 @@ $( "#btnpant3" ).on( "click", function() {
 		autoplayTimeout : 5000,
 		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
 	});
-	selectConfigurator('HR', 'HR');
 });
 function cambiar(){
 	m = 2;
-	pant = 2;
+	pant = 1;
 	$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 	firstWindow.addClass('opacity-done');
 	firstWindow.addClass('animated fadeOutUp');
