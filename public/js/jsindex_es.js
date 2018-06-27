@@ -524,6 +524,8 @@ function buttonQuestion(direction){
 				}
 			}
 			else if(m == 1){
+				$('#next').css('display', 'none');
+				$('#prev').css('display', 'none');
 				$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
 				firstWindow.addClass('animated fadeInDown');
 				secondWindow.addClass('animated fadeOutDown');
