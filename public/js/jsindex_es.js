@@ -880,15 +880,99 @@ $('#checkbox-1').change(function(){
 
 $( "#btnpant1" ).on( "click", function() {
 	cambiar();
-  	$('#ERP').trigger( "click" );
+  	$('.js-nav-none .owl-nav').css('display','none');
+	$('#js-carousel--ERP .owl-nav').css('display','flex');
+	$('#js-carousel--ERP .owl-carousel').owlCarousel({
+		lazyLoad : true,
+		responsive : {
+			0 : {
+				items : 1
+			},
+			550:{
+				items : 2
+			},
+			770:{
+				items : 3
+			}
+		},
+		navigation : false,
+		mouseDrag: false,
+		touchDrag:  false,
+		nav : true,
+		loop : false,
+		dots: false,
+		autoplay : false,
+		margin: 10,
+		autoplayTimeout : 5000,
+		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+	});
+	selectConfigurator('ERP', 'ERP');
 });
 $( "#btnpant2" ).on( "click", function() {
 	cambiar();
-  	$('#CRM').trigger( "click" );
+  	$('.js-nav-none .owl-nav').css('display','none');
+	$('#js-carousel--CRM .owl-nav').css('display','flex');
+	$('#js-carousel--CRM .owl-carousel').owlCarousel({
+		lazyLoad : true,
+		responsive : {
+			0 : {
+				items : 1
+			},
+			550:{
+				items : 2
+			},
+			770:{
+				items : 3
+			}
+		},
+		navigation : false,
+		mouseDrag: false,
+		touchDrag:  false,
+		nav : true,
+		loop : false,
+		dots: false,
+		autoplay : false,
+		margin: 10,
+		autoplayTimeout : 5000,
+		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+	});
+	selectConfigurator('CRM', 'CRM');
 });
 $( "#btnpant3" ).on( "click", function() {
 	cambiar();
-  	$('#HR').trigger( "click" );
+  	$('.js-nav-none .owl-nav').css('display','none');
+	$('#js-carousel--HR .owl-nav').css('display','flex');
+	$('#js-carousel--HR .owl-carousel').owlCarousel({
+		lazyLoad : true,
+		responsive : {
+			0 : {
+				items : 1
+			},
+			500:{
+				items : 2
+			},
+			770:{
+				items : 3
+			},
+			1000:{
+				items : 4
+			},
+			1200:{
+				items : 5
+			}
+		},
+		navigation : false,
+		mouseDrag: false,
+		touchDrag:  false,
+		nav : true,
+		loop : false,
+		dots: false,
+		margin: 10,
+		autoplay : false,
+		autoplayTimeout : 5000,
+		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+	});
+	selectConfigurator('HR', 'HR');
 });
 function cambiar(){
 	m = 2;
