@@ -873,3 +873,13 @@ $('#checkbox-1').change(function(){
 		checks = 'General Marketing, Sharing data';
 	}
 });
+
+$( "#btnpant1" ).on( "click", function() {
+  	$('#ERP').trigger( "click" );
+});
+$( "#btnpant2" ).on( "click", function() {
+  	$('#CRM').trigger( "click" );
+});
+$( "#btnpant3" ).on( "click", function() {
+  	$('#HR').trigger( "click" );
+});

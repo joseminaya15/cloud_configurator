@@ -102,7 +102,7 @@
                                                 <div class="js-card-flip js-card-flip__front">
                                                     <img src="<?php echo RUTA_IMG?>cards/byd.png">
                                                 </div>
-                                                <div class="js-card-flip js-card-flip__back selected">
+                                                <div class="js-card-flip js-card-flip__back selected" id="btnpant1">
                                                     <h2>ERP</h2>
                                                     <p>Cloud</p>
                                                     <button id="ERP" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'ERP')">Seleccionar</button>
@@ -119,7 +119,7 @@
                                                 <div class="js-card-flip js-card-flip__front">
                                                     <img src="<?php echo RUTA_IMG?>cards/crm.png">
                                                 </div>
-                                                <div class="js-card-flip js-card-flip__back">
+                                                <div class="js-card-flip js-card-flip__back" id="btnpant2">
                                                     <h2>CRM</h2>
                                                     <p>Cloud</p>
                                                     <button id="CRM" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'CRM')">Seleccionar</button>
@@ -136,7 +136,7 @@
                                                 <div class="js-card-flip js-card-flip__front">
                                                     <img src="<?php echo RUTA_IMG?>cards/hr.png">
                                                 </div>
-                                                <div class="js-card-flip js-card-flip__back">
+                                                <div class="js-card-flip js-card-flip__back" id="btnpant3">
                                                     <h2>HR</h2>
                                                     <p>Cloud</p>
                                                     <button id="HR" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'HR')">Seleccionar</button>
