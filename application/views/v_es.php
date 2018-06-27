@@ -89,6 +89,9 @@
                 </div>
                 <div class="js-window1">
                     <div class="js-container">
+                        <div class="js-question--number">
+                            <span>01/05</span>
+                        </div>
                         <h2>YO <strong>QUIERO</strong></h2>
                         <div class="js-card__flex">
                             <div id="js-carousel--configurator" class="js-carousel js-3cards">
@@ -154,7 +157,7 @@
                     <div class="js-container">
                         <p class="js-question--title"><strong>/ ERP</strong> Cloud Configurator</p>
                         <div class="js-question--number">
-                            <span>01/04</span>
+                            <span>02/05</span>
                             <h2>¿C&oacute;mo podemos ayudarle en su rol de responsable de <span id="title-configurator"></span>?</h2>
                         </div>
                         <div id="js-carousel--ERP" class="js-carousel js-cards js-nav-none">
@@ -400,7 +403,7 @@
                     <div class="js-container">
                         <p class="js-question--title"><strong>/ ERP</strong> Cloud Configurator</p>
                         <div class="js-question--number">
-                            <span>02/04</span>
+                            <span>03/05</span>
                             <h2>¿Cu&aacute;l es su tipo y tama&ntilde;o de empresa&#63;</h2>
                         </div>
                         <div class="js-card__flex js-card__flex--relative">
@@ -569,7 +572,7 @@
                     <div class="js-container">
                         <p class="js-question--title"><strong>/ ERP</strong> Cloud Configurator</p>
                         <div class="js-question--number">
-                            <span>03/04</span>
+                            <span>04/05</span>
                             <h2>¿Que tipo de soluci&oacute;n le interesa evaluar&#63;</h2>
                         </div>
                         <div class="js-card__flex">
@@ -666,7 +669,7 @@
                     <div class="js-container">
                         <p class="js-question--title"><strong>/ ERP</strong> Cloud Configurator</p>
                         <div class="js-question--number">
-                            <span>04/04</span>
+                            <span>05/05</span>
                             <h2>Complete el formulario para poder contactarlo y entrar en detalles</h2>
                         </div>
                         <div class="js-card__flex">
