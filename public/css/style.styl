@@ -266,6 +266,9 @@ body
 	z-index 2
 	&.js-fixed--top
 		bottom 100px
+		width 100%
+		max-width 120px
+		margin auto
 	button
 		background-color transparent !important
 		box-shadow none !important
@@ -965,6 +968,7 @@ body
 			max-width 100px
 	.js-container
 		padding-top 80px
+@media ( max-height 850px )
 	.js-button-next
 		&.js-fixed--top
 			bottom 10px
@@ -994,7 +998,6 @@ body
 				.js-formulario
 				.js-card-confirmacion
 					float left
-				.js-formulario
 					max-width 100%
 	.js-title
 		max-width 550px
@@ -1042,6 +1045,10 @@ body
 			max-width 500px
 		&.js-cards
 			max-width 500px
+	.js-button-next
+		&.js-fixed--top
+			background-color #000000
+			bottom 0
 @media ( max-width: 600px )
 	.js-container
 		align-items center

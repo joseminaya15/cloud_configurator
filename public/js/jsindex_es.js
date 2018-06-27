@@ -75,7 +75,7 @@ function buttonNext(){
 			500:{
 				items : 2
 			},
-			768:{
+			770:{
 				items : 3
 			}
 		},
@@ -566,7 +566,7 @@ function selectConfigurator(id, dato){
 			550:{
 				items : 2
 			},
-			768:{
+			770:{
 				items : 3
 			},
 			1000:{
@@ -595,7 +595,7 @@ function selectConfigurator(id, dato){
 			500:{
 				items : 2
 			},
-			768:{
+			770:{
 				items : 3
 			}
 		},
@@ -623,7 +623,7 @@ $('#ERP').click(function(){
 			550:{
 				items : 2
 			},
-			768:{
+			770:{
 				items : 3
 			}
 		},
@@ -651,7 +651,7 @@ $('#CRM').click(function(){
 			550:{
 				items : 2
 			},
-			768:{
+			770:{
 				items : 3
 			}
 		},
@@ -679,7 +679,7 @@ $('#HR').click(function(){
 			500:{
 				items : 2
 			},
-			768:{
+			770:{
 				items : 3
 			},
 			1000:{
