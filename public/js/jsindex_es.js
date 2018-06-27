@@ -16,6 +16,8 @@ var returnEdit     = 0;
 function buttonNext(){
 	pant++;
 	if(pant == 1){
+		$('#next').css('display', 'none');
+		$('#prev').css('display', 'none');
 		if(idConfigurator != null){
 			$('#next').prop("disabled", false);
 			$('#next').addClass('active');
@@ -539,13 +541,15 @@ function buttonQuestion(direction){
 				m = 1;
 				return;
 			}
-		}	
+		}
 	}
 	
 }
 function selectConfigurator(id, dato){
 	idConfigurator = id
 	configurador = dato;
+	$('#next').css('display', '');
+	$('#prev').css('display', '');
 	secondWindow.find('.js-card--large').css('display','none');
 	$('.js-card--large__'+idConfigurator).css('display','block');
 	$('.js-question--title').find('strong').text('/ '+idConfigurator);
@@ -875,11 +879,26 @@ $('#checkbox-1').change(function(){
 });
 
 $( "#btnpant1" ).on( "click", function() {
+	cambiar();
   	$('#ERP').trigger( "click" );
 });
 $( "#btnpant2" ).on( "click", function() {
+	cambiar();
   	$('#CRM').trigger( "click" );
 });
 $( "#btnpant3" ).on( "click", function() {
+	cambiar();
   	$('#HR').trigger( "click" );
 });
+function cambiar(){
+	m = 2;
+	pant = 2;
+	$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+	firstWindow.addClass('opacity-done');
+	firstWindow.addClass('animated fadeOutUp');
+	secondWindow.addClass('animated fadeInUp');
+	$('#step1').addClass('active');
+	$('.js-progress').find('span').css('width','20%');
+	$('#next').prop("disabled", true);		
+	$('#next').removeClass('active');
+}
