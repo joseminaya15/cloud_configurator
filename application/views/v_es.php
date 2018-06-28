@@ -110,7 +110,7 @@
                                                 </div>
                                             </div>
                                             <div class="js-card-content">
-                                                <p>Innovar digitalmente mis procesos para mejorar la competitividad, la eficiencia y la reputaci&oacute;n de mi marca y m&aacute;s.</p>
+                                                <p><strong>Innovar digitalmente</strong> mis procesos para mejorar la competitividad, la eficiencia y la reputaci&oacute;n de mi marca y m&aacute;s.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -127,7 +127,7 @@
                                                 </div>
                                             </div>
                                             <div class="js-card-content">
-                                                <p>Contar con herramientas para una gesti&oacute;n avanzada de mis clientes para entregar la mejor experiencia, adelantarse a sus necesidades y brindar un servicio de excelencia.</p>
+                                                <p>Contar con herramientas para una <strong>gesti&oacute;n avanzada de mis clientes</strong> para entregar la mejor experiencia, adelantarse a sus necesidades y brindar un servicio de excelencia.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -144,7 +144,7 @@
                                                 </div>
                                             </div>
                                             <div class="js-card-content">
-                                                <p>Modernizar la gesti&oacute;n de mi fuerza laboral, alinearlos con las metas del negocio, innovar su aprendizaje y compensarlos adecuadamente.</p>
+                                                <p><strong>Modernizar la gesti&oacute;n</strong> de mi fuerza laboral, alinearlos con las metas del negocio, innovar su aprendizaje y compensarlos adecuadamente.</p>
                                             </div>
                                         </div>
                                     </div>
