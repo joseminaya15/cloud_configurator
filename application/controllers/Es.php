@@ -381,13 +381,8 @@ class Es extends CI_Controller {
                                         </tr>
                                          <tr>
                                             <td style="padding:10px 40px 20px 40px;">
-                                              <font style="color: #000000;font-size:14px;font-family: arial;">Estamos seguros que Cloud Configurator lo ayudará a acelerar la transformación digital en su empresa.</font>
+                                              <font style="color: #000000;font-size:14px;font-family: arial;">Estamos seguros que Cloud Configurator lo ayudará a acelerar la transformación digital en su empresa. Un representante de SAP se pondrá en contacto con Usted para ayudarlo a dar el primer paso.</font>
                                             </td>
-                                        </tr>
-                                        <tr>
-                                          <td style="padding: 10px 40px 20px 40px;width:  300px;">
-                                            <font style="color: #000000;font-size:14px;font-family: arial;">Un representante de SAP se pondrá en contacto con Usted para ayudarlo a dar el primer paso.</font>
-                                          </td>
                                         </tr>
                                       </tbody>
                                     </table>
