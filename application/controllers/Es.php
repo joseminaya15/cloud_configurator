@@ -376,12 +376,17 @@ class Es extends CI_Controller {
                                       <tbody>
                                         <tr>
                                           <td style="padding: 20px 40px 10px 40px;">
-                                            <font style="color: #000000;font-weight: bold;font-size: 20px;">Gracias por su interés</font>
+                                            <font style="color: #000000;font-weight: bold;font-size: 20px;">¡Gracias por su participación!</font>
                                           </td>
+                                        </tr>
+                                         <tr>
+                                            <td style="padding:10px 40px 20px 40px;">
+                                              <font style="color: #000000;font-size:14px;font-family: arial;">Estamos seguros que Cloud Configurator lo ayudará a acelerar la transformación digital en su empresa.</font>
+                                            </td>
                                         </tr>
                                         <tr>
                                           <td style="padding: 10px 40px 20px 40px;width:  300px;">
-                                            <font style="color: #000000;">Un representante de SAP se pondrá en contacto con Usted para ayudarlo a dar el primer paso.</font>
+                                            <font style="color: #000000;font-size:14px;font-family: arial;">Un representante de SAP se pondrá en contacto con Usted para ayudarlo a dar el primer paso.</font>
                                           </td>
                                         </tr>
                                       </tbody>
@@ -389,7 +394,7 @@ class Es extends CI_Controller {
                                   </td>
                                 </tr>
                                 <tr>
-                                  <td style="padding: 0 20px 20px 20px;">
+                                  <td style="padding: 0 20px 20px 45px;">
                                     <table style="width: 100%;" cellspacing="0" cellpadding="0">
                                       <tbody>
                                         <tr style="padding: 5px 20px;">
