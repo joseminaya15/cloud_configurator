@@ -895,10 +895,10 @@
             }
             var confirmar = '';
              $(window).load(function(){
-                var URLactual = window.location;
-                if(URLactual['href'] != 'http://www.sap-latam.com/configurators/cloud/es'){
-                    location.href = 'http://www.sap-latam.com/configurators/cloud/es';
-                }
+                // var URLactual = window.location;
+                // if(URLactual['href'] != 'http://www.sap-latam.com/configurators/cloud/es'){
+                //     location.href = 'http://www.sap-latam.com/configurators/cloud/es';
+                // }
                  if(<?php echo $pantalla1 ?> == 5) {
                     confirmar = 1;
                     var windowQestion = $('.js-window5');
