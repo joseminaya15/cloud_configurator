@@ -44,7 +44,11 @@
                     <div class="background3"></div>
                 </div>
             </div>
-            <div class="mdl-card mdl-card-table contenido-admin">
+            <!-- <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">Información</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Detalle</button>
+            </div> -->
+            <div id="table" class="mdl-card mdl-card-table contenido-admin">
                 <div class="table-responsive">
                     <table id="example" class="table table-bordered table-hover dt-responsive" cellspacing="0" width="100%">
                         <thead>
@@ -73,6 +77,29 @@
                     </table>
                 </div>
             </div>
+
+            <div id="details" class="mdl-card mdl-card-table contenido-admin" style="display:none">
+                <button class="mdl-button mdl-js-button mdl-button--icon" onclick="returnTable();">
+                    <i class="fa fa-arrow-left"></i>
+                </button>
+                <div class="table-responsive">
+                    <table id="tbDetails" class="table table-bordered table-hover dt-responsive" cellspacing="0" width="100%">
+                        <thead>
+                            <tr class="tr-header-reporte">
+                                <th class="text-left"></th>
+                                <th class="text-left">General marketing Email</th>
+                                <th class="text-left">General marketing Phone</th>
+                                <th class="text-left">Email Channel</th>
+                                <th class="text-left">Phone Channel</th>
+                                <th class="text-left">Share Data</th>
+                                <th class="text-left">Share Data</th>
+                            </tr>
+                        </thead>
+                      <tbody id="tbBody"> 
+                      </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </section>
     <script type="text/javascript" src="<?php echo RUTA_JS?>jquery-3.2.1.min.js?v=<?php echo time();?>"></script>
@@ -94,6 +121,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
     <script src="<?php echo RUTA_JS?>login.js?v=<?php echo time();?>"></script>
     <script src="<?php echo RUTA_JS?>Utils.js?v=<?php echo time();?>"></script>
+    <script src="<?php echo RUTA_JS?>admin.js?v=<?php echo time();?>"></script>
     <script type="text/javascript">
       $(document).ready(function() {
             $('#example').DataTable( {

@@ -46,7 +46,7 @@ class Admin extends CI_Controller {
                             <td class="text-center">'.$key->Relacion.'</td>
                             <td class="text-center">'.$key->Cargo.'</td>
                             <td class="text-center">'.$contactado.'</td>
-                            <td class="text-center">'.$key->checks.'</td>
+                            <td class="text-center">'.(($key->checks=='') ? 'N/A' : '<a onclick="getDetails('.$key->Id.');">'.$key->checks.'</a>').'</td>
                             <td class="text-center">'.$key->Pais.'</td>
                             <td class="text-center">'.$key->fecha_sol.' pe</td>
                             <td class="text-center" style="display:none">'.$key->producto.'</td>
@@ -61,6 +61,130 @@ class Admin extends CI_Controller {
             return $html;
         }
 	}
+
+    function details(){
+        $data['error'] = EXIT_ERROR;
+        $data['msj']   = null;
+        try {
+            $id   = $this->input->post('valor');
+            $dato = $this->M_reportes->getInfoDetails($id);
+            $html = '';
+            $html = '<tr>
+                         <td class="text-left" style="background-color: #ddd;">DataSubjectId</td>
+                         <td class="text-left">'.$dato[0]->Email.'</td>
+                         <td class="text-left">'.$dato[0]->Telefono.'</td>
+                         <td class="text-left">'.$dato[0]->Email.'</td>
+                         <td class="text-left">'.$dato[0]->Telefono.'</td>
+                         <td class="text-left">'.$dato[0]->Email.'</td>
+                         <td class="text-left">'.$dato[0]->Telefono.'</td>
+                     </tr>
+                     <tr>
+                         <td class="text-left" style="background-color: #ddd;">CCRFormName</td>
+                         <td class="text-left">-</td>
+                         <td class="text-left">-</td>
+                         <td class="text-left">-</td>
+                         <td class="text-left">-</td>
+                         <td class="text-left">-</td>
+                         <td class="text-left">-</td>
+                     </tr>
+                     <tr>
+                         <td class="text-left" style="background-color: #ddd;">LanguageCode</td>
+                         <td class="text-left">'.$dato[0]->idioma.'</td>
+                         <td class="text-left">'.$dato[0]->idioma.'</td>
+                         <td class="text-left">'.$dato[0]->idioma.'</td>
+                         <td class="text-left">'.$dato[0]->idioma.'</td>
+                         <td class="text-left">'.$dato[0]->idioma.'</td>
+                         <td class="text-left">'.$dato[0]->idioma.'</td>
+                     </tr>
+                     <tr>
+                         <td class="text-left" style="background-color: #ddd;">DataSubjectTypeName</td>
+                         <td class="text-left">Email</td>
+                         <td class="text-left">Teléfono</td>
+                         <td class="text-left">Email</td>
+                         <td class="text-left">Teléfono</td>
+                         <td class="text-left">Email</td>
+                         <td class="text-left">Teléfono</td>
+                     </tr>
+                     <tr>
+                         <td class="text-left" style="background-color: #ddd;">DataSubjectDescription</td>
+                         <td class="text-left">'.$dato[0]->nombre_completo.'</td>
+                         <td class="text-left">'.$dato[0]->nombre_completo.'</td>
+                         <td class="text-left">'.$dato[0]->nombre_completo.'</td>
+                         <td class="text-left">'.$dato[0]->nombre_completo.'</td>
+                         <td class="text-left">'.$dato[0]->nombre_completo.'</td>
+                         <td class="text-left">'.$dato[0]->nombre_completo.'</td>
+                     </tr>
+                     <tr>
+                         <td class="text-left" style="background-color: #ddd;">ValidFrom</td>
+                         <td class="text-left">'.$dato[0]->fecha_sol.'</td>
+                         <td class="text-left">'.$dato[0]->fecha_sol.'</td>
+                         <td class="text-left">'.$dato[0]->fecha_sol.'</td>
+                         <td class="text-left">'.$dato[0]->fecha_sol.'</td>
+                         <td class="text-left">'.$dato[0]->fecha_sol.'</td>
+                         <td class="text-left">'.$dato[0]->fecha_sol.'</td>
+                     </tr>
+                     <tr>
+                         <td class="text-left" style="background-color: #ddd;">JurisdictionCode</td>
+                         <td class="text-left">'.$dato[0]->Pais.'</td>
+                         <td class="text-left">'.$dato[0]->Pais.'</td>
+                         <td class="text-left">'.$dato[0]->Pais.'</td>
+                         <td class="text-left">'.$dato[0]->Pais.'</td>
+                         <td class="text-left">'.$dato[0]->Pais.'</td>
+                         <td class="text-left">'.$dato[0]->Pais.'</td>
+                     </tr>
+                     <tr>
+                         <td class="text-left" style="background-color: #ddd;">ApplicationTemplateId</td>
+                         <td class="text-left">'.$dato[0]->Email.'</td>
+                         <td class="text-left">'.$dato[0]->Email.'</td>
+                         <td class="text-left">'.$dato[0]->Email.'</td>
+                         <td class="text-left">'.$dato[0]->Email.'</td>
+                         <td class="text-left">'.$dato[0]->Email.'</td>
+                         <td class="text-left">'.$dato[0]->Email.'</td>
+                     </tr>
+                     <tr>
+                         <td class="text-left" style="background-color: #ddd;">ControllerName</td>
+                         <td class="text-left">-</td>
+                         <td class="text-left">-</td>
+                         <td class="text-left">-</td>
+                         <td class="text-left">-</td>
+                         <td class="text-left">-</td>
+                         <td class="text-left">-</td>
+                     </tr>
+                     <tr>
+                         <td class="text-left" style="background-color: #ddd;">GrantedBy</td>
+                         <td class="text-left">'.$dato[0]->nombre_completo.'</td>
+                         <td class="text-left">'.$dato[0]->nombre_completo.'</td>
+                         <td class="text-left">'.$dato[0]->nombre_completo.'</td>
+                         <td class="text-left">'.$dato[0]->nombre_completo.'</td>
+                         <td class="text-left">'.$dato[0]->nombre_completo.'</td>
+                         <td class="text-left">'.$dato[0]->nombre_completo.'</td>
+                     </tr>
+                     <tr>
+                         <td class="text-left" style="background-color: #ddd;">GrantedAt</td>
+                         <td class="text-left">'.$dato[0]->fecha_sol.'</td>
+                         <td class="text-left">'.$dato[0]->fecha_sol.'</td>
+                         <td class="text-left">'.$dato[0]->fecha_sol.'</td>
+                         <td class="text-left">'.$dato[0]->fecha_sol.'</td>
+                         <td class="text-left">'.$dato[0]->fecha_sol.'</td>
+                         <td class="text-left">'.$dato[0]->fecha_sol.'</td>
+                     </tr>
+                     <tr>
+                         <td class="text-left" style="background-color: #ddd;">SubmissionSite</td>
+                         <td class="text-left">'.$dato[0]->lugar_aceptacion.'</td>
+                         <td class="text-left">'.$dato[0]->lugar_aceptacion.'</td>
+                         <td class="text-left">'.$dato[0]->lugar_aceptacion.'</td>
+                         <td class="text-left">'.$dato[0]->lugar_aceptacion.'</td>
+                         <td class="text-left">'.$dato[0]->lugar_aceptacion.'</td>
+                         <td class="text-left">'.$dato[0]->lugar_aceptacion.'</td>
+                     </tr>';
+            $data['htmlTabla'] = $html;
+            $data['error'] = EXIT_SUCCESS;
+        } catch (Exception $e){
+            $data['msj'] = $e->getMessage();
+        }
+        echo json_encode($data);
+    }
+
     function cerrarCesion(){
         $data['error'] = EXIT_ERROR;
         $data['msj']   = null;
