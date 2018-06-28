@@ -231,7 +231,7 @@ class Es extends CI_Controller {
                                         <td><font style="margin: 3px 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$_SESSION['Pais'].'</font></td>
                                       </tr>
                                       <tr style="padding: 0 20px;">
-                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold;"><strong>Quiero que me contacten:</strong></font></td>
+                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold;"><strong>Forma de contacto:</strong></font></td>
                                         <td><font style="margin: 3px 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$contact.'</font></td>
                                       </tr>
                                     </tbody>
