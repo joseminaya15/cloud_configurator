@@ -92,7 +92,7 @@ class Es extends CI_Controller {
                                'Id_solicitud'    => $_SESSION['id_sol'],
                                'fecha_sol'       => date('Y-m-d H:i:s'),
                                'checks'          => $checks,
-                               'idioma'          => $this->session->userdata('idioma'),
+                               'idioma'          => 'Español',
                                'lugar_aceptacion'=> 'Cloud Configurator');
           $datoInsert = $this->M_solicitud->insertarDatos($arrayInsert, 'usuario');
           $session    = array('nombre_completo' => $nombre_completo,
