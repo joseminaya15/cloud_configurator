@@ -93,7 +93,7 @@ function buttonNext(){
 		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
 	});
 }
-function cambiarIdioma(){
+function cambiarIdioma(){ 
 	var idioma = $('#IdiomaHome').val();
 	if(idioma == 'Español'){
 		location.href = 'Es';
