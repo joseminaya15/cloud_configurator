@@ -25,8 +25,8 @@
     	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>m-p.min.css?v=<?php echo time();?>">
     	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>style.css?v=<?php echo time();?>">
         <!--Google Tag Manager -->
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PW9PLW6');</script>
-        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW9PLW6"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!--End Google Tag Manager  (noscript) -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NFMTTDF');</script>
+        <!--End Google Tag Manager  (noscript) -->
     </head>
     <body>
         <section id="principal">
@@ -40,6 +40,7 @@
                             <option value="Portugués" disabled="true">Portugu&ecirc;s</option>
                         </select>
                     </div>
+                    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFMTTDF"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <div class="js-title">
                     <h1>Bienvenido a <br><strong>Cloud Configurator</strong></h1>
