@@ -139,7 +139,7 @@ class Es extends CI_Controller {
           }else if($_SESSION['Contacto'] == 2){
             $contact = 'por teléfono';
           }else if($_SESSION['Contacto'] == 1){
-            $contact = 'por Email';
+            $contact = 'por email';
           }
         }
         $respuestas = $this->M_solicitud->getRespUsuario($_SESSION['id_persona']);
@@ -154,7 +154,7 @@ class Es extends CI_Controller {
                             'newline'   => "\r\n");
          $this->email->initialize($configGmail);
          $this->email->from('info@sap-latam.com');
-         $this->email->to('jhonatanibericom@gmail.com');//Giovanna.bergamo@sap.com,anali.vidal@sap.com,alejandra.hamelink@sap.com 
+         $this->email->to('pyturrizaga@brainblue.com');//Giovanna.bergamo@sap.com,anali.vidal@sap.com,alejandra.hamelink@sap.com 
          $this->email->subject('Estoy interesado en Cloud Configurator para mi negocio.');
          $texto = '<!DOCTYPE html>
                     <html>

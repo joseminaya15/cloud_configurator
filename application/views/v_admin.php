@@ -44,10 +44,6 @@
                     <div class="background3"></div>
                 </div>
             </div>
-            <!-- <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'London')">Información</button>
-                <button class="tablinks" onclick="openCity(event, 'Paris')">Detalle</button>
-            </div> -->
             <div id="table" class="mdl-card mdl-card-table contenido-admin">
                 <div class="table-responsive">
                     <table id="example" class="table table-bordered table-hover dt-responsive" cellspacing="0" width="100%">
@@ -128,15 +124,15 @@
                 searching : false,
                 dom: 'Bfrtip',
                 language:{
-                    "emptyTable": "No data found",
+                    "emptyTable": "No se encontraron registros",
                     "info" : "Mostrando _END_ de _TOTAL_ resultados",
                     "infoEmpty": "Showing from 0 to 0 events of 0",
                     "paginate": {
-                    "first":    "First",
-                    "last":     "Latest",
-                    "next":     "next",
-                    "previous": "Previous"
-                },
+                        "first":    "Primero",
+                        "last":     "Último",
+                        "next":     "Siguiente",
+                        "previous": "Anterior"
+                    },
                 },
                 lengthMenu: [
                     [ 10, 25, 50, -1 ],
