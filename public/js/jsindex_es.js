@@ -559,10 +559,6 @@ function selectConfigurator(id, dato){
 	$('.js-card-imagen').removeClass('js-card-imagen__static');
 	$('#'+id).parents('.js-card-imagen').addClass('js-card-imagen__static');
 	// $('.owl-nav').css('display','none');
-	if(configurador != null || configurador != ''){
-		$('#next').prop("disabled", false);
-		$('#next').addClass('active');
-	}
 	$('.js-window3 .owl-carousel').owlCarousel({
 		lazyLoad : true,
 		responsive : {
@@ -988,6 +984,12 @@ function cambiar(){
 	secondWindow.addClass('animated fadeInUp');
 	$('#step1').addClass('active');
 	$('.js-progress').find('span').css('width','20%');
-	$('#next').prop("disabled", true);		
-	$('#next').removeClass('active');
+
+	if(ayuda_negocio != null){
+		$('#next').prop("disabled", false);
+		$('#next').addClass('active');
+	} else {
+		$('#next').prop("disabled", true);		
+		$('#next').removeClass('active');
+	}
 }
