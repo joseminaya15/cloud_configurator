@@ -548,6 +548,14 @@ function buttonQuestion(direction){
 	
 }
 function selectConfigurator(id, dato){
+	if  (idConfigurator != id) {
+		ayuda_negocio = null;
+		arr_ayuda     = [];
+		secondWindow.find('.js-card--large__button').find('button').removeClass('js-selected');
+		secondWindow.find('.js-card--large__button').find('button').text('Seleccione');
+		secondWindow.find('.js-card--large__button').find('button').text('Seleccione');
+		secondWindow.find('.js-card--large__button').find('button').css('color', '#FFFFFF');
+	}
 	idConfigurator = id
 	configurador = dato;
 	$('#next').css('display', '');
