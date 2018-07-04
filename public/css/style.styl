@@ -807,12 +807,13 @@ body
 	height 100%
 	max-height 285px
 .js-card--large__tipo
-	transitionTransform()
-	transform translate3d(-100%, 0, 0)
-	opacity 0
-	margin 0
-	z-index -5
-	width 0 !important
+	// transitionTransform()
+	// transform translate3d(-100%, 0, 0)
+	// opacity 0
+	// margin 0
+	// z-index -5
+	// width 0 !important
+	display none
 .js-card--transform
 	transitionTransform()
 	-webkit-transform translate3d(0px, 0px, 0px) !important
@@ -822,6 +823,7 @@ body
 	transform translate3d(0px, 0px, 0px) !important
 .js-card--tipo
 	flexCenter()
+	justify-content center
 	width 100%
 	&.js-card--show
 		max-width 240px
@@ -840,10 +842,10 @@ body
 	position relative
 	width 100%
 	max-width 1000px
-// .owl-carousel
-// 	.owl-item
-// 		width 100%
-// 		max-width 250px
+.js-nav-toggle	
+	.owl-carousel
+		.owl-item
+			width 250px !important
 .owl-theme 
 	.owl-nav
 		flexCenter()
@@ -1143,6 +1145,10 @@ body
 					border-color $color
 		.js-progress
 			display none
+	.js-card__flex--relative
+		justify-content center
+		.js-5cards
+			max-width 250px
 @media ( max-width: 480px )
 	.js-carousel
 		&.js-3cards

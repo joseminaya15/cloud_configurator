@@ -569,6 +569,7 @@ function selectConfigurator(id, dato){
 	// $('.owl-nav').css('display','none');
 	$('.js-window3 .owl-carousel').owlCarousel({
 		lazyLoad : true,
+		autoWidth: true,
 		responsive : {
 			0 : {
 				items : 1
