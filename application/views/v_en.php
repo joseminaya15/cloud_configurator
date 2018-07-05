@@ -175,7 +175,7 @@
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard1" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de la integración financiera de mi empresa quiero tener visibilidad en tiempo real.')">Seleccione</button>
+                                            <button id="buttonCard1" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de la integración financiera de mi empresa quiero tener visibilidad en tiempo real.')">Select</button>
                                         </div>
                                         <div class="js-card--menu"><span>1/3</span></div>
                                     </div>
@@ -191,7 +191,7 @@
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de los procesos operativos quiero alacanzar una mayor eficiencia.')">Seleccione</button>
+                                            <button id="buttonCard2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de los procesos operativos quiero alacanzar una mayor eficiencia.')">Select</button>
                                         </div>
                                         <div class="js-card--menu"><span>2/3</span></div>
                                     </div>
@@ -207,7 +207,7 @@
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable del crecimiento de la empresa quiero lograr máxima rentabilidad.')">Seleccione</button>
+                                            <button id="buttonCard3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable del crecimiento de la empresa quiero lograr máxima rentabilidad.')">Select</button>
                                         </div>
                                         <div class="js-card--menu"><span>3/3</span></div>
                                     </div>
@@ -227,7 +227,7 @@
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard4" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de ventas quiero mejorar mi proceso de ventas.')">Seleccione</button>
+                                            <button id="buttonCard4" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de ventas quiero mejorar mi proceso de ventas.')">Select</button>
                                         </div>
                                         <div class="js-card--menu"><span>1/3</span></div>
                                     </div>
@@ -243,7 +243,7 @@
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard5" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de servicios quiero mejorar nuestros procesos de soporte al cliente.')">Seleccione</button>
+                                            <button id="buttonCard5" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de servicios quiero mejorar nuestros procesos de soporte al cliente.')">Select</button>
                                         </div>
                                         <div class="js-card--menu"><span>2/3</span></div>
                                     </div>
@@ -259,7 +259,7 @@
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard6" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de ventas online quiero crear experiencias de compra únicas e simplificadas.')">Seleccione</button>
+                                            <button id="buttonCard6" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de ventas online quiero crear experiencias de compra únicas e simplificadas.')">Select</button>
                                         </div>
                                         <div class="js-card--menu"><span>3/3</span></div>
                                     </div>
@@ -279,7 +279,7 @@
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard7" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero consolidar y optimizar los procesos centrales de RRHH.')">Seleccione</button>
+                                            <button id="buttonCard7" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero consolidar y optimizar los procesos centrales de RRHH.')">Select</button>
                                         </div>
                                         <div class="js-card--menu"><span>1/8</span></div>
                                     </div>
@@ -295,7 +295,7 @@
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard8" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero alinear las metas de la empresa con la recompensa de mis empleados.')">Seleccione</button>
+                                            <button id="buttonCard8" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero alinear las metas de la empresa con la recompensa de mis empleados.')">Select</button>
                                         </div>
                                         <div class="js-card--menu"><span>2/8</span></div>
                                     </div>
@@ -311,7 +311,7 @@
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard9" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero desarrollar a mis empleados de una manera simple y colaborativa.')">Seleccione</button>
+                                            <button id="buttonCard9" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero desarrollar a mis empleados de una manera simple y colaborativa.')">Select</button>
                                         </div>
                                         <div class="js-card--menu"><span>3/8</span></div>
                                     </div>
@@ -327,7 +327,7 @@
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard10" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero retener a los mejores talentos con un plan de compensación atractivo.')">Seleccione</button>
+                                            <button id="buttonCard10" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero retener a los mejores talentos con un plan de compensación atractivo.')">Select</button>
                                         </div>
                                         <div class="js-card--menu"><span>4/8</span></div>
                                     </div>
@@ -343,7 +343,7 @@
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard11" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero planificar el desarrollo y sucesión de mis mejores talentos.')">Seleccione</button>
+                                            <button id="buttonCard11" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero planificar el desarrollo y sucesión de mis mejores talentos.')">Select</button>
                                         </div>
                                         <div class="js-card--menu"><span>5/8</span></div>
                                     </div>
@@ -359,7 +359,7 @@
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard12" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero centralizar y agilizar mis procesos de adquisición y contratación de talentos.')">Seleccione</button>
+                                            <button id="buttonCard12" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero centralizar y agilizar mis procesos de adquisición y contratación de talentos.')">Select</button>
                                         </div>
                                         <div class="js-card--menu"><span>6/8</span></div>
                                     </div>
@@ -375,7 +375,7 @@
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard13" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero aumentar la eficacia de la función de RRHH accediendo a un conjunto de analíticas listas para usar.')">Seleccione</button>
+                                            <button id="buttonCard13" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero aumentar la eficacia de la función de RRHH accediendo a un conjunto de analíticas listas para usar.')">Select</button>
                                         </div>
                                         <div class="js-card--menu"><span>7/8</span></div>
                                     </div>
@@ -391,7 +391,7 @@
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard14" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero empoderar a los nuevos empleados para lograr una contribución rápida a las metas del negocio.')">Seleccione</button>
+                                            <button id="buttonCard14" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero empoderar a los nuevos empleados para lograr una contribución rápida a las metas del negocio.')">Select</button>
                                         </div>
                                         <div class="js-card--menu"><span>8/8</span></div>
                                     </div>
@@ -423,7 +423,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="js-card--large__button">
-                                                    <button id="buttonCard15" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Servicios Profesionales')">Seleccione</button>
+                                                    <button id="buttonCard15" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Servicios Profesionales')">Select</button>
                                                 </div>
                                                 <div class="js-card--menu"><span>1/7</span></div>
                                             </div>
@@ -439,7 +439,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="js-card--large__button">
-                                                    <button id="buttonCard16" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Servicios Financieros')">Seleccione</button>
+                                                    <button id="buttonCard16" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Servicios Financieros')">Select</button>
                                                 </div>
                                                 <div class="js-card--menu"><span>2/7</span></div>
                                             </div>
@@ -455,7 +455,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="js-card--large__button">
-                                                    <button id="buttonCard17" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Comercio Minorista')">Seleccione</button>
+                                                    <button id="buttonCard17" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Comercio Minorista')">Select</button>
                                                 </div>
                                                 <div class="js-card--menu"><span>3/7</span></div>
                                             </div>
@@ -471,7 +471,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="js-card--large__button">
-                                                    <button id="buttonCard18" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Comercio Mayorista')">Seleccione</button>
+                                                    <button id="buttonCard18" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Comercio Mayorista')">Select</button>
                                                 </div>
                                                 <div class="js-card--menu"><span>4/7</span></div>
                                             </div>
@@ -487,7 +487,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="js-card--large__button">
-                                                    <button id="buttonCard19" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Productos de Consumo')">Seleccione</button>
+                                                    <button id="buttonCard19" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Productos de Consumo')">Select</button>
                                                 </div>
                                                 <div class="js-card--menu"><span>5/7</span></div>
                                             </div>
@@ -503,7 +503,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="js-card--large__button">
-                                                    <button id="buttonCard20" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Manufactura')">Seleccione</button>
+                                                    <button id="buttonCard20" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Manufactura')">Select</button>
                                                 </div>
                                                 <div class="js-card--menu"><span>6/7</span></div>
                                             </div>
@@ -521,7 +521,7 @@
                                                     </div>
                                                </div>
                                                <div class="js-card--large__button">
-                                                    <button id="buttonCardOtra" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Otras')">Seleccione</button>
+                                                    <button id="buttonCardOtra" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Otras')">Select</button>
                                                 </div>
                                                 <div class="js-card--menu"><span>7/7</span></div>
                                             </div>
@@ -541,7 +541,7 @@
                                     </div>
                                     <div class="js-card--large__select">
                                         <button id="buttonMenos" class="mdl-button mdl-js-button mdl-button--icon" onclick="operar(this.id,1)"><i class="mdi mdi-remove"></i></button>
-                                        <span id="textOperar">Seleccione</span>
+                                        <span id="textOperar">Select</span>
                                         <button id="buttonMas" class="mdl-button mdl-js-button mdl-button--icon" onclick="operar(this.id,2)"><i class="mdi mdi-add"></i></button>
                                     </div>
                                 </div>
@@ -556,7 +556,7 @@
                                     </div>
                                     <div class="js-card--large__select">
                                         <div class="js-select js-facturacion">
-                                            <select class="selectpicker" id="facturacion" name="facturacion" title="Seleccione" onchange="selectFacturacion(this.id)">
+                                            <select class="selectpicker" id="facturacion" name="facturacion" title="Select" onchange="selectFacturacion(this.id)">
                                                 <option value="10 - 30 Millones">10 - 30 Millones</option>
                                                 <option value="30 - 100 Millones">30 - 100 Millones</option>
                                                 <option value="100 Millones a más">100 Millones a m&aacute;s</option>
@@ -602,7 +602,7 @@
                                                 </div>
                                             </div>
                                             <div class="js-card--large__button">
-                                                <button id="buttonCard21" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'On Premise')">Seleccione</button>
+                                                <button id="buttonCard21" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'On Premise')">Select</button>
                                             </div>
                                             <div class="js-card--menu"><span>1/3</span></div>
                                         </div>
@@ -629,7 +629,7 @@
                                                 </div>
                                             </div>
                                             <div class="js-card--large__button">
-                                                <button id="buttonCard22" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Cloud')">Seleccione</button>
+                                                <button id="buttonCard22" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Cloud')">Select</button>
                                             </div>
                                             <div class="js-card--menu"><span>2/3</span></div>
                                         </div>
@@ -656,7 +656,7 @@
                                                 </div>
                                             </div>
                                             <div class="js-card--large__button">
-                                                <button id="buttonCard23" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Híbrida')">Seleccione</button>
+                                                <button id="buttonCard23" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Híbrida')">Select</button>
                                             </div>
                                             <div class="js-card--menu"><span>3/3</span></div>
                                         </div>
