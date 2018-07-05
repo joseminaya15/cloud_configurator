@@ -793,24 +793,24 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <p class="js-contacto">Quiero ser contactado por un representante de ventas:</p>
+                                    <p class="js-contacto">I’d like to be contacted by a sales representative:</p>
                                     <div class="js-contact-label">
                                         <div class="js-input-label">
                                             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-email">
                                                 <input type="radio" id="c-email" class="mdl-radio__button" name="options" value="1">
-                                                <span class="mdl-radio__label">Por email</span>
+                                                <span class="mdl-radio__label">By email</span>
                                             </label>
                                         </div>
                                         <div class="js-input-label">
                                             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-telefono">
                                                 <input type="radio" id="c-telefono" class="mdl-radio__button" name="options" value="2">
-                                                <span class="mdl-radio__label">Por tel&eacute;fono</span>
+                                                <span class="mdl-radio__label">By phone</span>
                                             </label>
                                         </div>
                                         <div class="js-input-label">
                                             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-ambos">
                                                 <input type="radio" id="c-ambos" class="mdl-radio__button" name="options" value="3">
-                                                <span class="mdl-radio__label">Ambos</span>
+                                                <span class="mdl-radio__label">Both</span>
                                             </label>
                                         </div>
                                     </div>
@@ -820,12 +820,12 @@
                                         <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
                                             <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
                                         </label>
-                                        <span onclick="openModal()">He le&iacute;do y acepto los</span>
+                                        <span onclick="openModal()">I have read and agree to the </span>
                                     </div>
-                                    <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Privacy_Statement_CloudConfig_eng.pdf" target="_blank">Términos y condiciones de SAP</a>
+                                    <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Privacy_Statement_CloudConfig_eng.pdf" target="_blank">SAP terms and conditions</a>
                                 </div>
                                 <div class="col-xs-12 text-right m-t-25">
-                                    <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button--confirmar button-confirmar" onclick="solicitarEstimacion();">Enviar informaci&oacute;n</button>
+                                    <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button--confirmar button-confirmar" onclick="solicitarEstimacion();">Send information</button>
                                 </div>
                             </form>
                         </div>
@@ -834,7 +834,7 @@
                 <div class="js-window6 opacity-done">
                     <div class="js-container">
                         <div class="js-agradecimiento">
-                            <h2>Gracias por su inter&eacute;s</h2>
+                            <h2>Thanks for your interest</h2>
                             <p>Un representante de SAP se pondr&aacute; en contacto con Usted para ayudarlo a transformar su negocio de cara al futuro.</p>
                         </div>
                     </div>
