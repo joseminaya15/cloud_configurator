@@ -419,7 +419,7 @@
                                                         <img src="<?php echo RUTA_IMG?>cards/servicios.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
-                                                        <small>Servicios Profesionales</small>
+                                                        <small>Professional services</small>
                                                     </div>
                                                 </div>
                                                 <div class="js-card--large__button">
@@ -435,7 +435,7 @@
                                                         <img src="<?php echo RUTA_IMG?>cards/finance.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
-                                                        <small>Servicios Financieros</small>
+                                                        <small>Financial Services</small>
                                                     </div>
                                                 </div>
                                                 <div class="js-card--large__button">
@@ -451,7 +451,7 @@
                                                         <img src="<?php echo RUTA_IMG?>cards/retail.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
-                                                        <small>Comercio Minorista</small>
+                                                        <small>Retail</small>
                                                     </div>
                                                 </div>
                                                 <div class="js-card--large__button">
@@ -467,7 +467,7 @@
                                                         <img src="<?php echo RUTA_IMG?>cards/distribucion.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
-                                                        <small>Comercio Mayorista</small>
+                                                        <small>Distribution</small>
                                                     </div>
                                                 </div>
                                                 <div class="js-card--large__button">
@@ -483,7 +483,7 @@
                                                         <img src="<?php echo RUTA_IMG?>cards/productos.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
-                                                        <small>Productos de Consumo</small>
+                                                        <small>Consumer products</small>
                                                     </div>
                                                 </div>
                                                 <div class="js-card--large__button">
@@ -499,7 +499,7 @@
                                                         <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
-                                                        <small>Manufactura</small>
+                                                        <small>Manufacturing</small>
                                                     </div>
                                                 </div>
                                                 <div class="js-card--large__button">
@@ -536,7 +536,7 @@
                                             <img src="<?php echo RUTA_IMG?>cards/empleados.png">
                                         </div>
                                         <div class="js-card--large__content-name">
-                                            <small>N&uacute;mero de empleados</small>
+                                            <small>Number of employees</small>
                                         </div>
                                     </div>
                                     <div class="js-card--large__select">
@@ -551,16 +551,16 @@
                                             <img src="<?php echo RUTA_IMG?>cards/facturacion.png">
                                         </div>
                                         <div class="js-card--large__content-name">
-                                            <small>Facturaci&oacute;n anual en d&oacute;lares</small>
+                                            <small>Annual Billing in dollars</small>
                                         </div>
                                     </div>
                                     <div class="js-card--large__select">
                                         <div class="js-select js-facturacion">
                                             <select class="selectpicker" id="facturacion" name="facturacion" title="Select" onchange="selectFacturacion(this.id)">
-                                                <option value="10 - 30 Millones">10 - 30 Millones</option>
-                                                <option value="30 - 100 Millones">30 - 100 Millones</option>
-                                                <option value="100 Millones a más">100 Millones a m&aacute;s</option>
-                                                <option value="No poseo información">No poseo información</option>
+                                                <option value="10 - 30 Millions">10 - 30 Millions</option>
+                                                <option value="30 - 100 Millions">30 - 100 Millions</option>
+                                                <option value="100 Millions to more">100 Millions to more</option>
+                                                <option value="I have no information">I have no information</option>
                                             </select>
                                         </div>
                                     </div>
@@ -595,7 +595,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="js-card-flip js-card-flip__back">
-                                                    <p>Implementar en su actual infraestructura o adquirir una de las opciones de hardware certificado.</p>
+                                                    <p>Implement in your current infrastructure or acquire one of the certified hardware options.</p>
                                                     <div class="js-card--large__icon">
                                                         <i class="mdi mdi-remove"></i>
                                                     </div>
@@ -622,7 +622,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="js-card-flip js-card-flip__back">
-                                                    <p>Ejecutar el software desde la nube junto con su informaci&oacute;n empresarial.</p>
+                                                    <p>Run software from the cloud along with your business information.</p>
                                                     <div class="js-card--large__icon">
                                                         <i class="mdi mdi-remove"></i>
                                                     </div>
@@ -642,7 +642,7 @@
                                                         <img src="<?php echo RUTA_IMG?>cards/hibrida.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
-                                                        <small>H&iacute;brida</small>
+                                                        <small>Hybrid</small>
                                                     </div>
                                                     <div class="js-card--large__icon">
                                                         <i class="mdi mdi-add"></i>
@@ -683,7 +683,7 @@
                                             <ul>
                                                 <li id="ayuda"></li>
                                             </ul>
-                                            <button id="window2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id)">Editar</button>
+                                            <button id="window2" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id)">Edit</button>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 p-0">
@@ -691,7 +691,7 @@
                                             <ul>
                                                 <li id="industria">Retail</li>
                                             </ul>
-                                            <button id="window3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id)">Editar</button>
+                                            <button id="window3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id)">Edit</button>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 p-0">
@@ -699,7 +699,7 @@
                                             <ul>
                                                 <li id="tamanio">1 - 50</li>
                                             </ul>
-                                            <button id="window3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id)">Editar</button>
+                                            <button id="window3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id)">Edit</button>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 p-0">
@@ -707,7 +707,7 @@
                                             <ul>
                                                 <li id="factura">1-3 Millones de D&oacute;lares</li>
                                             </ul>
-                                            <button id="window3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id)">Editar</button>
+                                            <button id="window3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id)">Edit</button>
                                         </div>
                                     </div>
                                     <div class="col-xs-12 p-0">
@@ -715,44 +715,44 @@
                                             <ul>
                                                 <li id="infraestructura">Local</li>
                                             </ul>
-                                            <button id="window4" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id)">Editar</button>
+                                            <button id="window4" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="EditQuestion(this.id)">Edit</button>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-xs-12 p-0 text-right m-t-10">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button--confirmar" onclick="ConfirmarRespuestas()">Confirmar respuestas</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button--confirmar" onclick="ConfirmarRespuestas()">Confirm answers</button>
                                 </div>
                             </div>
                             <form class="js-formulario js-disabled text-left">
                                 <div class="js-datos">
                                     <div class="js-datos__personal">
-                                        <p><i class="mdi mdi-arrow_downward"></i>Introduzca aqu&iacute; sus datos</p>
+                                        <p><i class="mdi mdi-arrow_downward"></i>Enter your data here</p>
                                     </div>
                                     <div class="js-datos__separacion">
                                         <p>o</p>
                                     </div>
                                     <div class="js-datos__linkedin">
-                                        <a class="button-linkedin" href="<?php  echo "https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id={$client_id}&redirect_uri={$redirect_uri}&state={$csrf_token}&scope={$scopes}"; ?>"><i class="fa fa-linkedin" aria-hidden="true"></i>Conéctese v&iacute;a LinkedIn</a>
+                                        <a class="button-linkedin" href="<?php  echo "https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id={$client_id}&redirect_uri={$redirect_uri}&state={$csrf_token}&scope={$scopes}"; ?>"><i class="fa fa-linkedin" aria-hidden="true"></i>connect via LinkedIn</a>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="js-input">
-                                        <input type="text" class="form-control" id="nombre_completo" maxlength="50" onkeypress="return soloLetras(event);" onchange="validarCampos()" placeholder="Nombre Completo">
+                                        <input type="text" class="form-control" id="nombre_completo" maxlength="50" onkeypress="return soloLetras(event);" onchange="validarCampos()" placeholder="Full name">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="js-input">
-                                        <input type="text" class="form-control NEGRO_FONDO" id="cargo" maxlength="50" onkeypress="return soloLetras(event);"  onchange="validarCampos()" placeholder="Cargo">
+                                        <input type="text" class="form-control NEGRO_FONDO" id="cargo" maxlength="50" onkeypress="return soloLetras(event);"  onchange="validarCampos()" placeholder="Title">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="js-input">
-                                        <input type="text" class="form-control" id="empresa" maxlength="50" onchange="validarCampos()" placeholder="Empresa">
+                                        <input type="text" class="form-control" id="empresa" maxlength="50" onchange="validarCampos()" placeholder="Company">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="js-input">
-                                        <input type="text" class="form-control" id="telefono" onchange="validarCampos()" placeholder="Teléfono">
+                                        <input type="text" class="form-control" id="telefono" onchange="validarCampos()" placeholder="Phone">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -762,21 +762,21 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="js-select js-standar">
-                                        <select class="selectpicker" id="relacion" name="relacion" title="Relación con SAP">
-                                            <option value="Cliente">Cliente</option>
-                                            <option value="Cliente potencial">Cliente potencial</option>
-                                            <option value="Consultor">Consultor</option>
-                                            <option value="Empleado SAP">Empleado SAP</option>
-                                            <option value="Estudiante">Estudiante</option>
+                                        <select class="selectpicker" id="relacion" name="relacion" title="Relationship with SAP">
+                                            <option value="Customer">Customer</option>
+                                            <option value="Potential Customer">Potential Customer</option>
+                                            <option value="Consultant">Consultant</option>
+                                            <option value="SAP employee">SAP employee</option>
+                                            <option value="Student">Student</option>
                                             <option value="Partner">Partner</option>
-                                            <option value="Partner potencial">Partner potencial</option>
-                                            <option value="Prensa/Analista">Prensa/Analista</option>
+                                            <option value="Potential Partner">Potential Partner</option>
+                                            <option value="Press/Analyst">Press/Analyst</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="js-select js-standar">
-                                        <select class="selectpicker" id="pais" name="pais" title="País">
+                                        <select class="selectpicker" id="pais" name="pais" title="Country">
                                             <option value="Argentina">Argentina</option>
                                             <option value="Brazil">Brazil</option>
                                             <option value="Canada">Canada</option>
@@ -848,7 +848,7 @@
                     </button>
                 </div>
                 <div class="js-chat">
-                    <a href="https://z1.liveper.sn/api/account/81933160/route/campaign/194741814/engagement/250005114" target="_blank"><img src="<?php echo RUTA_IMG?>/logo/chat.png"><label>Chatea con nosotros</label></a>
+                    <a href="https://z1.liveper.sn/api/account/81933160/route/campaign/194741814/engagement/250005114" target="_blank"><img src="<?php echo RUTA_IMG?>/logo/chat.png"><label>Chat with us</label></a>
                 </div>
             </div>
         </section> 
