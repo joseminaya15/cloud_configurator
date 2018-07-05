@@ -545,7 +545,6 @@ function buttonQuestion(direction){
 			}
 		}
 	}
-	
 }
 function selectConfigurator(id, dato){
 	if  (idConfigurator != id) {

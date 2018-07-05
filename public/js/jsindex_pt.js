@@ -12,15 +12,25 @@ var pant 		   = 0;
 var idConfigurator = null;
 var confirmar      = null;
 var especificar    = '';
+var returnEdit     = 0;
 function buttonNext(){
 	pant++;
 	if(pant == 1){
-		$('#next').prop("disabled", true);
+		$('#next').css('display', 'none');
+		$('#prev').css('display', 'none');
+		if(idConfigurator != null){
+			$('#next').prop("disabled", false);
+			$('#next').addClass('active');
+		} else {
+			$('#next').prop("disabled", true);
+			$('#next').removeClass('active');
+		}
+		firstWindow.removeClass('opacity-done');
 	}
 	if(tipo_ind == 'Otras'){
 		especificar = $('#idEspecificar').val();
 		if(especificar == null || especificar == ''){
-			msj('error', 'Especifique su industria');
+			msj('error', 'Especifique seu setor');
 			pant = 3;
 			return;
 		}
@@ -57,6 +67,31 @@ function buttonNext(){
 	      }
 		});
 	}
+	$('#js-carousel--configurator .owl-carousel').owlCarousel({
+		lazyLoad : true,
+		responsiveClass:true,
+		responsive : {
+			0 : {
+				items : 1
+			},
+			500:{
+				items : 2
+			},
+			770:{
+				items : 3
+			}
+		},
+		navigation : false,
+		mouseDrag: false,
+		touchDrag:  false,
+		nav : true,
+		loop : false,
+		margin: 30,
+		dots: false,
+		autoplay : false,
+		autoplayTimeout : 5000,
+		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+	});
 }
 function cambiarIdioma(){
 	var idioma = $('#IdiomaHome').val();
@@ -97,19 +132,19 @@ function solicitarEstimacion(){
 	var terminos		= $('#checkbox-1').is(':checked');
 	var term_cond		= null;
 	var contacto		= null;
-	/*if(nombre_completo == '' && empresa == '' && email == '' && pais == '' && cargo == '' && telefono == '' && c_email == false && terminos == false){
+	if(nombre_completo == '' && empresa == '' && email == '' && pais == '' && cargo == '' && telefono == '' && c_email == false && terminos == false){
 		validarCampos();
-	}*/
+	}
 	if(nombre_completo == null || nombre_completo == ''){
 		msj('error', 'Ingrese su nombre completo');
 		return;
 	}
 	if(empresa == null || empresa == ''){
-		msj('error', 'Ingrese su empresa');
+		msj('error', 'Digite a sua empresa');
 		return;
 	}
 	if(email == null || email == ''){
-		msj('error', 'Ingrese su email');
+		msj('error', 'Digite seu email');
 		return;
 	}
 	if (!validateEmail(email)){
@@ -117,19 +152,19 @@ function solicitarEstimacion(){
 		return;
 	}
 	if(pais == null || pais == ''){
-		msj('error', 'Ingrese su país');
+		msj('error', 'Digite seu país');
 		return;
 	}
 	if(cargo == null || cargo == ''){
-		msj('error', 'Ingrese su cargo');
+		msj('error', 'Digite sua posição');
 		return;
 	}
 	if(telefono == null || telefono == ''){
-		msj('error', 'Ingrese su teléfono');
+		msj('error', 'Digite seu telefone');
 		return;
 	}
 	if(relacion == null || relacion == ''){
-		msj('error', 'Seleccione cuál es su relación con SAP');
+		msj('error', 'Selecione qual é o seu relacionamento com o SAP');
 		return;
 	}
 	if(c_email == true){
@@ -148,7 +183,7 @@ function solicitarEstimacion(){
 		term_cond = 0;
 	}
 	if(terminos == false){
-		msj('error', 'Acepte los términos y condiciones');
+		msj('error', 'Aceite os termos e condições');
 		return;
 	}
 	$('.button-confirmar').prop("disabled", true);
@@ -161,7 +196,8 @@ function solicitarEstimacion(){
 				telefono 		: telefono,
 				relacion 		: relacion,
 				contacto 		: contacto,
-				term_cond       : term_cond},
+				term_cond       : term_cond,
+				checks 			: checks},
 		url  : 'pt/solicitarEstimacion',
 		type : 'POST'
 	}).done(function(data){
@@ -212,6 +248,7 @@ function validateEmail(email){
     return re.test(email);
 }
 var i = 1;
+var empleados = '';
 function operar(id,tipo){
 	var buttonSelect = $('#'+id);
 	var cardSelected = buttonSelect.parents('.js-card--large__select');
@@ -254,7 +291,7 @@ function operar(id,tipo){
 			return;
 		}
 	}
-	var empleados = $('#textOperar').text();
+	empleados = $('#textOperar').text();
 	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
 		if(tipo_ind != null && empleados != null && facturacion != null){
 			$('#next').prop("disabled", false);
@@ -262,6 +299,11 @@ function operar(id,tipo){
 	}
 }
 function mostrarDatos(){
+  	$('#industria').text('');
+  	$('#factura').text('')
+   	$('#tamanio').text('');
+   	$('#ayuda').text('');
+   	$('#infraestructura').text('');
 	$.ajax({
 		url  : 'pt/mostrarDatos',
 		type : 'POST'
@@ -271,10 +313,10 @@ function mostrarDatos(){
         if(data.error == 0){
         	$("#relacion").val('0');
 			$('.selectpicker').selectpicker('refresh');
-          	$('#industria').text(data.Industria);
-          	$('#factura').text(data.Factura_anual)
-           	$('#tamanio').text(data.Tamanio);
-           	$('#ayuda').append(data.Prioridad);
+          	$('#industria').text(especificar);
+          	$('#factura').text(facturacion)
+           	$('#tamanio').text(empleados);
+           	$('#ayuda').append(ayuda_negocio);
            	$('#infraestructura').text(solucion);
         }else{
         	return;
@@ -286,13 +328,28 @@ function mostrarDatos(){
 }
 var configurador = null;
 var ayuda_negocio = null;
+var arr_ayuda = [];
 function ayudaCard(id,ayuda){
 	var idButtonCard = $('#'+id);
-	$('.js-button-select').removeClass('js-selected');
-	idButtonCard.addClass('js-selected');
-	ayuda_negocio = ayuda;
-	if(ayuda_negocio != null || ayuda_negocio != ''){
+	var indice = arr_ayuda.indexOf(ayuda);
+	if( arr_ayuda.indexOf(ayuda) == -1 ) {
+		arr_ayuda.push(ayuda);
+		idButtonCard.addClass('js-selected');
+		idButtonCard.text('Deseleccione');
+		idButtonCard.css('color', '#000000');
+	} else {
+		arr_ayuda.splice(indice, 1);
+		idButtonCard.removeClass('js-selected');
+		idButtonCard.text('Seleccione');
+		idButtonCard.css('color', '#FFFFFF');
+	}
+	ayuda_negocio = arr_ayuda.toString().replace(/,/g, ' ');
+	if(ayuda_negocio.length != 0){
 		$('#next').prop("disabled", false);
+		$('#next').addClass('active');
+	} else {
+		$('#next').prop("disabled", true);
+		$('#next').removeClass('active');
 	}
 }
 function validarCampos(){
@@ -317,12 +374,11 @@ function ConfirmarRespuestas(){
 	confirmar = 1;
 	$('.js-card-confirmacion').addClass('js-disabled');
 	$('.js-formulario').removeClass('js-disabled');
-	$('.button-arrow.button-prev').css("display","none");
 	$('.mdl-card-confirmacion').addClass('confirmar');
-	$('.fp-controlArrow.fp-prev').css("display","none");
 	$('.mdl-formulario').removeClass('disabled');
-	$('#next').prop("disabled", true);
-    $('#prev').prop("disabled", true);
+	$('.js-button-next').css('display','none');
+	$('#step5').addClass('active');
+	$('.js-progress').find('span').css('width','100%');
 	$.ajax({
 		data : {confirmar : confirmar},
 		url  : 'pt/ConfirmarRespuestas',
@@ -342,151 +398,197 @@ function ConfirmarRespuestas(){
 var solucion = "";
 function saveSolucion(id,sol){
 	var idButtonSolution = $('#'+id);
+	$('.js-window4').find('.js-button-select').removeClass('js-selected');
 	idButtonSolution.addClass('js-selected');
 	solucion = sol;
 	if(solucion != '' || solucion != null){
+		$('#next').addClass('active');
 		$('#next').prop("disabled", false);
 	}
 }
 function buttonQuestion(direction){
 	var empleados = $('#textOperar').text();
-	if(direction == 2){
-		m++;
-		if(m == 2){
+	if(returnEdit == 1) {
+		$('#prev').prop("disabled", true);
+		mostrarDatos();
+		if(direction == 2){
 			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
-			firstWindow.addClass('opacity-done');
-			firstWindow.addClass('animated fadeOutUp');
-			secondWindow.addClass('animated fadeInUp');
-			$('#next').prop("disabled", true);
-			if(tipo_ind != null && empleados != null && facturacion != null){
-				$('#next').prop("disabled", false);
-			}
-		}
-		else if(m == 3){
-			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
-			secondWindow.addClass('animated fadeOutUp');
-			thirdWindow.addClass('animated fadeInUp');
-			$('#next').prop("disabled", true);
-		}
-		else if(m == 4){
-			if(tipo_ind == 'Otras') {
-				if($('#idEspecificar').val() == '' || $('#idEspecificar').val() == null) {
-					m = 3;
-					return;
-				}
-			}
-			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
-			thirdWindow.addClass('animated fadeOutUp');
-			fourWindow.addClass('animated fadeInUp');
-			$('#next').prop("disabled", true);
-		}
-		else if(m == 5){
-			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
-			fourWindow.addClass('animated fadeOutUp');
 			fiveWindow.addClass('animated fadeInUp');
 			$('#next').prop("disabled", true);
+			$('#next').removeClass('active');
 		}
-	}
-	else if(direction == 1){
-		m--;
-		pant--;
-		if(m == 4){
-			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
-			fourWindow.addClass('animated fadeInDown');
-			fiveWindow.addClass('animated fadeOutDown');
-		}
-		else if(m == 3){
-			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
-			thirdWindow.addClass('animated fadeInDown');
-			fourWindow.addClass('animated fadeOutDown');
-			if(tipo_ind != null && empleados != null && facturacion != null){
-				$('#next').prop("disabled", false);
+	} else {
+		$('#prev').prop("disabled", false);
+		if(direction == 2){
+			m++;
+			if(m == 1){
+				$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+				configurator.addClass('animated fadeInDown');
+				firstWindow.addClass('animated fadeOutDown');
+				if(configurador != null || configurador != ''){
+					$('#next').prop("disabled", false);
+					$('#next').addClass('active');
+				}
+			}
+			else if(m == 2){
+				$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+				firstWindow.addClass('opacity-done');
+				firstWindow.addClass('animated fadeOutUp');
+				secondWindow.addClass('animated fadeInUp');
+				$('#step1').addClass('active');
+				$('.js-progress').find('span').css('width','20%');
+				$('#next').prop("disabled", true);		
+				$('#next').removeClass('active');
+				if(ayuda_negocio != null){
+					$('#next').prop("disabled", false);
+					$('#next').addClass('active');
+				}
+			}
+			else if(m == 3){
+				$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+				secondWindow.addClass('animated fadeOutUp');
+				thirdWindow.addClass('animated fadeInUp');
+				$('#step2').addClass('active');
+				$('#next').removeClass('active');
+				$('.js-progress').find('span').css('width','40%');
+				if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
+					if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
+						$('#next').prop("disabled", false);
+						$('#next').addClass('active');
+					} else {
+						$('#next').removeClass('active');	
+					}
+				}else {
+					$('#next').prop("disabled", true);
+				}
+			}
+			else if(m == 4){
+				if(tipo_ind == 'Otras') {
+					if($('#idEspecificar').val() == '' || $('#idEspecificar').val() == null) {
+						m = 3;
+						$('#next').removeClass('active');
+						return;
+					}
+				}
+				$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+				thirdWindow.addClass('animated fadeOutUp');
+				fourWindow.addClass('animated fadeInUp');
+				$('#step3').addClass('active');
+				$('#next').removeClass('active');
+				$('.js-progress').find('span').css('width','60%');
+				if(solucion != ''){
+					$('#next').prop("disabled", false);
+					$('#next').addClass('active');
+				}
+			}
+			else if(m == 5){
+				$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+				fourWindow.addClass('animated fadeOutUp');
+				fiveWindow.addClass('animated fadeInUp');
+				$('#next').prop("disabled", true);
+				$('#next').removeClass('active');
+				$('#step4').addClass('active');
+				$('.js-progress').find('span').css('width','80%');
 			}
 		}
-		else if(m == 2){
-			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
-			secondWindow.addClass('animated fadeInDown');
-			thirdWindow.addClass('animated fadeOutDown');
-			if(ayuda_negocio != null || ayuda_negocio != ''){
-				$('#next').prop("disabled", false);
+		else if(direction == 1){
+			m--;
+			pant--;
+			//$('#next').addClass('active');
+			if(m == 4){
+				$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+				fourWindow.addClass('animated fadeInDown');
+				fiveWindow.addClass('animated fadeOutDown');
+				if(solucion != ''){
+					$('#next').prop("disabled", false);
+					$('#next').addClass('active');
+				}
+
 			}
-		}
-		else if(m == 1){
-			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
-			firstWindow.addClass('animated fadeInDown');
-			secondWindow.addClass('animated fadeOutDown');
-			if(configurador != null || configurador != ''){
-				$('#next').prop("disabled", false);
+			else if(m == 3){
+				$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+				thirdWindow.addClass('animated fadeInDown');
+				fourWindow.addClass('animated fadeOutDown');
+				if(tipo_ind != null && empleados != null && facturacion != null){
+					$('#next').prop("disabled", false);
+					$('#next').addClass('active');
+				}
 			}
-		}
-		else if(m < 1){
-			$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
-			homePage.removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
-			homePage.addClass('animated fadeInDown');
-			congigurator.addClass('animated fadeOutDown');
-			m = 1;
-			return;
+			else if(m == 2){
+				$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+				secondWindow.addClass('animated fadeInDown');
+				thirdWindow.addClass('animated fadeOutDown');
+				if(ayuda_negocio != null || ayuda_negocio != ''){
+					$('#next').prop("disabled", false);
+					$('#next').addClass('active');
+				}
+			}
+			else if(m == 1){
+				$('#next').css('display', 'none');
+				$('#prev').css('display', 'none');
+				$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+				firstWindow.addClass('animated fadeInDown');
+				secondWindow.addClass('animated fadeOutDown');
+				if(configurador != null || configurador != ''){
+					$('#next').prop("disabled", false);
+					$('#next').addClass('active');
+				}
+			}
+			else if(m < 1){
+				$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+				homePage.removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+				homePage.addClass('animated fadeInDown');
+				congigurator.addClass('animated fadeOutDown');
+				$('#next').addClass('active');
+				m = 1;
+				return;
+			}
 		}
 	}
 }
 function selectConfigurator(id, dato){
+	if  (idConfigurator != id) {
+		ayuda_negocio = null;
+		arr_ayuda     = [];
+		secondWindow.find('.js-card--large__button').find('button').removeClass('js-selected');
+		secondWindow.find('.js-card--large__button').find('button').text('Seleccione');
+		secondWindow.find('.js-card--large__button').find('button').text('Seleccione');
+		secondWindow.find('.js-card--large__button').find('button').css('color', '#FFFFFF');
+	}
 	idConfigurator = id
 	configurador = dato;
+	$('#next').css('display', '');
+	$('#prev').css('display', '');
 	secondWindow.find('.js-card--large').css('display','none');
 	$('.js-card--large__'+idConfigurator).css('display','block');
 	$('.js-question--title').find('strong').text('/ '+idConfigurator);
+	$('#title-configurator').text(idConfigurator);
 	$('.js-card-imagen').removeClass('js-card-imagen__static');
 	$('#'+id).parents('.js-card-imagen').addClass('js-card-imagen__static');
-	$('.owl-nav').css('display','none');
-	if(configurador != null || configurador != ''){
-		$('#next').prop("disabled", false);
-	}
-	if(configurador == 'HR'){
-		$('.owl-nav').css('display','flex');
-		$('.js-window2 .owl-carousel').owlCarousel({
-			lazyLoad : true,
-			responsive : {
-				0 : {
-					items : 1
-				},
-				600:{
-					items : 2
-				},
-				1200:{
-					items : 3
-				},
-				1400:{
-					items : 4
-				}
-
-			},
-			navigation : false,
-			nav : true,
-			loop : false,
-			dots: false,
-			autoplay : false,
-			autoplayTimeout : 5000,
-			navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
-		});
-	}
+	// $('.owl-nav').css('display','none');
 	$('.js-window3 .owl-carousel').owlCarousel({
 		lazyLoad : true,
+		autoWidth: true,
 		responsive : {
 			0 : {
 				items : 1
 			},
-			600:{
+			550:{
 				items : 2
 			},
-			1200:{
+			770:{
 				items : 3
 			},
-			1400:{
+			1000:{
 				items : 4
+			},
+			1200:{
+				items : 5
 			}
-
 		},
 		navigation : false,
+		mouseDrag: false,
+		touchDrag:  false,
 		nav : true,
 		loop : false,
 		dots: false,
@@ -500,40 +602,165 @@ function selectConfigurator(id, dato){
 			0 : {
 				items : 1
 			},
-			600:{
+			500:{
 				items : 2
 			},
-			1200:{
+			770:{
 				items : 3
 			}
 		},
 		navigation : false,
+		mouseDrag: false,
+		touchDrag:  false,
 		nav : true,
 		loop : false,
 		dots: false,
+		margin: 10,
 		autoplay : false,
 		autoplayTimeout : 5000,
 		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
 	});
 }
+$('#ERP').click(function(){
+	$('.js-nav-none .owl-nav').css('display','none');
+	$('#js-carousel--ERP .owl-nav').css('display','flex');
+	$('#js-carousel--ERP .owl-carousel').owlCarousel({
+		lazyLoad : true,
+		responsive : {
+			0 : {
+				items : 1
+			},
+			550:{
+				items : 2
+			},
+			770:{
+				items : 3
+			}
+		},
+		navigation : false,
+		mouseDrag: false,
+		touchDrag:  false,
+		nav : true,
+		loop : false,
+		dots: false,
+		autoplay : false,
+		margin: 10,
+		autoplayTimeout : 5000,
+		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+	});
+})
+$('#CRM').click(function(){
+	$('.js-nav-none .owl-nav').css('display','none');
+	$('#js-carousel--CRM .owl-nav').css('display','flex');
+	$('#js-carousel--CRM .owl-carousel').owlCarousel({
+		lazyLoad : true,
+		responsive : {
+			0 : {
+				items : 1
+			},
+			550:{
+				items : 2
+			},
+			770:{
+				items : 3
+			}
+		},
+		navigation : false,
+		mouseDrag: false,
+		touchDrag:  false,
+		nav : true,
+		loop : false,
+		dots: false,
+		autoplay : false,
+		margin: 10,
+		autoplayTimeout : 5000,
+		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+	});
+})
+$('#HR').click(function(){
+	$('.js-nav-none .owl-nav').css('display','none');
+	$('#js-carousel--HR .owl-nav').css('display','flex');
+	$('#js-carousel--HR .owl-carousel').owlCarousel({
+		lazyLoad : true,
+		responsive : {
+			0 : {
+				items : 1
+			},
+			500:{
+				items : 2
+			},
+			770:{
+				items : 3
+			},
+			1000:{
+				items : 4
+			},
+			1200:{
+				items : 5
+			}
+		},
+		navigation : false,
+		mouseDrag: false,
+		touchDrag:  false,
+		nav : true,
+		loop : false,
+		dots: false,
+		margin: 10,
+		autoplay : false,
+		autoplayTimeout : 5000,
+		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+	});
+})
 var tipo_ind = "";
+var idButtonSelect = "";
 function tipoTamaño(id,tipo){
-	var idButtonSelect = $('#'+id);
-	var cardIndustrias = idButtonSelect.parents('.js-card--large');
+	idButtonSelect     = $('#'+id);
+	var cardIndustrias = idButtonSelect.parents('.owl-item');
+	var cardCarousel   = idButtonSelect.parents('.owl-stage');
 	tipo_ind = tipo;
-	thirdWindow.find('.js-card--tipo').find('.js-card--large').toggleClass('js-card--large__tipo');
+	thirdWindow.find('.js-card--tipo').find('.owl-item').toggleClass('js-card--large__tipo');
 	thirdWindow.find('.js-card--tipo').find('.js-card--large').find('js-card--large__button').find('button').removeClass('js-selected');
 	cardIndustrias.removeClass('js-card--large__tipo');
 	$('.js-card--tipo').toggleClass('js-card--show');
 	$('.js-card--empresa').toggleClass('animated fadeInLeft');
+	cardCarousel.toggleClass('js-card--transform');
 	idButtonSelect.toggleClass('js-selected');
+	if(idButtonSelect.hasClass('js-selected')){
+		idButtonSelect.text('Deseleccione');
+		idButtonSelect.css('color', '#000000');
+	}else {
+		idButtonSelect.text('Seleccione');
+		idButtonSelect.css('color', '#FFFFFF');
+	}
+	$('.js-nav-toggle .owl-nav').toggleClass('dnone');
 	var empleados = $('#textOperar').text();
 	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
 		if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
 			$('#next').prop("disabled", false);
+			$('#next').addClass('active');
 		}
 	}
 }
+$('html').click(function() {
+	if( $('#facturacion').parents('.bootstrap-select').hasClass('open') != true ){
+		$('#facturacion').parents('.bootstrap-select').addClass('open');
+		$('.js-fixed--top').css('z-index', '0');
+	} else{
+		$('#facturacion').parents('.bootstrap-select').removeClass('open');
+		$('.js-fixed--top').css('z-index', '2');
+	}
+	$('.js-fixed--top').css('z-index', '2');
+});
+$('[data-id="facturacion"]').click(function(e){
+	if( $('#facturacion').parents('.bootstrap-select').hasClass('open') != true ){
+		$('#facturacion').parents('.bootstrap-select').addClass('open');
+		$('.js-fixed--top').css('z-index', '0');
+	} else{
+		$('#facturacion').parents('.bootstrap-select').removeClass('open');
+		$('.js-fixed--top').css('z-index', '2');
+	}
+	e.stopPropagation();
+})
 var facturacion = null;
 function selectFacturacion(id){
 	facturacion = $('#'+id).val();
@@ -542,13 +769,17 @@ function selectFacturacion(id){
 	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
 		if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
 			$('#next').prop("disabled", false);
+			$('#next').addClass('active');
 		}
 	}
+	$('.js-fixed--top').css('z-index', '2');
 }
 function EditQuestion(id){
+	returnEdit = 1;
 	var windowQestion = $('.js-'+id);
 	$('.opacity-done').removeClass('animated fadeInDown fadeOutDown fadeInUp fadeOutUp');
 	windowQestion.addClass('animated fadeInDown');
+	$('#next').addClass('active');
     var res = id.substr(6, 1);
 	pant = res;
 	m = res;
@@ -594,4 +825,179 @@ function enviarGracias(){
 	// setTimeout(function(){ 
 	// 	location.reload();
 	// }, 4000);
+}
+function closePoliticas(){
+	$('#checkbox-1').prop('checked', false);
+	$('#checkbox-1').parent().removeClass('is-checked');
+	$('#ModalPoliticas').modal('hide');
+}
+var checks = '';
+function acceptPoliticas(){
+	$('#checkbox-1').prop('checked', true);
+	$('#ModalPoliticas').modal('hide');
+	$('#checkbox-1').parent().addClass('is-checked');
+	var check_2 = $('#checkbox-2').is(':checked');
+	var share   = $('#checkbox-3').is(':checked');
+	if(check_2 == true){
+		checks = 'General Marketing';
+	}
+	if(share == true){
+		checks = 'Sharing data';
+	}
+	if(check_2 == true && share == true){
+		checks = 'General Marketing, Sharing data';
+	}
+}
+function openModal(){
+	$('#checkbox-2').prop('checked', false);
+	$('#checkbox-3').prop('checked', false);
+	$('#checkbox-2').parent().removeClass('is-checked');
+	$('#checkbox-3').parent().removeClass('is-checked');
+	$('#ModalPoliticas').modal('show');
+	var check_2 = $('#checkbox-2').is(':checked');
+	var share   = $('#checkbox-3').is(':checked');
+	if(check_2 == true){
+		checks = 'General Marketing';
+	}
+	if(share == true){
+		checks = 'Sharing data';
+	}
+	if(check_2 == true && share == true){
+		checks = 'General Marketing, Sharing data';
+	}
+}
+$('#checkbox-1').change(function(){
+	$('#checkbox-2').prop('checked', true);
+	$('#checkbox-3').prop('checked', true);
+	$('#checkbox-2').parent().addClass('is-checked');
+	$('#checkbox-3').parent().addClass('is-checked');
+	var check_2 = $('#checkbox-2').is(':checked');
+	var share   = $('#checkbox-3').is(':checked');
+	if(check_2 == true){
+		checks = 'General Marketing';
+	}
+	if(share == true){
+		checks = 'Sharing data';
+	}
+	if(check_2 == true && share == true){
+		checks = 'General Marketing, Sharing data';
+	}
+});
+
+$( "#btnpant1" ).on( "click", function() {
+	selectConfigurator('ERP', 'ERP');
+	cambiar();
+	buttonNext();
+  	$('.js-nav-none .owl-nav').css('display','none');
+	$('#js-carousel--ERP .owl-nav').css('display','flex');
+	$('#js-carousel--ERP .owl-carousel').owlCarousel({
+		lazyLoad : true,
+		responsive : {
+			0 : {
+				items : 1
+			},
+			550:{
+				items : 2
+			},
+			770:{
+				items : 3
+			}
+		},
+		navigation : false,
+		mouseDrag: false,
+		touchDrag:  false,
+		nav : true,
+		loop : false,
+		dots: false,
+		autoplay : false,
+		margin: 10,
+		autoplayTimeout : 5000,
+		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+	});
+});
+$( "#btnpant2" ).on( "click", function() {
+	selectConfigurator('CRM', 'CRM');
+	cambiar();
+	buttonNext();
+  	$('.js-nav-none .owl-nav').css('display','none');
+	$('#js-carousel--CRM .owl-nav').css('display','flex');
+	$('#js-carousel--CRM .owl-carousel').owlCarousel({
+		lazyLoad : true,
+		responsive : {
+			0 : {
+				items : 1
+			},
+			550:{
+				items : 2
+			},
+			770:{
+				items : 3
+			}
+		},
+		navigation : false,
+		mouseDrag: false,
+		touchDrag:  false,
+		nav : true,
+		loop : false,
+		dots: false,
+		autoplay : false,
+		margin: 10,
+		autoplayTimeout : 5000,
+		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+	});
+});
+$( "#btnpant3" ).on( "click", function() {
+	selectConfigurator('HR', 'HR');
+	cambiar();
+	buttonNext();
+  	$('.js-nav-none .owl-nav').css('display','none');
+	$('#js-carousel--HR .owl-nav').css('display','flex');
+	$('#js-carousel--HR .owl-carousel').owlCarousel({
+		lazyLoad : true,
+		responsive : {
+			0 : {
+				items : 1
+			},
+			500:{
+				items : 2
+			},
+			770:{
+				items : 3
+			},
+			1000:{
+				items : 4
+			},
+			1200:{
+				items : 5
+			}
+		},
+		navigation : false,
+		mouseDrag: false,
+		touchDrag:  false,
+		nav : true,
+		loop : false,
+		dots: false,
+		margin: 10,
+		autoplay : false,
+		autoplayTimeout : 5000,
+		navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"]
+	});
+});
+function cambiar(){
+	m = 2;
+	pant = 1;
+	$('.opacity-done').removeClass('animated fadeInUp fadeOutUp fadeInDown fadeOutDown');
+	firstWindow.addClass('opacity-done');
+	firstWindow.addClass('animated fadeOutUp');
+	secondWindow.addClass('animated fadeInUp');
+	$('#step1').addClass('active');
+	$('.js-progress').find('span').css('width','20%');
+
+	if(ayuda_negocio != null){
+		$('#next').prop("disabled", false);
+		$('#next').addClass('active');
+	} else {
+		$('#next').prop("disabled", true);		
+		$('#next').removeClass('active');
+	}
 }
