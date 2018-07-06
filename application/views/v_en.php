@@ -43,8 +43,8 @@
                     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFMTTDF"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <div class="js-title">
-                    <h1>Bienvenido a <br><strong>Cloud Configurator</strong></h1>
-                    <p>Complete estas preguntas y descubra la soluci&oacute;n perfecta de SAP en funci&oacute;n a las necesidades de su negocio.</p>
+                    <h1>Welcome to <br><strong>Cloud Configurator</strong></h1>
+                    <p>Complete these questions and discover the perfect SAP solution according to your business needs.</p>
                 </div>
                 <div class="js-bar">
                     <div class="js-bar__children background-body3"></div>
@@ -94,7 +94,7 @@
                         <div class="js-question--number">
                             <span>01/05</span>
                         </div>
-                        <h2>YO <strong>QUIERO...</strong></h2>
+                        <h2>I <strong>want...</strong></h2>
                         <div class="js-card__flex">
                             <div id="js-carousel--configurator" class="js-carousel js-3cards">
                                 <div class="owl-carousel owl-theme">
@@ -107,11 +107,11 @@
                                                 <div class="js-card-flip js-card-flip__back selected" id="btnpant1">
                                                     <h2>ERP</h2>
                                                     <p>Cloud</p>
-                                                    <button id="ERP" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'ERP')">Seleccionar</button>
+                                                    <button id="ERP" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'ERP')">Select</button>
                                                 </div>
                                             </div>
                                             <div class="js-card-content">
-                                                <p><strong>Innovar digitalmente</strong> mis procesos para mejorar la competitividad, la eficiencia y la reputaci&oacute;n de mi marca y m&aacute;s.</p>
+                                                <p><strong>Digitally innovate</strong> my processes to improve the competitiveness, efficiency and reputation of my brand and more.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -124,11 +124,11 @@
                                                 <div class="js-card-flip js-card-flip__back" id="btnpant2">
                                                     <h2>CRM</h2>
                                                     <p>Cloud</p>
-                                                    <button id="CRM" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'CRM')">Seleccionar</button>
+                                                    <button id="CRM" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'CRM')">Select</button>
                                                 </div>
                                             </div>
                                             <div class="js-card-content">
-                                                <p>Contar con herramientas para una <strong>gesti&oacute;n avanzada de mis clientes</strong> para entregar la mejor experiencia, adelantarse a sus necesidades y brindar un servicio de excelencia.</p>
+                                                <p>Have tools for an <strong>advanced management of my clients</strong> to deliver the best experience, anticipate their needs and provide an excellent service.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -141,18 +141,17 @@
                                                 <div class="js-card-flip js-card-flip__back" id="btnpant3">
                                                     <h2>HR</h2>
                                                     <p>Cloud</p>
-                                                    <button id="HR" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'HR')">Seleccionar</button>
+                                                    <button id="HR" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'HR')">Select</button>
                                                 </div>
                                             </div>
                                             <div class="js-card-content">
-                                                <p><strong>Modernizar la gesti&oacute;n</strong> de mi fuerza laboral, alinearlos con las metas del negocio, innovar su aprendizaje y compensarlos adecuadamente.</p>
+                                                <p><strong>Modernize the management</strong> of my workforce, align them with business goals, innovate their learning and compensate them adequately.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div> -->
                     </div>
                 </div>
                 <div class="js-window2 opacity-done">
@@ -160,7 +159,7 @@
                         <p class="js-question--title"><strong>/ ERP</strong> Cloud Configurator</p>
                         <div class="js-question--number">
                             <span>02/05</span>
-                            <h2>¿C&oacute;mo podemos ayudarle en su rol de responsable de <span id="title-configurator"></span>?</h2>
+                            <h2>How can we help you in your role as responsible for <span id="title-configurator"></span>&#63;</h2>
                         </div>
                         <div id="js-carousel--ERP" class="js-carousel js-cards js-nav-none">
                             <div class="owl-carousel owl-theme">
@@ -171,7 +170,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person1.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Como responsable de la integraci&oacute;n financiera de mi empresa <strong>quiero tener visibilidad en tiempo real.</strong></p>
+                                                <p>As responsible for the financial integration of my company <strong>I want to have visibility in real time.</strong></p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -187,7 +186,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person2.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Como responsable de los procesos operativos <strong>quiero alacanzar una mayor eficiencia.</strong></p>
+                                                <p>As responsible for the operational processes <strong>I want to achieve greater efficiency.</strong></p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -203,7 +202,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person3.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Como responsable del crecimiento de la empresa <strong>quiero lograr m&aacute;xima rentabilidad.</strong></p>
+                                                <p>As responsible for the growth of the company <strong>I want to achieve maximum profitability.</strong></p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -223,7 +222,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person1.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Como responsable de ventas quiero <strong>mejorar mi proceso de ventas.</strong></p>
+                                                <p>As sales manager I want <strong>to improve my sales process.</strong></p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -239,7 +238,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person2.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Como responsable de servicios quiero <strong>mejorar nuestros procesos de soporte al cliente.</strong></p>
+                                                <p>As responsible for services I want <strong>to improve our customer support processes.</strong></p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -255,7 +254,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person3.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Como responsable de ventas online quiero <strong>crear experiencias de compra &uacute;nicas e simplificadas.</strong></p>
+                                                <p>As an online sales manager I want <strong>to create unique and simplified shopping experiences.</strong></p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -275,7 +274,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person1.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Quiero consolidar y optimizar los procesos centrales de RRHH.</p>
+                                                <p>I want to consolidate and optimize the core HR processes.</p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -291,7 +290,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person2.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Quiero alinear las metas de la empresa con la recompensa de mis empleados.</p>
+                                                <p>I want to align the goals of the company with the reward to my employees.</p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -307,7 +306,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person3.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Quiero desarrollar a mis empleados de una manera simple y colaborativa.</p>
+                                                <p>I want to develop my employees in a simple and collaborative way.</p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -323,7 +322,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person4.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Quiero retener a los mejores talentos con un plan de compensaci&oacute;n atractivo.</p>
+                                                <p>I want to retain the best talent with an attractive compensation plan.</p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -339,7 +338,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person1.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Quiero planificar el desarrollo y sucesi&oacute;n de mis mejores talentos.</p>
+                                                <p>I want to plan the development and succession of my best talents.</p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -355,7 +354,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person2.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Quiero centralizar y agilizar mis procesos de adquisici&oacute;n y contrataci&oacute;n de talentos.</p>
+                                                <p>I want to centralize and streamline my talent acquisition and hiring processes.</p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -371,7 +370,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person3.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Quiero aumentar la eficacia de la funci&oacute;n de RRHH accediendo a un conjunto de anal&iacute;ticas listas para usar.</p>
+                                                <p>I want to increase the efficiency of the HR function by accessing a set of ready-to-use analytics.</p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -387,7 +386,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person4.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Quiero empoderar a los nuevos empleados para lograr una contribuci&oacute;n r&aacute;pida a las metas del negocio.</p>
+                                                <p>I want to empower new employees to make a quick contribution to business goals.</p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -398,7 +397,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div> -->
                     </div>
                 </div>
                 <div class="js-window3 opacity-done">

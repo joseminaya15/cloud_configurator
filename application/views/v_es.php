@@ -152,7 +152,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div> -->
                     </div>
                 </div>
                 <div class="js-window2 opacity-done">
@@ -160,7 +159,7 @@
                         <p class="js-question--title"><strong>/ ERP</strong> Cloud Configurator</p>
                         <div class="js-question--number">
                             <span>02/05</span>
-                            <h2>¿C&oacute;mo podemos ayudarle en su rol de responsable de <span id="title-configurator"></span>?</h2>
+                            <h2>¿C&oacute;mo podemos ayudarle en su rol de responsable de <span id="title-configurator"></span>&#63;</h2>
                         </div>
                         <div id="js-carousel--ERP" class="js-carousel js-cards js-nav-none">
                             <div class="owl-carousel owl-theme">
@@ -398,7 +397,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div> -->
                     </div>
                 </div>
                 <div class="js-window3 opacity-done">
