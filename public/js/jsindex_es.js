@@ -315,7 +315,7 @@ function mostrarDatos(){
 			$('.selectpicker').selectpicker('refresh');
           	$('#industria').text(especificar);
           	$('#factura').text(facturacion)
-           	$('#tamanio').text(empleados);
+           	$('#tamanio').text(empleados+" empleados");
            	$('#ayuda').append(ayuda_negocio);
            	$('#infraestructura').text(solucion);
         }else{
