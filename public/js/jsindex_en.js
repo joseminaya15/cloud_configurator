@@ -335,12 +335,12 @@ function ayudaCard(id,ayuda){
 	if( arr_ayuda.indexOf(ayuda) == -1 ) {
 		arr_ayuda.push(ayuda);
 		idButtonCard.addClass('js-selected');
-		idButtonCard.text('Deseleccione');
+		idButtonCard.text('Deselect');
 		idButtonCard.css('color', '#000000');
 	} else {
 		arr_ayuda.splice(indice, 1);
 		idButtonCard.removeClass('js-selected');
-		idButtonCard.text('Seleccione');
+		idButtonCard.text('Select');
 		idButtonCard.css('color', '#FFFFFF');
 	}
 	ayuda_negocio = arr_ayuda.toString().replace(/,/g, ' ');
@@ -551,8 +551,8 @@ function selectConfigurator(id, dato){
 		ayuda_negocio = null;
 		arr_ayuda     = [];
 		secondWindow.find('.js-card--large__button').find('button').removeClass('js-selected');
-		secondWindow.find('.js-card--large__button').find('button').text('Seleccione');
-		secondWindow.find('.js-card--large__button').find('button').text('Seleccione');
+		secondWindow.find('.js-card--large__button').find('button').text('Select');
+		secondWindow.find('.js-card--large__button').find('button').text('Select');
 		secondWindow.find('.js-card--large__button').find('button').css('color', '#FFFFFF');
 	}
 	idConfigurator = id
@@ -726,15 +726,15 @@ function tipoTamaño(id,tipo){
 	cardCarousel.toggleClass('js-card--transform');
 	idButtonSelect.toggleClass('js-selected');
 	if(idButtonSelect.hasClass('js-selected')){
-		idButtonSelect.text('Deseleccione');
+		idButtonSelect.text('Deselect');
 		idButtonSelect.css('color', '#000000');
 	}else {
-		idButtonSelect.text('Seleccione');
+		idButtonSelect.text('Select');
 		idButtonSelect.css('color', '#FFFFFF');
 	}
 	$('.js-nav-toggle .owl-nav').toggleClass('dnone');
 	var empleados = $('#textOperar').text();
-	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
+	if(empleados != 'Select' && facturacion != 'Select') {
 		if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
 			$('#next').prop("disabled", false);
 			$('#next').addClass('active');
@@ -766,7 +766,7 @@ function selectFacturacion(id){
 	facturacion = $('#'+id).val();
 	var empleados = $('#textOperar').text();
 	$('#'+id).parents('.js-card--large__select').addClass('js-selected');
-	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
+	if(empleados != 'Select' && facturacion != 'Select') {
 		if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
 			$('#next').prop("disabled", false);
 			$('#next').addClass('active');
