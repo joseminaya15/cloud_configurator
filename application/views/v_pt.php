@@ -417,11 +417,11 @@
                                                         <img src="<?php echo RUTA_IMG?>cards/servicios.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
-                                                        <small>Servicios Profesionales</small>
+                                                        <small>Serviços profissionais</small>
                                                     </div>
                                                 </div>
                                                 <div class="js-card--large__button">
-                                                    <button id="buttonCard15" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Servicios Profesionales')">Selecione</button>
+                                                    <button id="buttonCard15" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Serviços profissionais')">Selecione</button>
                                                 </div>
                                                 <div class="js-card--menu"><span>1/7</span></div>
                                             </div>
@@ -433,11 +433,11 @@
                                                         <img src="<?php echo RUTA_IMG?>cards/finance.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
-                                                        <small>Servicios Financieros</small>
+                                                        <small>Serviços Financeiros</small>
                                                     </div>
                                                 </div>
                                                 <div class="js-card--large__button">
-                                                    <button id="buttonCard16" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Servicios Financieros')">Selecione</button>
+                                                    <button id="buttonCard16" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Serviços Financeiros')">Selecione</button>
                                                 </div>
                                                 <div class="js-card--menu"><span>2/7</span></div>
                                             </div>
@@ -449,11 +449,11 @@
                                                         <img src="<?php echo RUTA_IMG?>cards/retail.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
-                                                        <small>Comercio Minorista</small>
+                                                        <small>Varejo</small>
                                                     </div>
                                                 </div>
                                                 <div class="js-card--large__button">
-                                                    <button id="buttonCard17" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Comercio Minorista')">Selecione</button>
+                                                    <button id="buttonCard17" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Varejo')">Selecione</button>
                                                 </div>
                                                 <div class="js-card--menu"><span>3/7</span></div>
                                             </div>
@@ -465,11 +465,11 @@
                                                         <img src="<?php echo RUTA_IMG?>cards/distribucion.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
-                                                        <small>Comercio Mayorista</small>
+                                                        <small>Distribuição Atacadista</small>
                                                     </div>
                                                 </div>
                                                 <div class="js-card--large__button">
-                                                    <button id="buttonCard18" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Comercio Mayorista')">Selecione</button>
+                                                    <button id="buttonCard18" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Distribuição Atacadista')">Selecione</button>
                                                 </div>
                                                 <div class="js-card--menu"><span>4/7</span></div>
                                             </div>
@@ -481,11 +481,11 @@
                                                         <img src="<?php echo RUTA_IMG?>cards/productos.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
-                                                        <small>Productos de Consumo</small>
+                                                        <small>Bens de Consumo</small>
                                                     </div>
                                                 </div>
                                                 <div class="js-card--large__button">
-                                                    <button id="buttonCard19" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Productos de Consumo')">Selecione</button>
+                                                    <button id="buttonCard19" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Bens de Consumo')">Selecione</button>
                                                 </div>
                                                 <div class="js-card--menu"><span>5/7</span></div>
                                             </div>
@@ -497,11 +497,11 @@
                                                         <img src="<?php echo RUTA_IMG?>cards/manufactura.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
-                                                        <small>Manufactura</small>
+                                                        <small>Manufatura</small>
                                                     </div>
                                                 </div>
                                                 <div class="js-card--large__button">
-                                                    <button id="buttonCard20" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Manufactura')">Selecione</button>
+                                                    <button id="buttonCard20" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select js-button--toggle" onclick="tipoTamaño(this.id,'Manufatura')">Selecione</button>
                                                 </div>
                                                 <div class="js-card--menu"><span>6/7</span></div>
                                             </div>
@@ -534,7 +534,7 @@
                                             <img src="<?php echo RUTA_IMG?>cards/empleados.png">
                                         </div>
                                         <div class="js-card--large__content-name">
-                                            <small>N&uacute;mero de empleados</small>
+                                            <small>Número de funcionários</small>
                                         </div>
                                     </div>
                                     <div class="js-card--large__select">
@@ -549,23 +549,22 @@
                                             <img src="<?php echo RUTA_IMG?>cards/facturacion.png">
                                         </div>
                                         <div class="js-card--large__content-name">
-                                            <small>Facturaci&oacute;n anual en d&oacute;lares</small>
+                                            <small>Faturamento anual em d&oacute;lares</small>
                                         </div>
                                     </div>
                                     <div class="js-card--large__select">
                                         <div class="js-select js-facturacion">
                                             <select class="selectpicker" id="facturacion" name="facturacion" title="Selecione" onchange="selectFacturacion(this.id)">
-                                                <option value="10 - 30 Millones">10 - 30 Millones</option>
-                                                <option value="30 - 100 Millones">30 - 100 Millones</option>
-                                                <option value="100 Millones a más">100 Millones a m&aacute;s</option>
-                                                <option value="No poseo información">No poseo información</option>
+                                                <option value="10 - 30 Milhões">10 - 30 Milhões</option>
+                                                <option value="30 - 100 Milhões">30 - 100 Milhões</option>
+                                                <option value="100 Milhões mais">100 Milhões mais</option>
+                                                <option value="Sem informação">Sem informação</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div> -->
                     </div>
                 </div>
                 <div class="js-window4 opacity-done">
@@ -613,14 +612,14 @@
                                                         <img src="<?php echo RUTA_IMG?>cards/cloud.png">
                                                     </div>
                                                     <div class="js-card--large__content-name">
-                                                        <small>Cloud</small>
+                                                        <small>Nuvem</small>
                                                     </div>
                                                     <div class="js-card--large__icon">
                                                         <i class="mdi mdi-add"></i>
                                                     </div>
                                                 </div>
                                                 <div class="js-card-flip js-card-flip__back">
-                                                    <p>Ejecutar el software desde la nube junto con su informaci&oacute;n empresarial.</p>
+                                                    <p>Executar  o software na nuvem juntamente com suas informações empresariais.</p>
                                                     <div class="js-card--large__icon">
                                                         <i class="mdi mdi-remove"></i>
                                                     </div>
@@ -662,7 +661,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div> -->
                     </div>
                 </div>
                 <div class="js-window5 opacity-done">
@@ -674,7 +672,7 @@
                         </div>
                         <div class="js-card__flex">
                             <div class="js-card-confirmacion">
-                                <h2>YO <strong>QUIERO</strong></h2>
+                                <h2>Eu <strong>QUERO</strong></h2>
                                 <div class="js-contenedor-respuestas"> 
                                     <div class="col-xs-12 p-0">
                                         <div class="js-respuestas">
@@ -718,24 +716,24 @@
                                     </div>
                                 </div>
                                 <div class="col-xs-12 p-0 text-right m-t-10">
-                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button--confirmar" onclick="ConfirmarRespuestas()">Confirmar respuestas</button>
+                                    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button--confirmar" onclick="ConfirmarRespuestas()">Confirmar respostas</button>
                                 </div>
                             </div>
                             <form class="js-formulario js-disabled text-left">
                                 <div class="js-datos">
                                     <div class="js-datos__personal">
-                                        <p><i class="mdi mdi-arrow_downward"></i>Introduzca aqu&iacute; sus datos</p>
+                                        <p><i class="mdi mdi-arrow_downward"></i>Insira aqui seus dados</p>
                                     </div>
                                     <div class="js-datos__separacion">
-                                        <p>o</p>
+                                        <p>ou</p>
                                     </div>
                                     <div class="js-datos__linkedin">
-                                        <a class="button-linkedin" href="<?php  echo "https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id={$client_id}&redirect_uri={$redirect_uri}&state={$csrf_token}&scope={$scopes}"; ?>"><i class="fa fa-linkedin" aria-hidden="true"></i>Conéctese v&iacute;a LinkedIn</a>
+                                        <a class="button-linkedin" href="<?php  echo "https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id={$client_id}&redirect_uri={$redirect_uri}&state={$csrf_token}&scope={$scopes}"; ?>"><i class="fa fa-linkedin" aria-hidden="true"></i>conecte-se via LinkedIn</a>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="js-input">
-                                        <input type="text" class="form-control" id="nombre_completo" maxlength="50" onkeypress="return soloLetras(event);" onchange="validarCampos()" placeholder="Nombre Completo">
+                                        <input type="text" class="form-control" id="nombre_completo" maxlength="50" onkeypress="return soloLetras(event);" onchange="validarCampos()" placeholder="Nome Completo">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -750,25 +748,25 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="js-input">
-                                        <input type="text" class="form-control" id="telefono" onchange="validarCampos()" placeholder="Teléfono">
+                                        <input type="text" class="form-control" id="telefono" onchange="validarCampos()" placeholder="Telefone">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="js-input">
-                                        <input type="email" class="form-control" id="email" maxlength="50" aria-describedby="emailHelp" placeholder="Email">
+                                        <input type="email" class="form-control" id="email" maxlength="50" aria-describedby="emailHelp" placeholder="E-mail">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="js-select js-standar">
-                                        <select class="selectpicker" id="relacion" name="relacion" title="Relación con SAP">
+                                        <select class="selectpicker" id="relacion" name="relacion" title="Relacionamento com SAP">
                                             <option value="Cliente">Cliente</option>
-                                            <option value="Cliente potencial">Cliente potencial</option>
+                                            <option value="Cliente em potencial">Cliente em potencial</option>
                                             <option value="Consultor">Consultor</option>
-                                            <option value="Empleado SAP">Empleado SAP</option>
-                                            <option value="Estudiante">Estudiante</option>
-                                            <option value="Partner">Partner</option>
-                                            <option value="Partner potencial">Partner potencial</option>
-                                            <option value="Prensa/Analista">Prensa/Analista</option>
+                                            <option value="Funcionário da SAP">Funcion&aacute;rio da SAP</option>
+                                            <option value="Estudante">Estudante</option>
+                                            <option value="Parceiro">Parceiro</option>
+                                            <option value="Parceiro em potencial">Parceiro em potencial</option>
+                                            <option value="Imprensa/Analista">Imprensa/Analista</option>
                                         </select>
                                     </div>
                                 </div>
@@ -791,18 +789,18 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <p class="js-contacto">Quiero ser contactado por un representante de ventas:</p>
+                                    <p class="js-contacto">Quero ser contatado por um representante de vendas:</p>
                                     <div class="js-contact-label">
                                         <div class="js-input-label">
                                             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-email">
                                                 <input type="radio" id="c-email" class="mdl-radio__button" name="options" value="1">
-                                                <span class="mdl-radio__label">Por email</span>
+                                                <span class="mdl-radio__label">Por e-mail</span>
                                             </label>
                                         </div>
                                         <div class="js-input-label">
                                             <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-telefono">
                                                 <input type="radio" id="c-telefono" class="mdl-radio__button" name="options" value="2">
-                                                <span class="mdl-radio__label">Por tel&eacute;fono</span>
+                                                <span class="mdl-radio__label">Por telefone</span>
                                             </label>
                                         </div>
                                         <div class="js-input-label">
@@ -818,12 +816,12 @@
                                         <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
                                             <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
                                         </label>
-                                        <span onclick="openModal()">He le&iacute;do y acepto los</span>
+                                        <span onclick="openModal()">Li e aceito os</span>
                                     </div>
-                                    <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Privacy_Statement_CloudConfig_eng.pdf" target="_blank">Términos y condiciones de SAP</a>
+                                    <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Privacy_Statement_CloudConfig_eng.pdf" target="_blank">termos e condi&ccedil;&otilde;es da SAP</a>
                                 </div>
                                 <div class="col-xs-12 text-right m-t-25">
-                                    <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button--confirmar button-confirmar" onclick="solicitarEstimacion();">Enviar informaci&oacute;n</button>
+                                    <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button--confirmar button-confirmar" onclick="solicitarEstimacion();">Enviar informa&ccedil;&otilde;es</button>
                                 </div>
                             </form>
                         </div>
@@ -832,7 +830,7 @@
                 <div class="js-window6 opacity-done">
                     <div class="js-container">
                         <div class="js-agradecimiento">
-                            <h2>Gracias por su inter&eacute;s</h2>
+                            <h2>Obrigado por seu interesse</h2>
                             <p>Un representante de SAP se pondr&aacute; en contacto con Usted para ayudarlo a transformar su negocio de cara al futuro.</p>
                         </div>
                     </div>
@@ -846,7 +844,7 @@
                     </button>
                 </div>
                 <div class="js-chat">
-                    <a href="https://z1.liveper.sn/api/account/81933160/route/campaign/194741814/engagement/250005114" target="_blank"><img src="<?php echo RUTA_IMG?>/logo/chat.png"><label>Chatea con nosotros</label></a>
+                    <a href="https://z1.liveper.sn/api/account/81933160/route/campaign/194741814/engagement/250005114" target="_blank"><img src="<?php echo RUTA_IMG?>/logo/chat.png"><label>Fale Conosco</label></a>
                 </div>
             </div>
         </section> 
