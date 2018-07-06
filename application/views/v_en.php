@@ -94,7 +94,7 @@
                         <div class="js-question--number">
                             <span>01/05</span>
                         </div>
-                        <h2>I <strong>want...</strong></h2>
+                        <h2>I <strong>WANT...</strong></h2>
                         <div class="js-card__flex">
                             <div id="js-carousel--configurator" class="js-carousel js-3cards">
                                 <div class="owl-carousel owl-theme">
@@ -672,7 +672,7 @@
                         </div>
                         <div class="js-card__flex">
                             <div class="js-card-confirmacion">
-                                <h2>YO <strong>QUIERO</strong></h2>
+                                <h2>I <strong>WANT</strong></h2>
                                 <div class="js-contenedor-respuestas"> 
                                     <div class="col-xs-12 p-0">
                                         <div class="js-respuestas">

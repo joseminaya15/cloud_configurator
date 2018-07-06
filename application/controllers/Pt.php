@@ -155,7 +155,7 @@ class Pt extends CI_Controller {
          $this->email->initialize($configGmail);
          $this->email->from('info@sap-latam.com');
          $this->email->to('jhonatanibericom@gmail.com');//Giovanna.bergamo@sap.com,anali.vidal@sap.com,alejandra.hamelink@sap.com
-         $this->email->subject('Estou interessado no Cloud Configurator para o meu negócio.');
+         $this->email->subject('Estou interessado no Cloud Configurator para o minha empresa.');
          $texto = '<!DOCTYPE html>
                     <html>
                     <head>
@@ -317,7 +317,7 @@ class Pt extends CI_Controller {
         $this->email->initialize($configGmail);
         $this->email->from('info@sap-latam.com');
         $this->email->to($email);
-        $this->email->subject('Obrigado pelo seu interesse no Cloud Configurator.');
+        $this->email->subject('Obrigado por seu interesse em Cloud Configurator.');
         $texto = '<!DOCTYPE html>
                     <html>
                     <head>

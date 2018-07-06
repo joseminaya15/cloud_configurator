@@ -317,7 +317,7 @@ class En extends CI_Controller {
         $this->email->initialize($configGmail);
         $this->email->from('info@sap-latam.com');
         $this->email->to($email);
-        $this->email->subject('Thank you for your interest in Cloud configurator.');
+        $this->email->subject('Thanks for your interest in Cloud configurator.');
         $texto = '<!DOCTYPE html>
                     <html>
                     <head>

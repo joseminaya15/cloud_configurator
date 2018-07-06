@@ -20,7 +20,7 @@
         <link rel="stylesheet"    href="<?php echo RUTA_PLUGINS?>owl-carousel/owl.theme.default.min.css">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>font-awesome.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>material-icons.css?v=<?php echo time();?>">
-        <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>bentonsans.css?v=<?php echo time();?>">
+        <link rel="stylesheet"    href="<?php echo RUTA_FONTS?>benton.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_CSS?>animate.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_CSS?>m-p.min.css?v=<?php echo time();?>">
         <link rel="stylesheet"    href="<?php echo RUTA_CSS?>style.css?v=<?php echo time();?>">
@@ -94,7 +94,7 @@
                         <div class="js-question--number">
                             <span>01/05</span>
                         </div>
-                        <h2>Eu <strong>QUERO...</strong></h2>
+                        <h2>EU <strong>QUERO...</strong></h2>
                         <div class="js-card__flex">
                             <div id="js-carousel--configurator" class="js-carousel js-3cards">
                                 <div class="owl-carousel owl-theme">
@@ -592,7 +592,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="js-card-flip js-card-flip__back">
-                                                    <p>Implementar en su actual infraestructura o adquirir una de las opciones de hardware certificado.</p>
+                                                    <p>Implementar em sua atual infraestrutura ou adquirir uma das opções de hardware certificado.</p>
                                                     <div class="js-card--large__icon">
                                                         <i class="mdi mdi-remove"></i>
                                                     </div>
@@ -672,7 +672,7 @@
                         </div>
                         <div class="js-card__flex">
                             <div class="js-card-confirmacion">
-                                <h2>Eu <strong>QUERO</strong></h2>
+                                <h2>EU <strong>QUERO</strong></h2>
                                 <div class="js-contenedor-respuestas"> 
                                     <div class="col-xs-12 p-0">
                                         <div class="js-respuestas">
