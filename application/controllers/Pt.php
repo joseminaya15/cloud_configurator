@@ -29,7 +29,7 @@ class Pt extends CI_Controller {
     $html                    = '';
     $data['Industria']       = $this->session->userdata('tipo_industria') == null ? '-' : $this->session->userdata('tipo_industria');
     $data['Factura_anual']   = $this->session->userdata('factura_anual') == null ? '-' : $this->session->userdata('factura_anual');
-    $data['Tamanio']         = $this->session->userdata('tamanio') == null ? '-' : $this->session->userdata('tamanio').' empleados';
+    $data['Tamanio']         = $this->session->userdata('tamanio') == null ? '-' : $this->session->userdata('tamanio').' funcionários';
     $data['Prioridad']       = $this->session->userdata('ayuda') == null ? '-' : $this->session->userdata('ayuda');
     $data['Infraestructura'] = $this->session->userdata('solucion') == null ? '-' : $this->session->userdata('solucion');
     $data['error']           = EXIT_SUCCESS;
@@ -258,7 +258,7 @@ class Pt extends CI_Controller {
                                           <td style="text-align: left;"><font style="font-weight: bold;font-size: 14px;">Qual é o tamanho da sua empresa?</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
-                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->tamanio.' empleados</font></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->tamanio.' funcionários</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td rowspan="2"></td>
@@ -406,7 +406,7 @@ class Pt extends CI_Controller {
                                           <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;"><strong>Qual é o tamanho da sua empresa?</strong></font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
-                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->tamanio.' empleados</font></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->tamanio.' funcionários</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td rowspan="2"></td>
@@ -460,7 +460,7 @@ class Pt extends CI_Controller {
           /*$obtenerDatos            = $this->M_solicitud->datos($this->session->userdata('id_sol'));
           $data['Industria']       = $obtenerDatos[0]->tipo_industria;//$this->session->userdata('tipo_industria') == null ? '-' : $this->session->userdata('tipo_industria');
           $data['Factura_anual']   = $obtenerDatos[0]->factura_anual; //$this->session->userdata('factura_anual') == null ? '-' : $this->session->userdata('factura_anual');
-          $data['Tamanio']         = $obtenerDatos[0]->tamanio; //$this->session->userdata('tamanio') == null ? '-' : $this->session->userdata('tamanio').' empleados';
+          $data['Tamanio']         = $obtenerDatos[0]->tamanio; //$this->session->userdata('tamanio') == null ? '-' : $this->session->userdata('tamanio').' funcionários';
           $data['Prioridad']       = $obtenerDatos[0]->ayuda; //$this->session->userdata('ayuda') == null ? '-' : $this->session->userdata('ayuda');
           $data['Infraestructura'] = $obtenerDatos[0]->solucion; //$this->session->userdata('solucion') == null ? '-' : $this->session->userdata('solucion');*/
           $data['error']           = EXIT_SUCCESS;
