@@ -306,7 +306,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person3.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Quero desenvolver meus funcionários de uma maneira simples e colaborativa.</p>
+                                                <p>Quero desenvolver meus funcion&aacute;rios de uma maneira simples e colaborativa.</p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
