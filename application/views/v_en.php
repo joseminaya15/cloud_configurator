@@ -242,7 +242,7 @@
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard5" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsable de servicios quiero mejorar nuestros procesos de soporte al cliente.')">Select</button>
+                                            <button id="buttonCard5" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'As responsible for services I want to improve our customer support processes.')">Select</button>
                                         </div>
                                         <div class="js-card--menu"><span>2/3</span></div>
                                     </div>
@@ -404,7 +404,7 @@
                         <p class="js-question--title"><strong>/ ERP</strong> Cloud Configurator</p>
                         <div class="js-question--number">
                             <span>03/05</span>
-                            <h2>¿Cu&aacute;l es su tipo y tama&ntilde;o de empresa&#63;</h2>
+                            <h2>What is the type and size of your company?</h2>
                         </div>
                         <div class="js-card__flex js-card__flex--relative">
                             <div class="js-card--tipo">
@@ -572,7 +572,7 @@
                         <p class="js-question--title"><strong>/ ERP</strong> Cloud Configurator</p>
                         <div class="js-question--number">
                             <span>04/05</span>
-                            <h2>¿Que tipo de soluci&oacute;n le interesa evaluar&#63;</h2>
+                            <h2>What type of solution  would you like to evaluate?</h2>
                         </div>
                         <div class="js-card__flex">
                             <div class="js-carousel js-3cards">
@@ -646,7 +646,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="js-card-flip js-card-flip__back">
-                                                    <p>Combinar ambas opciones donde la informaci&oacute;n sensible puede permanecer en su IT local y el resto en la nube.</p>
+                                                    <p>Combine both options where sensitive information can remain in your local IT and the remaining information in the cloud.</p>
                                                     <div class="js-card--large__icon">
                                                         <i class="mdi mdi-remove"></i>
                                                     </div>
@@ -668,7 +668,7 @@
                         <p class="js-question--title"><strong>/ ERP</strong> Cloud Configurator</p>
                         <div class="js-question--number">
                             <span>05/05</span>
-                            <h2>Complete el formulario para poder contactarlo y entrar en detalles</h2>
+                            <h2>Complete this form to get in touch and provide you more details</h2>
                         </div>
                         <div class="js-card__flex">
                             <div class="js-card-confirmacion">
@@ -831,7 +831,7 @@
                     <div class="js-container">
                         <div class="js-agradecimiento">
                             <h2>Thanks for your interest</h2>
-                            <p>Un representante de SAP se pondr&aacute; en contacto con Usted para ayudarlo a transformar su negocio de cara al futuro.</p>
+                            <p>A SAP representative will contact you to help you transform your business for the future.</p>
                         </div>
                     </div>
                 </div>
@@ -866,8 +866,8 @@
                             </label>
                         </div>
                         <div class="mdl-card__actions text-right">
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style="background-color: #fdb913 !important" onclick="acceptPoliticas()">Aceptar</button>
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="closePoliticas()">Cerrar</button>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style="background-color: #fdb913 !important" onclick="acceptPoliticas()">Accept</button>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="closePoliticas()">Close</button>
                         </div>
                     </div>
                 </div>
