@@ -92,7 +92,7 @@ class En extends CI_Controller {
                                'Id_solicitud'    => $_SESSION['id_sol'],
                                'fecha_sol'       => date('Y-m-d H:i:s'),
                                'checks'          => $checks,
-                               'idioma'          => 'Ingles',
+                               'idioma'          => 'Inglés',
                                'lugar_aceptacion'=> 'Cloud Configurator');
           $datoInsert = $this->M_solicitud->insertarDatos($arrayInsert, 'usuario');
           $session    = array('nombre_completo' => $nombre_completo,
@@ -199,13 +199,13 @@ class En extends CI_Controller {
                             <table style="width: 100%;padding: 10px;">
                               <tbody>
                                 <tr style="padding: 25px;margin: 30px;">
-                                  <td style="text-align: center;padding: 10px 0;"><font style="font-weight: bold;font-size: 20px;">Customer Data</font></td>
+                                  <td style="text-align: center;padding: 10px 0;"><font style="font-weight: bold;font-size: 20px;">Client Data</font></td>
                                 </tr>
                                 <tr>
                                   <table style="padding: 20px;" cellspacing="0" cellpadding="0" border="0">
                                     <tbody>
                                       <tr style="padding: 0 20px;">
-                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold !important;"><strong>Customer:</strong></font></td>
+                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold !important;"><strong>Client:</strong></font></td>
                                         <td><font style="margin: 3px 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$_SESSION['nombre_completo'].'</font></td>
                                       </tr>
                                       <tr style="padding: 0 20px;">
@@ -248,35 +248,35 @@ class En extends CI_Controller {
                                       <tbody>
                                         <tr style="padding: 5px 20px;">
                                           <td rowspan="2"></td>
-                                          <td style="text-align: left;"><font style="font-weight: bold;font-size: 14px;">¿En qué industria se desempeña?</font></td>
+                                          <td style="text-align: left;"><font style="font-weight: bold;font-size: 14px;">In which industry do you work?</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->tipo_industria.'</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td rowspan="2"></td>
-                                          <td style="text-align: left;"><font style="font-weight: bold;font-size: 14px;">¿De qué tamaño es su empresa?</font></td>
+                                          <td style="text-align: left;"><font style="font-weight: bold;font-size: 14px;">How big is your company?</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->tamanio.' empleados</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td rowspan="2"></td>
-                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;">Su facturación</font></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;">Your billing</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->factura_anual.'</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td rowspan="2"></td>
-                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;">¿Cómo podemos ayudarle?</font></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;">How can we help?</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->ayuda.'</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td rowspan="2"></td>
-                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;">¿Qué solución le interesa evaluar?</font></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;">What solution do you want to evaluate?</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->solucion.'</font></td>
@@ -317,7 +317,7 @@ class En extends CI_Controller {
         $this->email->initialize($configGmail);
         $this->email->from('info@sap-latam.com');
         $this->email->to($email);
-        $this->email->subject('Gracias por su interés en Cloud configurator.');
+        $this->email->subject('Thank you for your interest in Cloud configurator.');
         $texto = '<!DOCTYPE html>
                     <html>
                     <head>
@@ -378,12 +378,12 @@ class En extends CI_Controller {
                                       <tbody>
                                         <tr>
                                           <td style="padding: 20px 40px 10px 40px;">
-                                            <font style="color: #000000;font-weight: bold;font-size: 20px;">¡Gracias por su participación!</font>
+                                            <font style="color: #000000;font-weight: bold;font-size: 20px;">Thank you for participating!</font>
                                           </td>
                                         </tr>
                                          <tr>
                                             <td style="padding:10px 40px 20px 40px;">
-                                              <font style="color: #000000;font-size:14px;font-family: arial;">Estamos seguros que Cloud Configurator lo ayudará a acelerar la transformación digital en su empresa. Un representante de SAP se pondrá en contacto con Usted para ayudarlo a dar el primer paso.</font>
+                                              <font style="color: #000000;font-size:14px;font-family: arial;">We are confident that Cloud Configurator will help you accelerate the digital transformation in your company. A SAP representative will contact you to help you take the first step.</font>
                                             </td>
                                         </tr>
                                       </tbody>
@@ -396,35 +396,35 @@ class En extends CI_Controller {
                                       <tbody>
                                         <tr style="padding: 5px 20px;">
                                           <td rowspan="2"></td>
-                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;"><strong>¿En qué industria se desempeña?</strong></font></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;"><strong>In which industry do you work?</strong></font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->tipo_industria.'</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td rowspan="2"></td>
-                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;"><strong>¿De qué tamaño es su empresa?</strong></font></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;"><strong>How big is your company?</strong></font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->tamanio.' empleados</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td rowspan="2"></td>
-                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;"><strong>Su facturación</strong></font></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;"><strong>Your billing</strong></font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->factura_anual.'</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td rowspan="2"></td>
-                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;"><strong>¿Cómo podemos ayudarle?</strong></font></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;"><strong>How can we help?</strong></font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->ayuda.'</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td rowspan="2"></td>
-                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;"><strong>¿Qué solución le interesa evaluar?</strong></font></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;"><strong>What solution do you want to evaluate?</strong></font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->solucion.'</font></td>

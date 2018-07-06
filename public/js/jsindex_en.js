@@ -96,11 +96,11 @@ function buttonNext(){
 function cambiarIdioma(){
 	var idioma = $('#IdiomaHome').val();
 	if(idioma == 'Español'){
-		location.href = 'Es';
+		location.href = 'es';
 	}else if(idioma == 'Inglés'){
-		location.href = 'En';
+		location.href = 'en';
 	}else if(idioma == 'Portugués'){
-		location.href = 'Pt';
+		location.href = 'pt';
 	}
 	$.ajax({
 		data : {idioma : idioma},
