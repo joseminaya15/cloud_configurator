@@ -43,8 +43,8 @@
                     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFMTTDF"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <div class="js-title">
-                    <h1>Bienvenido a <br><strong>Cloud Configurator</strong></h1>
-                    <p>Complete estas preguntas y descubra la soluci&oacute;n perfecta de SAP en funci&oacute;n a las necesidades de su negocio.</p>
+                    <h1>Bem-vindo ao <br><strong>Cloud Configurator</strong></h1>
+                    <p>Responda a estas perguntas e descubra a solução perfeita de SAP para as necessidades do seu neg&oacute;cio.</p>
                 </div>
                 <div class="js-bar">
                     <div class="js-bar__children background-body3"></div>
@@ -94,7 +94,7 @@
                         <div class="js-question--number">
                             <span>01/05</span>
                         </div>
-                        <h2>YO <strong>QUIERO...</strong></h2>
+                        <h2>Eu <strong>QUERO...</strong></h2>
                         <div class="js-card__flex">
                             <div id="js-carousel--configurator" class="js-carousel js-3cards">
                                 <div class="owl-carousel owl-theme">
@@ -107,11 +107,11 @@
                                                 <div class="js-card-flip js-card-flip__back selected" id="btnpant1">
                                                     <h2>ERP</h2>
                                                     <p>Cloud</p>
-                                                    <button id="ERP" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'ERP')">Seleccionar</button>
+                                                    <button id="ERP" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'ERP')">Selecionar</button>
                                                 </div>
                                             </div>
                                             <div class="js-card-content">
-                                                <p><strong>Innovar digitalmente</strong> mis procesos para mejorar la competitividad, la eficiencia y la reputaci&oacute;n de mi marca y m&aacute;s.</p>
+                                                <p><strong>Inovar digitalmente</strong> os meus processos para melhorar a competitividade, a eficiência e a reputação da minha marca e mais.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -124,11 +124,11 @@
                                                 <div class="js-card-flip js-card-flip__back" id="btnpant2">
                                                     <h2>CRM</h2>
                                                     <p>Cloud</p>
-                                                    <button id="CRM" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'CRM')">Seleccionar</button>
+                                                    <button id="CRM" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'CRM')">Selecionar</button>
                                                 </div>
                                             </div>
                                             <div class="js-card-content">
-                                                <p>Contar con herramientas para una <strong>gesti&oacute;n avanzada de mis clientes</strong> para entregar la mejor experiencia, adelantarse a sus necesidades y brindar un servicio de excelencia.</p>
+                                                <p>Contar com ferramentas para um <strong>gerenciamento avançado dos meus clientes</strong> para entregar a melhor experiência, antecipar as necessidades deles e fornecer um serviço de excelência.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -141,18 +141,17 @@
                                                 <div class="js-card-flip js-card-flip__back" id="btnpant3">
                                                     <h2>HR</h2>
                                                     <p>Cloud</p>
-                                                    <button id="HR" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'HR')">Seleccionar</button>
+                                                    <button id="HR" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'HR')">Selecionar</button>
                                                 </div>
                                             </div>
                                             <div class="js-card-content">
-                                                <p><strong>Modernizar la gesti&oacute;n</strong> de mi fuerza laboral, alinearlos con las metas del negocio, innovar su aprendizaje y compensarlos adecuadamente.</p>
+                                                <p><strong>Modernizar o gerenciamento</strong> da minha força de trabalho, alinhá-la com as metas do negócio, inovar sua aprendizagem e remunerá-la adequadamente.</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div> -->
                     </div>
                 </div>
                 <div class="js-window2 opacity-done">
@@ -160,7 +159,7 @@
                         <p class="js-question--title"><strong>/ ERP</strong> Cloud Configurator</p>
                         <div class="js-question--number">
                             <span>02/05</span>
-                            <h2>¿C&oacute;mo podemos ayudarle en su rol de responsable de <span id="title-configurator"></span>?</h2>
+                            <h2>Como podemos ajud&aacute;-lo na sua função de respons&aacute;vel de <span id="title-configurator"></span>&#63;</h2>
                         </div>
                         <div id="js-carousel--ERP" class="js-carousel js-cards js-nav-none">
                             <div class="owl-carousel owl-theme">
@@ -171,7 +170,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person1.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Como responsable de la integraci&oacute;n financiera de mi empresa <strong>quiero tener visibilidad en tiempo real.</strong></p>
+                                                <p>Como responsável da integração financeira da minha empresa, <strong>quero ter visibilidade em tempo real.</strong></p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -187,7 +186,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person2.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Como responsable de los procesos operativos <strong>quiero alacanzar una mayor eficiencia.</strong></p>
+                                                <p>Como responsável dos processos operativos, <strong>quero atingir uma maior eficiência.</strong></p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -203,7 +202,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person3.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Como responsable del crecimiento de la empresa <strong>quiero lograr m&aacute;xima rentabilidad.</strong></p>
+                                                <p>Como responsável do crescimento da empresa, <strong>quero obter a máxima rentabilidade.</strong></p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -223,7 +222,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person1.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Como responsable de ventas quiero <strong>mejorar mi proceso de ventas.</strong></p>
+                                                <p>Como responsável de vendas, <strong>quero melhorar o meu processo de vendas.</strong></p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -239,7 +238,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person2.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Como responsable de servicios quiero <strong>mejorar nuestros procesos de soporte al cliente.</strong></p>
+                                                <p>Como responsável de serviços, <strong>quero melhorar nossos processos de suporte ao cliente.</strong></p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -255,7 +254,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person3.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Como responsable de ventas online quiero <strong>crear experiencias de compra &uacute;nicas e simplificadas.</strong></p>
+                                                <p>Como responsável de vendas, <strong>quero criar experiências de compra únicas e simplificadas.</strong></p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -275,11 +274,11 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person1.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Quiero consolidar y optimizar los procesos centrales de RRHH.</p>
+                                                <p>Quero consolidar e otimizar os processos centrais de RH.</p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard7" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero consolidar y optimizar los procesos centrales de RRHH.')">Selecione</button>
+                                            <button id="buttonCard7" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quero consolidar e otimizar os processos centrais de RH.')">Selecione</button>
                                         </div>
                                         <div class="js-card--menu"><span>1/8</span></div>
                                     </div>
@@ -291,11 +290,11 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person2.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Quiero alinear las metas de la empresa con la recompensa de mis empleados.</p>
+                                                <p>Quero alinhar as metas da empresa às remunerações dos meus funcionários.</p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard8" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero alinear las metas de la empresa con la recompensa de mis empleados.')">Selecione</button>
+                                            <button id="buttonCard8" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quero alinhar as metas da empresa às remunerações dos meus funcionários.')">Selecione</button>
                                         </div>
                                         <div class="js-card--menu"><span>2/8</span></div>
                                     </div>
@@ -307,11 +306,11 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person3.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Quiero desarrollar a mis empleados de una manera simple y colaborativa.</p>
+                                                <p>Quero desenvolver meus funcionários de uma maneira simples e colaborativa.</p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard9" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero desarrollar a mis empleados de una manera simple y colaborativa.')">Selecione</button>
+                                            <button id="buttonCard9" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quero desenvolver meus funcionários de uma maneira simples e colaborativa.')">Selecione</button>
                                         </div>
                                         <div class="js-card--menu"><span>3/8</span></div>
                                     </div>
@@ -323,11 +322,11 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person4.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Quiero retener a los mejores talentos con un plan de compensaci&oacute;n atractivo.</p>
+                                                <p>Quero reter os melhores talentos com um plano atraente de remunerações.</p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard10" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero retener a los mejores talentos con un plan de compensación atractivo.')">Selecione</button>
+                                            <button id="buttonCard10" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quero reter os melhores talentos com um plano atraente de remunerações.')">Selecione</button>
                                         </div>
                                         <div class="js-card--menu"><span>4/8</span></div>
                                     </div>
@@ -339,11 +338,11 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person1.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Quiero planificar el desarrollo y sucesi&oacute;n de mis mejores talentos.</p>
+                                                <p>Quero planejar o desenvolvimento e a sucessão dos meus melhores talentos.</p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard11" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero planificar el desarrollo y sucesión de mis mejores talentos.')">Selecione</button>
+                                            <button id="buttonCard11" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quero planejar o desenvolvimento e a sucessão dos meus melhores talentos.')">Selecione</button>
                                         </div>
                                         <div class="js-card--menu"><span>5/8</span></div>
                                     </div>
@@ -355,11 +354,11 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person2.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Quiero centralizar y agilizar mis procesos de adquisici&oacute;n y contrataci&oacute;n de talentos.</p>
+                                                <p>Quero centralizar e agilizar meus processos de aquisição e contratação de talentos.</p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard12" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero centralizar y agilizar mis procesos de adquisición y contratación de talentos.')">Selecione</button>
+                                            <button id="buttonCard12" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quero centralizar e agilizar meus processos de aquisição e contratação de talentos.')">Selecione</button>
                                         </div>
                                         <div class="js-card--menu"><span>6/8</span></div>
                                     </div>
@@ -371,11 +370,11 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person3.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Quiero aumentar la eficacia de la funci&oacute;n de RRHH accediendo a un conjunto de anal&iacute;ticas listas para usar.</p>
+                                                <p>Quero aumentar a eficácia da função de RH através de um conjunto de análises prontos para usar.</p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard13" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero aumentar la eficacia de la función de RRHH accediendo a un conjunto de analíticas listas para usar.')">Selecione</button>
+                                            <button id="buttonCard13" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quero aumentar a eficácia da função de RH através de um conjunto de análises prontos para usar.')">Selecione</button>
                                         </div>
                                         <div class="js-card--menu"><span>7/8</span></div>
                                     </div>
@@ -387,18 +386,17 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person4.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Quiero empoderar a los nuevos empleados para lograr una contribuci&oacute;n r&aacute;pida a las metas del negocio.</p>
+                                                <p>Quero empoderar os novos funcionários para obter uma contribuição rápida para as metas do negócio.</p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard14" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quiero empoderar a los nuevos empleados para lograr una contribución rápida a las metas del negocio.')">Selecione</button>
+                                            <button id="buttonCard14" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Quero empoderar os novos funcionários para obter uma contribuição rápida para as metas do negócio.')">Selecione</button>
                                         </div>
                                         <div class="js-card--menu"><span>8/8</span></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="js-minilogo js-minilogo__right"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div> -->
                     </div>
                 </div>
                 <div class="js-window3 opacity-done">

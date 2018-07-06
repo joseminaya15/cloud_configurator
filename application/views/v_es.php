@@ -222,7 +222,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person1.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Como responsable de ventas quiero <strong>mejorar mi proceso de ventas.</strong></p>
+                                                <p>Como responsable de ventas <strong>quiero mejorar mi proceso de ventas.</strong></p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -238,7 +238,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person2.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Como responsable de servicios quiero <strong>mejorar nuestros procesos de soporte al cliente.</strong></p>
+                                                <p>Como responsable de servicios <strong>quiero mejorar nuestros procesos de soporte al cliente.</strong></p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
@@ -254,7 +254,7 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person3.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Como responsable de ventas online quiero <strong>crear experiencias de compra &uacute;nicas e simplificadas.</strong></p>
+                                                <p>Como responsable de ventas online <strong>quiero crear experiencias de compra &uacute;nicas e simplificadas.</strong></p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
