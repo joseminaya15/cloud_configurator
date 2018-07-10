@@ -866,8 +866,8 @@
                             </label>
                         </div>
                         <div class="mdl-card__actions text-right">
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style="background-color: #fdb913 !important" onclick="acceptPoliticas()">Aceptar</button>
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="closePoliticas()">Cerrar</button>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style="background-color: #fdb913 !important" onclick="acceptPoliticas()">Aceitar</button>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="closePoliticas()">Fechar</button>
                         </div>
                     </div>
                 </div>
