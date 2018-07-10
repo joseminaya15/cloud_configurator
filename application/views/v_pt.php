@@ -923,6 +923,7 @@
                     $('#empresa').val("<?php echo $comp ?>");
                     $('#pais').val("<?php echo $pais_link ?>");
                     $('#telefono').css('border-color','red');
+                    $('.js-step').find('span').addClass('active');
                  }
             });
         </script>
