@@ -335,7 +335,7 @@ function ayudaCard(id,ayuda){
 	if( arr_ayuda.indexOf(ayuda) == -1 ) {
 		arr_ayuda.push(ayuda);
 		idButtonCard.addClass('js-selected');
-		idButtonCard.text('Desmarcar');
+		idButtonCard.text('Desmarque');
 		idButtonCard.css('color', '#000000');
 	} else {
 		arr_ayuda.splice(indice, 1);
@@ -726,7 +726,7 @@ function tipoTamaño(id,tipo){
 	cardCarousel.toggleClass('js-card--transform');
 	idButtonSelect.toggleClass('js-selected');
 	if(idButtonSelect.hasClass('js-selected')){
-		idButtonSelect.text('Desmarcar');
+		idButtonSelect.text('Desmarque');
 		idButtonSelect.css('color', '#000000');
 	}else {
 		idButtonSelect.text('Selecione');

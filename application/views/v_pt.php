@@ -404,7 +404,7 @@
                         <p class="js-question--title"><strong>/ ERP</strong> Cloud Configurator</p>
                         <div class="js-question--number">
                             <span>03/05</span>
-                            <h2>¿Cu&aacute;l es su tipo y tama&ntilde;o de empresa&#63;</h2>
+                            <h2>Qual &eacute; o tipo e tamanho da sua empresa&#63;</h2>
                         </div>
                         <div class="js-card__flex js-card__flex--relative">
                             <div class="js-card--tipo">
@@ -572,7 +572,7 @@
                         <p class="js-question--title"><strong>/ ERP</strong> Cloud Configurator</p>
                         <div class="js-question--number">
                             <span>04/05</span>
-                            <h2>¿Que tipo de soluci&oacute;n le interesa evaluar&#63;</h2>
+                            <h2>Que tipo de solução está interessado em avaliar&#63;</h2>
                         </div>
                         <div class="js-card__flex">
                             <div class="js-carousel js-3cards">
@@ -646,7 +646,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="js-card-flip js-card-flip__back">
-                                                    <p>Combinar ambas opciones donde la informaci&oacute;n sensible puede permanecer en su IT local y el resto en la nube.</p>
+                                                    <p>Combinar ambas opções, assim, a informação sensívelpode ficar na sua TI local e o resto, na nuvem.</p>
                                                     <div class="js-card--large__icon">
                                                         <i class="mdi mdi-remove"></i>
                                                     </div>
@@ -668,7 +668,7 @@
                         <p class="js-question--title"><strong>/ ERP</strong> Cloud Configurator</p>
                         <div class="js-question--number">
                             <span>05/05</span>
-                            <h2>Complete el formulario para poder contactarlo y entrar en detalles</h2>
+                            <h2>Preencha o formul&aacute;rio para que possamos entrar emcontato e dar-lhe mais detalhes.</h2>
                         </div>
                         <div class="js-card__flex">
                             <div class="js-card-confirmacion">
@@ -831,7 +831,7 @@
                     <div class="js-container">
                         <div class="js-agradecimiento">
                             <h2>Obrigado por seu interesse</h2>
-                            <p>Un representante de SAP se pondr&aacute; en contacto con Usted para ayudarlo a transformar su negocio de cara al futuro.</p>
+                            <p>Um representante da SAP entrar&aacute; em contato com você e o ajudar&aacute; a transformar o seu neg&oacute;cio para o futuro.</p>
                         </div>
                     </div>
                 </div>
