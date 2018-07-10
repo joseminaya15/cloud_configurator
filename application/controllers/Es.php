@@ -52,7 +52,7 @@ class Es extends CI_Controller {
 	}
 	function cambiarIdioma(){
     $data['error'] = EXIT_ERROR;
-    $data['msj'] = null;
+    $data['msj']   = null;
     try {
         $idioma  = $this->input->post('idioma');
         $session = array('idioma' => $idioma);
