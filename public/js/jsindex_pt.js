@@ -136,15 +136,15 @@ function solicitarEstimacion(){
 		validarCampos();
 	}
 	if(nombre_completo == null || nombre_completo == ''){
-		msj('error', 'Digite seu nome completo');
+		msj('error', 'Especifique Nome Completo');
 		return;
 	}
 	if(empresa == null || empresa == ''){
-		msj('error', 'Digite a sua empresa');
+		msj('error', 'Especifique Empresa');
 		return;
 	}
 	if(email == null || email == ''){
-		msj('error', 'Digite seu email');
+		msj('error', 'Especifique Email');
 		return;
 	}
 	if (!validateEmail(email)){
@@ -152,19 +152,19 @@ function solicitarEstimacion(){
 		return;
 	}
 	if(pais == null || pais == ''){
-		msj('error', 'Digite seu país');
+		msj('error', 'Especifique País');
 		return;
 	}
 	if(cargo == null || cargo == ''){
-		msj('error', 'Digite sua posição');
+		msj('error', 'Especifique Cargo');
 		return;
 	}
 	if(telefono == null || telefono == ''){
-		msj('error', 'Digite seu telefone');
+		msj('error', 'Especifique Telefone');
 		return;
 	}
 	if(relacion == null || relacion == ''){
-		msj('error', 'Selecione qual é o seu relacionamento com o SAP');
+		msj('error', 'Selecione qual é o seu relacionamento com a SAP');
 		return;
 	}
 	if(c_email == true){
@@ -183,7 +183,7 @@ function solicitarEstimacion(){
 		term_cond = 0;
 	}
 	if(terminos == false){
-		msj('error', 'Aceite os termos e condições');
+		msj('error', 'Aceito os termos e condições');
 		return;
 	}
 	$('.button-confirmar').prop("disabled", true);
@@ -264,7 +264,7 @@ function operar(id,tipo){
 		}else if(i == 4){
 			$('#textOperar').text('500 - 1000');
 		}else if(i == 5){
-			$('#textOperar').text('más de 1000');
+			$('#textOperar').text('mais de 1000');
 		}else if(i > 5){
 			i = 5;
 			return;
@@ -272,7 +272,7 @@ function operar(id,tipo){
 	}else if(tipo == 1){
 		i--;
 		if(i == 5){
-			$('#textOperar').text('Más de 1000');
+			$('#textOperar').text('mais de 1000');
 		}else if(i == 4){
 			$('#textOperar').text('500 - 1000');
 		}else if(i == 3){
@@ -335,7 +335,7 @@ function ayudaCard(id,ayuda){
 	if( arr_ayuda.indexOf(ayuda) == -1 ) {
 		arr_ayuda.push(ayuda);
 		idButtonCard.addClass('js-selected');
-		idButtonCard.text('Desmarque');
+		idButtonCard.text('Desmarcar');
 		idButtonCard.css('color', '#000000');
 	} else {
 		arr_ayuda.splice(indice, 1);
@@ -726,7 +726,7 @@ function tipoTamaño(id,tipo){
 	cardCarousel.toggleClass('js-card--transform');
 	idButtonSelect.toggleClass('js-selected');
 	if(idButtonSelect.hasClass('js-selected')){
-		idButtonSelect.text('Desmarque');
+		idButtonSelect.text('Desmarcar');
 		idButtonSelect.css('color', '#000000');
 	}else {
 		idButtonSelect.text('Selecione');

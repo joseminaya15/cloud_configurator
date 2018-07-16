@@ -264,7 +264,7 @@ function operar(id,tipo){
 		}else if(i == 4){
 			$('#textOperar').text('500 - 1000');
 		}else if(i == 5){
-			$('#textOperar').text('más de 1000');
+			$('#textOperar').text('more 1000');
 		}else if(i > 5){
 			i = 5;
 			return;
