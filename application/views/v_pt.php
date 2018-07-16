@@ -773,18 +773,7 @@
                                 <div class="col-sm-6">
                                     <div class="js-select js-standar">
                                         <select class="selectpicker" id="pais" name="pais" title="País">
-                                            <option value="Argentina">Argentina</option>
                                             <option value="Brasil">Brasil</option>
-                                            <option value="Canadá">Canadá</option>
-                                            <option value="Chile">Chile</option>
-                                            <option value="Colômbia">Colômbia</option>
-                                            <option value="Costa Rica">Costa Rica</option>
-                                            <option value="México">México</option>
-                                            <option value="Panamá">Panamá</option>
-                                            <option value="Peru">Peru</option>
-                                            <option value="Puerto Rico">Puerto Rico</option>
-                                            <option value="USA">USA</option>
-                                            <option value="Venezuela">Venezuela</option>
                                         </select>
                                     </div>
                                 </div>
