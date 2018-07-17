@@ -844,6 +844,10 @@ function acceptPoliticas(){
 	if(check_2 == true && share == true){
 		checks = 'General Marketing, Sharing data';
 	}
+	if(check_2 == false && share == false){
+		$('#checkbox-1').prop('checked', false);
+		$('#checkbox-1').parent().removeClass('is-checked');
+	}
 }
 function openModal(){
 	$('#checkbox-2').prop('checked', false);
