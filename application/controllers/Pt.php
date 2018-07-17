@@ -135,11 +135,11 @@ class Pt extends CI_Controller {
           $contact = '-';
         }else {
           if($_SESSION['Contacto'] == 3){
-            $contact = 'por email y teléfono';
+            $contact = 'por e-mail y telefone';
           }else if($_SESSION['Contacto'] == 2){
-            $contact = 'por teléfono';
+            $contact = 'por telefone';
           }else if($_SESSION['Contacto'] == 1){
-            $contact = 'por email';
+            $contact = 'por e-mail';
           }
         }
         $respuestas = $this->M_solicitud->getRespUsuario($_SESSION['id_persona']);
@@ -154,7 +154,7 @@ class Pt extends CI_Controller {
                             'newline'   => "\r\n");
          $this->email->initialize($configGmail);
          $this->email->from('info@sap-latam.com');
-         $this->email->to('jhonatanibericom@gmail.com');//Giovanna.bergamo@sap.com,anali.vidal@sap.com,alejandra.hamelink@sap.com
+         $this->email->to('pyf136@gmail.com');//Giovanna.bergamo@sap.com,anali.vidal@sap.com,alejandra.hamelink@sap.com
          $this->email->subject('Estou interessado no Cloud Configurator para o minha empresa.');
          $texto = '<!DOCTYPE html>
                     <html>

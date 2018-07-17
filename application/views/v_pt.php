@@ -626,7 +626,7 @@
                                                 </div>
                                             </div>
                                             <div class="js-card--large__button">
-                                                <button id="buttonCard22" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Cloud')">Selecione</button>
+                                                <button id="buttonCard22" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Nuvem')">Selecione</button>
                                             </div>
                                             <div class="js-card--menu"><span>2/3</span></div>
                                         </div>

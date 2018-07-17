@@ -174,9 +174,6 @@ function solicitarEstimacion(){
 	}else if(c_ambos == true){
 		contacto = 3;
 	}
-	if(c_email == null || c_email == ''){
-		contacto = '-';
-	}
 	if(terminos == true){
 		term_cond = 1
 	}else{
