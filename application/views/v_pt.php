@@ -807,7 +807,7 @@
                                         </label>
                                         <span onclick="openModal()">Li e aceito os</span>
                                     </div>
-                                    <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Privacy_Statement_CloudConfig_eng_PT.pdf" target="_blank">termos e condi&ccedil;&otilde;es da SAP</a>
+                                    <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Privacy_Statement_CloudConfig_Pt.pdf" target="_blank">termos e condi&ccedil;&otilde;es da SAP</a>
                                 </div>
                                 <div class="col-xs-12 text-right m-t-25">
                                     <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button--confirmar button-confirmar" onclick="solicitarEstimacion();">Enviar informa&ccedil;&otilde;es</button>

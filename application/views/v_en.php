@@ -818,7 +818,7 @@
                                         </label>
                                         <span onclick="openModal()">I have read and agree to the </span>
                                     </div>
-                                    <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Privacy_Statement_CloudConfig_eng.pdf" target="_blank">SAP terms and conditions</a>
+                                    <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Privacy_Statement_CloudConfig_En.pdf" target="_blank">SAP terms and conditions</a>
                                 </div>
                                 <div class="col-xs-12 text-right m-t-25">
                                     <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button--confirmar button-confirmar" onclick="solicitarEstimacion();">Send information</button>
