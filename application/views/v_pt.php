@@ -850,8 +850,8 @@
                             </div>
                         </div>
                         <div class="mdl-card__actions text-right">
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-default" onclick="closePoliticas()">Cerrar</button>
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button" onclick="acceptPoliticas()">Aceptar</button>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-default" onclick="closePoliticas()">Fechar</button>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button" onclick="acceptPoliticas()">Aceitar</button>
                         </div>
                     </div>
                 </div>
