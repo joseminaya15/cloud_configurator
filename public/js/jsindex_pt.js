@@ -126,9 +126,9 @@ function solicitarEstimacion(){
 	var cargo 	 		= $('#cargo').val();
 	var telefono 		= $('#telefono').val();
 	var relacion		= $('#relacion').val();
-	var c_email    		= $('#c-email').is(':checked');
+	/*var c_email    		= $('#c-email').is(':checked');
 	var c_telefono    	= $('#c-telefono').is(':checked');
-	var c_ambos    		= $('#c-ambos').is(':checked');
+	var c_ambos    		= $('#c-ambos').is(':checked');*/
 	var terminos		= $('#checkbox-1').is(':checked');
 	var term_cond		= null;
 	var contacto		= null;
@@ -167,13 +167,14 @@ function solicitarEstimacion(){
 		msj('error', 'Selecione qual é o seu relacionamento com a SAP');
 		return;
 	}
-	if(c_email == true){
+	/*if(c_email == true){
 		contacto = 1;
 	}else if(c_telefono == true){
 		contacto = 2;
 	}else if(c_ambos == true){
 		contacto = 3;
-	}
+	}*/
+	contacto = glob_contacto;
 	if(terminos == true){
 		term_cond = 1
 	}else{
@@ -829,6 +830,16 @@ var checks = '';
 function acceptPoliticas(){
 	var check_2 = $('#checkbox-2').is(':checked');
 	var share   = $('#checkbox-3').is(':checked');
+	var c_email    = $('#c-email').is(':checked');
+	var c_telefono = $('#c-telefono').is(':checked');
+	var c_ambos    = $('#c-ambos').is(':checked');
+	if(c_email == true){
+		glob_contacto = 1;
+	}else if(c_telefono == true){
+		glob_contacto = 2;
+	}else if(c_ambos == true){
+		glob_contacto = 3;
+	}
 	if(check_2 == true){
 		checks = 'General Marketing';
 	}
