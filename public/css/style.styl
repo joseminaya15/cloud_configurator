@@ -2,6 +2,7 @@ $regular = 'BentonSansRegular'
 $medium  = 'BentonSansMedium'
 $bold    = 'BentonSansBold'
 $color   = #FDB913
+$default = #008FD3
 flexCenter()
 	display flex
 	display -webkit-flex
@@ -759,7 +760,7 @@ body
 		border 2px solid #FFFFFF
 .js-formulario
 	.js-checkbox
-		padding 0 5px
+		padding 8px 5px
 .js-button--confirmar
 	background-color #008FD3 !important
 	color #FFFFFF
@@ -807,12 +808,6 @@ body
 	height 100%
 	max-height 285px
 .js-card--large__tipo
-	// transitionTransform()
-	// transform translate3d(-100%, 0, 0)
-	// opacity 0
-	// margin 0
-	// z-index -5
-	// width 0 !important
 	display none
 .js-card--transform
 	transitionTransform()
@@ -917,6 +912,8 @@ body
 			position absolute
 			top 50%
 			left 50%
+			.mdl-card__supporting-text
+				width 100%
 			.mdl-card__actions
 				padding 16px
 				button
@@ -927,6 +924,31 @@ body
 				transform translate(1)
 				transform transform(-50% , -50%)
 				opacity 1
+.js-modal
+	.mdl-card__title
+		padding 16px 16px 10px 16px
+		h2
+			margin 5px 0
+			font-size 22px
+	.mdl-card__supporting-text
+		p
+			color #000000
+			line-height 18px
+		.mdl-radio__outer-circle
+			border-radius 0
+		.mdl-checkbox
+			height 100%
+		.mdl-radio__label
+			font-weight 100
+			font-size 14px
+			color #000000
+	.mdl-card__actions
+		.js-button
+			background-color $default
+			color #FFFFFF
+		.js-default
+			background-color transparent
+			box-shadow none
 /*ANIMACIONES*/
 @-webkit-keyframes js-buttonscroll--animate
 	0%

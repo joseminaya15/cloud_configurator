@@ -788,37 +788,11 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
-                                    <p class="js-contacto">Quiero ser contactado por un representante de ventas:</p>
-                                    <div class="js-contact-label">
-                                        <div class="js-input-label">
-                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-email">
-                                                <input type="radio" id="c-email" class="mdl-radio__button" name="options" value="1">
-                                                <span class="mdl-radio__label">Por email</span>
-                                            </label>
-                                        </div>
-                                        <div class="js-input-label">
-                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-telefono">
-                                                <input type="radio" id="c-telefono" class="mdl-radio__button" name="options" value="2">
-                                                <span class="mdl-radio__label">Por tel&eacute;fono</span>
-                                            </label>
-                                        </div>
-                                        <div class="js-input-label">
-                                            <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-ambos">
-                                                <input type="radio" id="c-ambos" class="mdl-radio__button" name="options" value="3">
-                                                <span class="mdl-radio__label">Ambos</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs-12 js-checkbox m-t-10 js-flex js-terminos">
-                                    <div class="js-flex--left">
-                                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-                                            <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
-                                        </label>
-                                        <span onclick="openModal()">He le&iacute;do y acepto los</span>
-                                    </div>
-                                    <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Privacy_Statement_CloudConfig_Es.pdf" target="_blank">Términos y condiciones de SAP</a>
+                                <div class="col-sm-6 js-checkbox js-terminos">
+                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                                        <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+                                        <span class="mdl-checkbox__label" style="">He le&iacute;do y acepto los <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Privacy_Statement_CloudConfig_Es.pdf" target="_blank">T&eacute;rminos y condiciones de SAP</a></span>
+                                    </label>
                                 </div>
                                 <div class="col-xs-12 text-right m-t-25">
                                     <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button--confirmar button-confirmar" onclick="solicitarEstimacion();">Enviar informaci&oacute;n</button>
@@ -851,23 +825,44 @@
         <div class="modal fade" id="ModalPoliticas" tabindex="-1" role="dialog" aria-labelledby="simpleModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
             <div class="modal-dialog modal-sm">
                 <div class="modal-content">
-                    <div class="mdl-card">
+                    <div class="mdl-card js-modal">
                         <div class="mdl-card__title">
                             <h2>SAP Marketing Consent Statement</h2>
                         </div>
                         <div class="mdl-card__supporting-text p-t-0">
-                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label m-b-20" for="checkbox-3" id="label-check3">
-                                <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input">
-                                <span class="mdl-checkbox__label f-s-14">Would you like to receive additional information on SAP products and services along with information related to this inquiry? By checking this box, you agree that your contact details will be used by SAP Marketing in accordance with the <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Consent_Statement_Jan_18.pdf" target="_blank">SAP Marketing Consent Statement</a>.</span>
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-3" id="label-check3">
+                                <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input" checked>
+                                <span class="mdl-checkbox__label">¿Desea recibir informaci&oacute;n adicional de productos y servicios de SAP junto con la informaci&oacute;n relacionada con esta solicitud&#63; Al marcar aqu&iacute; usted acepta que su informaci&oacute;n de contacto sea usada por SAP Latinoam&eacute;rica de acuerdo a la <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Consent_Statement_Jan_18.pdf" target="_blank">Declaraci&oacute;n de Consentimiento de Marketing de SAP.</a></span>
                             </label>
                             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-2" id="label-check4">
-                                <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
-                                <span class="mdl-checkbox__label f-s-14">I agree that <span>SAP may share the information</span> I have provided hereunder with the <span>SAP group</span> in order that that they also may send additional marketing-related communications to me.</span>
+                                <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked>
+                                <span class="mdl-checkbox__label">Acepto que SAP pudiera compartir la informaci&oacute;n entregada aqu&iacute; con otras &aacute;reas de SAP para que puedan enviarme comunicaciones de marketing adicionales.</span>
                             </label>
+                            <p>¿C&oacute;mo quiere recibir estas comunicaciones?</p>
+                            <div class="js-contact-label">
+                                <div class="js-input-label">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-email">
+                                        <input type="radio" id="c-email" class="mdl-radio__button" name="options" value="1">
+                                        <span class="mdl-radio__label">Por email</span>
+                                    </label>
+                                </div>
+                                <div class="js-input-label">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-telefono">
+                                        <input type="radio" id="c-telefono" class="mdl-radio__button" name="options" value="2">
+                                        <span class="mdl-radio__label">Por tel&eacute;fono</span>
+                                    </label>
+                                </div>
+                                <div class="js-input-label">
+                                    <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="c-ambos">
+                                        <input type="radio" id="c-ambos" class="mdl-radio__button" name="options" value="3" checked>
+                                        <span class="mdl-radio__label">Ambas</span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                         <div class="mdl-card__actions text-right">
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" style="background-color: #fdb913 !important" onclick="acceptPoliticas()">Aceptar</button>
-                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="closePoliticas()">Cerrar</button>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-default" onclick="closePoliticas()">Cerrar</button>
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button" onclick="acceptPoliticas()">Aceptar</button>
                         </div>
                     </div>
                 </div>

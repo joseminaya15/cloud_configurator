@@ -819,9 +819,6 @@ function enviarGracias(){
     windowQestion.addClass('animated fadeInUp');
 	$('.button-arrow').css("display","none");
 	$('.question').css("display","none");
-	// setTimeout(function(){ 
-	// 	location.reload();
-	// }, 4000);
 }
 function closePoliticas(){
 	$('#checkbox-1').prop('checked', false);
@@ -830,60 +827,24 @@ function closePoliticas(){
 }
 var checks = '';
 function acceptPoliticas(){
+	var check_2 = $('#checkbox-2').is(':checked');
+	var share   = $('#checkbox-3').is(':checked');
+	if(check_2 == true){
+		checks = 'General Marketing';
+	}
+	if(share == true){
+		checks = 'Sharing data';
+	}
+	if(check_2 == true && share == true){
+		checks = 'General Marketing, Sharing data';
+	}
 	$('#checkbox-1').prop('checked', true);
-	$('#ModalPoliticas').modal('hide');
 	$('#checkbox-1').parent().addClass('is-checked');
-	var check_2 = $('#checkbox-2').is(':checked');
-	var share   = $('#checkbox-3').is(':checked');
-	if(check_2 == true){
-		checks = 'General Marketing';
-	}
-	if(share == true){
-		checks = 'Sharing data';
-	}
-	if(check_2 == true && share == true){
-		checks = 'General Marketing, Sharing data';
-	}
-	if(check_2 == false && share == false){
-		$('#checkbox-1').prop('checked', false);
-		$('#checkbox-1').parent().removeClass('is-checked');
-	}
-}
-function openModal(){
-	$('#checkbox-2').prop('checked', false);
-	$('#checkbox-3').prop('checked', false);
-	$('#checkbox-2').parent().removeClass('is-checked');
-	$('#checkbox-3').parent().removeClass('is-checked');
-	$('#ModalPoliticas').modal('show');
-	var check_2 = $('#checkbox-2').is(':checked');
-	var share   = $('#checkbox-3').is(':checked');
-	if(check_2 == true){
-		checks = 'General Marketing';
-	}
-	if(share == true){
-		checks = 'Sharing data';
-	}
-	if(check_2 == true && share == true){
-		checks = 'General Marketing, Sharing data';
-	}
+	$('#ModalPoliticas').modal('hide');
 }
 $('#checkbox-1').change(function(){
-	$('#checkbox-2').prop('checked', true);
-	$('#checkbox-3').prop('checked', true);
-	$('#checkbox-2').parent().addClass('is-checked');
-	$('#checkbox-3').parent().addClass('is-checked');
-	var check_2 = $('#checkbox-2').is(':checked');
-	var share   = $('#checkbox-3').is(':checked');
-	if(check_2 == true){
-		checks = 'General Marketing';
-	}
-	if(share == true){
-		checks = 'Sharing data';
-	}
-	if(check_2 == true && share == true){
-		checks = 'General Marketing, Sharing data';
-	}
-});
+	$('#ModalPoliticas').modal('show');
+})
 
 $( "#btnpant1" ).on( "click", function() {
 	selectConfigurator('ERP', 'ERP');
