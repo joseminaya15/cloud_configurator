@@ -58,7 +58,7 @@
                                 <th class="text-left">Contacted</th>
                                 <th class="text-left">Consent Statement</th>
                                 <th class="text-left">Country</th>
-                                <th class="text-left">Date</th>
+                                <th class="text-left">Application date</th>
                                 <th class="text-center" style="display: none">Product</th>
                                 <th class="text-center" style="display: none">Industry</th>
                                 <th class="text-center" style="display: none">Size</th>
@@ -123,6 +123,7 @@
             $('#example').DataTable( {
                 searching : false,
                 dom: 'Bfrtip',
+                order: [[9, "desc"]],
                 language:{
                     "emptyTable": "No se encontraron registros",
                     "info" : "Mostrando _END_ de _TOTAL_ resultados",
