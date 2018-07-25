@@ -28,10 +28,10 @@ class Login extends CI_Controller {
 			$username = $this->M_usuario->verificarUsuario($usuario, $password);
 			if(count($username) != 0){
 				if(strtolower($username[0]->usuario) == strtolower($usuario)){
-					if($usuario == 'fradmin'){
+					if($usuario == 'prueba'){
 						$session = array('usuario' => $usuario,
 								 		 'Id_user' => $username[0]->Id,
-								 		 'Idioma'  => 'Francés');
+								 		 'Idioma'  => 'Todos');
 					}else if($usuario == 'sapadmin'){
 						$session = array('usuario' => $usuario,
 								 		 'Id_user' => $username[0]->Id,
@@ -41,6 +41,9 @@ class Login extends CI_Controller {
 								 		 'Id_user' => $username[0]->Id,
 								 		 'Idioma'  => 'Sueco');
 					}
+					$data['Id'] = $username[0]->Id;
+					$data['Nombre'] = 'juanito';
+					$data['Pais'] = 1;
 					$this->session->set_userdata($session);
 		          	$data['error'] = EXIT_SUCCESS;
 				}

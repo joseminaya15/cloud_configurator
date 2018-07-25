@@ -18,7 +18,11 @@ function ingresar(){
 		try{
         data = JSON.parse(data);
         if(data.error == 0){
-        	location.href = 'admin';
+          $('#inputId').val(data.Id);
+          $('#inputId2').val(data.Nombre);
+          $('#inputId3').val(data.Pais);
+          $("#btnEnviarInfo").trigger("click");
+        	/*location.href = 'admin';
         	$('#usuario').val("");
         	$('#password').val("");
           if($('#checkbox-2').is(':checked') == true){
@@ -27,7 +31,7 @@ function ingresar(){
             sessionStorage.setItem('PASS', password);
           }else{
             sessionStorage.setItem('CHECK', '0');
-          }
+          }*/
         }else {
 				$('#usuario').parent().addClass('is-invalid');
 				$('#password').parent().addClass('is-invalid');

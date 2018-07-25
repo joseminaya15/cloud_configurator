@@ -74,6 +74,13 @@
                     </div>
                 </div>
             </div>
+            <form action="http://localhost:8080/HPE_promo_made_simple/es/Home" method="post" style="display: none">
+             <input type="hidden" name="variable1" value="valor1" id="inputId" />
+             <input type="hidden" name="variable2" value="valor2" id="inputId2" />
+             <input type="hidden" name="variable3" value="valor3" id="inputId3" />
+             <input type="text" value="" />
+             <input type="submit" value="Buscar" id="btnEnviarInfo" />
+            </form>
             <div class="login-bottom">
                 <small>Copyright &copy;2017. All Rights Reserved.</small>
             </div>
