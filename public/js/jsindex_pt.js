@@ -313,7 +313,7 @@ function mostrarDatos(){
 			$('.selectpicker').selectpicker('refresh');
           	$('#industria').text(especificar);
           	$('#factura').text(facturacion)
-           	$('#tamanio').text(empleados+" funcionários");
+           	$('#tamanio').text(empleados+" colaboradores");
            	$('#ayuda').append(ayuda_negocio);
            	$('#infraestructura').text(solucion);
         }else{
@@ -927,7 +927,7 @@ $( "#btnpant2" ).on( "click", function() {
 	});
 });
 $( "#btnpant3" ).on( "click", function() {
-	selectConfigurator('HR', 'HR');
+	selectConfigurator('RH', 'RH');
 	cambiar();
 	buttonNext();
   	$('.js-nav-none .owl-nav').css('display','none');

@@ -24,6 +24,35 @@
     	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>animate.css?v=<?php echo time();?>">
     	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>m-p.min.css?v=<?php echo time();?>">
     	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>style.css?v=<?php echo time();?>">
+        <style type="text/css">
+            .js-title h1{
+                font-size: 50px;
+            }
+            .js-title p{
+                font-size: 22px;
+                line-height: 26px;
+            }
+            @media (max-width: 768px){
+                .js-title h1 {
+                    font-size: 42px;
+                    line-height: 44px;
+                }
+                .js-title p {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+            @media (max-width: 600px){
+                .js-title h1{
+                    font-size: 32px;
+                    line-height: 34px;
+                }
+                .js-title p{
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        </style>
         <!--Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NFMTTDF');</script>
         <!--End Google Tag Manager  (noscript) -->
@@ -43,8 +72,8 @@
                     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFMTTDF"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <div class="js-title">
-                    <h1>Bienvenido a <br><strong>Cloud Configurator</strong></h1>
-                    <p>Complete estas preguntas y descubra la soluci&oacute;n perfecta de SAP en funci&oacute;n a las necesidades de su negocio.</p>
+                    <h1>¿Necesita innovar la gesti&oacute;n de su empresa?</h1>
+                    <p>SAP le ofrece una novedosa herramienta gratuita que le ayuda a identificar su necesidad seg&uacute;n el rol que ejerce actualmente, adem&aacute;s de sugerirle una soluci&oacute;n ideal para Ud.</p>
                 </div>
                 <div class="js-bar">
                     <div class="js-bar__children"></div>
