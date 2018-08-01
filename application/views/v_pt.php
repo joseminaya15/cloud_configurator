@@ -510,7 +510,8 @@
                                             <div class="js-card--large js-card--large__flex">
                                                 <div class="js-card--large__content">
                                                     <div class="js-card--large__content-imagen">
-                                                        <img src="<?php echo RUTA_IMG?>cards/otra.png">
+                                                        <!-- <img src="<?php echo RUTA_IMG?>cards/otra.png"> -->
+                                                        <p>Outra</p>
                                                     </div>
                                                     <div class="js-card--large__content-text" style="height: 79px;">
                                                         <div class="form-group">

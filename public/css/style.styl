@@ -276,9 +276,6 @@ body
 		min-width 50px !important
 		width 50px !important
 		height 60px !important
-		&.down
-			-webkit-animation js-buttonscroll--animate 1.5s infinite
-			animation js-buttonscroll--animate 1.5s infinite
 		&.active
 			i
 				-webkit-animation js-ripple--animate 1.5s infinite
@@ -288,6 +285,11 @@ body
 			color #FFFFFF
 			line-height 52px
 			flexCenter()
+.js-now
+	-webkit-animation js-buttonscroll--animate 1.5s infinite
+	animation js-buttonscroll--animate 1.5s infinite
+	p
+		font-size 20px
 .js-minilogo
 	position absolute
 	left 60px
@@ -487,6 +489,9 @@ body
 			img
 				width 100%
 				max-width 95px
+			p
+				font-size 18px
+				line-height 20px
 		.js-card--large__content-text
 			height 150px
 			p
@@ -1182,4 +1187,7 @@ body
 		p
 			font-size 24px
 			line-height 28px
+	.js-now
+		p
+			font-size 16px
 					
