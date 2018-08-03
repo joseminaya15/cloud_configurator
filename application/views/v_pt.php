@@ -600,7 +600,7 @@
                                                 </div>
                                             </div>
                                             <div class="js-card--large__button">
-                                                <button id="buttonCard21" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'On Premise')">Selecione</button>
+                                                <button id="buttonCard21" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'On Premise');buttonQuestion(2);buttonNext();">Selecione</button>
                                             </div>
                                             <div class="js-card--menu"><span>1/3</span></div>
                                         </div>
@@ -627,7 +627,7 @@
                                                 </div>
                                             </div>
                                             <div class="js-card--large__button">
-                                                <button id="buttonCard22" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Nuvem')">Selecione</button>
+                                                <button id="buttonCard22" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Nuvem');buttonQuestion(2);buttonNext();">Selecione</button>
                                             </div>
                                             <div class="js-card--menu"><span>2/3</span></div>
                                         </div>
@@ -654,7 +654,7 @@
                                                 </div>
                                             </div>
                                             <div class="js-card--large__button">
-                                                <button id="buttonCard23" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Híbrida')">Selecione</button>
+                                                <button id="buttonCard23" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Híbrida');buttonQuestion(2);buttonNext();">Selecione</button>
                                             </div>
                                             <div class="js-card--menu"><span>3/3</span></div>
                                         </div>
