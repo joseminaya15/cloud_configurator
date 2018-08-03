@@ -29,7 +29,8 @@ class Pt extends CI_Controller {
     $html                    = '';
     $data['Industria']       = $this->session->userdata('tipo_industria') == null ? '-' : $this->session->userdata('tipo_industria');
     $data['Factura_anual']   = $this->session->userdata('factura_anual') == null ? '-' : $this->session->userdata('factura_anual');
-    $data['Tamanio']         = $this->session->userdata('tamanio') == null ? '-' : $this->session->userdata('tamanio').' funcionários';
+    $data['Tamanio']         = $this->session->userdata('tamanio') == null ? '-' : $this->session->userdata('tamanio').' colaboradores
+';
     $data['Prioridad']       = $this->session->userdata('ayuda') == null ? '-' : $this->session->userdata('ayuda');
     $data['Infraestructura'] = $this->session->userdata('solucion') == null ? '-' : $this->session->userdata('solucion');
     $data['error']           = EXIT_SUCCESS;
@@ -225,7 +226,7 @@ class Pt extends CI_Controller {
                                         <td><font style="margin: 3px 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$_SESSION['Email'].'</font></td>
                                       </tr>
                                       <tr style="padding: 0 20px;">
-                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold;"><strong>Relacionamento com SAP:</strong></font></td>
+                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold;"><strong>Relacionamento com a SAP:</strong></font></td>
                                         <td><font style="margin: 3px 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$_SESSION['Relacion'].'</font></td>
                                       </tr>
                                       <tr style="padding: 0 20px;">
@@ -248,7 +249,7 @@ class Pt extends CI_Controller {
                                       <tbody>
                                         <tr style="padding: 5px 20px;">
                                           <td rowspan="2"></td>
-                                          <td style="text-align: left;"><font style="font-weight: bold;font-size: 14px;">Em que indústria você se desempenha?</font></td>
+                                          <td style="text-align: left;"><font style="font-weight: bold;font-size: 14px;">Em que indústria você atua?</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->tipo_industria.'</font></td>
@@ -258,11 +259,11 @@ class Pt extends CI_Controller {
                                           <td style="text-align: left;"><font style="font-weight: bold;font-size: 14px;">Qual é o tamanho da sua empresa?</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
-                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->tamanio.' funcionários</font></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->tamanio.' colaboradores</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td rowspan="2"></td>
-                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;">Seu volume de negócios</font></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;">Qual é o seu faturamento anual?</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->factura_anual.'</font></td>
@@ -317,7 +318,7 @@ class Pt extends CI_Controller {
         $this->email->initialize($configGmail);
         $this->email->from('info@sap-latam.com');
         $this->email->to($email);
-        $this->email->subject('Obrigado por seu interesse em Cloud Configurator.');
+        $this->email->subject('Agradecemos o seu interesse no Cloud Configurator');
         $texto = '<!DOCTYPE html>
                     <html>
                     <head>
@@ -378,12 +379,12 @@ class Pt extends CI_Controller {
                                       <tbody>
                                         <tr>
                                           <td style="padding: 20px 40px 10px 40px;">
-                                            <font style="color: #000000;font-weight: bold;font-size: 20px;">Obrigado pela sua participação!</font>
+                                            <font style="color: #000000;font-weight: bold;font-size: 20px;">Agradecemos sua participação!</font>
                                           </td>
                                         </tr>
                                          <tr>
                                             <td style="padding:10px 40px 20px 40px;">
-                                              <font style="color: #000000;font-size:14px;font-family: arial;">Temos certeza de que o Cloud Configurator o ajudará a acelerar a transformação digital da sua empresa.  Um representante da SAP entrará em contato com você para ajudá-lo a dar o primeiro passo.</font>
+                                              <font style="color: #000000;font-size:14px;font-family: arial;">Sem dúvida o Cloud Configurator irá ajudar na transformação digital da sua empresa. Um representante da SAP entrará em contato com você para que juntos vocês deem o primeiro passo em direção à essa transformação.</font>
                                             </td>
                                         </tr>
                                       </tbody>
@@ -396,7 +397,7 @@ class Pt extends CI_Controller {
                                       <tbody>
                                         <tr style="padding: 5px 20px;">
                                           <td rowspan="2"></td>
-                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;"><strong>Em que indústria você se desempenha?</strong></font></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;"><strong>Em que indústria você atua?</strong></font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->tipo_industria.'</font></td>
@@ -406,11 +407,11 @@ class Pt extends CI_Controller {
                                           <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;"><strong>Qual é o tamanho da sua empresa?</strong></font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
-                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->tamanio.' funcionários</font></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->tamanio.' colaboradores</font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td rowspan="2"></td>
-                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;"><strong>Seu volume de negócios</strong></font></td>
+                                          <td style="text-align: left;"><font style="margin: 0;font-weight: bold;font-size: 14px;"><strong>Qual é o seu faturamento anual?</strong></font></td>
                                         </tr>
                                         <tr style="padding: 5px 20px;">
                                           <td style="text-align: left;"><font style="margin: 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$respuestas[0]->factura_anual.'</font></td>
@@ -435,7 +436,7 @@ class Pt extends CI_Controller {
                                 </tr>
                                 <tr>
                                   <td style="padding:10px 40px 20px 40px;">
-                                    <font style="color: #000000;font-size:14px;font-family: arial;"><strong>SAP Latinoamérica</strong></font>
+                                    <font style="color: #000000;font-size:14px;font-family: arial;"><strong>SAP Brasil</strong></font>
                                   </td>
                                 </tr>
                               </tbody>

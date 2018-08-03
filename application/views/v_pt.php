@@ -111,7 +111,7 @@
                                                 </div>
                                             </div>
                                             <div class="js-card-content">
-                                                <p><strong>Inovar digitalmente</strong> os meus processos para melhorar a competitividade, a efici&ecirc;ncia e a reputa&ccedil;&atilce;o da minha marca e mais.</p>
+                                                <p><strong>Inovar digitalmente</strong> os meus processos para melhorar a competitividade, a efici&ecirc;ncia e a reputa&ccedil;&atilde;o da minha marca e mais.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -139,9 +139,9 @@
                                                     <img src="<?php echo RUTA_IMG?>cards/hr.png">
                                                 </div>
                                                 <div class="js-card-flip js-card-flip__back" id="btnpant3">
-                                                    <h2>HR</h2>
+                                                    <h2>RH</h2>
                                                     <p>Cloud</p>
-                                                    <button id="HR" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'HR')">Selecionar</button>
+                                                    <button id="RH" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="selectConfigurator(this.id, 'RH')">Selecionar</button>
                                                 </div>
                                             </div>
                                             <div class="js-card-content">
@@ -202,11 +202,11 @@
                                                 <img src="<?php echo RUTA_IMG?>cards/person3.png">
                                             </div>
                                             <div class="js-card--large__content-text">
-                                                <p>Como responsável do crescimento da empresa, <strong>quero obter a máxima rentabilidade.</strong></p>
+                                                <p>Como responsável pelo crescimento da empresa, <strong>quero obter a máxima rentabilidade.</strong></p>
                                             </div>
                                         </div>
                                         <div class="js-card--large__button">
-                                            <button id="buttonCard3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsável do crescimento da empresa, quero obter a máxima rentabilidade.')">Selecione</button>
+                                            <button id="buttonCard3" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="ayudaCard(this.id,'Como responsável pelo crescimento da empresa, quero obter a máxima rentabilidade.')">Selecione</button>
                                         </div>
                                         <div class="js-card--menu"><span>3/3</span></div>
                                     </div>
@@ -268,7 +268,7 @@
                         <div id="js-carousel--HR" class="js-carousel js-5cards js-nav-none">
                             <div class="owl-carousel owl-theme">
                                 <div class="item">
-                                    <div class="js-card--large js-card--large__HR js-card--large__flex">
+                                    <div class="js-card--large js-card--large__RH js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
                                                 <img src="<?php echo RUTA_IMG?>cards/person1.png">
@@ -284,7 +284,7 @@
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="js-card--large js-card--large__HR js-card--large__flex">
+                                    <div class="js-card--large js-card--large__RH js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
                                                 <img src="<?php echo RUTA_IMG?>cards/person2.png">
@@ -300,7 +300,7 @@
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="js-card--large js-card--large__HR js-card--large__flex">
+                                    <div class="js-card--large js-card--large__RH js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
                                                 <img src="<?php echo RUTA_IMG?>cards/person3.png">
@@ -316,7 +316,7 @@
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="js-card--large js-card--large__HR js-card--large__flex">
+                                    <div class="js-card--large js-card--large__RH js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
                                                 <img src="<?php echo RUTA_IMG?>cards/person4.png">
@@ -332,7 +332,7 @@
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="js-card--large js-card--large__HR js-card--large__flex">
+                                    <div class="js-card--large js-card--large__RH js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
                                                 <img src="<?php echo RUTA_IMG?>cards/person1.png">
@@ -348,7 +348,7 @@
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="js-card--large js-card--large__HR js-card--large__flex">
+                                    <div class="js-card--large js-card--large__RH js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
                                                 <img src="<?php echo RUTA_IMG?>cards/person2.png">
@@ -364,7 +364,7 @@
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="js-card--large js-card--large__HR js-card--large__flex">
+                                    <div class="js-card--large js-card--large__RH js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
                                                 <img src="<?php echo RUTA_IMG?>cards/person3.png">
@@ -380,7 +380,7 @@
                                     </div>
                                 </div>
                                 <div class="item">
-                                    <div class="js-card--large js-card--large__HR js-card--large__flex">
+                                    <div class="js-card--large js-card--large__RH js-card--large__flex">
                                         <div class="js-card--large__content">
                                             <div class="js-card--large__content-imagen">
                                                 <img src="<?php echo RUTA_IMG?>cards/person4.png">
@@ -510,7 +510,8 @@
                                             <div class="js-card--large js-card--large__flex">
                                                 <div class="js-card--large__content">
                                                     <div class="js-card--large__content-imagen">
-                                                        <img src="<?php echo RUTA_IMG?>cards/otra.png">
+                                                        <!-- <img src="<?php echo RUTA_IMG?>cards/otra.png"> -->
+                                                        <p>Outra</p>
                                                     </div>
                                                     <div class="js-card--large__content-text" style="height: 79px;">
                                                         <div class="form-group">
@@ -599,7 +600,7 @@
                                                 </div>
                                             </div>
                                             <div class="js-card--large__button">
-                                                <button id="buttonCard21" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'On Premise')">Selecione</button>
+                                                <button id="buttonCard21" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'On Premise');buttonQuestion(2);buttonNext();">Selecione</button>
                                             </div>
                                             <div class="js-card--menu"><span>1/3</span></div>
                                         </div>
@@ -626,7 +627,7 @@
                                                 </div>
                                             </div>
                                             <div class="js-card--large__button">
-                                                <button id="buttonCard22" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Nuvem')">Selecione</button>
+                                                <button id="buttonCard22" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Nuvem');buttonQuestion(2);buttonNext();">Selecione</button>
                                             </div>
                                             <div class="js-card--menu"><span>2/3</span></div>
                                         </div>
@@ -653,7 +654,7 @@
                                                 </div>
                                             </div>
                                             <div class="js-card--large__button">
-                                                <button id="buttonCard23" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Híbrida')">Selecione</button>
+                                                <button id="buttonCard23" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Híbrida');buttonQuestion(2);buttonNext();">Selecione</button>
                                             </div>
                                             <div class="js-card--menu"><span>3/3</span></div>
                                         </div>
@@ -668,7 +669,7 @@
                         <p class="js-question--title"><strong>/ ERP</strong> Cloud Configurator</p>
                         <div class="js-question--number">
                             <span>05/05</span>
-                            <h2>Preencha o formul&aacute;rio para que possamos entrar em contato com você e fornecer mais detalhes.</h2>
+                            <h2>Para receber mais detalhes, preencha o formul&aacute;rio que entraremos em contato com você.</h2>
                         </div>
                         <div class="js-card__flex">
                             <div class="js-card-confirmacion">

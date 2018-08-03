@@ -24,6 +24,35 @@
     	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>animate.css?v=<?php echo time();?>">
     	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>m-p.min.css?v=<?php echo time();?>">
     	<link rel="stylesheet"    href="<?php echo RUTA_CSS?>style.css?v=<?php echo time();?>">
+        <style type="text/css">
+            .js-title h1{
+                font-size: 50px;
+            }
+            .js-title p{
+                font-size: 22px;
+                line-height: 26px;
+            }
+            @media (max-width: 768px){
+                .js-title h1 {
+                    font-size: 42px;
+                    line-height: 44px;
+                }
+                .js-title p {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+            @media (max-width: 600px){
+                .js-title h1{
+                    font-size: 32px;
+                    line-height: 34px;
+                }
+                .js-title p{
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        </style>
         <!--Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NFMTTDF');</script>
         <!--End Google Tag Manager  (noscript) -->
@@ -43,8 +72,8 @@
                     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFMTTDF"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </div>
                 <div class="js-title">
-                    <h1>Bienvenido a <br><strong>Cloud Configurator</strong></h1>
-                    <p>Complete estas preguntas y descubra la soluci&oacute;n perfecta de SAP en funci&oacute;n a las necesidades de su negocio.</p>
+                    <h1>¿Necesita innovar la gesti&oacute;n de su empresa?</h1>
+                    <p>SAP le ofrece una novedosa herramienta gratuita que le ayuda a identificar su necesidad seg&uacute;n el rol que ejerce actualmente, adem&aacute;s de sugerirle una soluci&oacute;n ideal para Ud.</p>
                 </div>
                 <div class="js-bar">
                     <div class="js-bar__children"></div>
@@ -55,9 +84,12 @@
                 <div class="js-minilogo"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div>
                 <div class="js-button-next">
                     <div class="bgcolorblack left"></div>
-                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab down" onclick="buttonNext()">
-                        <i class="mdi mdi-keyboard_arrow_down"></i>
-                    </button>
+                    <div class="js-now">
+                        <p>Empiece Ahora</p>
+                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="buttonNext()">
+                            <i class="mdi mdi-keyboard_arrow_down"></i>
+                        </button>
+                    </div>
                     <div class="bgcolorblack right"></div>
                 </div>
             </div>
@@ -599,7 +631,7 @@
                                                 </div>
                                             </div>
                                             <div class="js-card--large__button">
-                                                <button id="buttonCard21" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'On Premise')">Seleccione</button>
+                                                <button id="buttonCard21" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'On Premise');buttonQuestion(2);buttonNext();">Seleccione</button>
                                             </div>
                                             <div class="js-card--menu"><span>1/3</span></div>
                                         </div>
@@ -626,7 +658,7 @@
                                                 </div>
                                             </div>
                                             <div class="js-card--large__button">
-                                                <button id="buttonCard22" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Cloud')">Seleccione</button>
+                                                <button id="buttonCard22" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Cloud');buttonQuestion(2);buttonNext();">Seleccione</button>
                                             </div>
                                             <div class="js-card--menu"><span>2/3</span></div>
                                         </div>
@@ -653,7 +685,7 @@
                                                 </div>
                                             </div>
                                             <div class="js-card--large__button">
-                                                <button id="buttonCard23" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Híbrida')">Seleccione</button>
+                                                <button id="buttonCard23" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button-select" onclick="saveSolucion(this.id,'Híbrida');buttonQuestion(2);buttonNext();">Seleccione</button>
                                             </div>
                                             <div class="js-card--menu"><span>3/3</span></div>
                                         </div>
