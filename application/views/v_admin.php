@@ -55,7 +55,6 @@
                                 <th class="text-left">Phone</th>
                                 <th class="text-left">Relationship</th>
                                 <th class="text-left">Position</th>
-                                <th class="text-left">Contacted</th>
                                 <th class="text-left">Consent Statement</th>
                                 <th class="text-left">Country</th>
                                 <th class="text-left">Application date</th>

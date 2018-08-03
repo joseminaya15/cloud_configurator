@@ -30,14 +30,6 @@ class Admin extends CI_Controller {
             return $html;
         }else {
             foreach ($datos as $key){
-                $contactado = null;
-                if($key->Contactado == 1){
-                    $contactado = 'Por Email';
-                }else if($key->Contactado == 2){
-                    $contactado = 'Por Teléfono';
-                }else if($key->Contactado == 3){
-                    $contactado = 'Por Email y teléfono';
-                }
                 $html .= '<tr class="tr-cursor-pointer tr-ver-info-solicitud" data-idSolicitud="'.$cont.'">
                             <td class="text-center">'.$key->nombre_completo.'</td>
                             <td class="text-center">'.$key->Empresa.'</td>
@@ -45,7 +37,6 @@ class Admin extends CI_Controller {
                             <td class="text-center">'.$key->Telefono.'</td>
                             <td class="text-center">'.$key->Relacion.'</td>
                             <td class="text-center">'.$key->Cargo.'</td>
-                            <td class="text-center">'.$contactado.'</td>
                             <td class="text-center">'.(($key->checks=='') ? 'N/A' : '<a onclick="getDetails('.$key->Id.');">'.$key->checks.'</a>').'</td>
                             <td class="text-center">'.$key->Pais.'</td>
                             <td class="text-center">'.$key->fecha_sol.' pe</td>
