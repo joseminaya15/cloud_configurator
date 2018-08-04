@@ -130,6 +130,8 @@ function solicitarEstimacion(){
 	var c_telefono    	= $('#c-telefono').is(':checked');
 	var c_ambos    		= $('#c-ambos').is(':checked');
 	var terminos		= $('#checkbox-1').is(':checked');
+	var check_2 		= $('#checkbox-2').is(':checked');
+	var share   		= $('#checkbox-3').is(':checked');
 	var term_cond		= null;
 	var contacto		= null;
 	if(nombre_completo == '' && empresa == '' && email == '' && pais == '' && cargo == '' && telefono == '' && c_email == false && terminos == false){
@@ -167,14 +169,14 @@ function solicitarEstimacion(){
 		msj('error', 'Selecione qual é o seu relacionamento com a SAP');
 		return;
 	}
-	if(c_email == true){
-		contacto = 1;
-	}else if(c_telefono == true){
-		contacto = 2;
-	}else if(c_ambos == true){
-		contacto = 3;
-	}
-	contacto = glob_contacto;
+	// if(c_email == true){
+	// 	contacto = 1;
+	// }else if(c_telefono == true){
+	// 	contacto = 2;
+	// }else if(c_ambos == true){
+	// 	contacto = 3;
+	// }
+	// contacto = glob_contacto;
 	if(terminos == true){
 		term_cond = 1
 	}else{
@@ -183,6 +185,15 @@ function solicitarEstimacion(){
 	if(terminos == false){
 		msj('error', 'Aceito os termos e condições');
 		return;
+	}
+	if(check_2 == true){
+		checks = 'General Marketing';
+	}
+	if(share == true){
+		checks = 'Sharing data';
+	}
+	if(check_2 == true && share == true){
+		checks = 'General Marketing, Sharing data';
 	}
 	$('.button-confirmar').prop("disabled", true);
 	$.ajax({
@@ -851,9 +862,9 @@ function acceptPoliticas(){
 	$('#checkbox-1').parent().addClass('is-checked');
 	$('#ModalPoliticas').modal('hide');
 }
-$('#checkbox-1').change(function(){
-	$('#ModalPoliticas').modal('show');
-})
+// $('#checkbox-1').change(function(){
+// 	$('#ModalPoliticas').modal('show');
+// })
 $('#checkbox-3').change(function(){
 	var share   = $('#checkbox-3').is(':checked');
 	if(share == true){

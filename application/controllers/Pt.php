@@ -75,12 +75,8 @@ class Pt extends CI_Controller {
           $cargo           = $this->input->post('cargo');
           $telefono        = $this->input->post('telefono');
           $relacion        = $this->input->post('relacion');
-          $contacto        = $this->input->post('contacto');
           $term_cond       = $this->input->post('term_cond');
           $checks          = $this->input->post('checks');
-          if($contacto == '-'){
-            $contacto = 0;
-          }
           $arrayInsert = array('nombre_completo' => $nombre_completo,
                                'Empresa'         => $empresa,
                                'Email'           => $email,
@@ -89,7 +85,6 @@ class Pt extends CI_Controller {
                                'Telefono'        => $telefono,
                                'Terminos'        => $term_cond,
                                'Relacion'        => $relacion,
-                               'Contactado'      => $contacto,
                                'Id_solicitud'    => $_SESSION['id_sol'],
                                'fecha_sol'       => date('Y-m-d H:i:s'),
                                'checks'          => $checks,
@@ -103,7 +98,6 @@ class Pt extends CI_Controller {
                               'Cargo'           => $cargo,
                               'Telefono'        => $telefono,
                               'Relacion'        => $relacion,
-                              'Contacto'        => $contacto,
                               'pantalla'        => 0,
                               'id_persona'      => $datoInsert['Id']);
           $this->session->set_userdata($session);
@@ -132,17 +126,6 @@ class Pt extends CI_Controller {
       $data['error'] = EXIT_ERROR;
       $data['msj']   = null;
       try { 
-        if($_SESSION['Contacto'] == '-'){
-          $contact = '-';
-        }else {
-          if($_SESSION['Contacto'] == 3){
-            $contact = 'por e-mail y telefone';
-          }else if($_SESSION['Contacto'] == 2){
-            $contact = 'por telefone';
-          }else if($_SESSION['Contacto'] == 1){
-            $contact = 'por e-mail';
-          }
-        }
         $respuestas = $this->M_solicitud->getRespUsuario($_SESSION['id_persona']);
         $this->load->library("email");
         $configGmail = array('protocol'  => 'smtp',
@@ -232,10 +215,6 @@ class Pt extends CI_Controller {
                                       <tr style="padding: 0 20px;">
                                         <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold;"><strong>País:</strong></font></td>
                                         <td><font style="margin: 3px 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$_SESSION['Pais'].'</font></td>
-                                      </tr>
-                                      <tr style="padding: 0 20px;">
-                                        <td><font style="margin: 3px 0;font-size: 18px;font-family: "Open Sans",Arial,Helvetica,sans-serif;font-weight: bold;"><strong>Forma de contato:</strong></font></td>
-                                        <td><font style="margin: 3px 0;font-family: "Open Sans",Arial,Helvetica,sans-serif;">'.$contact.'</font></td>
                                       </tr>
                                     </tbody>
                                   </table>
