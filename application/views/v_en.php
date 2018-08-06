@@ -801,7 +801,7 @@
                                     </label>
                                     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-2" id="label-check4">
                                         <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
-                                        <span class="mdl-checkbox__label">I agree that SAP may share the information I have provided hereunder with the SAP group in order that that they also may send additional marketing-related communications to me.</span>
+                                        <span class="mdl-checkbox__label">I agree that SAP may share the information I have provided hereunder with the <a href="https://www.sap.com/dam/site/corporate/legal/sap-legal-entities.pdf" target="_blank">SAP Group</a> in order that they also may send additional marketing-related communications to me.</span>
                                     </label>
                                 </div>
                                 <div class="col-xs-12 text-right m-t-25">
