@@ -796,11 +796,11 @@
                                 </div>
                                 <div class="col-sm-6 js-checkbox js-terminos">
                                     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-3" id="label-check3">
-                                        <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input" checked>
+                                        <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input">
                                         <span class="mdl-checkbox__label">Would you like to receive additional information on SAP products and services along with information related to this inquiry? ...By checking this box, you agree that your contact details will be used by SAP Marketing in accordance with the <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Consent_Statement_Jan_18.pdf" target="_blank">SAP Marketing Consent Statement</a>.</span>
                                     </label>
                                     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-2" id="label-check4">
-                                        <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked>
+                                        <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
                                         <span class="mdl-checkbox__label">I agree that SAP may share the information I have provided hereunder with the SAP group in order that that they also may send additional marketing-related communications to me.</span>
                                     </label>
                                 </div>
