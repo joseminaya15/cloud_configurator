@@ -826,17 +826,19 @@
                                         <span class="mdl-checkbox__label" style=""> <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Privacy_Statement_CloudConfig_Es.pdf" target="_blank">T&eacute;rminos y condiciones</a></span>
                                     </label>
                                 </div>
-                                <div class="col-sm-6 js-checkbox js-terminos">
+                                <div class="col-xs-12 js-checkbox js-terminos">
                                     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-3" id="label-check3">
                                         <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input">
-                                        <span class="mdl-checkbox__label" style="color: #FFFFFF;">¿Desea recibir informaci&oacute;n adicional de productos y servicios de SAP junto con la informaci&oacute;n relacionada con esta solicitud&#63; Al marcar aqu&iacute; usted acepta que su informaci&oacute;n de contacto sea usada por SAP Latinoam&eacute;rica de acuerdo a la <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Consent_Statement_Jan_18.pdf" target="_blank">Declaraci&oacute;n de Consentimiento de Marketing de SAP.</a></span>
-                                    </label>
-                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-2" id="label-check4">
-                                        <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
-                                        <span class="mdl-checkbox__label" style="color: #FFFFFF;">Acepto que SAP pudiera compartir la información entregada aquí con otras áreas de <a href="https://www.sap.com/dam/site/corporate/legal/sap-legal-entities.pdf" target="_blank">SAP Group</a> para que puedan enviarme comunicaciones de marketing adicionales.</span>
+                                        <span class="mdl-checkbox__label">¿Desea recibir informaci&oacute;n adicional de productos y servicios de SAP junto con la informaci&oacute;n relacionada con esta solicitud&#63; Al marcar aqu&iacute; usted acepta que su informaci&oacute;n de contacto sea usada por SAP Latinoam&eacute;rica de acuerdo a la <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Consent_Statement_Jan_18.pdf" target="_blank">Declaraci&oacute;n de Consentimiento de Marketing de SAP.</a></span>
                                     </label>
                                 </div>
-                                <div class="col-xs-12 text-right m-t-25">
+                                <div class="col-xs-12 js-checkbox js-terminos">
+                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-2" id="label-check4">
+                                        <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+                                        <span class="mdl-checkbox__label">Acepto que SAP pudiera compartir la información entregada aquí con otras áreas de <a href="https://www.sap.com/dam/site/corporate/legal/sap-legal-entities.pdf" target="_blank">SAP Group</a> para que puedan enviarme comunicaciones de marketing adicionales.</span>
+                                    </label>
+                                </div>
+                                <div class="col-xs-12 text-right m-t-10">
                                     <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button--confirmar button-confirmar" onclick="solicitarEstimacion();">Enviar informaci&oacute;n</button>
                                 </div>
                             </form>

@@ -784,17 +784,19 @@
                                         <span class="mdl-checkbox__label" style=""><a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Privacy_Statement_CloudConfig_Pt.pdf" target="_blank">termos e condi&ccedil;&otilde;es</a></span>
                                     </label>
                                 </div>
-                                <div class="col-sm-6 js-checkbox js-terminos">
+                                <div class="col-xs-12 js-checkbox js-terminos">
                                     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-3" id="label-check3">
                                         <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input">
                                         <span class="mdl-checkbox__label">Deseja receber informações adicionais sobre os produtos e serviços da SAP, juntamente com as informações relacionadas a essa consulta? Ao marcar essa caixa, você concorda que seus detalhes de contato serão usados pela SAP Brazil de acordo com a <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Consent_Statement_Jan_18.pdf" target="_blank">Declaração de Consentimento de Marketing da SAP.</a></span>
                                     </label>
+                                </div>
+                                <div class="col-xs-12 js-checkbox js-terminos">
                                     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-2" id="label-check4">
                                         <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
                                         <span class="mdl-checkbox__label">Eu concordo que a SAP pode compartilhar as informações que forneci aqui com o <a href="https://www.sap.com/dam/site/corporate/legal/sap-legal-entities.pdf" target="_blank">Grupo SAP</a> para que elas também possam enviar comunicações adicionais relacionadas a marketing para mim.</span>
                                     </label>
                                 </div>
-                                <div class="col-xs-12 text-right m-t-25">
+                                <div class="col-xs-12 text-right m-t-10">
                                     <button type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect js-button--confirmar button-confirmar" onclick="solicitarEstimacion();">Enviar informa&ccedil;&otilde;es</button>
                                 </div>
                             </form>
