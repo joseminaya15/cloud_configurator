@@ -63,6 +63,7 @@ flipCard()
 	backface-visibility hidden
 	-webkit-transition -webkit-transform 500ms
 	-moz-transition -moz-transform 500ms
+	-ms-transition -ms-transform 500ms
 	-o-transition -o-transform 500ms
 	transition transform 500ms
 	border-radius 5px
@@ -70,30 +71,36 @@ flipCard()
 flipCardFront()
 	-webkit-transform perspective(600) rotateY(0)
 	-moz-transform perspective(600) rotateY(0)
+	-ms-transform perspective(600) rotateY(0)
 	-o-transform perspective(600) rotateY(0)
 	transform perspective(600) rotateY(0)
 flipCardBack()
 	-webkit-transform rotateY(-180deg)
 	-moz-transform rotateY(-180deg)
+	-ms-transform rotateY(-180deg)
 	-o-transform rotateY(-180deg)
 	transform rotateY(-180deg)
 	z-index 900
 flipCardFrontHover()
 	-webkit-transform rotateY(180deg)
 	-moz-transform rotateY(180deg)
+	-ms-transform rotateY(180deg)
 	-o-transform rotateY(180deg)
 	transform rotateY(180deg)
 	-webkit-transform perspective(600) rotateY(180deg)
 	-moz-transform perspective(600) rotateY(180deg)
+	-ms-transform perspective(600) rotateY(180deg)
 	-o-transform perspective(600) rotateY(180deg)
 	transform perspective(600) rotateY(180deg)
 flipCardBackHover()
 	-webkit-transform rotateY(0)
 	-moz-transform rotateY(0)
+	-ms-transform rotateY(0)
 	-o-transform rotateY(0)
 	transform rotateY(0)
 	-webkit-transform perspective(600) rotateY(0)
 	-moz-transform perspective(600) rotateY(0)
+	-ms-transform perspective(600) rotateY(0)
 	-o-transform perspective(600) rotateY(0)
 	transform perspective(600) rotateY(0)
 	z-index 950
@@ -279,6 +286,9 @@ body
 		&.active
 			i
 				-webkit-animation js-ripple--animate 1.5s infinite
+				-moz-animation js-ripple--animate 1.5s infinite
+				-ms-animation js-ripple--animate 1.5s infinite
+				-o-animation js-ripple--animate 1.5s infinite
 				animation js-ripple--animate 1.5s infinite
 		i
 			font-size 50px
@@ -287,6 +297,9 @@ body
 			flexCenter()
 .js-now
 	-webkit-animation js-buttonscroll--animate 1.5s infinite
+	-moz-animation js-buttonscroll--animate 1.5s infinite
+	-ms-animation js-buttonscroll--animate 1.5s infinite
+	-o-animation js-buttonscroll--animate 1.5s infinite
 	animation js-buttonscroll--animate 1.5s infinite
 	p
 		font-size 20px
@@ -328,7 +341,13 @@ body
 		strong
 			background linear-gradient(to right, #EFAB1F 0%, #E35500 100%)
 			-webkit-background-clip text
+			-moz-background-clip text
+			-ms-background-clip text
+			-o-background-clip text
 			-webkit-text-fill-color transparent
+			-moz-text-fill-color transparent
+			-ms-text-fill-color transparent
+			-o-text-fill-color transparent
 .js-card__flex
 	flexStart()
 	width 100%
@@ -778,7 +797,13 @@ body
 		strong
 			background linear-gradient(to right, #EFAB1F 0%, #E35500 100%)
 			-webkit-background-clip text
+			-moz-background-clip text
+			-ms-background-clip text
+			-o-background-clip text
 			-webkit-text-fill-color transparent
+			-moz-text-fill-color transparent
+			-ms-text-fill-color transparent
+			-o-text-fill-color transparent
 			font-family $bold
 .js-agradecimiento
 	max-width 750px
@@ -955,34 +980,64 @@ body
 @-webkit-keyframes js-buttonscroll--animate
 	0%
 		-webkit-transform translateY(10px)
+		-moz-transform translateY(10px)
+		-ms-transform translateY(10px)
+		-o-transform translateY(10px)
 	30%
 		-webkit-transform translateY(-20px)
+		-moz-transform translateY(-20px)
+		-ms-transform translateY(-20px)
+		-o-transform translateY(-20px)
 	60%
 		-webkit-transform translateY(15px)
+		-moz-transform translateY(15px)
+		-ms-transform translateY(15px)
+		-o-transform translateY(15px)
 @keyframes js-buttonscroll--animate
 	0%
 		-webkit-transform translateY(10px)
+		-moz-transform translateY(10px)
+		-ms-transform translateY(10px)
+		-o-transform translateY(10px)
 	30%
 		-webkit-transform translateY(-20px)
+		-moz-transform translateY(-20px)
+		-ms-transform translateY(-20px)
+		-o-transform translateY(-20px)
 	60%
 		-webkit-transform translateY(15px)
+		-moz-transform translateY(15px)
+		-ms-transform translateY(15px)
+		-o-transform translateY(15px)
 @-webkit-keyframes js-ripple--animate
 	0%
 		-webkit-transform translateY(-25px)
+		-moz-transform translateY(-25px)
+		-ms-transform translateY(-25px)
+		-o-transform translateY(-25px)
 		opacity 0
 	50%
 		opacity 1
 	100%
 		-webkit-transform translateY(20px)
+		-moz-transform translateY(20px)
+		-ms-transform translateY(20px)
+		-o-transform translateY(20px)
 		opacity 0
 @keyframes js-ripple--animate
 	0%
 		-webkit-transform translateY(-25px)
+		-moz-transform translateY(-25px)
+		-ms-transform translateY(-25px)
+		-o-transform translateY(-25px)
 		opacity 0
 	50%
 		opacity 1
 	100%
 		-webkit-transform translateY(20px)
+		-moz-transform translateY(20px)
+		-ms-transform translateY(20px)
+		-o-transform translateY(20px)
 		opacity 0
 /*SCROLL*/
 ::-webkit-scrollbar

@@ -779,10 +779,7 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6 js-checkbox js-terminos">
-                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-                                        <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
-                                        <span class="mdl-checkbox__label" style=""><a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Privacy_Statement_CloudConfig_Pt.pdf" target="_blank">termos e condi&ccedil;&otilde;es</a></span>
-                                    </label>
+                                    <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Privacy_Statement_CloudConfig_Pt.pdf" target="_blank">termos e condi&ccedil;&otilde;es</a>
                                 </div>
                                 <div class="col-xs-12 js-checkbox js-terminos">
                                     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-3" id="label-check3">
