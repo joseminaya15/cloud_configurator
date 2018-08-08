@@ -55,9 +55,12 @@
                 <div class="js-minilogo"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div>
                 <div class="js-button-next">
                     <div class="bgcolorblack left"></div>
-                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab down" onclick="buttonNext()">
-                        <i class="mdi mdi-keyboard_arrow_down"></i>
-                    </button>
+                    <div class="js-now">
+                        <p>Start here</p>
+                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="buttonNext()">
+                            <i class="mdi mdi-keyboard_arrow_down"></i>
+                        </button>
+                    </div>
                     <div class="bgcolorblack right"></div>
                 </div>
             </div>
