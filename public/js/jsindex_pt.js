@@ -775,12 +775,15 @@ var facturacion = null;
 function selectFacturacion(id){
 	facturacion = $('#'+id).val();
 	var empleados = $('#empleados').val();
+	var factu = $('#facturacion').val();
 	$('#'+id).parents('.js-card--large__select').addClass('js-selected');
-	if(empleados != '' && facturacion != '') {
-		if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
+	if(empleados != '' && factu != '') {
+		if(tipo_ind != null && empleados != null && factu != null || tipo_ind != '' && empleados != '' && facturacion != ''){
 			$('#next').prop("disabled", false);
 			$('#next').addClass('active');
 		}
+	}else {
+		return;
 	}
 	$('.js-fixed--top').css('z-index', '2');
 }
