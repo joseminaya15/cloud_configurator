@@ -302,7 +302,7 @@ function operar(id,tipo){
 			return;
 		}
 	}
-	empleados = $('#empleados').text();
+	empleados = $('#empleados').val();
 	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
 		if(tipo_ind != null && empleados != null && facturacion != null){
 			$('#next').prop("disabled", false);
@@ -776,7 +776,7 @@ var facturacion = null;
 function selectFacturacion(id){
 	facturacion = $('#'+id).val();
 	var factu = $('#facturacion').val();
-	var empleados = $('#empleados').val();
+	empleados = $('#empleados').val();
 	$('#'+id).parents('.js-card--large__select').addClass('js-selected');
 	if(empleados != '' && factu != '') {
 		if(tipo_ind != null && empleados != null && factu != null || tipo_ind != '' && empleados != null && facturacion != ''){

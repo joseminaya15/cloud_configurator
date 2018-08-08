@@ -774,7 +774,7 @@ $('[data-id="facturacion"]').click(function(e){
 var facturacion = null;
 function selectFacturacion(id){
 	facturacion = $('#'+id).val();
-	var empleados = $('#empleados').val();
+	empleados = $('#empleados').val();
 	var factu = $('#facturacion').val();
 	$('#'+id).parents('.js-card--large__select').addClass('js-selected');
 	if(empleados != '' && factu != '') {
