@@ -118,6 +118,7 @@ function cambiarIdioma(){
       }
 	});
 }
+var checks = '';
 function solicitarEstimacion(){
 	var nombre_completo = $('#nombre_completo').val(); 
 	var empresa  		= $('#empresa').val();
@@ -169,6 +170,14 @@ function solicitarEstimacion(){
 		msj('error', 'Select what is your relationship with SAP');
 		return;
 	}
+	// if(c_email == true){
+	// 	contacto = 1;
+	// }else if(c_telefono == true){
+	// 	contacto = 2;
+	// }else if(c_ambos == true){
+	// 	contacto = 3;
+	// }
+	// contacto = glob_contacto;
 	if(terminos == true){
 		term_cond = 1
 	}else{
@@ -196,6 +205,7 @@ function solicitarEstimacion(){
 				cargo 		  	: cargo,
 				telefono 		: telefono,
 				relacion 		: relacion,
+				contacto 		: contacto,
 				term_cond       : term_cond,
 				checks 			: checks},
 		url  : 'en/solicitarEstimacion',
@@ -738,19 +748,22 @@ function tipoTamaño(id,tipo){
 		if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
 			$('#next').prop("disabled", false);
 			$('#next').addClass('active');
+		} else {
+			$('#next').prop("disabled", true);
+			$('#next').removeClass('active');
 		}
 	}
 }
-$('html').click(function() {
-	if( $('#facturacion').parents('.bootstrap-select').hasClass('open') != true ){
-		$('#facturacion').parents('.bootstrap-select').addClass('open');
-		$('.js-fixed--top').css('z-index', '0');
-	} else{
-		$('#facturacion').parents('.bootstrap-select').removeClass('open');
-		$('.js-fixed--top').css('z-index', '2');
-	}
-	$('.js-fixed--top').css('z-index', '2');
-});
+// $('html').click(function() {
+// 	if( $('#facturacion').parents('.bootstrap-select').hasClass('open') != true ){
+// 		$('#facturacion').parents('.bootstrap-select').addClass('open');
+// 		$('.js-fixed--top').css('z-index', '0');
+// 	} else{
+// 		$('#facturacion').parents('.bootstrap-select').removeClass('open');
+// 		$('.js-fixed--top').css('z-index', '2');
+// 	}
+// 	$('.js-fixed--top').css('z-index', '2');
+// });
 $('[data-id="facturacion"]').click(function(e){
 	if( $('#facturacion').parents('.bootstrap-select').hasClass('open') != true ){
 		$('#facturacion').parents('.bootstrap-select').addClass('open');
@@ -764,13 +777,15 @@ $('[data-id="facturacion"]').click(function(e){
 var facturacion = null;
 function selectFacturacion(id){
 	facturacion = $('#'+id).val();
-	empleados = $('#empleados').val();
 	var factu = $('#facturacion').val();
+	empleados = $('#empleados').val();
 	$('#'+id).parents('.js-card--large__select').addClass('js-selected');
 	if(empleados != '' && factu != '') {
-		if(tipo_ind != null && empleados != null && factu != null || tipo_ind != '' && empleados != '' && facturacion != ''){
-			$('#next').prop("disabled", false);
-			$('#next').addClass('active');
+		if((tipo_ind != null && empleados != null && factu != null) || (tipo_ind != '' && empleados != '' && facturacion != '')) {
+			// $('#next').prop("disabled", false);
+			// $('#next').addClass('active');
+			buttonQuestion(2);
+			buttonNext();
 		}
 	}else {
 		return;
@@ -829,11 +844,10 @@ function enviarGracias(){
 function closePoliticas(){
 	$('#ModalPoliticas').modal('hide');
 }
-var checks = '';
 var glob_contacto = '';
 function acceptPoliticas(){
-	var check_2 = $('#checkbox-2').is(':checked');
-	var share   = $('#checkbox-3').is(':checked');
+	var check_2    = $('#checkbox-2').is(':checked');
+	var share      = $('#checkbox-3').is(':checked');
 	var c_email    = $('#c-email').is(':checked');
 	var c_telefono = $('#c-telefono').is(':checked');
 	var c_ambos    = $('#c-ambos').is(':checked');

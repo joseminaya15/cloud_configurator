@@ -170,14 +170,14 @@ function solicitarEstimacion(){
 		msj('error', 'Seleccione cuál es su relación con SAP');
 		return;
 	}
-	/*if(c_email == true){
-		contacto = 1;
-	}else if(c_telefono == true){
-		contacto = 2;
-	}else if(c_ambos == true){
-		contacto = 3;
-	}*/
-	//contacto = glob_contacto;
+	// if(c_email == true){
+	// 	contacto = 1;
+	// }else if(c_telefono == true){
+	// 	contacto = 2;
+	// }else if(c_ambos == true){
+	// 	contacto = 3;
+	// }
+	// contacto = glob_contacto;
 	if(terminos == true){
 		term_cond = 1
 	}else{
@@ -781,7 +781,7 @@ function selectFacturacion(id){
 	empleados = $('#empleados').val();
 	$('#'+id).parents('.js-card--large__select').addClass('js-selected');
 	if(empleados != '' && factu != '') {
-		if((tipo_ind != null && empleados != null && factu != null) || (tipo_ind != '' && empleados != null && facturacion != '')) {
+		if((tipo_ind != null && empleados != null && factu != null) || (tipo_ind != '' && empleados != '' && facturacion != '')) {
 			// $('#next').prop("disabled", false);
 			// $('#next').addClass('active');
 			buttonQuestion(2);
