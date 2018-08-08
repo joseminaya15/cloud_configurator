@@ -55,9 +55,12 @@
                 <div class="js-minilogo"><img src="<?php echo RUTA_IMG?>logo/minilogo-home.png"></div>
                 <div class="js-button-next">
                     <div class="bgcolorblack left"></div>
-                    <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab down" onclick="buttonNext()">
-                        <i class="mdi mdi-keyboard_arrow_down"></i>
-                    </button>
+                    <div class="js-now">
+                        <p>Comece agora</p>
+                        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" onclick="buttonNext()">
+                            <i class="mdi mdi-keyboard_arrow_down"></i>
+                        </button>
+                    </div>
                     <div class="bgcolorblack right"></div>
                 </div>
             </div>
@@ -549,7 +552,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="js-card--large">
+                                <!-- <div class="js-card--large">
                                     <div class="js-card--large__content">
                                         <div class="js-card--large__content-tipo">
                                             <img src="<?php echo RUTA_IMG?>cards/empleados.png">
@@ -563,7 +566,7 @@
                                         <span id="textOperar">Selecione</span>
                                         <button id="buttonMas" class="mdl-button mdl-js-button mdl-button--icon" onclick="operar(this.id,2)"><i class="mdi mdi-add"></i></button>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="js-card--large">
                                     <div class="js-card--large__content">
                                         <div class="js-card--large__content-tipo">
