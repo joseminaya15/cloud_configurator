@@ -535,6 +535,26 @@
                                             <img src="<?php echo RUTA_IMG?>cards/empleados.png">
                                         </div>
                                         <div class="js-card--large__content-name">
+                                            <small>N&uacute;mero de colaboradores</small>
+                                        </div>
+                                    </div>
+                                    <div class="js-card--large__select">
+                                        <div class="js-select js-facturacion">
+                                            <select class="selectpicker" id="empleados" name="empleados" title="Selecione">
+                                                <option value="0 - 100">0 - 100</option>
+                                                <option value="100 - 500">100 - 500</option>
+                                                <option value="500 - 1000">500 - 1000</option>
+                                                <option value="más de 1000">m&aacute; de 1000</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="js-card--large">
+                                    <div class="js-card--large__content">
+                                        <div class="js-card--large__content-tipo">
+                                            <img src="<?php echo RUTA_IMG?>cards/empleados.png">
+                                        </div>
+                                        <div class="js-card--large__content-name">
                                             <small>Número de colaboradores</small>
                                         </div>
                                     </div>

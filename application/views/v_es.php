@@ -570,11 +570,31 @@
                                         </div>
                                     </div>
                                     <div class="js-card--large__select">
+                                        <div class="js-select js-facturacion">
+                                            <select class="selectpicker" id="empleados" name="empleados" title="Seleccione">
+                                                <option value="0 - 100">0 - 100</option>
+                                                <option value="100 - 500">100 - 500</option>
+                                                <option value="500 - 1000">500 - 1000</option>
+                                                <option value="más de 1000">m&aacute; de 1000</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="js-card--large">
+                                    <div class="js-card--large__content">
+                                        <div class="js-card--large__content-tipo">
+                                            <img src="<?php echo RUTA_IMG?>cards/empleados.png">
+                                        </div>
+                                        <div class="js-card--large__content-name">
+                                            <small>N&uacute;mero de empleados</small>
+                                        </div>
+                                    </div>
+                                    <div class="js-card--large__select">
                                         <button id="buttonMenos" class="mdl-button mdl-js-button mdl-button--icon" onclick="operar(this.id,1)"><i class="mdi mdi-remove"></i></button>
                                         <span id="textOperar">Seleccione</span>
                                         <button id="buttonMas" class="mdl-button mdl-js-button mdl-button--icon" onclick="operar(this.id,2)"><i class="mdi mdi-add"></i></button>
                                     </div>
-                                </div>
+                                </div> -->
                                 <div class="js-card--large">
                                     <div class="js-card--large__content">
                                         <div class="js-card--large__content-tipo">
