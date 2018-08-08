@@ -812,7 +812,7 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6 js-checkbox js-terminos">
-                                    <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Privacy_Statement_CloudConfig_En.pdf" target="_blank">SAP terms and conditions</a>
+                                    <a href="http://www.sap-latam.com/configurators/cloud/public/pdf/SAP_Privacy_Statement_CloudConfig_En.pdf" target="_blank">See SAP terms and conditions</a>
                                 </div>
                                 <div class="col-xs-12 js-checkbox js-terminos">
                                     <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect js-label" for="checkbox-3" id="label-check3">
