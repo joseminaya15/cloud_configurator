@@ -539,7 +539,7 @@
                                     </div>
                                     <div class="js-card--large__select">
                                         <div class="js-select js-facturacion">
-                                            <select class="selectpicker" id="empleados" name="empleados" title="Select">
+                                            <select class="selectpicker" id="empleados" name="empleados" title="Select" onchange="selectFacturacion(this.id)">
                                                 <option value="0 - 100">0 - 100</option>
                                                 <option value="100 - 500">100 - 500</option>
                                                 <option value="500 - 1000">500 - 1000</option>

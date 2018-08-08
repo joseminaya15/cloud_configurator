@@ -765,9 +765,9 @@ $('[data-id="facturacion"]').click(function(e){
 var facturacion = null;
 function selectFacturacion(id){
 	facturacion = $('#'+id).val();
-	var empleados = $('#textOperar').text();
+	var empleados = $('#empleados').val();
 	$('#'+id).parents('.js-card--large__select').addClass('js-selected');
-	if(empleados != 'Select' && facturacion != 'Select') {
+	if(empleados != '' && facturacion != '') {
 		if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
 			$('#next').prop("disabled", false);
 			$('#next').addClass('active');
