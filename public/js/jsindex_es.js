@@ -41,7 +41,7 @@ function buttonNext(){
 	homePage.addClass('animated fadeOutUp');
 	congigurator.addClass('animated fadeInUp');
 	if(pant >= 2){
-		var empleados = $('#empleados').text();
+		var empleados = $('#empleados').val();
 		if(pant == 5){
 			mostrarDatos();
 		}
@@ -418,7 +418,7 @@ function saveSolucion(id,sol){
 	}
 }
 function buttonQuestion(direction){
-	var empleados = $('#empleados').text();
+	var empleados = $('#empleados').val();
 	if(returnEdit == 1) {
 		$('#prev').prop("disabled", true);
 		mostrarDatos();
@@ -744,7 +744,7 @@ function tipoTamaño(id,tipo){
 		idButtonSelect.css('color', '#FFFFFF');
 	}
 	$('.js-nav-toggle .owl-nav').toggleClass('dnone');
-	var empleados = $('#empleados').text();
+	var empleados = $('#empleados').val();
 	if(empleados != 'Seleccione' && facturacion != 'Seleccione') {
 		if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
 			$('#next').prop("disabled", false);
