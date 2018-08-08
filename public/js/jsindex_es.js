@@ -749,19 +749,22 @@ function tipoTamaño(id,tipo){
 		if(tipo_ind != null && empleados != null && facturacion != null || tipo_ind != '' && empleados != '' && facturacion != ''){
 			$('#next').prop("disabled", false);
 			$('#next').addClass('active');
+		} else {
+			$('#next').prop("disabled", true);
+			$('#next').removeClass('active');
 		}
 	}
 }
-$('html').click(function() {
-	if( $('#facturacion').parents('.bootstrap-select').hasClass('open') != true ){
-		$('#facturacion').parents('.bootstrap-select').addClass('open');
-		$('.js-fixed--top').css('z-index', '0');
-	} else{
-		$('#facturacion').parents('.bootstrap-select').removeClass('open');
-		$('.js-fixed--top').css('z-index', '2');
-	}
-	$('.js-fixed--top').css('z-index', '2');
-});
+// $('html').click(function() {
+// 	if( $('#facturacion').parents('.bootstrap-select').hasClass('open') != true ){
+// 		$('#facturacion').parents('.bootstrap-select').addClass('open');
+// 		$('.js-fixed--top').css('z-index', '0');
+// 	} else{
+// 		$('#facturacion').parents('.bootstrap-select').removeClass('open');
+// 		$('.js-fixed--top').css('z-index', '2');
+// 	}
+// 	$('.js-fixed--top').css('z-index', '2');
+// });
 $('[data-id="facturacion"]').click(function(e){
 	if( $('#facturacion').parents('.bootstrap-select').hasClass('open') != true ){
 		$('#facturacion').parents('.bootstrap-select').addClass('open');
@@ -779,9 +782,11 @@ function selectFacturacion(id){
 	empleados = $('#empleados').val();
 	$('#'+id).parents('.js-card--large__select').addClass('js-selected');
 	if(empleados != '' && factu != '') {
-		if(tipo_ind != null && empleados != null && factu != null || tipo_ind != '' && empleados != null && facturacion != ''){
-			$('#next').prop("disabled", false);
-			$('#next').addClass('active');
+		if((tipo_ind != null && empleados != null && factu != null) || (tipo_ind != '' && empleados != null && facturacion != '')) {
+			// $('#next').prop("disabled", false);
+			// $('#next').addClass('active');
+			buttonQuestion(2);
+			buttonNext();
 		}
 	}else {
 		return;
