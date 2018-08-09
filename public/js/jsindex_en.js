@@ -152,6 +152,7 @@ function solicitarEstimacion(){
 	}
 	if (!validateEmail(email)){
 		$('#email').css('border-color','red');
+		msj('error', 'Email invalid');
 		return;
 	}
 	if(pais == null || pais == ''){
