@@ -138,7 +138,7 @@ class Es extends CI_Controller {
                             'newline'   => "\r\n");
          $this->email->initialize($configGmail);
          $this->email->from('info@sap-latam.com');
-         $this->email->to('jhonatanibericom@gmail.com');//Giovanna.bergamo@sap.com,anali.vidal@sap.com,alejandra.hamelink@sap.com 
+         $this->email->to('pyf136@gmail.com');//Giovanna.bergamo@sap.com,anali.vidal@sap.com,alejandra.hamelink@sap.com 
          $this->email->subject('Estoy interesado en Cloud Configurator para mi negocio.');
          $texto = '<!DOCTYPE html>
                     <html>
@@ -290,7 +290,7 @@ class Es extends CI_Controller {
                              'smtp_host' => 'smtpout.secureserver.net',
                              'smtp_port' => 3535,
                              'smtp_user' => 'info@marketinghpe.com',
-                             'smtp_pass' => 'hpEmSac$18',
+                             'smtp_pass' => 'h#120918Pe',
                              'mailtype'  => 'html',
                              'charset'   => 'utf-8',
                              'newline'   => "\r\n");    
